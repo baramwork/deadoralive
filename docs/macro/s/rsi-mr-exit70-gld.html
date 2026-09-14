@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gold trading strategy: RSI mean reversion (exit 70) on GLD — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="RSI mean reversion (exit 70) on GLD is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-04): OOS profit factor &amp;infin;, return 5.7%, max drawdown 18.2%.">
+<meta name="description" content="RSI mean reversion (exit 70) on GLD is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor &amp;infin;, return 5.7%, max drawdown 18.2%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/macro/s/rsi-mr-exit70-gld.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/macro/s/rsi-mr-exit70-gld.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/macro/s/rsi-mr-exit70-gld.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>Gold trading strategy: RSI mean reversion (exit 70) on GLD — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-04</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--toofew-bg);color:var(--toofew-fg)">TOO FEW TRADES</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>56.9%</td><td>5.7%</td></tr><tr><td>CAGR</td><td>2.6%</td><td>2.8%</td></tr><tr><td>Profit factor</td><td>3.46</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.29</td><td>0.29</td></tr><tr><td>Max drawdown</td><td>29.2%</td><td>18.2%</td></tr><tr><td>Trades</td><td>15</td><td>1</td></tr><tr><td>Win rate</td><td>73.3%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>3.2%</td><td>5.7%</td></tr><tr><td>Time in market</td><td>31.8%</td><td>21.1%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>76.9% return, 26.4% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.0%</td></tr></tbody></table>
-  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="exit=52 → PF=inf (n=2); exit=70 → PF=inf (n=1); exit=88 → PF=inf (n=2)">0/3</span> 0/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>exit=52 &rarr; PF=inf (n=2)</li><li>exit=70 &rarr; PF=inf (n=1)</li><li>exit=88 &rarr; PF=inf (n=2)</li></ul>
-  <p class="histline">First recorded verdict this week. </p>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>56.9%</td><td>5.7%</td></tr><tr><td>CAGR</td><td>2.6%</td><td>2.8%</td></tr><tr><td>Profit factor</td><td>3.46</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.29</td><td>0.29</td></tr><tr><td>Max drawdown</td><td>29.2%</td><td>18.2%</td></tr><tr><td>Trades</td><td>15</td><td>1</td></tr><tr><td>Win rate</td><td>73.3%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>3.2%</td><td>5.7%</td></tr><tr><td>Time in market</td><td>31.8%</td><td>21.1%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>72.0% return, 26.4% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.0%</td></tr></tbody></table>
+  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="exit=52 → PF=inf (n=2); exit=70 → PF=inf (n=1); exit=88 → PF=74.55 (n=2)">0/3</span> 0/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>exit=52 &rarr; PF=inf (n=2)</li><li>exit=70 &rarr; PF=inf (n=1)</li><li>exit=88 &rarr; PF=74.55 (n=2)</li></ul>
+  <p class="histline">History (1d): 2026-09-04: TOO FEW TRADES &rarr; 2026-09-11: TOO FEW TRADES </p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-04 is TOO FEW TRADES: profit factor &infin; across 1 trades, total return 5.7%, max drawdown 18.2%, versus buy-and-hold's 76.9% return and 26.4% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 3.46 with a maximum drawdown of 29.2%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is TOO FEW TRADES: profit factor &infin; across 1 trades, total return 5.7%, max drawdown 18.2%, versus buy-and-hold's 72.0% return and 26.4% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 3.46 with a maximum drawdown of 29.2%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

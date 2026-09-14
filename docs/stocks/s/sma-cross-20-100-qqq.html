@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QQQ strategy: SMA crossover (20, 100) on QQQ (stocks) — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="SMA crossover (20, 100) on QQQ is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-04): OOS profit factor &amp;infin;, return 35.5%, max drawdown 12.6%.">
+<meta name="description" content="SMA crossover (20, 100) on QQQ is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor &amp;infin;, return 34.4%, max drawdown 12.6%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/sma-cross-20-100-qqq.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/sma-cross-20-100-qqq.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/sma-cross-20-100-qqq.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>QQQ strategy: SMA crossover (20, 100) on QQQ (stocks) — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-04</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--toofew-bg);color:var(--toofew-fg)">TOO FEW TRADES</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>386.2%</td><td>35.5%</td></tr><tr><td>CAGR</td><td>6.6%</td><td>16.4%</td></tr><tr><td>Profit factor</td><td>2.94</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.48</td><td>1.01</td></tr><tr><td>Max drawdown</td><td>31.0%</td><td>12.6%</td></tr><tr><td>Trades</td><td>33</td><td>3</td></tr><tr><td>Win rate</td><td>54.5%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>6.2%</td><td>10.9%</td></tr><tr><td>Time in market</td><td>67.2%</td><td>80.9%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>56.7% return, 22.9% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.2%</td></tr></tbody></table>
-  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="n_fast=15, n_slow=75 → PF=35.44 (n=5); n_fast=15, n_slow=100 → PF=inf (n=3); n_fast=15, n_slow=125 → PF=inf (n=3); n_fast=20, n_slow=75 → PF=144.76 (n=4); n_fast=20, n_slow=100 → PF=inf (n=3); n_fast=20, n_slow=125 → PF=inf (n=3); n_fast=25, n_slow=75 → PF=8.80 (n=4); n_fast=25, n_slow=100 → PF=inf (n=3); n_fast=25, n_slow=125 → PF=inf (n=3)">0/9</span> 0/9 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>n_fast=15, n_slow=75 &rarr; PF=35.44 (n=5)</li><li>n_fast=15, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=15, n_slow=125 &rarr; PF=inf (n=3)</li><li>n_fast=20, n_slow=75 &rarr; PF=144.76 (n=4)</li><li>n_fast=20, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=20, n_slow=125 &rarr; PF=inf (n=3)</li><li>n_fast=25, n_slow=75 &rarr; PF=8.80 (n=4)</li><li>n_fast=25, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=25, n_slow=125 &rarr; PF=inf (n=3)</li></ul>
-  <p class="histline">First recorded verdict this week. </p>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>382.9%</td><td>34.4%</td></tr><tr><td>CAGR</td><td>6.6%</td><td>16.0%</td></tr><tr><td>Profit factor</td><td>2.93</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.48</td><td>0.99</td></tr><tr><td>Max drawdown</td><td>31.0%</td><td>12.6%</td></tr><tr><td>Trades</td><td>33</td><td>3</td></tr><tr><td>Win rate</td><td>54.5%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>6.2%</td><td>10.6%</td></tr><tr><td>Time in market</td><td>67.2%</td><td>80.9%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>55.4% return, 22.9% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.2%</td></tr></tbody></table>
+  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="n_fast=15, n_slow=75 → PF=inf (n=4); n_fast=15, n_slow=100 → PF=inf (n=3); n_fast=15, n_slow=125 → PF=inf (n=3); n_fast=20, n_slow=75 → PF=30.03 (n=4); n_fast=20, n_slow=100 → PF=inf (n=3); n_fast=20, n_slow=125 → PF=inf (n=3); n_fast=25, n_slow=75 → PF=7.33 (n=4); n_fast=25, n_slow=100 → PF=inf (n=3); n_fast=25, n_slow=125 → PF=inf (n=3)">0/9</span> 0/9 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>n_fast=15, n_slow=75 &rarr; PF=inf (n=4)</li><li>n_fast=15, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=15, n_slow=125 &rarr; PF=inf (n=3)</li><li>n_fast=20, n_slow=75 &rarr; PF=30.03 (n=4)</li><li>n_fast=20, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=20, n_slow=125 &rarr; PF=inf (n=3)</li><li>n_fast=25, n_slow=75 &rarr; PF=7.33 (n=4)</li><li>n_fast=25, n_slow=100 &rarr; PF=inf (n=3)</li><li>n_fast=25, n_slow=125 &rarr; PF=inf (n=3)</li></ul>
+  <p class="histline">History (1d): 2026-09-04: TOO FEW TRADES &rarr; 2026-09-11: TOO FEW TRADES </p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-04 is TOO FEW TRADES: profit factor &infin; across 3 trades, total return 35.5%, max drawdown 12.6%, versus buy-and-hold's 56.7% return and 22.9% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.2% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 2.94 with a maximum drawdown of 31.0%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is TOO FEW TRADES: profit factor &infin; across 3 trades, total return 34.4%, max drawdown 12.6%, versus buy-and-hold's 55.4% return and 22.9% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.2% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 2.93 with a maximum drawdown of 31.0%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

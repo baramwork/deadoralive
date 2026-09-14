@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DCA bot strategy: DCA bot (3Commas-style safety orders) (2.5% safety-order step) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="DCA bot (3Commas-style safety orders) (2.5% safety-order step) on SPY is currently rated ALIVE on the daily (1d) out-of-sample window (as of 2026-09-04): OOS profit factor 78.87, return 11.1%, max drawdown 11.9%.">
+<meta name="description" content="DCA bot (3Commas-style safety orders) (2.5% safety-order step) on SPY is currently rated ALIVE on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor 39.67, return 11.0%, max drawdown 11.9%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/dca-bot-sostep2-5-spy.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/dca-bot-sostep2-5-spy.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/dca-bot-sostep2-5-spy.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>DCA bot strategy: DCA bot (3Commas-style safety orders) (2.5% safety-order step) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-04</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--alive-bg);color:var(--alive-fg)">ALIVE</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>118.6%</td><td>11.1%</td></tr><tr><td>CAGR</td><td>3.2%</td><td>5.4%</td></tr><tr><td>Profit factor</td><td>259.67</td><td>78.87</td></tr><tr><td>Sharpe</td><td>0.30</td><td>0.60</td></tr><tr><td>Max drawdown</td><td>40.4%</td><td>11.9%</td></tr><tr><td>Trades</td><td>249</td><td>42</td></tr><tr><td>Win rate</td><td>99.6%</td><td>97.6%</td></tr><tr><td>Avg trade return</td><td>1.5%</td><td>1.4%</td></tr><tr><td>Time in market</td><td>96.0%</td><td>91.7%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>39.9% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>-0.0%</td></tr></tbody></table>
-  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="so_step_pct=1.875 → PF=inf (n=39); so_step_pct=2.5 → PF=78.87 (n=42); so_step_pct=3.125 → PF=71.17 (n=38)">3/3</span> 3/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>so_step_pct=1.875 &rarr; PF=inf (n=39)</li><li>so_step_pct=2.5 &rarr; PF=78.87 (n=42)</li><li>so_step_pct=3.125 &rarr; PF=71.17 (n=38)</li></ul>
-  <p class="histline">First recorded verdict this week. </p>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>118.6%</td><td>11.0%</td></tr><tr><td>CAGR</td><td>3.2%</td><td>5.4%</td></tr><tr><td>Profit factor</td><td>744.27</td><td>39.67</td></tr><tr><td>Sharpe</td><td>0.30</td><td>0.59</td></tr><tr><td>Max drawdown</td><td>40.4%</td><td>11.9%</td></tr><tr><td>Trades</td><td>249</td><td>42</td></tr><tr><td>Win rate</td><td>99.6%</td><td>97.6%</td></tr><tr><td>Avg trade return</td><td>1.5%</td><td>1.4%</td></tr><tr><td>Time in market</td><td>96.0%</td><td>91.6%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>39.2% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>-0.0%</td></tr></tbody></table>
+  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="so_step_pct=1.875 → PF=133.04 (n=37); so_step_pct=2.5 → PF=39.67 (n=42); so_step_pct=3.125 → PF=35.80 (n=38)">3/3</span> 3/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>so_step_pct=1.875 &rarr; PF=133.04 (n=37)</li><li>so_step_pct=2.5 &rarr; PF=39.67 (n=42)</li><li>so_step_pct=3.125 &rarr; PF=35.80 (n=38)</li></ul>
+  <p class="histline">History (1d): 2026-09-04: ALIVE &rarr; 2026-09-11: ALIVE </p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-04 is ALIVE: profit factor 78.87 across 42 trades, total return 11.1%, max drawdown 11.9%, versus buy-and-hold's 39.9% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by -0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 259.67 with a maximum drawdown of 40.4%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is ALIVE: profit factor 39.67 across 42 trades, total return 11.0%, max drawdown 11.9%, versus buy-and-hold's 39.2% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by -0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 744.27 with a maximum drawdown of 40.4%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

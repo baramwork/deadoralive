@@ -1,3 +1,11 @@
+/home/runner/work/deadoralive/deadoralive/fetch_data.py:75: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  now = pd.Timestamp.utcnow().tz_localize(None)
+/home/runner/work/deadoralive/deadoralive/fetch_data.py:75: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  now = pd.Timestamp.utcnow().tz_localize(None)
+/home/runner/work/deadoralive/deadoralive/fetch_data.py:75: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  now = pd.Timestamp.utcnow().tz_localize(None)
+/home/runner/work/deadoralive/deadoralive/fetch_data.py:75: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  now = pd.Timestamp.utcnow().tz_localize(None)
 /home/runner/work/deadoralive/deadoralive/fetch_data.py:180: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
   now = pd.Timestamp.utcnow().tz_localize(None) if now is None else now
 /home/runner/work/deadoralive/deadoralive/fetch_data.py:180: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
@@ -20,38 +28,38 @@
   now = pd.Timestamp.utcnow().tz_localize(None) if now is None else now
 /home/runner/work/deadoralive/deadoralive/fetch_data.py:373: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
   now = pd.Timestamp.utcnow().tz_localize(None) if now is None else now
-[fetch_data] BTCUSD 1d: no new bars.
-[fetch_data] BTCUSD 4h: no new bars.
-[fetch_data] ETHUSD 1d: no new bars.
-[fetch_data] ETHUSD 4h: no new bars.
-[fetch_data] (Upbit) KRW-BTC 1d: wrote 3263 rows (2017-10-01 00:00:00 .. 2026-09-06 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-BTC_1d.csv
-[fetch_data] (Upbit) KRW-BTC 4h: wrote 19578 rows (2017-10-01 00:00:00 .. 2026-09-07 08:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-BTC_4h.csv
-[fetch_data] (Upbit) KRW-ETH 1d: wrote 3260 rows (2017-10-01 00:00:00 .. 2026-09-06 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-ETH_1d.csv
-[fetch_data] (Upbit) KRW-ETH 4h: wrote 19555 rows (2017-10-01 00:00:00 .. 2026-09-07 08:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-ETH_4h.csv
+[fetch_data] BTCUSD 1d: wrote 3315 rows (2017-08-17 00:00:00 .. 2026-09-13 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/BTCUSD_1d.csv
+[fetch_data] BTCUSD 4h: wrote 19891 rows (2017-08-17 00:00:00 .. 2026-09-14 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/BTCUSD_4h.csv
+[fetch_data] ETHUSD 1d: wrote 3315 rows (2017-08-17 00:00:00 .. 2026-09-13 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/ETHUSD_1d.csv
+[fetch_data] ETHUSD 4h: wrote 19891 rows (2017-08-17 00:00:00 .. 2026-09-14 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/ETHUSD_4h.csv
+[fetch_data] (Upbit) KRW-BTC 1d: wrote 3270 rows (2017-10-01 00:00:00 .. 2026-09-13 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-BTC_1d.csv
+[fetch_data] (Upbit) KRW-BTC 4h: wrote 19618 rows (2017-10-01 00:00:00 .. 2026-09-14 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-BTC_4h.csv
+[fetch_data] (Upbit) KRW-ETH 1d: wrote 3267 rows (2017-10-01 00:00:00 .. 2026-09-13 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-ETH_1d.csv
+[fetch_data] (Upbit) KRW-ETH 4h: wrote 19595 rows (2017-10-01 00:00:00 .. 2026-09-14 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/KRW-ETH_4h.csv
 [fetch_data] (stocks) SPY: source=yahoo
-[fetch_data] (stocks) SPY 1d: wrote 6709 rows (2000-01-03 00:00:00 .. 2026-09-04 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/SPY_1d.csv
+[fetch_data] (stocks) SPY 1d: wrote 6713 rows (2000-01-03 00:00:00 .. 2026-09-11 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/SPY_1d.csv
 [fetch_data] (stocks) QQQ: source=yahoo
-[fetch_data] (stocks) QQQ 1d: wrote 6709 rows (2000-01-03 00:00:00 .. 2026-09-04 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/QQQ_1d.csv
-[fetch_data] (macro) GLD 1d: source=yahoo, wrote 4950 rows (2007-01-03 00:00:00 .. 2026-09-04 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/GLD_1d.csv
-[fetch_data] (macro) SLV 1d: source=yahoo, wrote 4950 rows (2007-01-03 00:00:00 .. 2026-09-04 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/SLV_1d.csv
-[fetch_data] (macro) USO 1d: source=yahoo, wrote 4950 rows (2007-01-03 00:00:00 .. 2026-09-04 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/USO_1d.csv
-[fetch_data] (macro) EURUSD 1d: source=yahoo, wrote 5103 rows (2007-01-01 00:00:00 .. 2026-09-03 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/EURUSD_1d.csv
-[fetch_data] (macro) USDJPY 1d: source=yahoo, wrote 5103 rows (2007-01-01 00:00:00 .. 2026-09-03 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/USDJPY_1d.csv
-total 9612
-drwxr-xr-x 2 runner runner    4096 Sep  7 14:19 .
-drwxr-xr-x 9 runner runner    4096 Sep  7 14:19 ..
--rw-r--r-- 1 runner runner  191254 Sep  7 14:19 BTCUSD_1d.csv
--rw-r--r-- 1 runner runner 1310932 Sep  7 14:19 BTCUSD_4h.csv
--rw-r--r-- 1 runner runner  178894 Sep  7 14:19 ETHUSD_1d.csv
--rw-r--r-- 1 runner runner 1235539 Sep  7 14:19 ETHUSD_4h.csv
--rw-r--r-- 1 runner runner  459380 Sep  7 14:21 EURUSD_1d.csv
--rw-r--r-- 1 runner runner  461726 Sep  7 14:21 GLD_1d.csv
--rw-r--r-- 1 runner runner  224883 Sep  7 14:19 KRW-BTC_1d.csv
--rw-r--r-- 1 runner runner 1509076 Sep  7 14:20 KRW-BTC_4h.csv
--rw-r--r-- 1 runner runner  210479 Sep  7 14:20 KRW-ETH_1d.csv
--rw-r--r-- 1 runner runner 1422402 Sep  7 14:21 KRW-ETH_4h.csv
--rw-r--r-- 1 runner runner  613370 Sep  7 14:21 QQQ_1d.csv
--rw-r--r-- 1 runner runner  464598 Sep  7 14:21 SLV_1d.csv
--rw-r--r-- 1 runner runner  618270 Sep  7 14:21 SPY_1d.csv
--rw-r--r-- 1 runner runner  451123 Sep  7 14:21 USDJPY_1d.csv
--rw-r--r-- 1 runner runner  451376 Sep  7 14:21 USO_1d.csv
+[fetch_data] (stocks) QQQ 1d: wrote 6713 rows (2000-01-03 00:00:00 .. 2026-09-11 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/QQQ_1d.csv
+[fetch_data] (macro) GLD 1d: source=yahoo, wrote 4954 rows (2007-01-03 00:00:00 .. 2026-09-11 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/GLD_1d.csv
+[fetch_data] (macro) SLV 1d: source=yahoo, wrote 4954 rows (2007-01-03 00:00:00 .. 2026-09-11 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/SLV_1d.csv
+[fetch_data] (macro) USO 1d: source=yahoo, wrote 4954 rows (2007-01-03 00:00:00 .. 2026-09-11 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/USO_1d.csv
+[fetch_data] (macro) EURUSD 1d: source=yahoo, wrote 5108 rows (2007-01-01 00:00:00 .. 2026-09-10 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/EURUSD_1d.csv
+[fetch_data] (macro) USDJPY 1d: source=yahoo, wrote 5108 rows (2007-01-01 00:00:00 .. 2026-09-10 00:00:00) -> /home/runner/work/deadoralive/deadoralive/data/USDJPY_1d.csv
+total 9628
+drwxr-xr-x 2 runner runner    4096 Sep 14 05:18 .
+drwxr-xr-x 9 runner runner    4096 Sep 14 05:18 ..
+-rw-r--r-- 1 runner runner  191671 Sep 14 05:18 BTCUSD_1d.csv
+-rw-r--r-- 1 runner runner 1313658 Sep 14 05:18 BTCUSD_4h.csv
+-rw-r--r-- 1 runner runner  179281 Sep 14 05:18 ETHUSD_1d.csv
+-rw-r--r-- 1 runner runner 1238068 Sep 14 05:18 ETHUSD_4h.csv
+-rw-r--r-- 1 runner runner  459831 Sep 14 05:21 EURUSD_1d.csv
+-rw-r--r-- 1 runner runner  462104 Sep 14 05:21 GLD_1d.csv
+-rw-r--r-- 1 runner runner  225387 Sep 14 05:19 KRW-BTC_1d.csv
+-rw-r--r-- 1 runner runner 1512290 Sep 14 05:20 KRW-BTC_4h.csv
+-rw-r--r-- 1 runner runner  210938 Sep 14 05:20 KRW-ETH_1d.csv
+-rw-r--r-- 1 runner runner 1425360 Sep 14 05:21 KRW-ETH_4h.csv
+-rw-r--r-- 1 runner runner  613744 Sep 14 05:21 QQQ_1d.csv
+-rw-r--r-- 1 runner runner  464970 Sep 14 05:21 SLV_1d.csv
+-rw-r--r-- 1 runner runner  618643 Sep 14 05:21 SPY_1d.csv
+-rw-r--r-- 1 runner runner  451569 Sep 14 05:21 USDJPY_1d.csv
+-rw-r--r-- 1 runner runner  451748 Sep 14 05:21 USO_1d.csv

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pionex grid bot: Grid bot (Pionex-style spot grid) (±20% range, 20 grids) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="Grid bot (Pionex-style spot grid) (±20% range, 20 grids) on SPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-04): OOS profit factor &amp;infin;, return 2.0%, max drawdown 0.8%.">
+<meta name="description" content="Grid bot (Pionex-style spot grid) (±20% range, 20 grids) on SPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor &amp;infin;, return 2.0%, max drawdown 0.8%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/grid-bot-range20-grid20-spy.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/grid-bot-range20-grid20-spy.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/grid-bot-range20-grid20-spy.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>Pionex grid bot: Grid bot (Pionex-style spot grid) (±20% range, 20 grids) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-04</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--fading-bg);color:var(--fading-fg)">FADING</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>13.1%</td><td>2.0%</td></tr><tr><td>CAGR</td><td>0.5%</td><td>1.0%</td></tr><tr><td>Profit factor</td><td>1.43</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.17</td><td>0.58</td></tr><tr><td>Max drawdown</td><td>9.1%</td><td>0.8%</td></tr><tr><td>Trades</td><td>437</td><td>18</td></tr><tr><td>Win rate</td><td>89.0%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>0.6%</td><td>2.2%</td></tr><tr><td>Time in market</td><td>26.7%</td><td>7.8%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>39.9% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.0%</td></tr></tbody></table>
-  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="range_pct=15.0 → PF=inf (n=23); range_pct=20.0 → PF=inf (n=18); range_pct=25.0 → PF=inf (n=14)">3/3</span> 3/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>range_pct=15.0 &rarr; PF=inf (n=23)</li><li>range_pct=20.0 &rarr; PF=inf (n=18)</li><li>range_pct=25.0 &rarr; PF=inf (n=14)</li></ul>
-  <p class="histline">First recorded verdict this week. </p>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>13.1%</td><td>2.0%</td></tr><tr><td>CAGR</td><td>0.5%</td><td>1.0%</td></tr><tr><td>Profit factor</td><td>1.43</td><td>&infin;</td></tr><tr><td>Sharpe</td><td>0.17</td><td>0.58</td></tr><tr><td>Max drawdown</td><td>9.1%</td><td>0.8%</td></tr><tr><td>Trades</td><td>437</td><td>18</td></tr><tr><td>Win rate</td><td>89.0%</td><td>100.0%</td></tr><tr><td>Avg trade return</td><td>0.6%</td><td>2.2%</td></tr><tr><td>Time in market</td><td>26.7%</td><td>7.2%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>39.2% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.0%</td></tr></tbody></table>
+  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="range_pct=15.0 → PF=inf (n=23); range_pct=20.0 → PF=inf (n=18); range_pct=25.0 → PF=inf (n=17)">3/3</span> 3/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>range_pct=15.0 &rarr; PF=inf (n=23)</li><li>range_pct=20.0 &rarr; PF=inf (n=18)</li><li>range_pct=25.0 &rarr; PF=inf (n=17)</li></ul>
+  <p class="histline">History (1d): 2026-09-04: FADING &rarr; 2026-09-11: FADING </p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-04 is FADING: profit factor &infin; across 18 trades, total return 2.0%, max drawdown 0.8%, versus buy-and-hold's 39.9% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.43 with a maximum drawdown of 9.1%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is FADING: profit factor &infin; across 18 trades, total return 2.0%, max drawdown 0.8%, versus buy-and-hold's 39.2% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.0% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.43 with a maximum drawdown of 9.1%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QQQ strategy: Donchian/Turtle breakout (55, 20) on QQQ (stocks) — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="Donchian/Turtle breakout (55, 20) on QQQ is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-04): OOS profit factor 4.50, return 19.6%, max drawdown 11.3%.">
+<meta name="description" content="Donchian/Turtle breakout (55, 20) on QQQ is currently rated TOO FEW TRADES on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor 4.50, return 19.6%, max drawdown 11.3%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-55-20-qqq.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-55-20-qqq.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-55-20-qqq.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>QQQ strategy: Donchian/Turtle breakout (55, 20) on QQQ (stocks) — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-04</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--toofew-bg);color:var(--toofew-fg)">TOO FEW TRADES</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>90.6%</td><td>19.6%</td></tr><tr><td>CAGR</td><td>2.7%</td><td>9.4%</td></tr><tr><td>Profit factor</td><td>1.63</td><td>4.50</td></tr><tr><td>Sharpe</td><td>0.28</td><td>0.72</td></tr><tr><td>Max drawdown</td><td>45.1%</td><td>11.3%</td></tr><tr><td>Trades</td><td>57</td><td>4</td></tr><tr><td>Win rate</td><td>54.4%</td><td>75.0%</td></tr><tr><td>Avg trade return</td><td>1.4%</td><td>4.9%</td></tr><tr><td>Time in market</td><td>46.4%</td><td>57.5%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>56.7% return, 22.9% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.2%</td></tr></tbody></table>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>90.6%</td><td>19.6%</td></tr><tr><td>CAGR</td><td>2.7%</td><td>9.4%</td></tr><tr><td>Profit factor</td><td>1.63</td><td>4.50</td></tr><tr><td>Sharpe</td><td>0.28</td><td>0.72</td></tr><tr><td>Max drawdown</td><td>45.1%</td><td>11.3%</td></tr><tr><td>Trades</td><td>57</td><td>4</td></tr><tr><td>Win rate</td><td>54.4%</td><td>75.0%</td></tr><tr><td>Avg trade return</td><td>1.4%</td><td>4.9%</td></tr><tr><td>Time in market</td><td>46.4%</td><td>57.6%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>55.4% return, 22.9% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.2%</td></tr></tbody></table>
   <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="n_high=41, n_low=15 → PF=3.46 (n=5); n_high=41, n_low=20 → PF=5.50 (n=4); n_high=41, n_low=25 → PF=4.86 (n=4); n_high=55, n_low=15 → PF=2.53 (n=5); n_high=55, n_low=20 → PF=4.50 (n=4); n_high=55, n_low=25 → PF=3.87 (n=4); n_high=69, n_low=15 → PF=13.43 (n=3); n_high=69, n_low=20 → PF=13.43 (n=3); n_high=69, n_low=25 → PF=11.36 (n=3)">0/9</span> 0/9 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>n_high=41, n_low=15 &rarr; PF=3.46 (n=5)</li><li>n_high=41, n_low=20 &rarr; PF=5.50 (n=4)</li><li>n_high=41, n_low=25 &rarr; PF=4.86 (n=4)</li><li>n_high=55, n_low=15 &rarr; PF=2.53 (n=5)</li><li>n_high=55, n_low=20 &rarr; PF=4.50 (n=4)</li><li>n_high=55, n_low=25 &rarr; PF=3.87 (n=4)</li><li>n_high=69, n_low=15 &rarr; PF=13.43 (n=3)</li><li>n_high=69, n_low=20 &rarr; PF=13.43 (n=3)</li><li>n_high=69, n_low=25 &rarr; PF=11.36 (n=3)</li></ul>
-  <p class="histline">First recorded verdict this week. </p>
+  <p class="histline">History (1d): 2026-09-04: TOO FEW TRADES &rarr; 2026-09-11: TOO FEW TRADES </p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-04 is TOO FEW TRADES: profit factor 4.50 across 4 trades, total return 19.6%, max drawdown 11.3%, versus buy-and-hold's 56.7% return and 22.9% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.2% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.63 with a maximum drawdown of 45.1%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is TOO FEW TRADES: profit factor 4.50 across 4 trades, total return 19.6%, max drawdown 11.3%, versus buy-and-hold's 55.4% return and 22.9% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.2% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.63 with a maximum drawdown of 45.1%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;
