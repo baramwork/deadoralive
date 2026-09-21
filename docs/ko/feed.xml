@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>매주 전략 백테스트 결과 중 바뀐 부분만 숫자로 정리한 요약입니다.</description>
   <item>
+    <title>2026-09-21 주간 요약: 생존 21 / 약화 30 / 사망 20 — 이번 주 변경 사항</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-09-21.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-09-21.html</guid>
+    <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+    <description>2026-09-21 주간 요약: 생존 21 / 약화 30 / 사망 20 — 이번 주 변경 사항</description>
+    <content:encoded><![CDATA[<ul><li>이번 실행은 전략·자산·시간대 조합 140건을 다뤘습니다: 생존 21건, 약화 30건, 사망 20건, 표본 부족 17건입니다.</li><li>2026-09-14 실행 이후 판정이 3건 바뀌었습니다.</li><li>거래가 30회 이상인 조합의 표본외 순손익비 중, 가장 높은 값은 22.27(분할매수 봇, 3커맨스 방식 (DCA bot, 3Commas-style safety orders)(sostep2.5) KRW-ETH (이더리움) 일봉 (1d)), 가장 낮은 값은 0.46(그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range10-grid20) KRW-ETH (이더리움) 일봉 (1d))이었습니다.</li></ul><h2>판정 변경</h2><ul><li>3봉 연속 하락 뒤 매수 (Buy the dip, 3 down closes)(fixed) KRW-BTC 1d: FADING &rarr; DEAD</li><li>지수이동평균 교차 (EMA crossover)(12-26) KRW-ETH 4h: FADING &rarr; ALIVE</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-ETH 4h: DEAD &rarr; FADING</li></ul>]]></content:encoded>
+  </item>
+  <item>
     <title>2026-09-14 주간 요약: 생존 20 / 약화 32 / 사망 19 — 이번 주 변경 사항</title>
     <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-09-14.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-09-14.html</guid>

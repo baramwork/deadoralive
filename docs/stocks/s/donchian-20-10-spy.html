@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Donchian/Turtle breakout (20, 10) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="Donchian/Turtle breakout (20, 10) on SPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor 2.88, return 14.5%, max drawdown 7.8%.">
+<meta name="description" content="Donchian/Turtle breakout (20, 10) on SPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-18): OOS profit factor 2.88, return 14.5%, max drawdown 7.8%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-20-10-spy.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-20-10-spy.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/stocks/s/donchian-20-10-spy.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>Donchian/Turtle breakout (20, 10) on SPY (stocks) — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-18</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--fading-bg);color:var(--fading-fg)">FADING</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>101.4%</td><td>14.5%</td></tr><tr><td>CAGR</td><td>2.9%</td><td>7.0%</td></tr><tr><td>Profit factor</td><td>1.68</td><td>2.88</td></tr><tr><td>Sharpe</td><td>0.35</td><td>0.79</td></tr><tr><td>Max drawdown</td><td>36.3%</td><td>7.8%</td></tr><tr><td>Trades</td><td>106</td><td>10</td></tr><tr><td>Win rate</td><td>46.2%</td><td>50.0%</td></tr><tr><td>Avg trade return</td><td>0.7%</td><td>1.4%</td></tr><tr><td>Time in market</td><td>48.5%</td><td>61.4%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>39.2% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.5%</td></tr></tbody></table>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>101.4%</td><td>14.5%</td></tr><tr><td>CAGR</td><td>2.9%</td><td>7.0%</td></tr><tr><td>Profit factor</td><td>1.68</td><td>2.88</td></tr><tr><td>Sharpe</td><td>0.35</td><td>0.79</td></tr><tr><td>Max drawdown</td><td>36.3%</td><td>7.8%</td></tr><tr><td>Trades</td><td>106</td><td>10</td></tr><tr><td>Win rate</td><td>46.2%</td><td>50.0%</td></tr><tr><td>Avg trade return</td><td>0.7%</td><td>1.4%</td></tr><tr><td>Time in market</td><td>48.4%</td><td>61.4%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>35.1% return, 19.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>0.5%</td></tr></tbody></table>
   <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="n_high=15, n_low=8 → PF=2.63 (n=13); n_high=15, n_low=10 → PF=3.43 (n=10); n_high=15, n_low=12 → PF=3.72 (n=9); n_high=20, n_low=8 → PF=2.75 (n=12); n_high=20, n_low=10 → PF=2.88 (n=10); n_high=20, n_low=12 → PF=3.18 (n=9); n_high=25, n_low=8 → PF=1.97 (n=12); n_high=25, n_low=10 → PF=2.12 (n=10); n_high=25, n_low=12 → PF=2.39 (n=9)">6/9</span> 6/9 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>n_high=15, n_low=8 &rarr; PF=2.63 (n=13)</li><li>n_high=15, n_low=10 &rarr; PF=3.43 (n=10)</li><li>n_high=15, n_low=12 &rarr; PF=3.72 (n=9)</li><li>n_high=20, n_low=8 &rarr; PF=2.75 (n=12)</li><li>n_high=20, n_low=10 &rarr; PF=2.88 (n=10)</li><li>n_high=20, n_low=12 &rarr; PF=3.18 (n=9)</li><li>n_high=25, n_low=8 &rarr; PF=1.97 (n=12)</li><li>n_high=25, n_low=10 &rarr; PF=2.12 (n=10)</li><li>n_high=25, n_low=12 &rarr; PF=2.39 (n=9)</li></ul>
-  <p class="histline">History (1d): 2026-09-04: FADING &rarr; 2026-09-11: FADING </p>
+  <p class="histline">History (1d): 2026-09-04: FADING &rarr; 2026-09-11: FADING &rarr; 2026-09-18: FADING <span class="sparkline" title="2026-09-04: 2.88, 2026-09-11: 2.88, 2026-09-18: 2.88">OOS PF trend <svg width="96" height="26" viewBox="0 0 96 26" role="img" aria-label="trend sparkline"><polyline points="3.0,13.0 48.0,13.0 93.0,13.0" fill="none" stroke="var(--link)" stroke-width="1.4"/><circle cx="3.0" cy="13.0" r="1.7" fill="var(--link)"/><circle cx="48.0" cy="13.0" r="1.7" fill="var(--link)"/><circle cx="93.0" cy="13.0" r="1.7" fill="var(--link)"/></svg> (2.88)</span></p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is FADING: profit factor 2.88 across 10 trades, total return 14.5%, max drawdown 7.8%, versus buy-and-hold's 39.2% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.5% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.68 with a maximum drawdown of 36.3%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-18 is FADING: profit factor 2.88 across 10 trades, total return 14.5%, max drawdown 7.8%, versus buy-and-hold's 35.1% return and 19.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 0.5% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.68 with a maximum drawdown of 36.3%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

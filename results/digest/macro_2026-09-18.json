@@ -1,0 +1,261 @@
+{
+  "edition": "macro",
+  "as_of": "2026-09-18",
+  "tally": {
+    "ALIVE": 8,
+    "FADING": 34,
+    "DEAD": 13,
+    "TOO FEW TRADES": 55
+  },
+  "first_week": false,
+  "prev_as_of": "2026-09-11",
+  "flips": [
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range20-grid20",
+      "asset": "GLD",
+      "timeframe": "1d",
+      "from": "DEAD",
+      "to": "FADING"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range20-grid20",
+      "asset": "USO",
+      "timeframe": "1d",
+      "from": "DEAD",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range30-grid20",
+      "asset": "USO",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "rsi2_connors",
+      "strategy_name": "Connors RSI(2)",
+      "params": "fixed",
+      "asset": "EURUSD",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "vol_breakout",
+      "strategy_name": "Larry Williams volatility breakout",
+      "params": "k0.5",
+      "asset": "GLD",
+      "timeframe": "1d",
+      "from": "ALIVE",
+      "to": "FADING"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "vol_breakout",
+    "strategy_name": "Larry Williams volatility breakout",
+    "type": "onebar",
+    "params": "k0.5",
+    "asset": "SLV",
+    "timeframe": "1d",
+    "as_of": "2026-09-18",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 1.8690503740234958,
+      "cagr": 0.061403808518139646,
+      "bh_return": 1.1505706908052122,
+      "n_trades": 1807,
+      "win_rate": 49.25290536801328,
+      "profit_factor": 1.126129411706249,
+      "mdd": 57.55406542595907,
+      "bh_mdd": 76.2801514255676,
+      "sharpe": 0.41741662239499183,
+      "exposure": 66.59187794480592,
+      "max_consec_loss": 13,
+      "avg_trade_return": 0.0007431623829174916
+    },
+    "oos": {
+      "total_return": 0.4097080575695524,
+      "cagr": 0.18812370574936033,
+      "bh_return": 1.143328496002332,
+      "n_trades": 205,
+      "win_rate": 52.6829268292683,
+      "profit_factor": 1.2494872619575303,
+      "mdd": 34.91802987037804,
+      "bh_mdd": 52.28219685817772,
+      "sharpe": 0.8402708818107182,
+      "exposure": 67.33067729083665,
+      "max_consec_loss": 8,
+      "avg_trade_return": 0.0019438500740273144,
+      "fee_drag": 0.12046774535582738
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "k=0.4",
+          "oos_pf": 1.2122120163013164,
+          "oos_n_trades": 250
+        },
+        {
+          "params": "k=0.5",
+          "oos_pf": 1.2494872619575303,
+          "oos_n_trades": 205
+        },
+        {
+          "params": "k=0.6",
+          "oos_pf": 1.294443858871063,
+          "oos_n_trades": 161
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "edition": "macro"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "USO",
+    "timeframe": "1d",
+    "as_of": "2026-09-18",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": -0.5225907631892786,
+      "cagr": -0.04094304550921135,
+      "bh_return": -0.8257212137553978,
+      "n_trades": 145,
+      "win_rate": 99.3103448275862,
+      "profit_factor": 2.359018978908555,
+      "mdd": 79.38181114629239,
+      "bh_mdd": 98.18692538851106,
+      "sharpe": -0.1758337890845678,
+      "exposure": 96.74669059905766,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.008465687841345031,
+      "max_deal_dd": 0.9772228063644492
+    },
+    "oos": {
+      "total_return": 0.4792516032632428,
+      "cagr": 0.21719386158548892,
+      "bh_return": 1.1653075200511638,
+      "n_trades": 87,
+      "win_rate": 98.85057471264368,
+      "profit_factor": 118.3425221859547,
+      "mdd": 24.87669436450537,
+      "bh_mdd": 32.485622312865615,
+      "sharpe": 0.9383174421255589,
+      "exposure": 82.66932270916335,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.014503321367146707,
+      "fee_drag": 0.09598986989072711,
+      "max_deal_dd": 0.3097160512142354
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 120.79446792071977,
+          "oos_n_trades": 106
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": 118.3425221859547,
+          "oos_n_trades": 87
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 150.76980475298345,
+          "oos_n_trades": 117
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "macro"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "SLV",
+    "timeframe": "1d",
+    "as_of": "2026-09-18",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.6444936179727918,
+      "cagr": -0.056797834601279185,
+      "bh_return": 1.1505706908052122,
+      "n_trades": 2092,
+      "win_rate": 75.23900573613767,
+      "profit_factor": 0.4517692122236108,
+      "mdd": 65.02391416368111,
+      "bh_mdd": 76.2801514255676,
+      "sharpe": -0.9692216025869683,
+      "exposure": 49.18106349562486,
+      "max_consec_loss": 30,
+      "avg_trade_return": -0.009602447831292564,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.28451514047271087,
+      "cagr": -0.15470055569635122,
+      "bh_return": 1.143328496002332,
+      "n_trades": 296,
+      "win_rate": 66.21621621621621,
+      "profit_factor": 0.24028211053988768,
+      "mdd": 29.169968878593945,
+      "bh_mdd": 52.28219685817772,
+      "sharpe": -1.5636643206238894,
+      "exposure": 34.06374501992032,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.02191660101419949,
+      "fee_drag": 0.004231931840558811,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 0.20809256432008352,
+          "oos_n_trades": 472
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.24028211053988768,
+          "oos_n_trades": 296
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.3379437960644824,
+          "oos_n_trades": 241
+        }
+      ],
+      "share_pf_ge_1": 0.0,
+      "n_pass": 0,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "macro"
+  },
+  "n_rows": 175,
+  "title": "Week of 2026-09-18: 8 alive / 34 fading / 13 dead \u2014 what changed",
+  "markdown": "# Week of 2026-09-18: 8 alive / 34 fading / 13 dead \u2014 what changed\n\n- This run covers 175 strategy/asset/timeframe rows: 8 ALIVE, 34 FADING, 13 DEAD, 55 with too few trades.\n- 5 verdict(s) changed since the 2026-09-11 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 118.34 (DCA bot (3Commas-style safety orders) (sostep1.5) on USO 1d); the lowest was 0.24 (Grid bot (Pionex-style spot grid) (range10-grid20) on SLV 1d).\n\n## Verdict changes\n- Grid bot (Pionex-style spot grid) (range20-grid20) on GLD 1d: DEAD -> FADING\n- Grid bot (Pionex-style spot grid) (range20-grid20) on USO 1d: DEAD -> ALIVE\n- Grid bot (Pionex-style spot grid) (range30-grid20) on USO 1d: FADING -> ALIVE\n- Connors RSI(2) (fixed) on EURUSD 1d: FADING -> DEAD\n- Larry Williams volatility breakout (k0.5) on GLD 1d: ALIVE -> FADING\n\nBiggest fee drag: 12.0% on Larry Williams volatility breakout (k0.5) on SLV 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 175 strategy/asset/timeframe rows: 8 ALIVE, 34 FADING, 13 DEAD, 55 with too few trades.</li><li>5 verdict(s) changed since the 2026-09-11 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 118.34 (DCA bot (3Commas-style safety orders) (sostep1.5) on USO 1d); the lowest was 0.24 (Grid bot (Pionex-style spot grid) (range10-grid20) on SLV 1d).</li></ul><h2>Verdict changes</h2><ul><li>Grid bot (Pionex-style spot grid) (range20-grid20) on GLD 1d: DEAD &rarr; FADING</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on USO 1d: DEAD &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range30-grid20) on USO 1d: FADING &rarr; ALIVE</li><li>Connors RSI(2) (fixed) on EURUSD 1d: FADING &rarr; DEAD</li><li>Larry Williams volatility breakout (k0.5) on GLD 1d: ALIVE &rarr; FADING</li></ul><p><strong>Biggest fee drag:</strong> 12.0% on Larry Williams volatility breakout (k0.5) on SLV 1d.</p>"
+}

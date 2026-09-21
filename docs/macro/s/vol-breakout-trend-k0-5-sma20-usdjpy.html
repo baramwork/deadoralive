@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Volatility breakout + trend filter (k=0.5, SMA20 filter) on USD/JPY — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="Volatility breakout + trend filter (k=0.5, SMA20 filter) on USD/JPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor 1.08, return 1.6%, max drawdown 5.9%.">
+<meta name="description" content="Volatility breakout + trend filter (k=0.5, SMA20 filter) on USD/JPY is currently rated FADING on the daily (1d) out-of-sample window (as of 2026-09-18): OOS profit factor 1.08, return 1.6%, max drawdown 5.9%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-trend-k0-5-sma20-usdjpy.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-trend-k0-5-sma20-usdjpy.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-trend-k0-5-sma20-usdjpy.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>Volatility breakout + trend filter (k=0.5, SMA20 filter) on USD/JPY — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-18</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--fading-bg);color:var(--fading-fg)">FADING</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>69.2%</td><td>1.6%</td></tr><tr><td>CAGR</td><td>2.9%</td><td>0.8%</td></tr><tr><td>Profit factor</td><td>1.38</td><td>1.08</td></tr><tr><td>Sharpe</td><td>0.63</td><td>0.17</td></tr><tr><td>Max drawdown</td><td>6.2%</td><td>5.9%</td></tr><tr><td>Trades</td><td>966</td><td>133</td></tr><tr><td>Win rate</td><td>54.9%</td><td>57.9%</td></tr><tr><td>Avg trade return</td><td>0.1%</td><td>0.0%</td></tr><tr><td>Time in market</td><td>34.9%</td><td>44.0%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>8.6% return, 11.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>2.7%</td></tr></tbody></table>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>69.2%</td><td>1.6%</td></tr><tr><td>CAGR</td><td>2.9%</td><td>0.8%</td></tr><tr><td>Profit factor</td><td>1.38</td><td>1.08</td></tr><tr><td>Sharpe</td><td>0.63</td><td>0.17</td></tr><tr><td>Max drawdown</td><td>6.2%</td><td>5.9%</td></tr><tr><td>Trades</td><td>966</td><td>133</td></tr><tr><td>Win rate</td><td>54.9%</td><td>57.9%</td></tr><tr><td>Avg trade return</td><td>0.1%</td><td>0.0%</td></tr><tr><td>Time in market</td><td>34.9%</td><td>44.0%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>9.9% return, 11.0% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>2.7%</td></tr></tbody></table>
   <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--alive-bg);color:var(--alive-fg)" title="k=0.4, sma_n=15 → PF=0.91 (n=151); k=0.4, sma_n=20 → PF=1.07 (n=157); k=0.4, sma_n=25 → PF=1.08 (n=153); k=0.5, sma_n=15 → PF=0.94 (n=126); k=0.5, sma_n=20 → PF=1.08 (n=133); k=0.5, sma_n=25 → PF=1.12 (n=128); k=0.6, sma_n=15 → PF=0.88 (n=107); k=0.6, sma_n=20 → PF=1.00 (n=113); k=0.6, sma_n=25 → PF=1.03 (n=107)">6/9</span> 6/9 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>k=0.4, sma_n=15 &rarr; PF=0.91 (n=151)</li><li>k=0.4, sma_n=20 &rarr; PF=1.07 (n=157)</li><li>k=0.4, sma_n=25 &rarr; PF=1.08 (n=153)</li><li>k=0.5, sma_n=15 &rarr; PF=0.94 (n=126)</li><li>k=0.5, sma_n=20 &rarr; PF=1.08 (n=133)</li><li>k=0.5, sma_n=25 &rarr; PF=1.12 (n=128)</li><li>k=0.6, sma_n=15 &rarr; PF=0.88 (n=107)</li><li>k=0.6, sma_n=20 &rarr; PF=1.00 (n=113)</li><li>k=0.6, sma_n=25 &rarr; PF=1.03 (n=107)</li></ul>
-  <p class="histline">History (1d): 2026-09-04: FADING &rarr; 2026-09-11: FADING </p>
+  <p class="histline">History (1d): 2026-09-04: FADING &rarr; 2026-09-11: FADING &rarr; 2026-09-18: FADING <span class="sparkline" title="2026-09-04: 1.08, 2026-09-11: 1.08, 2026-09-18: 1.08">OOS PF trend <svg width="96" height="26" viewBox="0 0 96 26" role="img" aria-label="trend sparkline"><polyline points="3.0,13.0 48.0,13.0 93.0,13.0" fill="none" stroke="var(--link)" stroke-width="1.4"/><circle cx="3.0" cy="13.0" r="1.7" fill="var(--link)"/><circle cx="48.0" cy="13.0" r="1.7" fill="var(--link)"/><circle cx="93.0" cy="13.0" r="1.7" fill="var(--link)"/></svg> (1.08)</span></p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is FADING: profit factor 1.08 across 133 trades, total return 1.6%, max drawdown 5.9%, versus buy-and-hold's 8.6% return and 11.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 2.7% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.38 with a maximum drawdown of 6.2%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-18 is FADING: profit factor 1.08 across 133 trades, total return 1.6%, max drawdown 5.9%, versus buy-and-hold's 9.9% return and 11.0% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 2.7% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 1.38 with a maximum drawdown of 6.2%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

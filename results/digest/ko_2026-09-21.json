@@ -1,0 +1,246 @@
+{
+  "edition": "ko",
+  "as_of": "2026-09-21",
+  "tally": {
+    "ALIVE": 21,
+    "FADING": 30,
+    "DEAD": 20,
+    "TOO FEW TRADES": 17
+  },
+  "first_week": false,
+  "prev_as_of": "2026-09-14",
+  "flips": [
+    {
+      "strategy_id": "dip_3down",
+      "strategy_name": "Buy the dip (3 down closes)",
+      "params": "fixed",
+      "asset": "KRW-BTC",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "ema_cross",
+      "strategy_name": "EMA crossover",
+      "params": "12-26",
+      "asset": "KRW-ETH",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range30-grid20",
+      "asset": "KRW-ETH",
+      "timeframe": "4h",
+      "from": "DEAD",
+      "to": "FADING"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "KRW-ETH",
+    "timeframe": "1d",
+    "as_of": "2026-09-20",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 20.62737473315366,
+      "cagr": 0.55458610390545,
+      "bh_return": 8.61711016256471,
+      "n_trades": 563,
+      "win_rate": 99.82238010657194,
+      "profit_factor": 21.355081844941676,
+      "mdd": 73.25565275861968,
+      "bh_mdd": 95.5905695611578,
+      "sharpe": 1.3115550806679948,
+      "exposure": 77.86079433739678,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013306443802902744,
+      "max_deal_dd": 0.9036915059701934
+    },
+    "oos": {
+      "total_return": 10.866288870415469,
+      "cagr": 2.438924432972872,
+      "bh_return": 0.09947312961011612,
+      "n_trades": 516,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 23.910118694116143,
+      "bh_mdd": 64.29856115107913,
+      "sharpe": 7.339546314901469,
+      "exposure": 29.411764705882355,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.0139849999999999,
+      "fee_drag": 2.7060438216805416,
+      "max_deal_dd": 0.3683011176533653
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 33.94705122405022,
+          "oos_n_trades": 390
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": "inf",
+          "oos_n_trades": 516
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 23.33800567910098,
+          "oos_n_trades": 384
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "ko"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep2.5",
+    "asset": "KRW-ETH",
+    "timeframe": "1d",
+    "as_of": "2026-09-20",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 38.59981478411234,
+      "cagr": 0.6955824595669442,
+      "bh_return": 8.61711016256471,
+      "n_trades": 1038,
+      "win_rate": 99.90366088631984,
+      "profit_factor": 40.28506587622571,
+      "mdd": 73.09028032824313,
+      "bh_mdd": 95.5905695611578,
+      "sharpe": 1.7840586806504974,
+      "exposure": 59.18206842312229,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.01362471043956666,
+      "max_deal_dd": 0.9016992520384185
+    },
+    "oos": {
+      "total_return": 1.7291863385465636,
+      "cagr": 0.6508908102518904,
+      "bh_return": 0.09947312961011612,
+      "n_trades": 363,
+      "win_rate": 99.72451790633609,
+      "profit_factor": 22.269437185587933,
+      "mdd": 39.887800905933446,
+      "bh_mdd": 64.29856115107913,
+      "sharpe": 2.1040476158779597,
+      "exposure": 50.341997264021884,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013320213106355859,
+      "fee_drag": 0.32293976316105155,
+      "max_deal_dd": 0.5084515511652624
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 23.33800567910098,
+          "oos_n_trades": 384
+        },
+        {
+          "params": "so_step_pct=2.5",
+          "oos_pf": 22.269437185587933,
+          "oos_n_trades": 363
+        },
+        {
+          "params": "so_step_pct=3.125",
+          "oos_pf": "inf",
+          "oos_n_trades": 432
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "ko"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "KRW-ETH",
+    "timeframe": "1d",
+    "as_of": "2026-09-20",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.9279919621257242,
+      "cagr": -0.314514221111022,
+      "bh_return": 8.61711016256471,
+      "n_trades": 3813,
+      "win_rate": 74.77052189876737,
+      "profit_factor": 0.40903760488478524,
+      "mdd": 93.91688935344197,
+      "bh_mdd": 95.5905695611578,
+      "sharpe": -1.720045462145819,
+      "exposure": 54.03067243413291,
+      "max_consec_loss": 20,
+      "avg_trade_return": -0.01323131183711298,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.34024906584577597,
+      "cagr": -0.18751837090596712,
+      "bh_return": 0.09947312961011612,
+      "n_trades": 892,
+      "win_rate": 78.25112107623319,
+      "profit_factor": 0.4632401676892208,
+      "mdd": 39.79218246786764,
+      "bh_mdd": 64.29856115107913,
+      "sharpe": -1.5396358584393377,
+      "exposure": 51.57318741450069,
+      "max_consec_loss": 18,
+      "avg_trade_return": -0.0090975605558113,
+      "fee_drag": 0.061744587781616844,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 0.3709429422399562,
+          "oos_n_trades": 1311
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.4632401676892208,
+          "oos_n_trades": 892
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.5661580592723983,
+          "oos_n_trades": 721
+        }
+      ],
+      "share_pf_ge_1": 0.0,
+      "n_pass": 0,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "ko"
+  },
+  "n_rows": 140,
+  "title": "2026-09-21 \uc8fc\uac04 \uc694\uc57d: \uc0dd\uc874 21 / \uc57d\ud654 30 / \uc0ac\ub9dd 20 \u2014 \uc774\ubc88 \uc8fc \ubcc0\uacbd \uc0ac\ud56d",
+  "markdown": "# 2026-09-21 \uc8fc\uac04 \uc694\uc57d: \uc0dd\uc874 21 / \uc57d\ud654 30 / \uc0ac\ub9dd 20 \u2014 \uc774\ubc88 \uc8fc \ubcc0\uacbd \uc0ac\ud56d\n\n- \uc774\ubc88 \uc2e4\ud589\uc740 \uc804\ub7b5\u00b7\uc790\uc0b0\u00b7\uc2dc\uac04\ub300 \uc870\ud569 140\uac74\uc744 \ub2e4\ub918\uc2b5\ub2c8\ub2e4: \uc0dd\uc874 21\uac74, \uc57d\ud654 30\uac74, \uc0ac\ub9dd 20\uac74, \ud45c\ubcf8 \ubd80\uc871 17\uac74\uc785\ub2c8\ub2e4.\n- 2026-09-14 \uc2e4\ud589 \uc774\ud6c4 \ud310\uc815\uc774 3\uac74 \ubc14\ub00c\uc5c8\uc2b5\ub2c8\ub2e4.\n- \uac70\ub798\uac00 30\ud68c \uc774\uc0c1\uc778 \uc870\ud569\uc758 \ud45c\ubcf8\uc678 \uc21c\uc190\uc775\ube44 \uc911, \uac00\uc7a5 \ub192\uc740 \uac12\uc740 22.27(\ubd84\ud560\ub9e4\uc218 \ubd07, 3\ucee4\ub9e8\uc2a4 \ubc29\uc2dd (DCA bot, 3Commas-style safety orders)(sostep2.5) KRW-ETH (\uc774\ub354\ub9ac\uc6c0) \uc77c\ubd09 (1d)), \uac00\uc7a5 \ub0ae\uc740 \uac12\uc740 0.46(\uadf8\ub9ac\ub4dc \ubd07, \ud30c\uc774\uc624\ub125\uc2a4 \ubc29\uc2dd (Grid bot, Pionex-style spot grid)(range10-grid20) KRW-ETH (\uc774\ub354\ub9ac\uc6c0) \uc77c\ubd09 (1d))\uc774\uc5c8\uc2b5\ub2c8\ub2e4.\n\n## \ud310\uc815 \ubcc0\uacbd\n- 3\ubd09 \uc5f0\uc18d \ud558\ub77d \ub4a4 \ub9e4\uc218 (Buy the dip, 3 down closes)(fixed) KRW-BTC 1d: FADING -> DEAD\n- \uc9c0\uc218\uc774\ub3d9\ud3c9\uade0 \uad50\ucc28 (EMA crossover)(12-26) KRW-ETH 4h: FADING -> ALIVE\n- \uadf8\ub9ac\ub4dc \ubd07, \ud30c\uc774\uc624\ub125\uc2a4 \ubc29\uc2dd (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-ETH 4h: DEAD -> FADING\n\n\ubcf8 \uc694\uc57d\uc740 \uc774\ubbf8 \uacf5\uac1c\ub41c \uc218\uce58\ub97c \ub2e4\uc2dc \uc815\ub9ac\ud55c \uac83\uc774\uba70 \ud22c\uc790 \uc790\ubb38\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+  "html_body": "<ul><li>\uc774\ubc88 \uc2e4\ud589\uc740 \uc804\ub7b5\u00b7\uc790\uc0b0\u00b7\uc2dc\uac04\ub300 \uc870\ud569 140\uac74\uc744 \ub2e4\ub918\uc2b5\ub2c8\ub2e4: \uc0dd\uc874 21\uac74, \uc57d\ud654 30\uac74, \uc0ac\ub9dd 20\uac74, \ud45c\ubcf8 \ubd80\uc871 17\uac74\uc785\ub2c8\ub2e4.</li><li>2026-09-14 \uc2e4\ud589 \uc774\ud6c4 \ud310\uc815\uc774 3\uac74 \ubc14\ub00c\uc5c8\uc2b5\ub2c8\ub2e4.</li><li>\uac70\ub798\uac00 30\ud68c \uc774\uc0c1\uc778 \uc870\ud569\uc758 \ud45c\ubcf8\uc678 \uc21c\uc190\uc775\ube44 \uc911, \uac00\uc7a5 \ub192\uc740 \uac12\uc740 22.27(\ubd84\ud560\ub9e4\uc218 \ubd07, 3\ucee4\ub9e8\uc2a4 \ubc29\uc2dd (DCA bot, 3Commas-style safety orders)(sostep2.5) KRW-ETH (\uc774\ub354\ub9ac\uc6c0) \uc77c\ubd09 (1d)), \uac00\uc7a5 \ub0ae\uc740 \uac12\uc740 0.46(\uadf8\ub9ac\ub4dc \ubd07, \ud30c\uc774\uc624\ub125\uc2a4 \ubc29\uc2dd (Grid bot, Pionex-style spot grid)(range10-grid20) KRW-ETH (\uc774\ub354\ub9ac\uc6c0) \uc77c\ubd09 (1d))\uc774\uc5c8\uc2b5\ub2c8\ub2e4.</li></ul><h2>\ud310\uc815 \ubcc0\uacbd</h2><ul><li>3\ubd09 \uc5f0\uc18d \ud558\ub77d \ub4a4 \ub9e4\uc218 (Buy the dip, 3 down closes)(fixed) KRW-BTC 1d: FADING &rarr; DEAD</li><li>\uc9c0\uc218\uc774\ub3d9\ud3c9\uade0 \uad50\ucc28 (EMA crossover)(12-26) KRW-ETH 4h: FADING &rarr; ALIVE</li><li>\uadf8\ub9ac\ub4dc \ubd07, \ud30c\uc774\uc624\ub125\uc2a4 \ubc29\uc2dd (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-ETH 4h: DEAD &rarr; FADING</li></ul>"
+}

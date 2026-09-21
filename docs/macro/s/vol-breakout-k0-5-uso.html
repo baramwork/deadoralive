@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Larry Williams volatility breakout (k=0.5) on USO — does it still work in 2026? After-fees backtest, updated weekly</title>
-<meta name="description" content="Larry Williams volatility breakout (k=0.5) on USO is currently rated DEAD on the daily (1d) out-of-sample window (as of 2026-09-11): OOS profit factor 0.96, return -14.4%, max drawdown 35.4%.">
+<meta name="description" content="Larry Williams volatility breakout (k=0.5) on USO is currently rated DEAD on the daily (1d) out-of-sample window (as of 2026-09-18): OOS profit factor 0.96, return -14.8%, max drawdown 35.4%.">
 <link rel="canonical" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-k0-5-uso.html">
 <link rel="alternate" hreflang="x-default" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-k0-5-uso.html"><link rel="alternate" hreflang="en" href="https://getjogak-sketch.github.io/deadoralive/macro/s/vol-breakout-k0-5-uso.html">
 <style>
@@ -72,7 +72,7 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
 <body class="stratpage">
 <header class="top">
   <h1>Larry Williams volatility breakout (k=0.5) on USO — does it still work in 2026? After-fees backtest, updated weekly</h1>
-  <p class="meta">as_of: <strong>2026-09-11</strong> &middot;
+  <p class="meta">as_of: <strong>2026-09-18</strong> &middot;
      <a href="../index.html">Back to the full table</a></p>
 </header>
 <main>
@@ -82,13 +82,13 @@ footer.bottom .disclaimer { margin-top: 0.75rem; }
   
 <div class="tfblock">
   <h2>daily (1d) &mdash; Verdict: <span class="badge" style="background:var(--dead-bg);color:var(--dead-fg)">DEAD</span></h2>
-  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>-40.9%</td><td>-14.4%</td></tr><tr><td>CAGR</td><td>-2.9%</td><td>-7.5%</td></tr><tr><td>Profit factor</td><td>0.99</td><td>0.96</td></tr><tr><td>Sharpe</td><td>-0.03</td><td>-0.15</td></tr><tr><td>Max drawdown</td><td>78.8%</td><td>35.4%</td></tr><tr><td>Trades</td><td>1895</td><td>222</td></tr><tr><td>Win rate</td><td>51.0%</td><td>46.4%</td></tr><tr><td>Avg trade return</td><td>-0.0%</td><td>-0.0%</td></tr><tr><td>Time in market</td><td>69.5%</td><td>70.7%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>128.2% return, 32.5% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>7.9%</td></tr></tbody></table>
-  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="k=0.4 → PF=0.90 (n=269); k=0.5 → PF=0.96 (n=222); k=0.6 → PF=0.95 (n=178)">0/3</span> 0/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>k=0.4 &rarr; PF=0.90 (n=269)</li><li>k=0.5 &rarr; PF=0.96 (n=222)</li><li>k=0.6 &rarr; PF=0.95 (n=178)</li></ul>
-  <p class="histline">History (1d): 2026-09-04: DEAD &rarr; 2026-09-11: DEAD </p>
+  <table class='scorecard'><thead><tr><th>Metric</th><th>In-sample (IS)</th><th>Out-of-sample (OOS)</th></tr></thead><tbody><tr><td>Total return</td><td>-40.7%</td><td>-14.8%</td></tr><tr><td>CAGR</td><td>-2.9%</td><td>-7.7%</td></tr><tr><td>Profit factor</td><td>0.99</td><td>0.96</td></tr><tr><td>Sharpe</td><td>-0.02</td><td>-0.15</td></tr><tr><td>Max drawdown</td><td>78.8%</td><td>35.4%</td></tr><tr><td>Trades</td><td>1897</td><td>221</td></tr><tr><td>Win rate</td><td>51.0%</td><td>46.6%</td></tr><tr><td>Avg trade return</td><td>-0.0%</td><td>-0.0%</td></tr><tr><td>Time in market</td><td>69.5%</td><td>70.5%</td></tr><tr><td>Buy &amp; hold (OOS)</td><td colspan='2'>116.5% return, 32.5% MDD</td></tr><tr><td>Fee drag (OOS)</td><td colspan='2'>7.9%</td></tr></tbody></table>
+  <h3>Robustness (nearby parameter grid, diagnostic only)</h3><p><span class="badge robustness-badge" style="background:var(--toofew-bg);color:var(--toofew-fg)" title="k=0.4 → PF=0.89 (n=269); k=0.5 → PF=0.96 (n=221); k=0.6 → PF=0.95 (n=177)">0/3</span> 0/3 cleared &mdash; This grid never changes the verdict above and never selects parameters — it only shows whether nearby, never-registered parameter values would also have cleared OOS PF &ge; 1.0 with &ge; 10 trades.</p><ul class='griddump'><li>k=0.4 &rarr; PF=0.89 (n=269)</li><li>k=0.5 &rarr; PF=0.96 (n=221)</li><li>k=0.6 &rarr; PF=0.95 (n=177)</li></ul>
+  <p class="histline">History (1d): 2026-09-04: DEAD &rarr; 2026-09-11: DEAD &rarr; 2026-09-18: DEAD <span class="sparkline" title="2026-09-04: 0.96, 2026-09-11: 0.96, 2026-09-18: 0.96">OOS PF trend <svg width="96" height="26" viewBox="0 0 96 26" role="img" aria-label="trend sparkline"><polyline points="3.0,23.0 48.0,3.0 93.0,21.2" fill="none" stroke="var(--link)" stroke-width="1.4"/><circle cx="3.0" cy="23.0" r="1.7" fill="var(--link)"/><circle cx="48.0" cy="3.0" r="1.7" fill="var(--link)"/><circle cx="93.0" cy="21.2" r="1.7" fill="var(--link)"/></svg> (0.96)</span></p>
 </div>
   <div class="interp">
     <h3>What the numbers say (no opinions, no advice)</h3>
-    <p>At daily (1d), the out-of-sample verdict as of 2026-09-11 is DEAD: profit factor 0.96 across 222 trades, total return -14.4%, max drawdown 35.4%, versus buy-and-hold's 128.2% return and 32.5% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 7.9% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 0.99 with a maximum drawdown of 78.8%.</p>
+    <p>At daily (1d), the out-of-sample verdict as of 2026-09-18 is DEAD: profit factor 0.96 across 221 trades, total return -14.8%, max drawdown 35.4%, versus buy-and-hold's 116.5% return and 32.5% drawdown over the same window. Trading cost reduced the daily (1d) out-of-sample return by 7.9% compared with the same signal at zero cost. Over the longer in-sample history before that 730-day out-of-sample window, the same rule's profit factor was 0.99 with a maximum drawdown of 78.8%.</p>
   </div>
   <p>
     <a href="../index.html">Back to the full table</a> &middot;

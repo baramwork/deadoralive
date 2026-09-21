@@ -2,6 +2,10 @@
   "edition": "ko",
   "history": [
     {
+      "as_of": "2026-09-21",
+      "file": "history/2026-09-21.json"
+    },
+    {
       "as_of": "2026-09-14",
       "file": "history/2026-09-14.json"
     },

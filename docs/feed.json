@@ -5,6 +5,13 @@
   "feed_url": "https://getjogak-sketch.github.io/deadoralive/feed.json",
   "items": [
     {
+      "id": "https://getjogak-sketch.github.io/deadoralive/digest/2026-09-21.html",
+      "url": "https://getjogak-sketch.github.io/deadoralive/digest/2026-09-21.html",
+      "title": "Week of 2026-09-21: 13 alive / 32 fading / 28 dead \u2014 what changed",
+      "content_html": "<ul><li>This run covers 140 strategy/asset/timeframe rows: 13 ALIVE, 32 FADING, 28 DEAD, 15 with too few trades.</li><li>7 verdict(s) changed since the 2026-09-14 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 29.65 (DCA bot (3Commas-style safety orders) (sostep2.5) on BTCUSD 1d); the lowest was 0.38 (Grid bot (Pionex-style spot grid) (range10-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Price above SMA (n50) on ETHUSD 4h: DEAD &rarr; FADING</li><li>Donchian/Turtle breakout (55-20) on BTCUSD 4h: FADING &rarr; ALIVE</li><li>EMA 9/21 crossover (9-21) on BTCUSD 4h: DEAD &rarr; FADING</li><li>Grid bot (Pionex-style spot grid) (range30-grid20) on BTCUSD 1d: FADING &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 4h: FADING &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on ETHUSD 4h: DEAD &rarr; FADING</li><li>MACD signal cross (12-26-9) on BTCUSD 1d: ALIVE &rarr; FADING</li></ul><p><strong>Biggest fee drag:</strong> 674.6% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>",
+      "date_published": "2026-09-21T00:00:00Z"
+    },
+    {
       "id": "https://getjogak-sketch.github.io/deadoralive/digest/2026-09-14.html",
       "url": "https://getjogak-sketch.github.io/deadoralive/digest/2026-09-14.html",
       "title": "Week of 2026-09-14: 13 alive / 31 fading / 29 dead \u2014 what changed",
