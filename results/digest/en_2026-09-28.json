@@ -1,0 +1,300 @@
+{
+  "edition": "en",
+  "as_of": "2026-09-28",
+  "tally": {
+    "ALIVE": 11,
+    "FADING": 32,
+    "DEAD": 30,
+    "TOO FEW TRADES": 15
+  },
+  "first_week": false,
+  "prev_as_of": "2026-09-21",
+  "flips": [
+    {
+      "strategy_id": "above_sma",
+      "strategy_name": "Price above SMA",
+      "params": "n50",
+      "asset": "ETHUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "bb_breakout",
+      "strategy_name": "Bollinger breakout",
+      "params": "20-2",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "DEAD",
+      "to": "FADING"
+    },
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "params": "20-10",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "ema_9_21",
+      "strategy_name": "EMA 9/21 crossover",
+      "params": "9-21",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range20-grid20",
+      "asset": "BTCUSD",
+      "timeframe": "1d",
+      "from": "DEAD",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range20-grid20",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "ALIVE",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "macd",
+      "strategy_name": "MACD signal cross",
+      "params": "12-26-9",
+      "asset": "ETHUSD",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "params": "10-50",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "ALIVE",
+      "to": "FADING"
+    },
+    {
+      "strategy_id": "supertrend",
+      "strategy_name": "Supertrend",
+      "params": "10-3",
+      "asset": "ETHUSD",
+      "timeframe": "4h",
+      "from": "ALIVE",
+      "to": "FADING"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "ETHUSD",
+    "timeframe": "1d",
+    "as_of": "2026-09-27",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 85.93731221359667,
+      "cagr": 0.8725968580623435,
+      "bh_return": 7.336009704581134,
+      "n_trades": 722,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 73.22337717446973,
+      "bh_mdd": 94.01276737099033,
+      "sharpe": 1.6940878749998127,
+      "exposure": 72.20939183987683,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.013984999999999904,
+      "max_deal_dd": 0.9036057580011099
+    },
+    "oos": {
+      "total_return": 22.057141443775368,
+      "cagr": 3.7914899370800734,
+      "bh_return": 0.018739209508440435,
+      "n_trades": 614,
+      "win_rate": 99.8371335504886,
+      "profit_factor": 2396.228843744449,
+      "mdd": 4.7205324494344225,
+      "bh_mdd": 67.590690740434,
+      "sharpe": 18.22504374006986,
+      "exposure": 16.00547195622435,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013956396378407988,
+      "fee_drag": 6.728100646534671,
+      "max_deal_dd": 0.2401094146687417
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 2099.143375351989,
+          "oos_n_trades": 538
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": 2396.228843744449,
+          "oos_n_trades": 614
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 37.72082018102643,
+          "oos_n_trades": 410
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "ETHUSD",
+    "timeframe": "1d",
+    "as_of": "2026-09-27",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 85.93731221359667,
+      "cagr": 0.8725968580623435,
+      "bh_return": 7.336009704581134,
+      "n_trades": 722,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 73.22337717446973,
+      "bh_mdd": 94.01276737099033,
+      "sharpe": 1.6940878749998127,
+      "exposure": 72.20939183987683,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.013984999999999904,
+      "max_deal_dd": 0.9036057580011099
+    },
+    "oos": {
+      "total_return": 22.057141443775368,
+      "cagr": 3.7914899370800734,
+      "bh_return": 0.018739209508440435,
+      "n_trades": 614,
+      "win_rate": 99.8371335504886,
+      "profit_factor": 2396.228843744449,
+      "mdd": 4.7205324494344225,
+      "bh_mdd": 67.590690740434,
+      "sharpe": 18.22504374006986,
+      "exposure": 16.00547195622435,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013956396378407988,
+      "fee_drag": 6.728100646534671,
+      "max_deal_dd": 0.2401094146687417
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 2099.143375351989,
+          "oos_n_trades": 538
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": 2396.228843744449,
+          "oos_n_trades": 614
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 37.72082018102643,
+          "oos_n_trades": 410
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "ETHUSD",
+    "timeframe": "1d",
+    "as_of": "2026-09-27",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.9132658452621228,
+      "cagr": -0.29071058052602616,
+      "bh_return": 7.336009704581134,
+      "n_trades": 4690,
+      "win_rate": 78.44349680170576,
+      "profit_factor": 0.509571554608018,
+      "mdd": 91.64349630914302,
+      "bh_mdd": 94.01276737099033,
+      "sharpe": -1.4481124986147416,
+      "exposure": 58.46805234795996,
+      "max_consec_loss": 20,
+      "avg_trade_return": -0.009870095585884408,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.4533360381784227,
+      "cagr": -0.2603272488046722,
+      "bh_return": 0.018739209508440435,
+      "n_trades": 1036,
+      "win_rate": 75.38610038610038,
+      "profit_factor": 0.397560101330827,
+      "mdd": 47.899123229198935,
+      "bh_mdd": 67.590690740434,
+      "sharpe": -2.0155023485709864,
+      "exposure": 54.85636114911081,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.011361352146539421,
+      "fee_drag": 0.05958718966553478,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 0.3712489601831226,
+          "oos_n_trades": 1414
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.397560101330827,
+          "oos_n_trades": 1036
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.6633628528895364,
+          "oos_n_trades": 837
+        }
+      ],
+      "share_pf_ge_1": 0.0,
+      "n_pass": 0,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "n_rows": 140,
+  "title": "Week of 2026-09-28: 11 alive / 32 fading / 30 dead \u2014 what changed",
+  "markdown": "# Week of 2026-09-28: 11 alive / 32 fading / 30 dead \u2014 what changed\n\n- This run covers 140 strategy/asset/timeframe rows: 11 ALIVE, 32 FADING, 30 DEAD, 15 with too few trades.\n- 9 verdict(s) changed since the 2026-09-21 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 2396.23 (DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d); the lowest was 0.40 (Grid bot (Pionex-style spot grid) (range10-grid20) on ETHUSD 1d).\n\n## Verdict changes\n- Price above SMA (n50) on ETHUSD 4h: FADING -> DEAD\n- Bollinger breakout (20-2) on BTCUSD 4h: DEAD -> FADING\n- Donchian/Turtle breakout (20-10) on BTCUSD 4h: FADING -> DEAD\n- EMA 9/21 crossover (9-21) on BTCUSD 4h: FADING -> DEAD\n- Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 1d: DEAD -> ALIVE\n- Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 4h: ALIVE -> DEAD\n- MACD signal cross (12-26-9) on ETHUSD 1d: FADING -> DEAD\n- SMA crossover (10-50) on BTCUSD 4h: ALIVE -> FADING\n- Supertrend (10-3) on ETHUSD 4h: ALIVE -> FADING\n\nBiggest fee drag: 672.8% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 140 strategy/asset/timeframe rows: 11 ALIVE, 32 FADING, 30 DEAD, 15 with too few trades.</li><li>9 verdict(s) changed since the 2026-09-21 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 2396.23 (DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d); the lowest was 0.40 (Grid bot (Pionex-style spot grid) (range10-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Price above SMA (n50) on ETHUSD 4h: FADING &rarr; DEAD</li><li>Bollinger breakout (20-2) on BTCUSD 4h: DEAD &rarr; FADING</li><li>Donchian/Turtle breakout (20-10) on BTCUSD 4h: FADING &rarr; DEAD</li><li>EMA 9/21 crossover (9-21) on BTCUSD 4h: FADING &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 1d: DEAD &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 4h: ALIVE &rarr; DEAD</li><li>MACD signal cross (12-26-9) on ETHUSD 1d: FADING &rarr; DEAD</li><li>SMA crossover (10-50) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>Supertrend (10-3) on ETHUSD 4h: ALIVE &rarr; FADING</li></ul><p><strong>Biggest fee drag:</strong> 672.8% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>"
+}
