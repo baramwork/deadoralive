@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>Weekly, plain-numbers digest of what changed in this week&#x27;s strategy backtest run.</description>
   <item>
+    <title>Week of 2026-10-05: 12 alive / 32 fading / 28 dead — what changed</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-10-05.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-10-05.html</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    <description>Week of 2026-10-05: 12 alive / 32 fading / 28 dead — what changed</description>
+    <content:encoded><![CDATA[<ul><li>This run covers 140 strategy/asset/timeframe rows: 12 ALIVE, 32 FADING, 28 DEAD, 16 with too few trades.</li><li>13 verdict(s) changed since the 2026-09-28 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 55.31 (DCA bot (3Commas-style safety orders) (sostep2.5) on BTCUSD 1d); the lowest was 0.38 (Grid bot (Pionex-style spot grid) (range30-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Donchian/Turtle breakout (20-10) on BTCUSD 4h: DEAD &rarr; FADING</li><li>Donchian/Turtle breakout (55-20) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>EMA 9/21 crossover (9-21) on BTCUSD 4h: DEAD &rarr; FADING</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 1d: ALIVE &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 4h: DEAD &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on ETHUSD 4h: FADING &rarr; DEAD</li><li>Ichimoku cloud breakout (9-26-52) on BTCUSD 4h: DEAD &rarr; FADING</li><li>MACD signal cross (12-26-9) on ETHUSD 1d: DEAD &rarr; FADING</li><li>MACD signal cross (12-26-9) on ETHUSD 4h: ALIVE &rarr; FADING</li><li>SMA crossover (10-50) on BTCUSD 4h: FADING &rarr; ALIVE</li><li>Supertrend (10-3) on ETHUSD 1d: FADING &rarr; TOO FEW TRADES</li><li>Supertrend (10-3) on ETHUSD 4h: FADING &rarr; ALIVE</li><li>Time-series momentum (n90) on ETHUSD 4h: FADING &rarr; ALIVE</li></ul><p><strong>Biggest fee drag:</strong> 650.6% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>]]></content:encoded>
+  </item>
+  <item>
     <title>Week of 2026-09-28: 11 alive / 32 fading / 30 dead — what changed</title>
     <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-09-28.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-09-28.html</guid>
