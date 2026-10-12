@@ -1,0 +1,255 @@
+{
+  "edition": "en",
+  "as_of": "2026-10-12",
+  "tally": {
+    "ALIVE": 14,
+    "FADING": 30,
+    "DEAD": 28,
+    "TOO FEW TRADES": 16
+  },
+  "first_week": false,
+  "prev_as_of": "2026-10-05",
+  "flips": [
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "params": "20-10",
+      "asset": "ETHUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "macd",
+      "strategy_name": "MACD signal cross",
+      "params": "12-26-9",
+      "asset": "ETHUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "strategy_name": "RSI mean reversion",
+      "params": "exit50",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "ALIVE",
+      "to": "FADING"
+    },
+    {
+      "strategy_id": "supertrend",
+      "strategy_name": "Supertrend",
+      "params": "10-3",
+      "asset": "BTCUSD",
+      "timeframe": "4h",
+      "from": "FADING",
+      "to": "ALIVE"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "ETHUSD",
+    "timeframe": "1d",
+    "as_of": "2026-10-11",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 90.37706594421681,
+      "cagr": 0.879345943877978,
+      "bh_return": 6.553766233766234,
+      "n_trades": 733,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 73.22337717446973,
+      "bh_mdd": 94.01276737099033,
+      "sharpe": 1.7058712060265409,
+      "exposure": 71.93721286370597,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.013984999999999902,
+      "max_deal_dd": 0.9036057580011099
+    },
+    "oos": {
+      "total_return": 21.714396394715084,
+      "cagr": 3.755792499929213,
+      "bh_return": 0.06075699319554717,
+      "n_trades": 611,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 4.7205324494344225,
+      "bh_mdd": 67.59069074043398,
+      "sharpe": 18.13338400146864,
+      "exposure": 16.415868673050614,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.0139849999999999,
+      "fee_drag": 6.589712617732399,
+      "max_deal_dd": 0.2401094146687418
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 148.63057708568638,
+          "oos_n_trades": 545
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": "inf",
+          "oos_n_trades": 611
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 27.904961716452995,
+          "oos_n_trades": 400
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep2.5",
+    "asset": "BTCUSD",
+    "timeframe": "1d",
+    "as_of": "2026-10-11",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 864.0063803464284,
+      "cagr": 1.5728714569649132,
+      "bh_return": 12.791311863522028,
+      "n_trades": 1857,
+      "win_rate": 100.0,
+      "profit_factor": "inf",
+      "mdd": 19.526496076833066,
+      "bh_mdd": 83.4293493046095,
+      "sharpe": 8.18361259357586,
+      "exposure": 28.90505359877488,
+      "max_consec_loss": 0,
+      "avg_trade_return": 0.013984999999999902,
+      "max_deal_dd": 0.3691210122423579
+    },
+    "oos": {
+      "total_return": 0.9124449838155326,
+      "cagr": 0.3822986056090103,
+      "bh_return": 0.3854444270020434,
+      "n_trades": 247,
+      "win_rate": 99.59514170040485,
+      "profit_factor": 36.64998898198966,
+      "mdd": 29.705505886038342,
+      "bh_mdd": 53.076959463793216,
+      "sharpe": 1.5797689216928736,
+      "exposure": 66.21067031463748,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013548342783607482,
+      "fee_drag": 0.14662854938400938,
+      "max_deal_dd": 0.374186115382781
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 32.63283499453287,
+          "oos_n_trades": 247
+        },
+        {
+          "params": "so_step_pct=2.5",
+          "oos_pf": 36.64998898198966,
+          "oos_n_trades": 247
+        },
+        {
+          "params": "so_step_pct=3.125",
+          "oos_pf": 11.219315472026947,
+          "oos_n_trades": 180
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range30-grid20",
+    "asset": "ETHUSD",
+    "timeframe": "1d",
+    "as_of": "2026-10-11",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.24768327729783113,
+      "cagr": -0.038989179506140115,
+      "bh_return": 6.553766233766234,
+      "n_trades": 1193,
+      "win_rate": 85.4149203688181,
+      "profit_factor": 0.8924939718355404,
+      "mdd": 47.26975804611039,
+      "bh_mdd": 94.01276737099033,
+      "sharpe": -0.14458110700921942,
+      "exposure": 57.23583460949464,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.0034281189749473403,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.2587480425856187,
+      "cagr": -0.13886375442019627,
+      "bh_return": 0.06075699319554717,
+      "n_trades": 150,
+      "win_rate": 67.33333333333333,
+      "profit_factor": 0.378672872103602,
+      "mdd": 31.031635190233132,
+      "bh_mdd": 67.59069074043398,
+      "sharpe": -1.1067967802159309,
+      "exposure": 32.69493844049248,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.03822923919476454,
+      "fee_drag": 0.011209459454796455,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=22.5",
+          "oos_pf": 0.6157435012436298,
+          "oos_n_trades": 345
+        },
+        {
+          "params": "range_pct=30.0",
+          "oos_pf": 0.378672872103602,
+          "oos_n_trades": 150
+        },
+        {
+          "params": "range_pct=37.5",
+          "oos_pf": 1.1274647116646395,
+          "oos_n_trades": 146
+        }
+      ],
+      "share_pf_ge_1": 0.3333333333333333,
+      "n_pass": 1,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "en"
+  },
+  "n_rows": 140,
+  "title": "Week of 2026-10-12: 14 alive / 30 fading / 28 dead \u2014 what changed",
+  "markdown": "# Week of 2026-10-12: 14 alive / 30 fading / 28 dead \u2014 what changed\n\n- This run covers 140 strategy/asset/timeframe rows: 14 ALIVE, 30 FADING, 28 DEAD, 16 with too few trades.\n- 4 verdict(s) changed since the 2026-10-05 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 36.65 (DCA bot (3Commas-style safety orders) (sostep2.5) on BTCUSD 1d); the lowest was 0.38 (Grid bot (Pionex-style spot grid) (range30-grid20) on ETHUSD 1d).\n\n## Verdict changes\n- Donchian/Turtle breakout (20-10) on ETHUSD 4h: FADING -> ALIVE\n- MACD signal cross (12-26-9) on ETHUSD 4h: FADING -> ALIVE\n- RSI mean reversion (exit50) on BTCUSD 4h: ALIVE -> FADING\n- Supertrend (10-3) on BTCUSD 4h: FADING -> ALIVE\n\nBiggest fee drag: 659.0% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 140 strategy/asset/timeframe rows: 14 ALIVE, 30 FADING, 28 DEAD, 16 with too few trades.</li><li>4 verdict(s) changed since the 2026-10-05 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 36.65 (DCA bot (3Commas-style safety orders) (sostep2.5) on BTCUSD 1d); the lowest was 0.38 (Grid bot (Pionex-style spot grid) (range30-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Donchian/Turtle breakout (20-10) on ETHUSD 4h: FADING &rarr; ALIVE</li><li>MACD signal cross (12-26-9) on ETHUSD 4h: FADING &rarr; ALIVE</li><li>RSI mean reversion (exit50) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>Supertrend (10-3) on BTCUSD 4h: FADING &rarr; ALIVE</li></ul><p><strong>Biggest fee drag:</strong> 659.0% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>"
+}
