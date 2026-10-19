@@ -1,0 +1,243 @@
+{
+  "edition": "stocks",
+  "as_of": "2026-10-16",
+  "tally": {
+    "ALIVE": 4,
+    "FADING": 15,
+    "DEAD": 3,
+    "TOO FEW TRADES": 22
+  },
+  "first_week": false,
+  "prev_as_of": "2026-10-09",
+  "flips": [
+    {
+      "strategy_id": "bb_breakout",
+      "strategy_name": "Bollinger breakout",
+      "params": "20-2",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "vol_breakout_trend",
+      "strategy_name": "Volatility breakout + trend filter",
+      "params": "k0.5-sma20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    },
+    {
+      "strategy_id": "vol_breakout_trend",
+      "strategy_name": "Volatility breakout + trend filter",
+      "params": "k0.5-sma20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "vol_breakout",
+    "strategy_name": "Larry Williams volatility breakout",
+    "type": "onebar",
+    "params": "k0.5",
+    "asset": "QQQ",
+    "timeframe": "1d",
+    "as_of": "2026-10-16",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 5.686499073668238,
+      "cagr": 0.07980842537120125,
+      "bh_return": 4.1010131811433155,
+      "n_trades": 2594,
+      "win_rate": 54.741711642251346,
+      "profit_factor": 1.2076240213732021,
+      "mdd": 36.295319260913196,
+      "bh_mdd": 82.96390703529309,
+      "sharpe": 0.5993973679229083,
+      "exposure": 68.87427838357921,
+      "max_consec_loss": 8,
+      "avg_trade_return": 0.0008268098789495899
+    },
+    "oos": {
+      "total_return": 0.30867113226739584,
+      "cagr": 0.14458484522659143,
+      "bh_return": 0.44451348823329284,
+      "n_trades": 210,
+      "win_rate": 56.19047619047619,
+      "profit_factor": 1.4414259464493215,
+      "mdd": 9.70014452495832,
+      "bh_mdd": 22.8833069215711,
+      "sharpe": 1.191964313606017,
+      "exposure": 68.52589641434263,
+      "max_consec_loss": 4,
+      "avg_trade_return": 0.0013358528747538184,
+      "fee_drag": 0.11467740527427717
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "k=0.4",
+          "oos_pf": 1.4147425642962186,
+          "oos_n_trades": 253
+        },
+        {
+          "params": "k=0.5",
+          "oos_pf": 1.4414259464493215,
+          "oos_n_trades": 210
+        },
+        {
+          "params": "k=0.6",
+          "oos_pf": 1.4451274176442708,
+          "oos_n_trades": 169
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "edition": "stocks"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep1.5",
+    "asset": "SPY",
+    "timeframe": "1d",
+    "as_of": "2026-10-16",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 1.6210524339820704,
+      "cagr": 0.039706647808492646,
+      "bh_return": 2.909262486733787,
+      "n_trades": 227,
+      "win_rate": 99.55947136563876,
+      "profit_factor": 1162.616521365653,
+      "mdd": 42.92478100397988,
+      "bh_mdd": 56.473669178171626,
+      "sharpe": 0.34874670264508817,
+      "exposure": 96.35984605516357,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.01471914371904396,
+      "max_deal_dd": 0.5348946730598171
+    },
+    "oos": {
+      "total_return": 0.16381378705045835,
+      "cagr": 0.07912807360880025,
+      "bh_return": 0.31592107781471435,
+      "n_trades": 41,
+      "win_rate": 97.5609756097561,
+      "profit_factor": 78.43318895893596,
+      "mdd": 13.36260326488099,
+      "bh_mdd": 18.99890412950491,
+      "sharpe": 0.7815387798689984,
+      "exposure": 91.83266932270917,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.014252041579667264,
+      "fee_drag": 0.008240330658996431,
+      "max_deal_dd": 0.18822507847153563
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.125",
+          "oos_pf": 63.2971564564035,
+          "oos_n_trades": 43
+        },
+        {
+          "params": "so_step_pct=1.5",
+          "oos_pf": 78.43318895893596,
+          "oos_n_trades": 41
+        },
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 95.70298089048862,
+          "oos_n_trades": 35
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "stocks"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "SPY",
+    "timeframe": "1d",
+    "as_of": "2026-10-16",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.16397637478064642,
+      "cagr": -0.007211332317006658,
+      "bh_return": 2.909262486733787,
+      "n_trades": 1456,
+      "win_rate": 82.6923076923077,
+      "profit_factor": 0.7891154310170133,
+      "mdd": 24.637691192751067,
+      "bh_mdd": 56.473669178171626,
+      "sharpe": -0.19293354612528743,
+      "exposure": 32.135984605516356,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.002318840818412361,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.008759790283553448,
+      "cagr": -0.004406978696985919,
+      "bh_return": 0.31592107781471435,
+      "n_trades": 71,
+      "win_rate": 85.91549295774648,
+      "profit_factor": 0.7953886888816549,
+      "mdd": 3.8737582237847956,
+      "bh_mdd": 18.99890412950491,
+      "sharpe": -0.16249335635848197,
+      "exposure": 20.51792828685259,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.0022913541349957795,
+      "fee_drag": 0.0014112353007983414,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 0.8579887808001078,
+          "oos_n_trades": 131
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.7953886888816549,
+          "oos_n_trades": 71
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.6705387927392791,
+          "oos_n_trades": 44
+        }
+      ],
+      "share_pf_ge_1": 0.0,
+      "n_pass": 0,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "stocks"
+  },
+  "n_rows": 70,
+  "title": "Week of 2026-10-16: 4 alive / 15 fading / 3 dead \u2014 what changed",
+  "markdown": "# Week of 2026-10-16: 4 alive / 15 fading / 3 dead \u2014 what changed\n\n- This run covers 70 strategy/asset/timeframe rows: 4 ALIVE, 15 FADING, 3 DEAD, 22 with too few trades.\n- 3 verdict(s) changed since the 2026-10-09 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 78.43 (DCA bot (3Commas-style safety orders) (sostep1.5) on SPY 1d); the lowest was 0.80 (Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d).\n\n## Verdict changes\n- Bollinger breakout (20-2) on SPY 1d: FADING -> DEAD\n- Volatility breakout + trend filter (k0.5-sma20) on QQQ 1d: FADING -> DEAD\n- Volatility breakout + trend filter (k0.5-sma20) on SPY 1d: FADING -> DEAD\n\nBiggest fee drag: 11.5% on Larry Williams volatility breakout (k0.5) on QQQ 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 70 strategy/asset/timeframe rows: 4 ALIVE, 15 FADING, 3 DEAD, 22 with too few trades.</li><li>3 verdict(s) changed since the 2026-10-09 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 78.43 (DCA bot (3Commas-style safety orders) (sostep1.5) on SPY 1d); the lowest was 0.80 (Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d).</li></ul><h2>Verdict changes</h2><ul><li>Bollinger breakout (20-2) on SPY 1d: FADING &rarr; DEAD</li><li>Volatility breakout + trend filter (k0.5-sma20) on QQQ 1d: FADING &rarr; DEAD</li><li>Volatility breakout + trend filter (k0.5-sma20) on SPY 1d: FADING &rarr; DEAD</li></ul><p><strong>Biggest fee drag:</strong> 11.5% on Larry Williams volatility breakout (k0.5) on QQQ 1d.</p>"
+}

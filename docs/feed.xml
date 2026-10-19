@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>Weekly, plain-numbers digest of what changed in this week&#x27;s strategy backtest run.</description>
   <item>
+    <title>Week of 2026-10-19: 9 alive / 34 fading / 29 dead — what changed</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-10-19.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-10-19.html</guid>
+    <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    <description>Week of 2026-10-19: 9 alive / 34 fading / 29 dead — what changed</description>
+    <content:encoded><![CDATA[<ul><li>This run covers 140 strategy/asset/timeframe rows: 9 ALIVE, 34 FADING, 29 DEAD, 16 with too few trades.</li><li>11 verdict(s) changed since the 2026-10-12 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 30.21 (DCA bot (3Commas-style safety orders) (sostep2.5) on BTCUSD 1d); the lowest was 0.40 (Grid bot (Pionex-style spot grid) (range10-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Donchian/Turtle breakout (20-10) on BTCUSD 4h: FADING &rarr; DEAD</li><li>Donchian/Turtle breakout (20-10) on ETHUSD 4h: ALIVE &rarr; FADING</li><li>EMA200 trend + MACD cross (ema200-macd12.26.9) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>EMA 9/21 crossover (9-21) on BTCUSD 4h: FADING &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on BTCUSD 4h: ALIVE &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on ETHUSD 4h: DEAD &rarr; FADING</li><li>Ichimoku cloud breakout (9-26-52) on BTCUSD 4h: FADING &rarr; DEAD</li><li>MACD signal cross (12-26-9) on ETHUSD 4h: ALIVE &rarr; FADING</li><li>SMA crossover (10-50) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>Supertrend (10-3) on BTCUSD 4h: ALIVE &rarr; FADING</li><li>Supertrend (10-3) on ETHUSD 4h: ALIVE &rarr; FADING</li></ul><p><strong>Biggest fee drag:</strong> 679.9% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>]]></content:encoded>
+  </item>
+  <item>
     <title>Week of 2026-10-12: 14 alive / 30 fading / 28 dead — what changed</title>
     <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-10-12.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-10-12.html</guid>

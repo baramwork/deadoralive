@@ -3,13 +3,13 @@
   "edition": "stocks",
   "lang": "en",
   "tagline": "Popular trading strategies, re-tested every week \u2014 after fees, out-of-sample.",
-  "generated_at": "2026-10-12T06:24:47.784205+00:00",
-  "as_of": "2026-10-09",
+  "generated_at": "2026-10-19T05:09:13.015879+00:00",
+  "as_of": "2026-10-16",
   "oos_days": 730,
   "tally": {
     "ALIVE": 4,
-    "FADING": 18,
-    "DEAD": 0,
+    "FADING": 15,
+    "DEAD": 3,
     "TOO FEW TRADES": 22
   },
   "rows": [
@@ -20,83 +20,83 @@
       "params": "10-50",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 0.9745894626632849,
-        "cagr": 0.027897839046585604,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.9973612901003408,
+        "cagr": 0.02835155349462859,
+        "bh_return": 2.909262486733787,
         "n_trades": 82,
         "win_rate": 41.46341463414634,
-        "profit_factor": 1.6314766958837077,
+        "profit_factor": 1.640628232371372,
         "mdd": 33.514289608804724,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.30189604452915314,
-        "exposure": 63.90627507623174,
+        "sharpe": 0.3058473702134554,
+        "exposure": 63.93521488133419,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.009883514463782331
+        "avg_trade_return": 0.01002674911334463
       },
       "oos": {
-        "total_return": 0.22576972637839376,
-        "cagr": 0.10759390929936008,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.18792941527722173,
+        "cagr": 0.09029571064372077,
+        "bh_return": 0.31592107781471435,
         "n_trades": 7,
-        "win_rate": 57.14285714285714,
-        "profit_factor": 5.292702060921613,
+        "win_rate": 42.857142857142854,
+        "profit_factor": 4.110054519543863,
         "mdd": 7.409718481787497,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.030714406265978,
+        "sharpe": 0.878778260142419,
         "exposure": 77.68924302788844,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.03158866809295878,
-        "fee_drag": 0.003436964784899521
+        "avg_trade_return": 0.027076875753507288,
+        "fee_drag": 0.0033308634398416803
       },
-      "suspicious": true,
+      "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=8, n_slow=38",
-            "oos_pf": 6.35048931761613,
+            "oos_pf": 4.06434833305526,
             "oos_n_trades": 9
           },
           {
             "params": "n_fast=8, n_slow=50",
-            "oos_pf": 8.76780789069123,
+            "oos_pf": 6.069678527038923,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=8, n_slow=62",
-            "oos_pf": 8.866892915715706,
+            "oos_pf": 4.995469592694306,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=10, n_slow=38",
-            "oos_pf": 3.077230735359558,
+            "oos_pf": 2.5530072168622033,
             "oos_n_trades": 9
           },
           {
             "params": "n_fast=10, n_slow=50",
-            "oos_pf": 5.292702060921613,
+            "oos_pf": 4.110054519543863,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=10, n_slow=62",
-            "oos_pf": 4.658925203701453,
+            "oos_pf": 3.0463619584657193,
             "oos_n_trades": 5
           },
           {
             "params": "n_fast=12, n_slow=38",
-            "oos_pf": 3.0653377798586545,
+            "oos_pf": 2.5241469602431197,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=12, n_slow=50",
-            "oos_pf": 5.263875238908861,
+            "oos_pf": 4.102259142139991,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=12, n_slow=62",
-            "oos_pf": 4.40315536250181,
+            "oos_pf": 3.1696018694163444,
             "oos_n_trades": 5
           }
         ],
@@ -114,83 +114,83 @@
       "params": "20-100",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.9814677583280762,
-        "cagr": 0.04517100210256886,
-        "bh_return": 2.8646931585930653,
+        "total_return": 2.0158513456942413,
+        "cagr": 0.0456183695861232,
+        "bh_return": 2.909262486733787,
         "n_trades": 35,
         "win_rate": 48.57142857142857,
-        "profit_factor": 2.650394323263912,
+        "profit_factor": 2.668198496378748,
         "mdd": 23.695333174816525,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.44348570647409763,
-        "exposure": 67.64564275397208,
+        "sharpe": 0.4472478332944503,
+        "exposure": 67.67158434894162,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.03853863221125383
+        "avg_trade_return": 0.038954380417501405
       },
       "oos": {
-        "total_return": 0.21066162107253117,
-        "cagr": 0.10071978189387276,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.17328770703813334,
+        "cagr": 0.08352894210003847,
+        "bh_return": 0.31592107781471435,
         "n_trades": 3,
         "win_rate": 66.66666666666666,
-        "profit_factor": 11.383891455404322,
-        "mdd": 9.301226966679232,
+        "profit_factor": 6.541656276279317,
+        "mdd": 9.301226966679266,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.9217304390338633,
+        "sharpe": 0.7787211971349401,
         "exposure": 83.26693227091634,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.06772594567623036,
-        "fee_drag": 0.00145366598982144
+        "avg_trade_return": 0.05682311166164966,
+        "fee_drag": 0.001408790372397828
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=15, n_slow=75",
-            "oos_pf": 57.443752011342625,
+            "oos_pf": 14.499481737569079,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=15, n_slow=100",
-            "oos_pf": 24.287073500353376,
+            "oos_pf": 10.461196493072759,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=15, n_slow=125",
-            "oos_pf": 11.592544258215222,
+            "oos_pf": 6.671742300710011,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=20, n_slow=75",
-            "oos_pf": 25.28964547225085,
+            "oos_pf": 10.938440547272823,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=20, n_slow=100",
-            "oos_pf": 11.383891455404322,
+            "oos_pf": 6.541656276279317,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=20, n_slow=125",
-            "oos_pf": 6.895203228198698,
+            "oos_pf": 4.5212034293270005,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=25, n_slow=75",
-            "oos_pf": 9.146140952652342,
+            "oos_pf": 5.676140668599892,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=25, n_slow=100",
-            "oos_pf": 8.565506666346506,
+            "oos_pf": 5.426027921433688,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=25, n_slow=125",
-            "oos_pf": 12.491456579748052,
+            "oos_pf": 6.317572604178031,
             "oos_n_trades": 3
           }
         ],
@@ -208,83 +208,83 @@
       "params": "50-200",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 4.040703524810217,
-        "cagr": 0.06760552394504593,
-        "bh_return": 2.8646931585930653,
+        "total_return": 4.098835117730559,
+        "cagr": 0.06804430691512398,
+        "bh_return": 2.909262486733787,
         "n_trades": 12,
         "win_rate": 83.33333333333334,
-        "profit_factor": 15.070243786034087,
+        "profit_factor": 15.190077439739795,
         "mdd": 34.10474689324394,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.5931706577393165,
-        "exposure": 67.58144760070614,
+        "sharpe": 0.5965626217818999,
+        "exposure": 67.60744066709428,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.15707517556324443
+        "avg_trade_return": 0.1584129556671608
       },
       "oos": {
-        "total_return": 0.1867208897187631,
-        "cagr": 0.0897387604129305,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.15008604167932638,
+        "cagr": 0.07271942019978694,
+        "bh_return": 0.31592107781471435,
         "n_trades": 2,
         "win_rate": 50.0,
-        "profit_factor": 4.436016462457049,
-        "mdd": 18.99890412950488,
+        "profit_factor": 3.3939013097417408,
+        "mdd": 18.998904129504922,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.6284364437336003,
+        "sharpe": 0.5272016330263284,
         "exposure": 89.2430278884462,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.10103089962837547,
-        "fee_drag": 0.0009497565764162719
+        "avg_trade_return": 0.08325239835782261,
+        "fee_drag": 0.0009204369713136096
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=38, n_slow=150",
-            "oos_pf": 5.797057790885052,
+            "oos_pf": 3.602074766727684,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=38, n_slow=200",
-            "oos_pf": 3.3008874519014526,
+            "oos_pf": 2.7042654863527735,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=38, n_slow=250",
-            "oos_pf": 5.051713700751498,
+            "oos_pf": 3.904223933504731,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=50, n_slow=150",
-            "oos_pf": 1.1913919948339555,
+            "oos_pf": 0.9814556728045728,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=50, n_slow=200",
-            "oos_pf": 4.436016462457049,
+            "oos_pf": 3.3939013097417408,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=50, n_slow=250",
-            "oos_pf": 4.381736741176083,
+            "oos_pf": 3.416795925423755,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=62, n_slow=150",
-            "oos_pf": 1.7227885112847663,
+            "oos_pf": 1.4458725832105122,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=62, n_slow=200",
-            "oos_pf": 4.17896443422614,
+            "oos_pf": 3.162348433484621,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=62, n_slow=250",
-            "oos_pf": 9.36635604909683,
+            "oos_pf": 5.985626811080721,
             "oos_n_trades": 2
           }
         ],
@@ -302,83 +302,83 @@
       "params": "12-26",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 0.9577336000105976,
-        "cagr": 0.02754150944292899,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.9803110382832789,
+        "cagr": 0.027995352387226502,
+        "bh_return": 2.909262486733787,
         "n_trades": 97,
         "win_rate": 43.29896907216495,
-        "profit_factor": 1.5771693922363061,
+        "profit_factor": 1.585805665081652,
         "mdd": 29.851289673952664,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.30324640784493395,
-        "exposure": 64.58032418552399,
+        "sharpe": 0.30729044655245324,
+        "exposure": 64.60872354073123,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.0081415603124425
+        "avg_trade_return": 0.008263383709855623
       },
       "oos": {
-        "total_return": 0.2809577380607906,
-        "cagr": 0.13235242246213463,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.24141373703632318,
+        "cagr": 0.11466754988610828,
+        "bh_return": 0.31592107781471435,
         "n_trades": 8,
-        "win_rate": 75.0,
-        "profit_factor": 8.236754172967428,
+        "win_rate": 62.5,
+        "profit_factor": 5.604372368866615,
         "mdd": 6.890838194670934,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.2631368962839502,
+        "sharpe": 1.107913463474271,
         "exposure": 77.29083665338645,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.03349582616515476,
-        "fee_drag": 0.004105630321579179
+        "avg_trade_return": 0.02955434942882776,
+        "fee_drag": 0.003978886835186657
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=9, n_slow=20",
-            "oos_pf": 3.8758589325142347,
+            "oos_pf": 2.9062474476134925,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=9, n_slow=26",
-            "oos_pf": 5.414546147271112,
+            "oos_pf": 3.9981467277827574,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=9, n_slow=32",
-            "oos_pf": 8.396420093965471,
+            "oos_pf": 5.706745534573718,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=12, n_slow=20",
-            "oos_pf": 6.445798427618359,
+            "oos_pf": 4.786848387982122,
             "oos_n_trades": 10
           },
           {
             "params": "n_fast=12, n_slow=26",
-            "oos_pf": 8.236754172967428,
+            "oos_pf": 5.604372368866615,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=12, n_slow=32",
-            "oos_pf": 5.200557773460114,
+            "oos_pf": 4.623400289722228,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=15, n_slow=20",
-            "oos_pf": 6.393516894604059,
+            "oos_pf": 4.524491448023708,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=15, n_slow=26",
-            "oos_pf": 7.979630690406368,
+            "oos_pf": 5.247199873232639,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=15, n_slow=32",
-            "oos_pf": 4.692798558216424,
+            "oos_pf": 4.161377215311379,
             "oos_n_trades": 7
           }
         ],
@@ -396,53 +396,53 @@
       "params": "n200",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 2.8808293485002667,
-        "cagr": 0.056374341368577996,
-        "bh_return": 2.8646931585930653,
+        "total_return": 2.9255847662251817,
+        "cagr": 0.056817469656408104,
+        "bh_return": 2.909262486733787,
         "n_trades": 79,
         "win_rate": 35.44303797468354,
-        "profit_factor": 2.9028071344257618,
+        "profit_factor": 2.9206341290689783,
         "mdd": 22.302282243573746,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.5679456896392392,
-        "exposure": 67.98266730861819,
+        "sharpe": 0.5718883894839011,
+        "exposure": 68.00833867864016,
         "max_consec_loss": 10,
-        "avg_trade_return": 0.020610666134413796
+        "avg_trade_return": 0.020803763074257988
       },
       "oos": {
-        "total_return": 0.24721875427468354,
-        "cagr": 0.11728106099648872,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.20871629768978162,
+        "cagr": 0.0998315701812793,
+        "bh_return": 0.31592107781471435,
         "n_trades": 4,
         "win_rate": 50.0,
-        "profit_factor": 7.1478949957931714,
-        "mdd": 10.756228748140483,
+        "profit_factor": 5.103414388405873,
+        "mdd": 10.756228748140506,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0232259119544755,
+        "sharpe": 0.8851081354098681,
         "exposure": 88.84462151394422,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.059797702127147745,
-        "fee_drag": 0.0019971473252684557
+        "avg_trade_return": 0.05133963887415166,
+        "fee_drag": 0.0019354940844726887
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n=150",
-            "oos_pf": 35.196546819064196,
+            "oos_pf": 18.861917689089452,
             "oos_n_trades": 5
           },
           {
             "params": "n=200",
-            "oos_pf": 7.1478949957931714,
+            "oos_pf": 5.103414388405873,
             "oos_n_trades": 4
           },
           {
             "params": "n=250",
-            "oos_pf": 3.098222295288822,
+            "oos_pf": 2.5384896545156224,
             "oos_n_trades": 7
           }
         ],
@@ -460,53 +460,53 @@
       "params": "n50",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 0.7654184838100062,
-        "cagr": 0.023253519532191014,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.7857780602321791,
+        "cagr": 0.023708900994428683,
+        "bh_return": 2.909262486733787,
         "n_trades": 222,
         "win_rate": 31.53153153153153,
-        "profit_factor": 1.3523647398000322,
+        "profit_factor": 1.3583289323906758,
         "mdd": 33.68203199956136,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.26907217617398804,
-        "exposure": 64.32354357246028,
+        "sharpe": 0.27324738580779373,
+        "exposure": 64.35214881334188,
         "max_consec_loss": 10,
-        "avg_trade_return": 0.0031682378896529997
+        "avg_trade_return": 0.003221864086637374
       },
       "oos": {
-        "total_return": 0.24942202347353648,
-        "cagr": 0.1182714214305125,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.21085155053113547,
+        "cagr": 0.10080646334757692,
+        "bh_return": 0.31592107781471435,
         "n_trades": 18,
-        "win_rate": 50.0,
-        "profit_factor": 3.4556418972033742,
-        "mdd": 8.519356151322476,
+        "win_rate": 44.44444444444444,
+        "profit_factor": 2.9381457595305673,
+        "mdd": 8.519356151322487,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.1427041109534462,
+        "sharpe": 0.987519590187018,
         "exposure": 76.49402390438247,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.013406163396960102,
-        "fee_drag": 0.009028301572816977
+        "avg_trade_return": 0.011647870746825113,
+        "fee_drag": 0.008749592013527652
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n=38",
-            "oos_pf": 2.663200664791414,
+            "oos_pf": 2.204059029047103,
             "oos_n_trades": 20
           },
           {
             "params": "n=50",
-            "oos_pf": 3.4556418972033742,
+            "oos_pf": 2.9381457595305673,
             "oos_n_trades": 18
           },
           {
             "params": "n=62",
-            "oos_pf": 4.131469039845153,
+            "oos_pf": 3.746687151176918,
             "oos_n_trades": 17
           }
         ],
@@ -524,83 +524,83 @@
       "params": "20-10",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.0319220662232156,
-        "cagr": 0.02908836545629656,
-        "bh_return": 2.8646931585930653,
+        "total_return": 1.0553550782657153,
+        "cagr": 0.02954164987002983,
+        "bh_return": 2.909262486733787,
         "n_trades": 107,
         "win_rate": 46.728971962616825,
-        "profit_factor": 1.689366075409991,
+        "profit_factor": 1.6993692073406659,
         "mdd": 36.30713177226188,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.3552569360087329,
-        "exposure": 48.51548708072541,
+        "sharpe": 0.35996906717978344,
+        "exposure": 48.556767158434894,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.0074943663638643776
+        "avg_trade_return": 0.0076031142964196035
       },
       "oos": {
-        "total_return": 0.13768319924269035,
-        "cagr": 0.06689644653360727,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.10256217669866796,
+        "cagr": 0.05023385339167996,
+        "bh_return": 0.31592107781471435,
         "n_trades": 11,
-        "win_rate": 45.45454545454545,
-        "profit_factor": 2.7192924505087346,
-        "mdd": 7.8230725015532965,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 1.9901651650250851,
+        "mdd": 7.823072501553274,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.7651153762863598,
+        "sharpe": 0.5891616116060392,
         "exposure": 59.16334661354582,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.012594383144127903,
-        "fee_drag": 0.0050168350869250755
+        "avg_trade_return": 0.00976554257654952,
+        "fee_drag": 0.004861962114988794
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_high=15, n_low=8",
-            "oos_pf": 2.4970324996500435,
+            "oos_pf": 1.8935872069082675,
             "oos_n_trades": 14
           },
           {
             "params": "n_high=15, n_low=10",
-            "oos_pf": 3.2448481532113997,
+            "oos_pf": 2.3820696822486433,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=15, n_low=12",
-            "oos_pf": 3.5286268053217293,
+            "oos_pf": 2.6208237640142964,
             "oos_n_trades": 10
           },
           {
             "params": "n_high=20, n_low=8",
-            "oos_pf": 2.5797862091079358,
+            "oos_pf": 1.8400148341969187,
             "oos_n_trades": 13
           },
           {
             "params": "n_high=20, n_low=10",
-            "oos_pf": 2.7192924505087346,
+            "oos_pf": 1.9901651650250851,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=20, n_low=12",
-            "oos_pf": 3.0095941150091114,
+            "oos_pf": 2.2297507321275023,
             "oos_n_trades": 10
           },
           {
             "params": "n_high=25, n_low=8",
-            "oos_pf": 1.8552813620668351,
+            "oos_pf": 1.357276661166725,
             "oos_n_trades": 13
           },
           {
             "params": "n_high=25, n_low=10",
-            "oos_pf": 2.008329612137369,
+            "oos_pf": 1.502878345886236,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=25, n_low=12",
-            "oos_pf": 2.273021502923167,
+            "oos_pf": 1.7202432354778148,
             "oos_n_trades": 10
           }
         ],
@@ -618,83 +618,83 @@
       "params": "55-20",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 0.14262486330340574,
-        "cagr": 0.005406746309938981,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.15580211189326731,
+        "cagr": 0.005868375736401088,
+        "bh_return": 2.909262486733787,
         "n_trades": 61,
         "win_rate": 45.90163934426229,
-        "profit_factor": 1.1930344564141655,
+        "profit_factor": 1.2041436153147418,
         "mdd": 29.378949571294356,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.10682244289677988,
-        "exposure": 42.882362381640185,
+        "sharpe": 0.11238621118327315,
+        "exposure": 42.92815907633098,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.003314580797740791
+        "avg_trade_return": 0.003505335367960614
       },
       "oos": {
-        "total_return": 0.03185028285869351,
-        "cagr": 0.015863762590904384,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.02006838891932672,
+        "cagr": 0.010024327832824698,
+        "bh_return": 0.31592107781471435,
         "n_trades": 7,
-        "win_rate": 42.857142857142854,
-        "profit_factor": 1.3319127839588438,
-        "mdd": 9.706458722868593,
+        "win_rate": 28.57142857142857,
+        "profit_factor": 1.2228267946113156,
+        "mdd": 9.70645872286864,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.21019982958263064,
-        "exposure": 68.92430278884463,
+        "sharpe": 0.15137888063187874,
+        "exposure": 67.92828685258964,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.005692095371942311,
-        "fee_drag": 0.0028932294615797716
+        "avg_trade_return": 0.0040541483256841026,
+        "fee_drag": 0.00286019392995418
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_high=41, n_low=15",
-            "oos_pf": 1.6284684937983163,
+            "oos_pf": 1.48018434881372,
             "oos_n_trades": 8
           },
           {
             "params": "n_high=41, n_low=20",
-            "oos_pf": 1.545942104633815,
+            "oos_pf": 1.424565505009779,
             "oos_n_trades": 7
           },
           {
             "params": "n_high=41, n_low=25",
-            "oos_pf": 2.9802367258064657,
+            "oos_pf": 2.656215989800297,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=55, n_low=15",
-            "oos_pf": 1.4022281105510574,
+            "oos_pf": 1.2745448319133186,
             "oos_n_trades": 8
           },
           {
             "params": "n_high=55, n_low=20",
-            "oos_pf": 1.3319127839588438,
+            "oos_pf": 1.2228267946113156,
             "oos_n_trades": 7
           },
           {
             "params": "n_high=55, n_low=25",
-            "oos_pf": 2.6301473340620944,
+            "oos_pf": 2.3380988995422474,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=69, n_low=15",
-            "oos_pf": 1.3573994647251828,
+            "oos_pf": 1.2337981670667642,
             "oos_n_trades": 8
           },
           {
             "params": "n_high=69, n_low=20",
-            "oos_pf": 1.2895037123546609,
+            "oos_pf": 1.1828530592948512,
             "oos_n_trades": 7
           },
           {
             "params": "n_high=69, n_low=25",
-            "oos_pf": 2.560778492281302,
+            "oos_pf": 2.2750652440752175,
             "oos_n_trades": 5
           }
         ],
@@ -712,54 +712,54 @@
       "params": "k0.5",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": -0.6685720383688748,
-        "cagr": -0.043680252424598054,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 2633,
-        "win_rate": 50.81655905810862,
-        "profit_factor": 0.8972944309863211,
+        "total_return": -0.665954075140551,
+        "cagr": -0.04334188409136652,
+        "bh_return": 2.909262486733787,
+        "n_trades": 2636,
+        "win_rate": 50.87253414264037,
+        "profit_factor": 0.8981377630215697,
         "mdd": 77.48485978471518,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.33206572367457493,
-        "exposure": 69.44310704541807,
+        "sharpe": -0.32912810379073554,
+        "exposure": 69.4676074406671,
         "max_consec_loss": 9,
-        "avg_trade_return": -0.00036486278601842616
+        "avg_trade_return": -0.0003614556770526819
       },
       "oos": {
-        "total_return": 0.23303021667203172,
-        "cagr": 0.11088239014051737,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.2038379743064982,
+        "cagr": 0.09760104912289913,
+        "bh_return": 0.31592107781471435,
         "n_trades": 214,
-        "win_rate": 58.41121495327103,
-        "profit_factor": 1.4622629629260622,
-        "mdd": 6.1329745952946935,
+        "win_rate": 57.476635514018696,
+        "profit_factor": 1.3957871109502036,
+        "mdd": 6.132974595294716,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0839871699815897,
-        "exposure": 71.51394422310757,
+        "sharpe": 0.9622917485331004,
+        "exposure": 71.31474103585657,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.0010121498886175638,
-        "fee_drag": 0.11019651981520129
+        "avg_trade_return": 0.0009005945420504519,
+        "fee_drag": 0.10758759468848078
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.4",
-            "oos_pf": 1.339262353000265,
+            "oos_pf": 1.2937234099861883,
             "oos_n_trades": 258
           },
           {
             "params": "k=0.5",
-            "oos_pf": 1.4622629629260622,
+            "oos_pf": 1.3957871109502036,
             "oos_n_trades": 214
           },
           {
             "params": "k=0.6",
-            "oos_pf": 1.416472942471956,
-            "oos_n_trades": 170
+            "oos_pf": 1.4043391928896012,
+            "oos_n_trades": 168
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -776,54 +776,54 @@
       "params": "k0.7",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": -0.3341204737615653,
-        "cagr": -0.01631148646470293,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 1688,
-        "win_rate": 53.317535545023695,
-        "profit_factor": 0.9399163287334427,
+        "total_return": -0.33156820863827285,
+        "cagr": -0.016146428711157235,
+        "bh_return": 2.909262486733787,
+        "n_trades": 1691,
+        "win_rate": 53.341218214074516,
+        "profit_factor": 0.9406295171096828,
         "mdd": 55.96736187142683,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.1582670696632463,
-        "exposure": 49.63890226287916,
+        "sharpe": -0.15631214108630825,
+        "exposure": 49.67928159076331,
         "max_consec_loss": 8,
-        "avg_trade_return": -0.0001945928736105343
+        "avg_trade_return": -0.00019197821516745982
       },
       "oos": {
-        "total_return": 0.13667414183520754,
-        "cagr": 0.06642131968856102,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 136,
-        "win_rate": 60.29411764705882,
-        "profit_factor": 1.4805641500530222,
-        "mdd": 5.904698577318934,
+        "total_return": 0.13233399253913314,
+        "cagr": 0.0643753092880821,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 133,
+        "win_rate": 60.150375939849624,
+        "profit_factor": 1.4683844295229684,
+        "mdd": 5.904698577318889,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.81279744620873,
-        "exposure": 49.20318725099602,
+        "sharpe": 0.7902088471273012,
+        "exposure": 48.20717131474104,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.0009729733401144263,
-        "fee_drag": 0.06354790622416195
+        "avg_trade_return": 0.0009660659056327414,
+        "fee_drag": 0.061871355404474526
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.6",
-            "oos_pf": 1.416472942471956,
-            "oos_n_trades": 170
+            "oos_pf": 1.4043391928896012,
+            "oos_n_trades": 168
           },
           {
             "params": "k=0.7",
-            "oos_pf": 1.4805641500530222,
-            "oos_n_trades": 136
+            "oos_pf": 1.4683844295229684,
+            "oos_n_trades": 133
           },
           {
             "params": "k=0.8",
-            "oos_pf": 1.2367347087209903,
-            "oos_n_trades": 101
+            "oos_pf": 1.231197382448485,
+            "oos_n_trades": 98
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -840,88 +840,88 @@
       "params": "k0.5-sma20",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
-      "verdict": "FADING",
+      "as_of": "2026-10-16",
+      "verdict": "DEAD",
       "is": {
-        "total_return": -0.49294636043417894,
-        "cagr": -0.0270925907287356,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 1613,
-        "win_rate": 48.85306881587105,
-        "profit_factor": 0.860395704794429,
+        "total_return": -0.4889411226846603,
+        "cagr": -0.02676177255166101,
+        "bh_return": 2.909262486733787,
+        "n_trades": 1616,
+        "win_rate": 48.948019801980195,
+        "profit_factor": 0.8621420168637006,
         "mdd": 60.57698424086235,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.40955606529340505,
-        "exposure": 43.02680147648852,
+        "sharpe": -0.4041845296404082,
+        "exposure": 43.07248236048749,
         "max_consec_loss": 9,
-        "avg_trade_return": -0.0003909868855796108
+        "avg_trade_return": -0.0003853807522056098
       },
       "oos": {
-        "total_return": 0.005384974185337343,
-        "cagr": 0.0026995991608464998,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 141,
-        "win_rate": 56.73758865248227,
-        "profit_factor": 1.0263656110459258,
-        "mdd": 5.637139778326816,
+        "total_return": -0.020780814456151986,
+        "cagr": -0.010486350196976302,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 140,
+        "win_rate": 55.00000000000001,
+        "profit_factor": 0.940764465839011,
+        "mdd": 6.891668046360233,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.07822658490761682,
-        "exposure": 47.211155378486055,
+        "sharpe": -0.17605102762091943,
+        "exposure": 46.81274900398406,
         "max_consec_loss": 7,
-        "avg_trade_return": 5.5041681974714646e-05,
-        "fee_drag": 0.058333248779332214
+        "avg_trade_return": -0.0001323229291251409,
+        "fee_drag": 0.056400757731035145
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.4, sma_n=15",
-            "oos_pf": 1.1182086319903306,
-            "oos_n_trades": 168
+            "oos_pf": 1.036647455297706,
+            "oos_n_trades": 167
           },
           {
             "params": "k=0.4, sma_n=20",
-            "oos_pf": 1.0157620864165915,
-            "oos_n_trades": 173
+            "oos_pf": 0.9461997838213649,
+            "oos_n_trades": 172
           },
           {
             "params": "k=0.4, sma_n=25",
-            "oos_pf": 1.0959316476718939,
-            "oos_n_trades": 177
+            "oos_pf": 1.02040716988809,
+            "oos_n_trades": 176
           },
           {
             "params": "k=0.5, sma_n=15",
-            "oos_pf": 1.2040250280350078,
-            "oos_n_trades": 136
+            "oos_pf": 1.0920178085501877,
+            "oos_n_trades": 135
           },
           {
             "params": "k=0.5, sma_n=20",
-            "oos_pf": 1.0263656110459258,
-            "oos_n_trades": 141
+            "oos_pf": 0.940764465839011,
+            "oos_n_trades": 140
           },
           {
             "params": "k=0.5, sma_n=25",
-            "oos_pf": 1.0746420036251385,
-            "oos_n_trades": 146
+            "oos_pf": 0.9862201456517447,
+            "oos_n_trades": 145
           },
           {
             "params": "k=0.6, sma_n=15",
-            "oos_pf": 1.279154242287964,
-            "oos_n_trades": 107
+            "oos_pf": 1.2475727389525368,
+            "oos_n_trades": 104
           },
           {
             "params": "k=0.6, sma_n=20",
-            "oos_pf": 1.0230887637938861,
-            "oos_n_trades": 113
+            "oos_pf": 0.9975414638511836,
+            "oos_n_trades": 110
           },
           {
             "params": "k=0.6, sma_n=25",
-            "oos_pf": 1.0793325928168243,
-            "oos_n_trades": 118
+            "oos_pf": 1.0539318285271289,
+            "oos_n_trades": 115
           }
         ],
-        "share_pf_ge_1": 1.0,
-        "n_pass": 9,
+        "share_pf_ge_1": 0.5555555555555556,
+        "n_pass": 5,
         "n_total": 9,
         "note": "diagnostic; verdict uses registered params only"
       },
@@ -934,26 +934,26 @@
       "params": "exit50",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.7823045848448487,
-        "cagr": 0.023647543451774666,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.02362836068705887,
+        "bh_return": 2.909262486733787,
         "n_trades": 33,
         "win_rate": 81.81818181818183,
         "profit_factor": 4.003641759028074,
         "mdd": 29.160087310732074,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.27150279915328096,
-        "exposure": 7.302198683999358,
+        "sharpe": 0.2713939180273429,
+        "exposure": 7.296343810134702,
         "max_consec_loss": 2,
         "avg_trade_return": 0.018213372403185383
       },
       "oos": {
         "total_return": -0.0036245459850196005,
         "cagr": -0.0018211383230686273,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 2,
         "win_rate": 50.0,
         "profit_factor": 0.8956074889940727,
@@ -998,32 +998,32 @@
       "params": "exit70",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 1.1833095797987103,
-        "cagr": 0.032083470938509606,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.032057338549705605,
+        "bh_return": 2.909262486733787,
         "n_trades": 20,
         "win_rate": 80.0,
         "profit_factor": 2.8640204803165004,
         "mdd": 56.47366917817172,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.2734271446735474,
-        "exposure": 42.882362381640185,
+        "sharpe": 0.27331749136875444,
+        "exposure": 42.847979474021805,
         "max_consec_loss": 2,
         "avg_trade_return": 0.046990278224569824
       },
       "oos": {
         "total_return": 0.17993673605561922,
         "cagr": 0.08660701930969839,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 2,
         "win_rate": 100.0,
         "profit_factor": "inf",
         "mdd": 13.724673821056676,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.7368564994805714,
+        "sharpe": 0.7368564994805713,
         "exposure": 18.92430278884462,
         "max_consec_loss": 0,
         "avg_trade_return": 0.08629191655889068,
@@ -1062,36 +1062,36 @@
       "params": "fixed",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 0.6766992843939186,
-        "cagr": 0.02112198982326441,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.02110487682933737,
+        "bh_return": 2.909262486733787,
         "n_trades": 169,
         "win_rate": 71.59763313609467,
         "profit_factor": 1.780554583056353,
         "mdd": 14.913272065388094,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.39376576650035905,
-        "exposure": 9.340394800192584,
+        "sharpe": 0.39360780315527755,
+        "exposure": 9.332905708787683,
         "max_consec_loss": 4,
         "avg_trade_return": 0.003187882724988494
       },
       "oos": {
-        "total_return": 0.14289585022945217,
-        "cagr": 0.06934755066544374,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 23,
-        "win_rate": 78.26086956521739,
-        "profit_factor": 4.184126313869822,
+        "total_return": 0.13796593977921146,
+        "cagr": 0.06702954067911548,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 24,
+        "win_rate": 75.0,
+        "profit_factor": 3.797938145162055,
         "mdd": 4.838766407608707,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.315904840189661,
-        "exposure": 12.94820717131474,
+        "sharpe": 1.2543400375286193,
+        "exposure": 13.147410358565736,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.005872780233519047,
-        "fee_drag": 0.010563157984311289
+        "avg_trade_return": 0.005448350825898414,
+        "fee_drag": 0.010977078842850485
       },
       "suspicious": false,
       "robustness": {
@@ -1110,26 +1110,26 @@
       "params": "20-2",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 1.1990026159633556,
-        "cagr": 0.03238246049943716,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.03235608078294416,
+        "bh_return": 2.909262486733787,
         "n_trades": 117,
         "win_rate": 74.35897435897436,
         "profit_factor": 1.7881904518366447,
         "mdd": 37.02152286716021,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.30295327879415923,
-        "exposure": 21.794254533782702,
+        "sharpe": 0.30283177633545955,
+        "exposure": 21.776779987171263,
         "max_consec_loss": 4,
         "avg_trade_return": 0.0076195550215536565
       },
       "oos": {
         "total_return": 0.17906538193681154,
         "cagr": 0.08620413052574483,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 12,
         "win_rate": 83.33333333333334,
         "profit_factor": 4.368953622126029,
@@ -1158,36 +1158,36 @@
       "params": "20-2",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
-      "verdict": "FADING",
+      "as_of": "2026-10-16",
+      "verdict": "DEAD",
       "is": {
-        "total_return": -0.0159302308314323,
-        "cagr": -0.0006492414329852814,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 106,
-        "win_rate": 41.509433962264154,
-        "profit_factor": 1.0108903174662958,
+        "total_return": -0.018760785278350012,
+        "cagr": -0.0007650420890121801,
+        "bh_return": 2.909262486733787,
+        "n_trades": 107,
+        "win_rate": 41.1214953271028,
+        "profit_factor": 1.007797835570807,
         "mdd": 29.315699177325317,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.020996145515627056,
-        "exposure": 28.26191622532499,
+        "sharpe": 0.01914714774981186,
+        "exposure": 28.255291853752407,
         "max_consec_loss": 6,
-        "avg_trade_return": 9.630449387180183e-05
+        "avg_trade_return": 6.85224352654916e-05
       },
       "oos": {
-        "total_return": 0.006890852593472774,
-        "cagr": 0.00345323804307629,
-        "bh_return": 0.3578384361431759,
+        "total_return": -0.0065809363910382945,
+        "cagr": -0.0033090089978626835,
+        "bh_return": 0.31592107781471435,
         "n_trades": 10,
-        "win_rate": 40.0,
-        "profit_factor": 1.117350053905357,
+        "win_rate": 30.0,
+        "profit_factor": 0.9660658394061306,
         "mdd": 5.504234269200092,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.08589046789159181,
-        "exposure": 35.2589641434263,
+        "sharpe": -0.018940654788392138,
+        "exposure": 35.657370517928285,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.0010151729877495574,
-        "fee_drag": 0.004035629342027169
+        "avg_trade_return": -0.0003282603821980534,
+        "fee_drag": 0.003981634267213541
       },
       "suspicious": false,
       "robustness": {
@@ -1206,36 +1206,36 @@
       "params": "12-26-9",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.294026066001515,
-        "cagr": 0.03415029393561553,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 265,
-        "win_rate": 43.39622641509434,
-        "profit_factor": 1.3988237041001834,
+        "total_return": 1.3079569865614422,
+        "cagr": 0.03437548837444826,
+        "bh_return": 2.909262486733787,
+        "n_trades": 266,
+        "win_rate": 43.609022556390975,
+        "profit_factor": 1.4013884241743895,
         "mdd": 26.35648652954191,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.3495286643689376,
-        "exposure": 50.698122291766964,
+        "sharpe": 0.35145782337787895,
+        "exposure": 50.68954457985888,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.0035634985393960465
+        "avg_trade_return": 0.0035729316086969285
       },
       "oos": {
-        "total_return": 0.014844597258127479,
-        "cagr": 0.007424527019713301,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.001412714365972123,
+        "cagr": 0.0007089220645777328,
+        "bh_return": 0.31592107781471435,
         "n_trades": 25,
-        "win_rate": 44.0,
-        "profit_factor": 1.1314723169758443,
+        "win_rate": 36.0,
+        "profit_factor": 1.0724636045490343,
         "mdd": 12.976258457389012,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.12891803884129338,
-        "exposure": 44.6215139442231,
+        "sharpe": 0.05150551679458052,
+        "exposure": 45.0199203187251,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.0012309108504406474,
-        "fee_drag": 0.010199357903579953
+        "avg_trade_return": 0.0006980424979582045,
+        "fee_drag": 0.010064365234450978
       },
       "suspicious": false,
       "robustness": {
@@ -1254,36 +1254,36 @@
       "params": "10-3",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.2795198699432655,
-        "cagr": 0.03388501504637231,
-        "bh_return": 2.8646931585930653,
+        "total_return": 1.305808287915311,
+        "cagr": 0.03433655567449767,
+        "bh_return": 2.909262486733787,
         "n_trades": 99,
         "win_rate": 45.45454545454545,
-        "profit_factor": 1.6467009336612037,
+        "profit_factor": 1.6548059130304973,
         "mdd": 30.836290347622853,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.36319216532652226,
-        "exposure": 59.47680950088269,
+        "sharpe": 0.36724953490204887,
+        "exposure": 59.50930083386786,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.009657498927632811
+        "avg_trade_return": 0.009778534518418648
       },
       "oos": {
-        "total_return": 0.18231395167675912,
-        "cagr": 0.08770542171547846,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.14581514868960266,
+        "cagr": 0.07071783781340302,
+        "bh_return": 0.31592107781471435,
         "n_trades": 10,
-        "win_rate": 40.0,
-        "profit_factor": 3.0882552173378426,
-        "mdd": 7.5709308526323404,
+        "win_rate": 30.0,
+        "profit_factor": 2.314173143298638,
+        "mdd": 7.570930852632374,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0075701492455003,
+        "sharpe": 0.8255690799063399,
         "exposure": 58.16733067729084,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.018289155454680628,
-        "fee_drag": 0.004738727005598298
+        "avg_trade_return": 0.015177430830344407,
+        "fee_drag": 0.004592439411562843
       },
       "suspicious": false,
       "robustness": {
@@ -1302,54 +1302,54 @@
       "params": "n30",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 0.8615377748940909,
-        "cagr": 0.02544981943316338,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.8830058409295864,
+        "cagr": 0.025904414665000042,
+        "bh_return": 2.909262486733787,
         "n_trades": 238,
         "win_rate": 39.075630252100844,
-        "profit_factor": 1.333924514707582,
+        "profit_factor": 1.3391845739847719,
         "mdd": 29.167132691721555,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.2856369193984797,
-        "exposure": 62.84705504734392,
+        "sharpe": 0.2897182489420146,
+        "exposure": 62.876844130853115,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.003204764979795085
+        "avg_trade_return": 0.0032552472086243957
       },
       "oos": {
-        "total_return": 0.06757721133621009,
-        "cagr": 0.03337088124124499,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.0346204063734723,
+        "cagr": 0.017231884232882466,
+        "bh_return": 0.31592107781471435,
         "n_trades": 23,
-        "win_rate": 30.434782608695656,
-        "profit_factor": 1.394108856600047,
-        "mdd": 15.930628893593568,
+        "win_rate": 26.08695652173913,
+        "profit_factor": 1.2153091069360686,
+        "mdd": 15.930628893593578,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.3811323053695759,
+        "sharpe": 0.22195546352449913,
         "exposure": 70.5179282868526,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.0034126281028476744,
-        "fee_drag": 0.009867029214889467
+        "avg_trade_return": 0.002052924607787967,
+        "fee_drag": 0.00956242758613235
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n=22",
-            "oos_pf": 2.187194310712904,
+            "oos_pf": 1.9269618403633066,
             "oos_n_trades": 22
           },
           {
             "params": "n=30",
-            "oos_pf": 1.394108856600047,
+            "oos_pf": 1.2153091069360686,
             "oos_n_trades": 23
           },
           {
             "params": "n=38",
-            "oos_pf": 2.139292489351376,
-            "oos_n_trades": 18
+            "oos_pf": 1.8096853418087542,
+            "oos_n_trades": 19
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -1366,53 +1366,53 @@
       "params": "n90",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.365422576410832,
-        "cagr": 0.0354329259570092,
-        "bh_return": 2.8646931585930653,
+        "total_return": 1.3927016618836632,
+        "cagr": 0.035883900043136796,
+        "bh_return": 2.909262486733787,
         "n_trades": 132,
         "win_rate": 40.909090909090914,
-        "profit_factor": 1.7949118384850955,
+        "profit_factor": 1.8041549566970905,
         "mdd": 29.5361064527205,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.3751779848701752,
-        "exposure": 66.24939817043813,
+        "sharpe": 0.37919654337807374,
+        "exposure": 66.27645926876203,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.008125258123453744
+        "avg_trade_return": 0.008219737432607302
       },
       "oos": {
-        "total_return": 0.24541346476936043,
-        "cagr": 0.11646894119542095,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.20696673864919735,
+        "cagr": 0.09903213391840637,
+        "bh_return": 0.31592107781471435,
         "n_trades": 9,
-        "win_rate": 88.88888888888889,
-        "profit_factor": 19.900033180440715,
-        "mdd": 7.183087636714425,
+        "win_rate": 77.77777777777779,
+        "profit_factor": 16.476893602880335,
+        "mdd": 7.183087636714447,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0811657236523537,
+        "sharpe": 0.9330938199239356,
         "exposure": 81.07569721115537,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.025686265890168154,
-        "fee_drag": 0.004491568505476495
+        "avg_trade_return": 0.02192930257639257,
+        "fee_drag": 0.004352910855571546
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n=68",
-            "oos_pf": 3.338680271288361,
+            "oos_pf": 2.9735210325242587,
             "oos_n_trades": 7
           },
           {
             "params": "n=90",
-            "oos_pf": 19.900033180440715,
+            "oos_pf": 16.476893602880335,
             "oos_n_trades": 9
           },
           {
             "params": "n=112",
-            "oos_pf": 4.433452427054434,
+            "oos_pf": 3.3071186361414777,
             "oos_n_trades": 6
           }
         ],
@@ -1430,36 +1430,36 @@
       "params": "fixed",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 1.081502590677513,
-        "cagr": 0.030092208445314128,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.03006772148135295,
+        "bh_return": 2.909262486733787,
         "n_trades": 328,
         "win_rate": 63.109756097560975,
         "profit_factor": 1.588887247318864,
         "mdd": 20.490344030817965,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.4296899530787328,
-        "exposure": 8.84288236238164,
+        "sharpe": 0.42951755814558124,
+        "exposure": 8.835792174470814,
         "max_consec_loss": 6,
         "avg_trade_return": 0.0023363615157321344
       },
       "oos": {
-        "total_return": 0.12175890934115485,
-        "cagr": 0.059373646976889516,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 28,
-        "win_rate": 64.28571428571429,
-        "profit_factor": 3.0449870100718655,
+        "total_return": 0.1315392651775118,
+        "cagr": 0.06400024030204943,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 29,
+        "win_rate": 65.51724137931035,
+        "profit_factor": 3.198231901439798,
         "mdd": 5.231223914914973,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.6500614301629264,
-        "exposure": 7.968127490039841,
+        "sharpe": 0.694916763488336,
+        "exposure": 8.167330677290837,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.0041552929304380214,
-        "fee_drag": 0.012634320075012972
+        "avg_trade_return": 0.0043126541444634715,
+        "fee_drag": 0.013202280839713199
       },
       "suspicious": false,
       "robustness": {
@@ -1478,32 +1478,32 @@
       "params": "-5pct-5bar",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.07668225973799103,
-        "cagr": 0.0029925688787348914,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.002990165865134342,
+        "bh_return": 2.909262486733787,
         "n_trades": 14,
         "win_rate": 50.0,
         "profit_factor": 1.3109974567102276,
         "mdd": 24.78392050295114,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.0769205946649237,
-        "exposure": 1.2999518536350505,
+        "sharpe": 0.07688975539164836,
+        "exposure": 1.2989095574085954,
         "max_consec_loss": 4,
         "avg_trade_return": 0.007411303378749544
       },
       "oos": {
         "total_return": 0.11169976614206512,
         "cagr": 0.05459416904582848,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 1,
         "win_rate": 100.0,
         "profit_factor": "inf",
         "mdd": 4.3818997195333225,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.6574255370151999,
+        "sharpe": 0.6574255370151998,
         "exposure": 1.1952191235059761,
         "max_consec_loss": 0,
         "avg_trade_return": 0.1116997661420649,
@@ -1572,16 +1572,16 @@
       "params": "-",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": null,
       "is": {
-        "total_return": 2.8646931585930653,
+        "total_return": 2.909262486733787,
         "mdd": 56.473669178171626
       },
       "oos": {
-        "total_return": 0.3578384361431759,
+        "total_return": 0.31592107781471435,
         "mdd": 18.99890412950491,
-        "fee_drag": 0.0005432440232620017
+        "fee_drag": 0.0005264737258712238
       },
       "suspicious": false,
       "edition": "stocks"
@@ -1593,16 +1593,16 @@
       "params": "-",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": null,
       "is": {
-        "total_return": 2.5730698641886107,
+        "total_return": 2.612253690438984,
         "mdd": 56.31661284174405
       },
       "oos": {
-        "total_return": 0.20173011737053104,
-        "mdd": 17.906187802811935,
-        "fee_drag": 0.00024034602347455802
+        "total_return": 0.17476675117885532,
+        "mdd": 17.741864796826135,
+        "fee_drag": 0.00023495335023593356
       },
       "suspicious": false,
       "edition": "stocks"
@@ -1614,83 +1614,83 @@
       "params": "10-50",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.5167277360867017,
-        "cagr": 0.038032613038998075,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.5247002972371546,
+        "cagr": 0.03813422318284698,
+        "bh_return": 4.1010131811433155,
         "n_trades": 79,
         "win_rate": 48.10126582278481,
-        "profit_factor": 1.6036988900406546,
+        "profit_factor": 1.6052462851535465,
         "mdd": 50.14615756862541,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.31656291998399566,
-        "exposure": 63.408762638420804,
+        "sharpe": 0.3172079434538968,
+        "exposure": 63.438101347017316,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.015843568087596457
+        "avg_trade_return": 0.015884178166948874
       },
       "oos": {
-        "total_return": 0.3477636826053767,
-        "cagr": 0.1616226444117843,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.2677157027669581,
+        "cagr": 0.12646099339588734,
+        "bh_return": 0.44451348823329284,
         "n_trades": 7,
-        "win_rate": 57.14285714285714,
-        "profit_factor": 4.7835095307114,
+        "win_rate": 42.857142857142854,
+        "profit_factor": 3.252522022953019,
         "mdd": 11.67078554960076,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.0558155429760554,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8486682236227194,
         "exposure": 74.5019920318725,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.04750562545699303,
-        "fee_drag": 0.003779026529863838
+        "avg_trade_return": 0.038766191556409514,
+        "fee_drag": 0.0035545781021644185
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=8, n_slow=38",
-            "oos_pf": 7.643741958976469,
+            "oos_pf": 5.165486147013219,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=8, n_slow=50",
-            "oos_pf": 6.328903654186528,
+            "oos_pf": 4.4508431489770155,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=8, n_slow=62",
-            "oos_pf": 14.761659713271023,
+            "oos_pf": 6.4483445063194935,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=10, n_slow=38",
-            "oos_pf": 6.389052453030098,
+            "oos_pf": 4.524195912067221,
             "oos_n_trades": 6
           },
           {
             "params": "n_fast=10, n_slow=50",
-            "oos_pf": 4.7835095307114,
+            "oos_pf": 3.252522022953019,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=10, n_slow=62",
-            "oos_pf": 8.321569362204041,
+            "oos_pf": 5.402030363762194,
             "oos_n_trades": 6
           },
           {
             "params": "n_fast=12, n_slow=38",
-            "oos_pf": 8.62783128278121,
+            "oos_pf": 4.734478941973798,
             "oos_n_trades": 6
           },
           {
             "params": "n_fast=12, n_slow=50",
-            "oos_pf": 4.683835253416669,
+            "oos_pf": 3.107397386182864,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=12, n_slow=62",
-            "oos_pf": "inf",
+            "oos_pf": 17.348635405252814,
             "oos_n_trades": 4
           }
         ],
@@ -1708,83 +1708,83 @@
       "params": "20-100",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 4.151789853564048,
-        "cagr": 0.06854713689084613,
-        "bh_return": 4.084905075337475,
+        "total_return": 4.168109838858003,
+        "cagr": 0.06862690931106918,
+        "bh_return": 4.1010131811433155,
         "n_trades": 33,
         "win_rate": 54.54545454545454,
-        "profit_factor": 3.006314220960938,
+        "profit_factor": 3.01005321546408,
         "mdd": 31.005696670456306,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.4968004748219352,
-        "exposure": 67.34071577595891,
+        "sharpe": 0.49731771629618754,
+        "exposure": 67.36690186016678,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.06450515243077445
+        "avg_trade_return": 0.06462536511124255
       },
       "oos": {
-        "total_return": 0.32823739052225065,
-        "cagr": 0.1531436716263166,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.2493491393923264,
+        "cagr": 0.11823867425219214,
+        "bh_return": 0.44451348823329284,
         "n_trades": 3,
         "win_rate": 66.66666666666666,
-        "profit_factor": 16.082696982082872,
-        "mdd": 12.588970004624667,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.9533662604672073,
+        "profit_factor": 10.757196222755908,
+        "mdd": 12.588970004624645,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7606894659010178,
         "exposure": 80.87649402390437,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.10313831975410721,
-        "fee_drag": 0.0015948416034721191
+        "avg_trade_return": 0.08086046018686421,
+        "fee_drag": 0.0015001188785881414
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=15, n_slow=75",
-            "oos_pf": 51.82381462976796,
+            "oos_pf": 3.960683246228743,
             "oos_n_trades": 5
           },
           {
             "params": "n_fast=15, n_slow=100",
-            "oos_pf": 9.148730792748047,
+            "oos_pf": 6.489536098583974,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=15, n_slow=125",
-            "oos_pf": 15.95756493656738,
+            "oos_pf": 10.602722411460112,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=20, n_slow=75",
-            "oos_pf": 8.078340081716698,
+            "oos_pf": 2.7952261894358243,
             "oos_n_trades": 5
           },
           {
             "params": "n_fast=20, n_slow=100",
-            "oos_pf": 16.082696982082872,
+            "oos_pf": 10.757196222755908,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=20, n_slow=125",
-            "oos_pf": 14.20731268944695,
+            "oos_pf": 9.016191318616706,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=25, n_slow=75",
-            "oos_pf": 8.48535370569391,
+            "oos_pf": 4.738202633506416,
             "oos_n_trades": 4
           },
           {
             "params": "n_fast=25, n_slow=100",
-            "oos_pf": 8.991814243995229,
+            "oos_pf": 6.163112174521847,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=25, n_slow=125",
-            "oos_pf": 11.862439029433617,
+            "oos_pf": 8.008249524069496,
             "oos_n_trades": 3
           }
         ],
@@ -1802,83 +1802,83 @@
       "params": "50-200",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 10.970184159561974,
-        "cagr": 0.10560902290324647,
-        "bh_return": 4.084905075337475,
+        "total_return": 11.008103646769868,
+        "cagr": 0.10566133477884154,
+        "bh_return": 4.1010131811433155,
         "n_trades": 16,
         "win_rate": 62.5,
-        "profit_factor": 11.99629899894104,
+        "profit_factor": 12.015157376161318,
         "mdd": 28.5593695231535,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.7174253410508349,
-        "exposure": 68.608570052961,
+        "sharpe": 0.7178026038209865,
+        "exposure": 68.63373957665169,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.19185818628886125
+        "avg_trade_return": 0.19218721827045634
       },
       "oos": {
-        "total_return": 0.29858277915214737,
-        "cagr": 0.14014701554704878,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.22145580988766134,
+        "cagr": 0.1056354194961775,
+        "bh_return": 0.44451348823329284,
         "n_trades": 2,
         "win_rate": 50.0,
-        "profit_factor": 6.15011600697606,
-        "mdd": 22.883306921571066,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.7355376565025794,
+        "profit_factor": 4.622865629100784,
+        "mdd": 22.883306921571045,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.5853853028691612,
         "exposure": 90.2390438247012,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.16136698811383254,
-        "fee_drag": 0.0010392818945070825
+        "avg_trade_return": 0.12104995834333204,
+        "fee_drag": 0.0009775556310620548
       },
-      "suspicious": true,
+      "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=38, n_slow=150",
-            "oos_pf": 4.731791424748789,
+            "oos_pf": 3.1470711748212254,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=38, n_slow=200",
-            "oos_pf": 3.8538631690605234,
+            "oos_pf": 2.9977900237855053,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=38, n_slow=250",
-            "oos_pf": 4.574503227819779,
+            "oos_pf": 3.558156583792627,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=50, n_slow=150",
-            "oos_pf": 1.1570036435705426,
+            "oos_pf": 0.5580171703635858,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=50, n_slow=200",
-            "oos_pf": 6.15011600697606,
+            "oos_pf": 4.622865629100784,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=50, n_slow=250",
-            "oos_pf": 6.4789698819859085,
+            "oos_pf": 4.927978395336796,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=62, n_slow=150",
-            "oos_pf": 1.3633117538449346,
+            "oos_pf": 0.6826549416305733,
             "oos_n_trades": 3
           },
           {
             "params": "n_fast=62, n_slow=200",
-            "oos_pf": 5.587476461524262,
+            "oos_pf": 4.137504649126509,
             "oos_n_trades": 2
           },
           {
             "params": "n_fast=62, n_slow=250",
-            "oos_pf": 66.7355564259733,
+            "oos_pf": 29.166721545047277,
             "oos_n_trades": 2
           }
         ],
@@ -1896,83 +1896,83 @@
       "params": "12-26",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 2.8767392175030486,
-        "cagr": 0.05632929155443045,
-        "bh_return": 4.084905075337475,
+        "total_return": 2.8890200614071104,
+        "cagr": 0.056417892622845356,
+        "bh_return": 4.1010131811433155,
         "n_trades": 101,
         "win_rate": 45.54455445544555,
-        "profit_factor": 1.802105059378227,
+        "profit_factor": 1.8036890979261326,
         "mdd": 34.661933928519396,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.42981788182714725,
-        "exposure": 64.14700690097898,
+        "sharpe": 0.4303921502395199,
+        "exposure": 64.17575368826171,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.01630931705567519
+        "avg_trade_return": 0.016341525538347307
       },
       "oos": {
-        "total_return": 0.27429110034974946,
-        "cagr": 0.1293902222924017,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.19860689129620668,
+        "cagr": 0.09520422820210706,
+        "bh_return": 0.44451348823329284,
         "n_trades": 8,
-        "win_rate": 50.0,
-        "profit_factor": 3.220801604160082,
-        "mdd": 13.043860875188873,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8850164893808075,
+        "win_rate": 37.5,
+        "profit_factor": 2.4302787179877576,
+        "mdd": 13.043860875188951,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6756452487633113,
         "exposure": 74.9003984063745,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.03427372978087807,
-        "fee_drag": 0.004084262910996728
+        "avg_trade_return": 0.026586562331816818,
+        "fee_drag": 0.003841685521970506
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=9, n_slow=20",
-            "oos_pf": 2.995375956334974,
+            "oos_pf": 2.4373631741338535,
             "oos_n_trades": 13
           },
           {
             "params": "n_fast=9, n_slow=26",
-            "oos_pf": 4.844986946493938,
+            "oos_pf": 3.457975468691556,
             "oos_n_trades": 9
           },
           {
             "params": "n_fast=9, n_slow=32",
-            "oos_pf": 4.869653603875884,
+            "oos_pf": 3.4791615104502367,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=12, n_slow=20",
-            "oos_pf": 6.139877753307606,
+            "oos_pf": 4.455420046906816,
             "oos_n_trades": 10
           },
           {
             "params": "n_fast=12, n_slow=26",
-            "oos_pf": 3.220801604160082,
+            "oos_pf": 2.4302787179877576,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=12, n_slow=32",
-            "oos_pf": 3.808523332514012,
+            "oos_pf": 2.821771760647833,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=15, n_slow=20",
-            "oos_pf": 3.793123969556605,
+            "oos_pf": 2.876817572841451,
             "oos_n_trades": 8
           },
           {
             "params": "n_fast=15, n_slow=26",
-            "oos_pf": 4.265558085179724,
+            "oos_pf": 3.1928643281167144,
             "oos_n_trades": 7
           },
           {
             "params": "n_fast=15, n_slow=32",
-            "oos_pf": 5.369885626496672,
+            "oos_pf": 3.730884259792674,
             "oos_n_trades": 7
           }
         ],
@@ -1990,53 +1990,53 @@
       "params": "n200",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 6.3929214425637415,
-        "cagr": 0.08427010246116895,
-        "bh_return": 4.084905075337475,
+        "total_return": 6.416340947755424,
+        "cagr": 0.08433834889756486,
+        "bh_return": 4.1010131811433155,
         "n_trades": 79,
         "win_rate": 26.582278481012654,
-        "profit_factor": 3.417322024451293,
+        "profit_factor": 3.422049837063018,
         "mdd": 26.56771542764108,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.6231879713273889,
-        "exposure": 69.45915583373456,
+        "sharpe": 0.6236624378072562,
+        "exposure": 69.48364336112893,
         "max_consec_loss": 9,
-        "avg_trade_return": 0.03407259872072067
+        "avg_trade_return": 0.03413923810939816
       },
       "oos": {
-        "total_return": 0.4308548012885054,
-        "cagr": 0.19703743931646134,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.34587177513673883,
+        "cagr": 0.1608038027764951,
+        "bh_return": 0.44451348823329284,
         "n_trades": 3,
         "win_rate": 66.66666666666666,
-        "profit_factor": 95.81292898542435,
-        "mdd": 11.315266928614442,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.1566402659863586,
+        "profit_factor": 38.49002220449072,
+        "mdd": 11.31526692861442,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.9672038841096271,
         "exposure": 88.24701195219123,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.13151150270217918,
-        "fee_drag": 0.001718056412131963
+        "avg_trade_return": 0.10723392285473525,
+        "fee_drag": 0.0016160155671294252
       },
       "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "n=150",
-            "oos_pf": 5.950285111960387,
+            "oos_pf": 4.916803321084455,
             "oos_n_trades": 8
           },
           {
             "params": "n=200",
-            "oos_pf": 95.81292898542435,
+            "oos_pf": 38.49002220449072,
             "oos_n_trades": 3
           },
           {
             "params": "n=250",
-            "oos_pf": 5.978478569307589,
+            "oos_pf": 4.75632366368122,
             "oos_n_trades": 6
           }
         ],
@@ -2054,53 +2054,53 @@
       "params": "n50",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 2.802322713435574,
-        "cagr": 0.05550158462316834,
-        "bh_return": 4.084905075337475,
+        "total_return": 2.8143678186378387,
+        "cagr": 0.055590779714429495,
+        "bh_return": 4.1010131811433155,
         "n_trades": 200,
         "win_rate": 29.5,
-        "profit_factor": 1.6687395572034978,
+        "profit_factor": 1.6700828935295273,
         "mdd": 46.62059471771505,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.43287427425311586,
-        "exposure": 63.264323543572466,
+        "sharpe": 0.4334650324031051,
+        "exposure": 63.29377806286081,
         "max_consec_loss": 14,
-        "avg_trade_return": 0.008162476233165296
+        "avg_trade_return": 0.008178872677365813
       },
       "oos": {
-        "total_return": 0.309098762664193,
-        "cagr": 0.14477258121263925,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.23134721562912874,
+        "cagr": 0.11012097194278936,
+        "bh_return": 0.44451348823329284,
         "n_trades": 21,
-        "win_rate": 28.57142857142857,
-        "profit_factor": 2.588953538175282,
-        "mdd": 11.965327101939938,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.9963003050098862,
+        "win_rate": 23.809523809523807,
+        "profit_factor": 2.189168761480525,
+        "mdd": 11.965327101939982,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7803235740596818,
         "exposure": 72.11155378486056,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.014712061680293334,
-        "fee_drag": 0.011042744348617628
+        "avg_trade_return": 0.011744187380255563,
+        "fee_drag": 0.010386880573400425
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n=38",
-            "oos_pf": 3.05062808894356,
+            "oos_pf": 2.7546420670016674,
             "oos_n_trades": 26
           },
           {
             "params": "n=50",
-            "oos_pf": 2.588953538175282,
+            "oos_pf": 2.189168761480525,
             "oos_n_trades": 21
           },
           {
             "params": "n=62",
-            "oos_pf": 5.418513345621993,
+            "oos_pf": 4.166672312485124,
             "oos_n_trades": 15
           }
         ],
@@ -2118,83 +2118,83 @@
       "params": "20-10",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.5308291130294678,
-        "cagr": 0.03826720562703101,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.5388463449197753,
+        "cagr": 0.03836865059944583,
+        "bh_return": 4.1010131811433155,
         "n_trades": 106,
-        "win_rate": 50.943396226415096,
-        "profit_factor": 1.6167218635994212,
+        "win_rate": 51.886792452830186,
+        "profit_factor": 1.6193791214947189,
         "mdd": 44.66525475944131,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.34953136138391233,
-        "exposure": 48.72412132883967,
+        "sharpe": 0.3502737828566869,
+        "exposure": 48.76523412443874,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.010775144994511739
+        "avg_trade_return": 0.010804945129668382
       },
       "oos": {
-        "total_return": 0.23616874857271797,
-        "cagr": 0.1123009338940868,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.17708243543221203,
+        "cagr": 0.08528672073826371,
+        "bh_return": 0.44451348823329284,
         "n_trades": 11,
-        "win_rate": 45.45454545454545,
-        "profit_factor": 2.567831691228584,
-        "mdd": 11.092762687077917,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.9732835026357908,
-        "exposure": 50.59760956175299,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 2.0171790970462853,
+        "mdd": 11.092762687077895,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7574299716631484,
+        "exposure": 50.39840637450199,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.021796928923753886,
-        "fee_drag": 0.005451126249669924
+        "avg_trade_return": 0.017383759012319366,
+        "fee_drag": 0.005190573673066412
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_high=15, n_low=8",
-            "oos_pf": 2.728328427335347,
+            "oos_pf": 2.160091503774338,
             "oos_n_trades": 12
           },
           {
             "params": "n_high=15, n_low=10",
-            "oos_pf": 2.8274380061284994,
+            "oos_pf": 2.2283649663879754,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=15, n_low=12",
-            "oos_pf": 3.7191964031062326,
+            "oos_pf": 2.8042086852958783,
             "oos_n_trades": 8
           },
           {
             "params": "n_high=20, n_low=8",
-            "oos_pf": 2.4754779076918365,
+            "oos_pf": 1.9533981414292494,
             "oos_n_trades": 12
           },
           {
             "params": "n_high=20, n_low=10",
-            "oos_pf": 2.567831691228584,
+            "oos_pf": 2.0171790970462853,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=20, n_low=12",
-            "oos_pf": 3.377267575673647,
+            "oos_pf": 2.538518730992015,
             "oos_n_trades": 8
           },
           {
             "params": "n_high=25, n_low=8",
-            "oos_pf": 2.401399510887515,
+            "oos_pf": 1.8882179749162222,
             "oos_n_trades": 11
           },
           {
             "params": "n_high=25, n_low=10",
-            "oos_pf": 2.790143178420143,
+            "oos_pf": 2.13593087574995,
             "oos_n_trades": 10
           },
           {
             "params": "n_high=25, n_low=12",
-            "oos_pf": 4.228199714500472,
+            "oos_pf": 2.9755083352523233,
             "oos_n_trades": 7
           }
         ],
@@ -2212,83 +2212,83 @@
       "params": "55-20",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 0.9063876170668594,
-        "cagr": 0.026437634004374377,
-        "bh_return": 4.084905075337475,
-        "n_trades": 57,
-        "win_rate": 54.385964912280706,
-        "profit_factor": 1.6283357124143423,
+        "total_return": 0.8789068023181965,
+        "cagr": 0.025814073501277957,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 58,
+        "win_rate": 53.44827586206896,
+        "profit_factor": 1.6104654628004311,
         "mdd": 45.06127594367264,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.28193306323711165,
-        "exposure": 46.20446156315198,
+        "sharpe": 0.27674824833507183,
+        "exposure": 46.16741500962156,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.014320430747730071
+        "avg_trade_return": 0.013824990140884365
       },
       "oos": {
-        "total_return": 0.2122582925459986,
-        "cagr": 0.10144827229833542,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.16084832055133114,
+        "cagr": 0.07774687811639036,
+        "bh_return": 0.44451348823329284,
         "n_trades": 5,
-        "win_rate": 80.0,
-        "profit_factor": 4.738906701251184,
-        "mdd": 11.349817232780623,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.7622809263869315,
-        "exposure": 60.1593625498008,
+        "win_rate": 60.0,
+        "profit_factor": 2.693258589852639,
+        "mdd": 11.349817232780591,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.600980141709724,
+        "exposure": 60.95617529880478,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.041763109824616264,
-        "fee_drag": 0.0024269427512215724
+        "avg_trade_return": 0.033293477554781514,
+        "fee_drag": 0.0023240199173351073
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_high=41, n_low=15",
-            "oos_pf": 3.764398083515165,
+            "oos_pf": 2.5008076271446824,
             "oos_n_trades": 6
           },
           {
             "params": "n_high=41, n_low=20",
-            "oos_pf": 5.796744463230059,
+            "oos_pf": 3.109751194988449,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=41, n_low=25",
-            "oos_pf": 5.161111941057409,
+            "oos_pf": 2.7486587190698972,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=55, n_low=15",
-            "oos_pf": 2.666680821121621,
+            "oos_pf": 2.145147675325822,
             "oos_n_trades": 6
           },
           {
             "params": "n_high=55, n_low=20",
-            "oos_pf": 4.738906701251184,
+            "oos_pf": 2.693258589852639,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=55, n_low=25",
-            "oos_pf": 4.114697138461312,
+            "oos_pf": 2.338655310981063,
             "oos_n_trades": 5
           },
           {
             "params": "n_high=69, n_low=15",
-            "oos_pf": 13.75202844449106,
+            "oos_pf": 4.061507315716316,
             "oos_n_trades": 4
           },
           {
             "params": "n_high=69, n_low=20",
-            "oos_pf": 13.75202844449106,
+            "oos_pf": 3.349581860124914,
             "oos_n_trades": 4
           },
           {
             "params": "n_high=69, n_low=25",
-            "oos_pf": 11.68190219483977,
+            "oos_pf": 2.833295266834395,
             "oos_n_trades": 4
           }
         ],
@@ -2306,54 +2306,54 @@
       "params": "k0.5",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 5.724812895222734,
-        "cagr": 0.08012452290935035,
-        "bh_return": 4.084905075337475,
-        "n_trades": 2590,
-        "win_rate": 54.78764478764479,
-        "profit_factor": 1.2083724913571905,
+        "total_return": 5.686499073668238,
+        "cagr": 0.07980842537120125,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 2594,
+        "win_rate": 54.741711642251346,
+        "profit_factor": 1.2076240213732021,
         "mdd": 36.295319260913196,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.6012597972325798,
-        "exposure": 68.84930187770823,
+        "sharpe": 0.5993973679229083,
+        "exposure": 68.87427838357921,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.0008302793698291655
+        "avg_trade_return": 0.0008268098789495899
       },
       "oos": {
-        "total_return": 0.31031650623431606,
-        "cagr": 0.1453070211641656,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 212,
-        "win_rate": 56.132075471698116,
-        "profit_factor": 1.4409968328246325,
-        "mdd": 9.700144524958299,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.1972551882483222,
-        "exposure": 68.72509960159363,
+        "total_return": 0.30867113226739584,
+        "cagr": 0.14458484522659143,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 210,
+        "win_rate": 56.19047619047619,
+        "profit_factor": 1.4414259464493215,
+        "mdd": 9.70014452495832,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.191964313606017,
+        "exposure": 68.52589641434263,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.0013292703087433367,
-        "fee_drag": 0.11596215423299183
+        "avg_trade_return": 0.0013358528747538184,
+        "fee_drag": 0.11467740527427717
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.4",
-            "oos_pf": 1.4711945344481916,
-            "oos_n_trades": 254
+            "oos_pf": 1.4147425642962186,
+            "oos_n_trades": 253
           },
           {
             "params": "k=0.5",
-            "oos_pf": 1.4409968328246325,
-            "oos_n_trades": 212
+            "oos_pf": 1.4414259464493215,
+            "oos_n_trades": 210
           },
           {
             "params": "k=0.6",
-            "oos_pf": 1.4404907855564872,
-            "oos_n_trades": 171
+            "oos_pf": 1.4451274176442708,
+            "oos_n_trades": 169
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -2370,54 +2370,54 @@
       "params": "k0.7",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 3.011607091054138,
-        "cagr": 0.05779125775170568,
-        "bh_return": 4.084905075337475,
-        "n_trades": 1720,
-        "win_rate": 55.05813953488372,
-        "profit_factor": 1.2449462416410797,
+        "total_return": 2.989977047253406,
+        "cagr": 0.05751254012653417,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 1723,
+        "win_rate": 55.02031340684852,
+        "profit_factor": 1.2437904896121208,
         "mdd": 21.166759935902736,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.5641006554714494,
-        "exposure": 50.12036591237362,
+        "sharpe": 0.5618672138734078,
+        "exposure": 50.160359204618345,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.0008905419346587263
+        "avg_trade_return": 0.000885865335122505
       },
       "oos": {
-        "total_return": 0.16165324443836848,
-        "cagr": 0.07812195298928759,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 135,
-        "win_rate": 60.74074074074074,
-        "profit_factor": 1.4164037971093282,
-        "mdd": 7.444543495502631,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8589671614010659,
-        "exposure": 49.40239043824701,
+        "total_return": 0.15379906258280318,
+        "cagr": 0.07445654619634623,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 134,
+        "win_rate": 60.447761194029844,
+        "profit_factor": 1.3941383874621691,
+        "mdd": 7.4445434955027086,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.821164727643918,
+        "exposure": 49.20318725099602,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.001155650726749956,
-        "fee_drag": 0.06445386899261063
+        "avg_trade_return": 0.0011137558432966273,
+        "fee_drag": 0.06353105337886022
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.6",
-            "oos_pf": 1.4404907855564872,
-            "oos_n_trades": 171
+            "oos_pf": 1.4451274176442708,
+            "oos_n_trades": 169
           },
           {
             "params": "k=0.7",
-            "oos_pf": 1.4164037971093282,
-            "oos_n_trades": 135
+            "oos_pf": 1.3941383874621691,
+            "oos_n_trades": 134
           },
           {
             "params": "k=0.8",
-            "oos_pf": 1.6157666770228047,
-            "oos_n_trades": 103
+            "oos_pf": 1.5651308221282323,
+            "oos_n_trades": 104
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -2434,84 +2434,84 @@
       "params": "k0.5-sma20",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
-      "verdict": "FADING",
+      "as_of": "2026-10-16",
+      "verdict": "DEAD",
       "is": {
-        "total_return": 2.3670343045206454,
-        "cagr": 0.05032437452905536,
-        "bh_return": 4.084905075337475,
-        "n_trades": 1562,
-        "win_rate": 54.609475032010245,
-        "profit_factor": 1.278587993556781,
+        "total_return": 2.34785102707914,
+        "cagr": 0.050040552307810904,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 1566,
+        "win_rate": 54.5338441890166,
+        "profit_factor": 1.2767785611106186,
         "mdd": 20.61413671372122,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.6383551993619184,
-        "exposure": 41.662654469587544,
+        "sharpe": 0.63514204826397,
+        "exposure": 41.70942912123156,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.0008285289402454564
+        "avg_trade_return": 0.0008227863747133462
       },
       "oos": {
-        "total_return": -0.0038510324050793354,
-        "cagr": -0.0019350449320640895,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 134,
-        "win_rate": 52.23880597014925,
-        "profit_factor": 1.0011963824700658,
-        "mdd": 10.405910279910325,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.008776151689803547,
-        "exposure": 44.42231075697211,
+        "total_return": -0.004566714726807808,
+        "cagr": -0.002295067185140831,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 131,
+        "win_rate": 52.67175572519084,
+        "profit_factor": 0.9992875072459045,
+        "mdd": 10.405910279910257,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.003650542498209721,
+        "exposure": 43.82470119521912,
         "max_consec_loss": 4,
-        "avg_trade_return": 3.467890552413686e-06,
-        "fee_drag": 0.0548504460489867
+        "avg_trade_return": -2.0905341257686046e-06,
+        "fee_drag": 0.053551501463669604
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "k=0.4, sma_n=15",
-            "oos_pf": 1.1303527035977468,
-            "oos_n_trades": 160
+            "oos_pf": 1.134192200059403,
+            "oos_n_trades": 156
           },
           {
             "params": "k=0.4, sma_n=20",
-            "oos_pf": 1.165276509387063,
-            "oos_n_trades": 161
+            "oos_pf": 1.1557202440144703,
+            "oos_n_trades": 158
           },
           {
             "params": "k=0.4, sma_n=25",
-            "oos_pf": 1.367136594335331,
-            "oos_n_trades": 163
+            "oos_pf": 1.2608435654128836,
+            "oos_n_trades": 161
           },
           {
             "params": "k=0.5, sma_n=15",
-            "oos_pf": 0.9994886372510416,
-            "oos_n_trades": 132
+            "oos_pf": 1.0122556288339473,
+            "oos_n_trades": 128
           },
           {
             "params": "k=0.5, sma_n=20",
-            "oos_pf": 1.0011963824700658,
-            "oos_n_trades": 134
+            "oos_pf": 0.9992875072459045,
+            "oos_n_trades": 131
           },
           {
             "params": "k=0.5, sma_n=25",
-            "oos_pf": 1.252935586381661,
-            "oos_n_trades": 135
+            "oos_pf": 1.2537994481198862,
+            "oos_n_trades": 132
           },
           {
             "params": "k=0.6, sma_n=15",
-            "oos_pf": 1.000853415934047,
-            "oos_n_trades": 104
+            "oos_pf": 1.0358184877848022,
+            "oos_n_trades": 100
           },
           {
             "params": "k=0.6, sma_n=20",
-            "oos_pf": 1.050709130844297,
-            "oos_n_trades": 108
+            "oos_pf": 1.062435754748075,
+            "oos_n_trades": 105
           },
           {
             "params": "k=0.6, sma_n=25",
-            "oos_pf": 1.2483955809972775,
-            "oos_n_trades": 111
+            "oos_pf": 1.2663909301240466,
+            "oos_n_trades": 108
           }
         ],
         "share_pf_ge_1": 0.8888888888888888,
@@ -2528,31 +2528,31 @@
       "params": "exit50",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.6079048200896331,
-        "cagr": 0.0193933022188697,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.019377603054704373,
+        "bh_return": 4.1010131811433155,
         "n_trades": 31,
         "win_rate": 80.64516129032258,
         "profit_factor": 2.0148697791115464,
         "mdd": 47.49649188915034,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.2034411372078273,
-        "exposure": 8.618199325950892,
+        "sharpe": 0.20335956139956035,
+        "exposure": 8.611289288005132,
         "max_consec_loss": 3,
         "avg_trade_return": 0.0192379687311493
       },
       "oos": {
         "total_return": 0.05493583285992654,
         "cagr": 0.027210119377124586,
-        "bh_return": 0.5357250953231518,
+        "bh_return": 0.44451348823329284,
         "n_trades": 2,
         "win_rate": 50.0,
         "profit_factor": 5.728928757996147,
         "mdd": 15.685160952614009,
-        "bh_mdd": 22.88330692157109,
+        "bh_mdd": 22.8833069215711,
         "sharpe": 0.2715008063263577,
         "exposure": 7.768924302788845,
         "max_consec_loss": 1,
@@ -2592,31 +2592,31 @@
       "params": "exit70",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.6028642413090262,
-        "cagr": 0.01926386514649492,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.01924827174967292,
+        "bh_return": 4.1010131811433155,
         "n_trades": 21,
         "win_rate": 80.95238095238095,
         "profit_factor": 1.8079092997976225,
         "mdd": 77.81851658732555,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.19630803122660873,
-        "exposure": 36.96035949285829,
+        "sharpe": 0.1962293165408078,
+        "exposure": 36.930724823604876,
         "max_consec_loss": 2,
         "avg_trade_return": 0.03967256606302495
       },
       "oos": {
         "total_return": 0.23096398496844173,
         "cagr": 0.10994751946561965,
-        "bh_return": 0.5357250953231518,
+        "bh_return": 0.44451348823329284,
         "n_trades": 2,
         "win_rate": 100.0,
         "profit_factor": "inf",
         "mdd": 15.685160952614009,
-        "bh_mdd": 22.88330692157109,
+        "bh_mdd": 22.8833069215711,
         "sharpe": 0.8390415565925051,
         "exposure": 11.553784860557768,
         "max_consec_loss": 0,
@@ -2656,36 +2656,36 @@
       "params": "fixed",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 1.1325404864037423,
-        "cagr": 0.031101871969935413,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.031076551083391024,
+        "bh_return": 4.1010131811433155,
         "n_trades": 185,
         "win_rate": 67.02702702702703,
         "profit_factor": 1.8945093471648446,
         "mdd": 13.940230762741113,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.45501581888871084,
-        "exposure": 11.137859091638582,
+        "sharpe": 0.4548332468072362,
+        "exposure": 11.12892880051315,
         "max_consec_loss": 4,
         "avg_trade_return": 0.004244123120467135
       },
       "oos": {
-        "total_return": 0.15186298352588712,
-        "cagr": 0.07355110518749597,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 22,
-        "win_rate": 77.27272727272727,
-        "profit_factor": 2.7469768380334987,
+        "total_return": 0.13738135688754616,
+        "cagr": 0.06675434242899136,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 23,
+        "win_rate": 73.91304347826086,
+        "profit_factor": 2.387639687171219,
         "mdd": 7.337219259566163,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.896032937247108,
-        "exposure": 14.54183266932271,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7987683486153867,
+        "exposure": 14.741035856573706,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.0066335752452034566,
-        "fee_drag": 0.010181125641484323
+        "avg_trade_return": 0.0057985349394920884,
+        "fee_drag": 0.010512190554196055
       },
       "suspicious": false,
       "robustness": {
@@ -2704,32 +2704,32 @@
       "params": "20-2",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 1.3400496048671733,
-        "cagr": 0.034981410751603326,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.03495287823272197,
+        "bh_return": 4.1010131811433155,
         "n_trades": 110,
         "win_rate": 75.45454545454545,
         "profit_factor": 1.652821702202153,
         "mdd": 49.87100932829549,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.2809363907376513,
-        "exposure": 21.3448884609212,
+        "sharpe": 0.2808237241174093,
+        "exposure": 21.3277742142399,
         "max_consec_loss": 2,
         "avg_trade_return": 0.009685803797932603
       },
       "oos": {
         "total_return": 0.12391464280923992,
         "cagr": 0.060395136356633294,
-        "bh_return": 0.5357250953231518,
+        "bh_return": 0.44451348823329284,
         "n_trades": 7,
         "win_rate": 85.71428571428571,
         "profit_factor": 7.652934421501146,
         "mdd": 8.211849544977646,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.4981623473112775,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.4981623473112776,
         "exposure": 15.737051792828685,
         "max_consec_loss": 1,
         "avg_trade_return": 0.016982440002168118,
@@ -2752,36 +2752,36 @@
       "params": "20-2",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": -0.057772232850044736,
-        "cagr": -0.0024037949220493404,
-        "bh_return": 4.084905075337475,
+        "cagr": -0.0024018698853224274,
+        "bh_return": 4.1010131811433155,
         "n_trades": 117,
         "win_rate": 43.58974358974359,
         "profit_factor": 1.0182350859354523,
         "mdd": 49.084759561435064,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.031500484457153026,
-        "exposure": 31.632161771786233,
+        "sharpe": 0.031487855419706015,
+        "exposure": 31.60679923027582,
         "max_consec_loss": 10,
         "avg_trade_return": 0.00026209128012454313
       },
       "oos": {
-        "total_return": 0.1683658678435649,
-        "cagr": 0.0812448448176617,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.11748007806904548,
+        "cagr": 0.05734323247686923,
+        "bh_return": 0.44451348823329284,
         "n_trades": 9,
-        "win_rate": 44.44444444444444,
-        "profit_factor": 2.9831075063303585,
+        "win_rate": 33.33333333333333,
+        "profit_factor": 2.0773242537339125,
         "mdd": 7.111692776331047,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8826707347847448,
-        "exposure": 32.27091633466135,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6330282252104854,
+        "exposure": 33.067729083665334,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.018772581804328208,
-        "fee_drag": 0.004213697284738194
+        "avg_trade_return": 0.01386812386352655,
+        "fee_drag": 0.004030178303137122
       },
       "suspicious": false,
       "robustness": {
@@ -2800,36 +2800,36 @@
       "params": "12-26-9",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 0.21056315208654275,
-        "cagr": 0.007758005975009308,
-        "bh_return": 4.084905075337475,
-        "n_trades": 247,
-        "win_rate": 44.534412955465584,
-        "profit_factor": 1.1329605776150713,
+        "total_return": 0.21465704733133673,
+        "cagr": 0.007889258703613455,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 248,
+        "win_rate": 44.75806451612903,
+        "profit_factor": 1.1337260788619132,
         "mdd": 75.41231359684971,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.13051350466856732,
-        "exposure": 51.58080564917349,
+        "sharpe": 0.13127655098958493,
+        "exposure": 51.60359204618346,
         "max_consec_loss": 9,
-        "avg_trade_return": 0.0023780956182148185
+        "avg_trade_return": 0.0023821428558617264
       },
       "oos": {
-        "total_return": 0.024957966412372024,
-        "cagr": 0.012451794470145439,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.0023577872926905385,
+        "cagr": 0.0011828963666000725,
+        "bh_return": 0.44451348823329284,
         "n_trades": 21,
         "win_rate": 28.57142857142857,
-        "profit_factor": 1.1732966996005023,
-        "mdd": 21.70076120092731,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.16114604726144255,
-        "exposure": 47.211155378486055,
+        "profit_factor": 1.1081263398878292,
+        "mdd": 21.700761200927275,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.07270381182971189,
+        "exposure": 46.81274900398406,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.002878627930441495,
-        "fee_drag": 0.008645909013112352
+        "avg_trade_return": 0.0017960844190053667,
+        "fee_drag": 0.008455267934401878
       },
       "suspicious": false,
       "robustness": {
@@ -2848,36 +2848,36 @@
       "params": "10-3",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.9924967860697076,
-        "cagr": 0.04532708943048824,
-        "bh_return": 4.084905075337475,
+        "total_return": 2.001976501844038,
+        "cagr": 0.0454235438682713,
+        "bh_return": 4.1010131811433155,
         "n_trades": 96,
         "win_rate": 48.95833333333333,
-        "profit_factor": 1.6657260772515345,
+        "profit_factor": 1.6672971150234874,
         "mdd": 47.846535451989304,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.3679173602073556,
-        "exposure": 57.90402824586744,
+        "sharpe": 0.3685501620214355,
+        "exposure": 57.93778062860808,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.014174655485846064
+        "avg_trade_return": 0.014208106059488334
       },
       "oos": {
-        "total_return": 0.4057570545818572,
-        "cagr": 0.18645092097186522,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.3385647706623658,
+        "cagr": 0.15763584305419354,
+        "bh_return": 0.44451348823329284,
         "n_trades": 8,
-        "win_rate": 62.5,
-        "profit_factor": 3.8805595342312174,
-        "mdd": 11.969354343171767,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.4252882811979664,
-        "exposure": 58.16733067729084,
+        "win_rate": 50.0,
+        "profit_factor": 3.3066828391878986,
+        "mdd": 11.969354343171723,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.2223046905681576,
+        "exposure": 57.96812749003985,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.04714107027393874,
-        "fee_drag": 0.004505627794405109
+        "avg_trade_return": 0.04092057890879572,
+        "fee_drag": 0.004290268091241556
       },
       "suspicious": false,
       "robustness": {
@@ -2896,53 +2896,53 @@
       "params": "n30",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.948748960515145,
-        "cagr": 0.044704670967114835,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.9580900906930152,
+        "cagr": 0.044801566923289515,
+        "bh_return": 4.1010131811433155,
         "n_trades": 222,
         "win_rate": 44.5945945945946,
-        "profit_factor": 1.4681183173504684,
+        "profit_factor": 1.4691993681119688,
         "mdd": 52.49767360488161,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.35787541535953515,
-        "exposure": 62.269298667950565,
+        "sharpe": 0.3584946068854581,
+        "exposure": 62.29955099422707,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.006226282858970422
+        "avg_trade_return": 0.006240661548238776
       },
       "oos": {
-        "total_return": 0.3589518153241842,
-        "cagr": 0.16645335285978202,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.27823933663194533,
+        "cagr": 0.13114547907057061,
+        "bh_return": 0.44451348823329284,
         "n_trades": 22,
-        "win_rate": 54.54545454545454,
-        "profit_factor": 2.4938008419254722,
-        "mdd": 12.443826607691133,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.124278122901138,
+        "win_rate": 50.0,
+        "profit_factor": 2.1129967591945547,
+        "mdd": 12.44382660769119,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.9070234330772176,
         "exposure": 69.7211155378486,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.015987142370242825,
-        "fee_drag": 0.01201154943810101
+        "avg_trade_return": 0.013188699333826619,
+        "fee_drag": 0.011298145241464663
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n=22",
-            "oos_pf": 1.8602092693036483,
+            "oos_pf": 1.6056993917822604,
             "oos_n_trades": 25
           },
           {
             "params": "n=30",
-            "oos_pf": 2.4938008419254722,
+            "oos_pf": 2.1129967591945547,
             "oos_n_trades": 22
           },
           {
             "params": "n=38",
-            "oos_pf": 2.639857584441168,
+            "oos_pf": 2.2201334522439486,
             "oos_n_trades": 24
           }
         ],
@@ -2960,53 +2960,53 @@
       "params": "n90",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 3.966421117625546,
-        "cagr": 0.06696470128506293,
-        "bh_return": 4.084905075337475,
+        "total_return": 3.9821538866062465,
+        "cagr": 0.0670456235145318,
+        "bh_return": 4.1010131811433155,
         "n_trades": 95,
         "win_rate": 41.05263157894737,
-        "profit_factor": 2.2285614730683103,
+        "profit_factor": 2.230426110121598,
         "mdd": 48.52540578079451,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.49768697838463927,
-        "exposure": 68.7851067244423,
+        "sharpe": 0.4982218491612923,
+        "exposure": 68.81013470173188,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.024053997251520815
+        "avg_trade_return": 0.024090504968503706
       },
       "oos": {
-        "total_return": 0.2681785915496737,
-        "cagr": 0.126667449765983,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.19285742387163807,
+        "cagr": 0.09256387243799113,
+        "bh_return": 0.44451348823329284,
         "n_trades": 10,
         "win_rate": 20.0,
-        "profit_factor": 5.082425987480677,
+        "profit_factor": 3.790023211454345,
         "mdd": 11.986920683391688,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8096468280444733,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6186131665702451,
         "exposure": 82.07171314741036,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.02640363059102071,
-        "fee_drag": 0.005082873403614574
+        "avg_trade_return": 0.019277981243080822,
+        "fee_drag": 0.0047809853553026915
       },
-      "suspicious": true,
+      "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n=68",
-            "oos_pf": 9.744878131449035,
-            "oos_n_trades": 9
+            "oos_pf": 4.468361288181054,
+            "oos_n_trades": 8
           },
           {
             "params": "n=90",
-            "oos_pf": 5.082425987480677,
+            "oos_pf": 3.790023211454345,
             "oos_n_trades": 10
           },
           {
             "params": "n=112",
-            "oos_pf": 4.120550588262363,
+            "oos_pf": 3.141393063888028,
             "oos_n_trades": 7
           }
         ],
@@ -3024,36 +3024,36 @@
       "params": "fixed",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 4.144521308272704,
-        "cagr": 0.06848612422722367,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.06842937499444335,
+        "bh_return": 4.1010131811433155,
         "n_trades": 320,
         "win_rate": 65.3125,
         "profit_factor": 1.9905544426472352,
         "mdd": 19.860832328476242,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.6321030347178763,
-        "exposure": 8.907077515647568,
+        "sharpe": 0.6318492140204813,
+        "exposure": 8.899935856318153,
         "max_consec_loss": 5,
         "avg_trade_return": 0.005425339881439161
       },
       "oos": {
-        "total_return": 0.09177788625487215,
-        "cagr": 0.04506453880815897,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 24,
-        "win_rate": 66.66666666666666,
-        "profit_factor": 1.8108452651844706,
-        "mdd": 6.312231205919816,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.7063470665975902,
-        "exposure": 7.968127490039841,
-        "max_consec_loss": 2,
-        "avg_trade_return": 0.0037956808119366894,
-        "fee_drag": 0.010531538350457614
+        "total_return": 0.07805167059652796,
+        "cagr": 0.03844812743912174,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 25,
+        "win_rate": 64.0,
+        "profit_factor": 1.6285955617323007,
+        "mdd": 6.422576666692814,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.585257908573213,
+        "exposure": 8.167330677290837,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.0031409595080129017,
+        "fee_drag": 0.010834599560045843
       },
       "suspicious": false,
       "robustness": {
@@ -3072,32 +3072,32 @@
       "params": "-5pct-5bar",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.45898869461443614,
-        "cagr": 0.015394351845642307,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.015381914268292052,
+        "bh_return": 4.1010131811433155,
         "n_trades": 45,
         "win_rate": 60.0,
         "profit_factor": 1.4631415360003115,
         "mdd": 34.58078139499911,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.1836505836308144,
-        "exposure": 4.285026480500722,
+        "sharpe": 0.18357694567453348,
+        "exposure": 4.281590763309814,
         "max_consec_loss": 3,
         "avg_trade_return": 0.010537437791209123
       },
       "oos": {
         "total_return": 0.014452354506939269,
         "cagr": 0.007229045129738543,
-        "bh_return": 0.5357250953231518,
+        "bh_return": 0.44451348823329284,
         "n_trades": 1,
         "win_rate": 100.0,
         "profit_factor": "inf",
         "mdd": 5.05847713271913,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.12075538313148751,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.12075538313148755,
         "exposure": 1.1952191235059761,
         "max_consec_loss": 0,
         "avg_trade_return": 0.014452354506939269,
@@ -3166,16 +3166,16 @@
       "params": "-",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": null,
       "is": {
-        "total_return": 4.084905075337475,
+        "total_return": 4.1010131811433155,
         "mdd": 82.96390703529309
       },
       "oos": {
-        "total_return": 0.5357250953231518,
-        "mdd": 22.88330692157109,
-        "fee_drag": 0.000614412920713292
+        "total_return": 0.44451348823329284,
+        "mdd": 22.8833069215711,
+        "fee_drag": 0.000577920979489166
       },
       "suspicious": false,
       "edition": "stocks"
@@ -3187,16 +3187,16 @@
       "params": "-",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": null,
       "is": {
-        "total_return": 6.6305151157716935,
+        "total_return": 6.64953672885818,
         "mdd": 62.846472354820484
       },
       "oos": {
-        "total_return": 0.2984219044804599,
-        "mdd": 22.266594024190447,
-        "fee_drag": 0.00025968438089529755
+        "total_return": 0.22207042756239992,
+        "mdd": 22.141412122338266,
+        "fee_drag": 0.0002444140855120125
       },
       "suspicious": false,
       "edition": "stocks"
@@ -3210,83 +3210,83 @@
       "params": "9-21",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.1335529468152763,
-        "cagr": 0.031121665635359452,
-        "bh_return": 2.8646931585930653,
+        "total_return": 1.158158010526682,
+        "cagr": 0.03157421304146091,
+        "bh_return": 2.909262486733787,
         "n_trades": 130,
         "win_rate": 41.53846153846154,
-        "profit_factor": 1.530822320599644,
+        "profit_factor": 1.537847416874852,
         "mdd": 28.638998855975174,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.3348431089762189,
-        "exposure": 63.80998234633285,
+        "sharpe": 0.3388603524925409,
+        "exposure": 63.838999358563186,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.006919640265185998
+        "avg_trade_return": 0.007011217309267006
       },
       "oos": {
-        "total_return": 0.22825274093294,
-        "cagr": 0.10871962536422286,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.19033577755264597,
+        "cagr": 0.09140384548142677,
+        "bh_return": 0.31592107781471435,
         "n_trades": 11,
-        "win_rate": 45.45454545454545,
-        "profit_factor": 3.8758589325142347,
-        "mdd": 6.166832007030221,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 2.9062474476134925,
+        "mdd": 6.1668320070302425,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0986225783458134,
+        "sharpe": 0.9370895047484586,
         "exposure": 73.50597609561753,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.02079765903350641,
-        "fee_drag": 0.005416219076124218
+        "avg_trade_return": 0.017962948256338353,
+        "fee_drag": 0.005249016859897537
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=7, n_slow=16",
-            "oos_pf": 1.9035468647064042,
+            "oos_pf": 1.613370845230493,
             "oos_n_trades": 16
           },
           {
             "params": "n_fast=7, n_slow=21",
-            "oos_pf": 2.4182355807102227,
+            "oos_pf": 1.9525007520607622,
             "oos_n_trades": 12
           },
           {
             "params": "n_fast=7, n_slow=26",
-            "oos_pf": 2.993503650204716,
+            "oos_pf": 2.338205562660473,
             "oos_n_trades": 12
           },
           {
             "params": "n_fast=9, n_slow=16",
-            "oos_pf": 2.631918935636963,
+            "oos_pf": 2.14623385576618,
             "oos_n_trades": 13
           },
           {
             "params": "n_fast=9, n_slow=21",
-            "oos_pf": 3.8758589325142347,
+            "oos_pf": 2.9062474476134925,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=9, n_slow=26",
-            "oos_pf": 5.414546147271112,
+            "oos_pf": 3.9981467277827574,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=11, n_slow=16",
-            "oos_pf": 3.1158845626717078,
+            "oos_pf": 2.4524151279796973,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=11, n_slow=21",
-            "oos_pf": 5.540241181982955,
+            "oos_pf": 4.2390188863492515,
             "oos_n_trades": 10
           },
           {
             "params": "n_fast=11, n_slow=26",
-            "oos_pf": 11.110866679577418,
+            "oos_pf": 6.654573129255161,
             "oos_n_trades": 8
           }
         ],
@@ -3305,53 +3305,53 @@
       "params": "ema200-macd12.26.9",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 0.5922872089761078,
-        "cagr": 0.018990982925780386,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 240,
-        "win_rate": 42.5,
-        "profit_factor": 1.3105851658629686,
+        "total_return": 0.6019566835063153,
+        "cagr": 0.019224944153810597,
+        "bh_return": 2.909262486733787,
+        "n_trades": 241,
+        "win_rate": 42.738589211618255,
+        "profit_factor": 1.3141955386995383,
         "mdd": 13.451479353829654,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.30528154214233055,
-        "exposure": 38.147969828277965,
+        "sharpe": 0.30851306108525095,
+        "exposure": 38.1494547787043,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.0021767015265636612
+        "avg_trade_return": 0.0021928674744759722
       },
       "oos": {
-        "total_return": 0.057650650119903,
-        "cagr": 0.02853626935815634,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.043652211628331994,
+        "cagr": 0.02167993115933231,
+        "bh_return": 0.31592107781471435,
         "n_trades": 25,
-        "win_rate": 44.0,
-        "profit_factor": 1.4371575589202008,
-        "mdd": 7.717604096301589,
+        "win_rate": 36.0,
+        "profit_factor": 1.3321400818551898,
+        "mdd": 7.717604096301556,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.4422057958515612,
-        "exposure": 40.438247011952186,
+        "sharpe": 0.34569723308492195,
+        "exposure": 40.83665338645419,
         "max_consec_loss": 4,
-        "avg_trade_return": 0.002592169880711319,
-        "fee_drag": 0.01062956589281927
+        "avg_trade_return": 0.0020593015282288764,
+        "fee_drag": 0.010488879245176719
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_ema=150",
-            "oos_pf": 1.1078629152956767,
+            "oos_pf": 1.0105818723488842,
             "oos_n_trades": 24
           },
           {
             "params": "n_ema=200",
-            "oos_pf": 1.4371575589202008,
+            "oos_pf": 1.3321400818551898,
             "oos_n_trades": 25
           },
           {
             "params": "n_ema=250",
-            "oos_pf": 0.9756449797173584,
+            "oos_pf": 0.918398241347505,
             "oos_n_trades": 25
           }
         ],
@@ -3370,26 +3370,26 @@
       "params": "rsi14-sma200",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.042295600105891396,
-        "cagr": 0.0016767770798802317,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.0016754315210616433,
+        "bh_return": 2.909262486733787,
         "n_trades": 10,
         "win_rate": 40.0,
         "profit_factor": 1.377013741785417,
         "mdd": 9.185899028480172,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.07140065469877693,
-        "exposure": 2.952977050232707,
+        "sharpe": 0.07137202859207366,
+        "exposure": 2.95060936497755,
         "max_consec_loss": 2,
         "avg_trade_return": 0.005061185367627441
       },
       "oos": {
         "total_return": 0.0,
         "cagr": 0.0,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 0,
         "win_rate": 0.0,
         "profit_factor": null,
@@ -3435,32 +3435,32 @@
       "params": "bb20.2-look120-conf5",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": -0.1711618940872165,
-        "cagr": -0.007563622550757265,
-        "bh_return": 2.8646931585930653,
+        "cagr": -0.007557581042658024,
+        "bh_return": 2.909262486733787,
         "n_trades": 24,
         "win_rate": 20.833333333333336,
         "profit_factor": 0.3993958074481995,
         "mdd": 26.74644469971046,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.2568475899084404,
-        "exposure": 4.878831648210561,
+        "sharpe": -0.2567445891435506,
+        "exposure": 4.8749198203976905,
         "max_consec_loss": 9,
         "avg_trade_return": -0.00755438264698137
       },
       "oos": {
         "total_return": 0.004236377377158984,
         "cagr": 0.002124389094246615,
-        "bh_return": 0.3578384361431759,
+        "bh_return": 0.31592107781471435,
         "n_trades": 1,
         "win_rate": 100.0,
         "profit_factor": "inf",
         "mdd": 2.984648312685423,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.10060696896732833,
+        "sharpe": 0.1006069689673283,
         "exposure": 4.183266932270916,
         "max_consec_loss": 0,
         "avg_trade_return": 0.00423637737715965,
@@ -3530,38 +3530,38 @@
       "params": "9-26-52",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.7669236004059354,
-        "cagr": 0.04201907184185516,
-        "bh_return": 2.8646931585930653,
+        "total_return": 1.7988329709112243,
+        "cagr": 0.04246761466964166,
+        "bh_return": 2.909262486733787,
         "n_trades": 72,
         "win_rate": 41.66666666666667,
-        "profit_factor": 2.045344964580754,
+        "profit_factor": 2.0558078164391267,
         "mdd": 34.21911583266858,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.42188921778920757,
-        "exposure": 69.47520462205104,
+        "sharpe": 0.4257276194832889,
+        "exposure": 69.49967928159076,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.01670986258470268
+        "avg_trade_return": 0.016877111505127367
       },
       "oos": {
-        "total_return": 0.22894678346966502,
-        "cagr": 0.10903407841414636,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.19100839454348972,
+        "cagr": 0.09171338746125324,
+        "bh_return": 0.31592107781471435,
         "n_trades": 5,
-        "win_rate": 60.0,
-        "profit_factor": 5.183513066871239,
-        "mdd": 10.974147552007729,
+        "win_rate": 40.0,
+        "profit_factor": 4.126717745548776,
+        "mdd": 10.974147552007762,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 1.0069732464337184,
+        "sharpe": 0.8609824089531213,
         "exposure": 83.86454183266933,
-        "max_consec_loss": 2,
-        "avg_trade_return": 0.04481361414806488,
-        "fee_drag": 0.0024603531327609396
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.038066772076210696,
+        "fee_drag": 0.002384400426506561
       },
-      "suspicious": true,
+      "suspicious": false,
       "robustness": {
         "grid": [],
         "share_pf_ge_1": null,
@@ -3579,44 +3579,44 @@
       "params": "conf2",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": -0.3759320329810961,
-        "cagr": -0.018888030032800374,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 632,
-        "win_rate": 43.67088607594937,
-        "profit_factor": 0.9164488568945913,
+        "total_return": -0.3718369626500946,
+        "cagr": -0.01861367995313834,
+        "bh_return": 2.909262486733787,
+        "n_trades": 633,
+        "win_rate": 43.75987361769352,
+        "profit_factor": 0.9179590636488264,
         "mdd": 62.26936489511129,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.13014066410476577,
-        "exposure": 44.4872412132884,
+        "sharpe": -0.1274841585098736,
+        "exposure": 44.499679281590765,
         "max_consec_loss": 11,
-        "avg_trade_return": -0.0005744184534698892
+        "avg_trade_return": -0.0005631446518401784
       },
       "oos": {
-        "total_return": 0.1314682478740794,
-        "cagr": 0.06396671753293015,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 52,
-        "win_rate": 50.0,
-        "profit_factor": 1.5740712440919005,
+        "total_return": 0.10716896893054084,
+        "cagr": 0.052434383105821825,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 53,
+        "win_rate": 49.056603773584904,
+        "profit_factor": 1.4516181812365885,
         "mdd": 6.971529898112417,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.8262700264344522,
-        "exposure": 47.808764940239044,
+        "sharpe": 0.6883545595054401,
+        "exposure": 47.410358565737056,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.0025477097628854497,
-        "fee_drag": 0.023781004945968354
+        "avg_trade_return": 0.0020913771766951743,
+        "fee_drag": 0.023722553037782035
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_confirm=2",
-            "oos_pf": 1.5740712440919005,
-            "oos_n_trades": 52
+            "oos_pf": 1.4516181812365885,
+            "oos_n_trades": 53
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -3634,53 +3634,53 @@
       "params": "st10.3-ema200",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 0.4933418147722264,
-        "cagr": 0.0163505166298199,
-        "bh_return": 2.8646931585930653,
+        "total_return": 0.5105636843069021,
+        "cagr": 0.01680834458750713,
+        "bh_return": 2.909262486733787,
         "n_trades": 91,
         "win_rate": 41.75824175824176,
-        "profit_factor": 1.3405207109909407,
+        "profit_factor": 1.3485776679637491,
         "mdd": 25.481949834572337,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.22773124425795807,
-        "exposure": 52.41534264163056,
+        "sharpe": 0.23279634540950597,
+        "exposure": 52.45349583066068,
         "max_consec_loss": 6,
-        "avg_trade_return": 0.005565182153882946
+        "avg_trade_return": 0.00569685823616644
       },
       "oos": {
-        "total_return": 0.15078950308500882,
-        "cagr": 0.07304874677612472,
-        "bh_return": 0.3578384361431759,
+        "total_return": 0.11526388039129598,
+        "cagr": 0.056290068136714666,
+        "bh_return": 0.31592107781471435,
         "n_trades": 10,
-        "win_rate": 40.0,
-        "profit_factor": 2.74052970297252,
-        "mdd": 7.570930852632385,
+        "win_rate": 30.0,
+        "profit_factor": 2.050478711203145,
+        "mdd": 7.570930852632307,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.8634014757518489,
+        "sharpe": 0.6790478646559359,
         "exposure": 57.56972111553785,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.015243739389160849,
-        "fee_drag": 0.0046123766773595865
+        "avg_trade_return": 0.012132014764824627,
+        "fee_drag": 0.00446998960038103
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_ema=150",
-            "oos_pf": 2.74052970297252,
+            "oos_pf": 2.050478711203145,
             "oos_n_trades": 10
           },
           {
             "params": "n_ema=200",
-            "oos_pf": 2.74052970297252,
+            "oos_pf": 2.050478711203145,
             "oos_n_trades": 10
           },
           {
             "params": "n_ema=250",
-            "oos_pf": 2.691979342538247,
+            "oos_pf": 2.0136609937971772,
             "oos_n_trades": 10
           }
         ],
@@ -3699,83 +3699,83 @@
       "params": "9-21",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.8570348137395714,
-        "cagr": 0.043370533843478665,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.866085409254893,
+        "cagr": 0.0434683751811642,
+        "bh_return": 4.1010131811433155,
         "n_trades": 134,
         "win_rate": 37.3134328358209,
-        "profit_factor": 1.5387719810483507,
+        "profit_factor": 1.5400707254482873,
         "mdd": 45.3801507718911,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.35165744160818296,
-        "exposure": 63.21617717862301,
+        "sharpe": 0.3522876658238597,
+        "exposure": 63.24567030147531,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.010136874419126921
+        "avg_trade_return": 0.010161310004769449
       },
       "oos": {
-        "total_return": 0.36092603596990314,
-        "cagr": 0.16730370500936909,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.2800963020225473,
+        "cagr": 0.1319700915484434,
+        "bh_return": 0.44451348823329284,
         "n_trades": 13,
-        "win_rate": 38.46153846153847,
-        "profit_factor": 3.042668021151542,
-        "mdd": 12.633259706385003,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.1368755689173364,
+        "win_rate": 30.76923076923077,
+        "profit_factor": 2.4787062649864957,
+        "mdd": 12.633259706384992,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.9177622000709829,
         "exposure": 71.51394422310757,
         "max_consec_loss": 3,
-        "avg_trade_return": 0.027564534545128954,
-        "fee_drag": 0.007095247136248872
+        "avg_trade_return": 0.02282549059461262,
+        "fee_drag": 0.00667383779940578
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_fast=7, n_slow=16",
-            "oos_pf": 2.638809338668673,
+            "oos_pf": 2.3322870795229154,
             "oos_n_trades": 16
           },
           {
             "params": "n_fast=7, n_slow=21",
-            "oos_pf": 3.177727880225906,
+            "oos_pf": 2.531825780680763,
             "oos_n_trades": 14
           },
           {
             "params": "n_fast=7, n_slow=26",
-            "oos_pf": 2.6591267343296057,
+            "oos_pf": 2.204192678895015,
             "oos_n_trades": 13
           },
           {
             "params": "n_fast=9, n_slow=16",
-            "oos_pf": 2.603317157138276,
+            "oos_pf": 2.0818315920024677,
             "oos_n_trades": 13
           },
           {
             "params": "n_fast=9, n_slow=21",
-            "oos_pf": 3.042668021151542,
+            "oos_pf": 2.4787062649864957,
             "oos_n_trades": 13
           },
           {
             "params": "n_fast=9, n_slow=26",
-            "oos_pf": 4.844986946493938,
+            "oos_pf": 3.457975468691556,
             "oos_n_trades": 9
           },
           {
             "params": "n_fast=11, n_slow=16",
-            "oos_pf": 3.2250532793076907,
+            "oos_pf": 2.5959887968319406,
             "oos_n_trades": 11
           },
           {
             "params": "n_fast=11, n_slow=21",
-            "oos_pf": 6.201642555374697,
+            "oos_pf": 4.5034588990972955,
             "oos_n_trades": 10
           },
           {
             "params": "n_fast=11, n_slow=26",
-            "oos_pf": 4.934456055728058,
+            "oos_pf": 3.469995062332722,
             "oos_n_trades": 8
           }
         ],
@@ -3794,53 +3794,53 @@
       "params": "ema200-macd12.26.9",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": 1.6839374756670753,
-        "cagr": 0.040736578897757614,
-        "bh_return": 4.084905075337475,
-        "n_trades": 206,
-        "win_rate": 44.66019417475729,
-        "profit_factor": 1.5148960471553878,
+        "total_return": 1.6930140437503,
+        "cagr": 0.040845253579608665,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 207,
+        "win_rate": 44.927536231884055,
+        "profit_factor": 1.516453704684516,
         "mdd": 25.318233217782105,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.4465145356514782,
-        "exposure": 38.95040924410207,
+        "sharpe": 0.44746487957582604,
+        "exposure": 38.98332264271969,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.005426622785078393
+        "avg_trade_return": 0.00541674446512462
       },
       "oos": {
-        "total_return": 0.04548894943959447,
-        "cagr": 0.022582152013983725,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.02243606502942974,
+        "cagr": 0.011200499932878749,
+        "bh_return": 0.44451348823329284,
         "n_trades": 22,
         "win_rate": 27.27272727272727,
-        "profit_factor": 1.253557303878142,
-        "mdd": 15.253202460836246,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.2606354619875541,
-        "exposure": 43.02788844621514,
+        "profit_factor": 1.1696835421430893,
+        "mdd": 15.253202460836224,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.1572491105134454,
+        "exposure": 42.62948207171315,
         "max_consec_loss": 7,
-        "avg_trade_return": 0.003123862997231835,
-        "fee_drag": 0.009240903217887286
+        "avg_trade_return": 0.0020905260090428035,
+        "fee_drag": 0.00903714260057642
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_ema=150",
-            "oos_pf": 1.1484656740746806,
+            "oos_pf": 1.0602059192155011,
             "oos_n_trades": 21
           },
           {
             "params": "n_ema=200",
-            "oos_pf": 1.253557303878142,
+            "oos_pf": 1.1696835421430893,
             "oos_n_trades": 22
           },
           {
             "params": "n_ema=250",
-            "oos_pf": 1.1466895636911805,
+            "oos_pf": 1.0709354020573818,
             "oos_n_trades": 21
           }
         ],
@@ -3859,31 +3859,31 @@
       "params": "rsi14-sma200",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": 0.5317421498894519,
-        "cagr": 0.017394660148162044,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.017380592671970563,
+        "bh_return": 4.1010131811433155,
         "n_trades": 10,
         "win_rate": 80.0,
         "profit_factor": 6.344357633201734,
         "mdd": 13.652376731007065,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.4306331114023892,
-        "exposure": 4.638099823463328,
+        "sharpe": 0.4304603375110687,
+        "exposure": 4.634381013470174,
         "max_consec_loss": 2,
         "avg_trade_return": 0.045215001405712496
       },
       "oos": {
         "total_return": 0.0,
         "cagr": 0.0,
-        "bh_return": 0.5357250953231518,
+        "bh_return": 0.44451348823329284,
         "n_trades": 0,
         "win_rate": 0.0,
         "profit_factor": null,
         "mdd": 0.0,
-        "bh_mdd": 22.88330692157109,
+        "bh_mdd": 22.8833069215711,
         "sharpe": 0.0,
         "exposure": 0.0,
         "max_consec_loss": 0,
@@ -3924,83 +3924,83 @@
       "params": "bb20.2-look120-conf5",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
         "total_return": -0.22634112915209126,
-        "cagr": -0.010324968092579101,
-        "bh_return": 4.084905075337475,
+        "cagr": -0.010316732425528663,
+        "bh_return": 4.1010131811433155,
         "n_trades": 28,
         "win_rate": 39.285714285714285,
         "profit_factor": 0.5298614404722047,
         "mdd": 31.625313830279634,
         "bh_mdd": 82.96390703529309,
-        "sharpe": -0.18001428787036794,
-        "exposure": 5.922002888781897,
+        "sharpe": -0.17994210832993063,
+        "exposure": 5.917254650416933,
         "max_consec_loss": 5,
         "avg_trade_return": -0.008488448659226136
       },
       "oos": {
-        "total_return": -0.018766090367940413,
-        "cagr": -0.009464865296188951,
-        "bh_return": 0.5357250953231518,
+        "total_return": -0.0615017297933913,
+        "cagr": -0.03136128118487491,
+        "bh_return": 0.44451348823329284,
         "n_trades": 3,
-        "win_rate": 33.33333333333333,
-        "profit_factor": 0.4205801671263132,
-        "mdd": 4.837729086090081,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": -0.2995996973304804,
-        "exposure": 5.378486055776892,
-        "max_consec_loss": 2,
-        "avg_trade_return": -0.006191053425209425,
-        "fee_drag": 0.0011781874783716173
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "mdd": 7.179381539833562,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": -0.887183923518678,
+        "exposure": 6.175298804780876,
+        "max_consec_loss": 3,
+        "avg_trade_return": -0.020904427247614394,
+        "fee_drag": 0.0011268739284047147
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_lookback=90, n_confirm=4",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=90, n_confirm=5",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=90, n_confirm=6",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=120, n_confirm=4",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=120, n_confirm=5",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=120, n_confirm=6",
-            "oos_pf": 0.4205801671263132,
+            "oos_pf": 0.0,
             "oos_n_trades": 3
           },
           {
             "params": "n_lookback=150, n_confirm=4",
-            "oos_pf": 1.1761678151863735,
+            "oos_pf": 0.0,
             "oos_n_trades": 2
           },
           {
             "params": "n_lookback=150, n_confirm=5",
-            "oos_pf": 1.1761678151863735,
+            "oos_pf": 0.0,
             "oos_n_trades": 2
           },
           {
             "params": "n_lookback=150, n_confirm=6",
-            "oos_pf": 1.1761678151863735,
+            "oos_pf": 0.0,
             "oos_n_trades": 2
           }
         ],
@@ -4019,36 +4019,36 @@
       "params": "9-26-52",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.7290366330688802,
-        "cagr": 0.041438199740948534,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.737681752335058,
+        "cagr": 0.04153740792388372,
+        "bh_return": 4.1010131811433155,
         "n_trades": 77,
         "win_rate": 38.961038961038966,
-        "profit_factor": 1.7420349026099546,
+        "profit_factor": 1.743821613628511,
         "mdd": 48.418850913280934,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.3417775146245105,
-        "exposure": 66.95554485636335,
+        "sharpe": 0.34242159378112375,
+        "exposure": 66.98203976908275,
         "max_consec_loss": 8,
-        "avg_trade_return": 0.017831742644754015
+        "avg_trade_return": 0.017874678861030887
       },
       "oos": {
-        "total_return": 0.25916147896511466,
-        "cagr": 0.12263888252370503,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.1843758663370374,
+        "cagr": 0.08865724761492189,
+        "bh_return": 0.44451348823329284,
         "n_trades": 8,
-        "win_rate": 62.5,
-        "profit_factor": 4.570870835876289,
-        "mdd": 13.380084147716598,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8252270919232743,
+        "win_rate": 50.0,
+        "profit_factor": 3.2168728239895024,
+        "mdd": 13.380084147716554,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6225196050648013,
         "exposure": 79.2828685258964,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.030863770029418758,
-        "fee_drag": 0.004035770575562925
+        "avg_trade_return": 0.02309720618704611,
+        "fee_drag": 0.0037960733008619574
       },
       "suspicious": false,
       "robustness": {
@@ -4068,44 +4068,44 @@
       "params": "conf2",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
-        "total_return": -0.03342151516105385,
-        "cagr": -0.0013738235600726512,
-        "bh_return": 4.084905075337475,
-        "n_trades": 610,
-        "win_rate": 44.59016393442623,
-        "profit_factor": 1.031881406771163,
+        "total_return": -0.03380806924417279,
+        "cagr": -0.0013888646788007275,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 611,
+        "win_rate": 44.51718494271686,
+        "profit_factor": 1.0318097866132616,
         "mdd": 70.73178035693108,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.0652426375769251,
-        "exposure": 44.262558176857645,
+        "sharpe": 0.065128306691298,
+        "exposure": 44.27517639512508,
         "max_consec_loss": 11,
-        "avg_trade_return": 0.000301123847748826
+        "avg_trade_return": 0.0002999764764497334
       },
       "oos": {
-        "total_return": 0.07189616477275473,
-        "cagr": 0.03546738401179739,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 57,
-        "win_rate": 45.614035087719294,
-        "profit_factor": 1.1996880115761037,
-        "mdd": 13.052065895087805,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.34937398291283944,
-        "exposure": 49.20318725099602,
+        "total_return": 0.0716045951890476,
+        "cagr": 0.03532598311435953,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 56,
+        "win_rate": 44.642857142857146,
+        "profit_factor": 1.1990878711970303,
+        "mdd": 12.442869692383773,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.34928329615174003,
+        "exposure": 48.40637450199203,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.0015882978135076957,
-        "fee_drag": 0.024719969680957243
+        "avg_trade_return": 0.0016118015796307283,
+        "fee_drag": 0.02427480608193089
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_confirm=2",
-            "oos_pf": 1.1996880115761037,
-            "oos_n_trades": 57
+            "oos_pf": 1.1990878711970303,
+            "oos_n_trades": 56
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4123,53 +4123,53 @@
       "params": "st10.3-ema200",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "TOO FEW TRADES",
       "is": {
-        "total_return": 1.8087974224971406,
-        "cagr": 0.04265225608949441,
-        "bh_return": 4.084905075337475,
+        "total_return": 1.8176952102431105,
+        "cagr": 0.04275060583930146,
+        "bh_return": 4.1010131811433155,
         "n_trades": 87,
         "win_rate": 49.42528735632184,
-        "profit_factor": 1.7658837454478271,
+        "profit_factor": 1.7678796807095511,
         "mdd": 32.953064373371674,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.4033727397214942,
-        "exposure": 51.56475686085701,
+        "sharpe": 0.404134355444599,
+        "exposure": 51.60359204618346,
         "max_consec_loss": 5,
-        "avg_trade_return": 0.014163544518223352
+        "avg_trade_return": 0.01420045549603551
       },
       "oos": {
-        "total_return": 0.37219407642929436,
-        "cagr": 0.17214545047751084,
-        "bh_return": 0.5357250953231518,
+        "total_return": 0.30660603354836646,
+        "cagr": 0.1436778064398736,
+        "bh_return": 0.44451348823329284,
         "n_trades": 8,
-        "win_rate": 62.5,
-        "profit_factor": 3.6651197579569748,
-        "mdd": 11.969354343171801,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.3369770532220462,
-        "exposure": 57.171314741035864,
+        "win_rate": 50.0,
+        "profit_factor": 3.1079385822346595,
+        "mdd": 11.96935434317179,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.1331871211931184,
+        "exposure": 56.97211155378486,
         "max_consec_loss": 2,
-        "avg_trade_return": 0.04361534497215072,
-        "fee_drag": 0.004398054236983917
+        "avg_trade_return": 0.0373948536070077,
+        "fee_drag": 0.004187836327695704
       },
       "suspicious": false,
       "robustness": {
         "grid": [
           {
             "params": "n_ema=150",
-            "oos_pf": 3.6651197579569748,
+            "oos_pf": 3.1079385822346595,
             "oos_n_trades": 8
           },
           {
             "params": "n_ema=200",
-            "oos_pf": 3.6651197579569748,
+            "oos_pf": 3.1079385822346595,
             "oos_n_trades": 8
           },
           {
             "params": "n_ema=250",
-            "oos_pf": 3.6299989371344434,
+            "oos_pf": 3.075539451680993,
             "oos_n_trades": 8
           }
         ],
@@ -4190,37 +4190,37 @@
       "params": "range10-grid20",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "DEAD",
       "is": {
         "total_return": -0.16397637478064642,
-        "cagr": -0.0072170980424656195,
-        "bh_return": 2.8646931585930653,
+        "cagr": -0.007211332317006658,
+        "bh_return": 2.909262486733787,
         "n_trades": 1456,
         "win_rate": 82.6923076923077,
         "profit_factor": 0.7891154310170133,
         "mdd": 24.637691192751067,
         "bh_mdd": 56.473669178171626,
-        "sharpe": -0.19301093836400549,
-        "exposure": 32.16177178623014,
+        "sharpe": -0.19293354612528743,
+        "exposure": 32.135984605516356,
         "max_consec_loss": 10,
         "avg_trade_return": -0.002318840818412361,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": -0.00493784938489128,
-        "cagr": -0.0024818163299097362,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 68,
-        "win_rate": 85.29411764705883,
-        "profit_factor": 0.8721276485635281,
-        "mdd": 3.378600683127575,
+        "total_return": -0.008759790283553448,
+        "cagr": -0.004406978696985919,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 71,
+        "win_rate": 85.91549295774648,
+        "profit_factor": 0.7953886888816549,
+        "mdd": 3.8737582237847956,
         "bh_mdd": 18.99890412950491,
-        "sharpe": -0.09461225433338254,
-        "exposure": 19.12350597609562,
+        "sharpe": -0.16249335635848197,
+        "exposure": 20.51792828685259,
         "max_consec_loss": 10,
-        "avg_trade_return": -0.0012952358480509815,
-        "fee_drag": 0.0013548195111797723,
+        "avg_trade_return": -0.0022913541349957795,
+        "fee_drag": 0.0014112353007983414,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4228,18 +4228,18 @@
         "grid": [
           {
             "params": "range_pct=7.5",
-            "oos_pf": 0.9058667394566434,
-            "oos_n_trades": 127
+            "oos_pf": 0.8579887808001078,
+            "oos_n_trades": 131
           },
           {
             "params": "range_pct=10.0",
-            "oos_pf": 0.8721276485635281,
-            "oos_n_trades": 68
+            "oos_pf": 0.7953886888816549,
+            "oos_n_trades": 71
           },
           {
             "params": "range_pct=12.5",
-            "oos_pf": 0.337224175614037,
-            "oos_n_trades": 25
+            "oos_pf": 0.6705387927392791,
+            "oos_n_trades": 44
           }
         ],
         "share_pf_ge_1": 0.0,
@@ -4257,37 +4257,37 @@
       "params": "range20-grid20",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 0.131411913824657,
-        "cagr": 0.00500582985900766,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.005001806183474233,
+        "bh_return": 2.909262486733787,
         "n_trades": 437,
         "win_rate": 89.01601830663616,
         "profit_factor": 1.4290685299483976,
         "mdd": 9.126475347305906,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.1698017323621576,
-        "exposure": 26.60889102872733,
+        "sharpe": 0.16973364867018265,
+        "exposure": 26.58755612572162,
         "max_consec_loss": 10,
         "avg_trade_return": 0.005935521295847293,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": 0.02677965777393343,
-        "cagr": 0.013354711505565442,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 24,
+        "total_return": 0.018081685397441483,
+        "cagr": 0.009036359096453728,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 16,
         "win_rate": 100.0,
         "profit_factor": "inf",
-        "mdd": 1.8389238220225645,
+        "mdd": 1.9967520479511003,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.5039578191463536,
-        "exposure": 23.904382470119522,
+        "sharpe": 0.32868451671279675,
+        "exposure": 10.557768924302788,
         "max_consec_loss": 0,
-        "avg_trade_return": 0.02219707146315673,
-        "fee_drag": 0.0004961411623596312,
+        "avg_trade_return": 0.022602106746802686,
+        "fee_drag": 0.00032729813378584716,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4295,18 +4295,18 @@
         "grid": [
           {
             "params": "range_pct=15.0",
-            "oos_pf": "inf",
-            "oos_n_trades": 35
+            "oos_pf": 222.9988489247836,
+            "oos_n_trades": 42
           },
           {
             "params": "range_pct=20.0",
             "oos_pf": "inf",
-            "oos_n_trades": 24
+            "oos_n_trades": 16
           },
           {
             "params": "range_pct=25.0",
             "oos_pf": "inf",
-            "oos_n_trades": 11
+            "oos_n_trades": 15
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4324,37 +4324,37 @@
       "params": "range30-grid20",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 0.19640390632532223,
-        "cagr": 0.007278603021806163,
-        "bh_return": 2.8646931585930653,
+        "cagr": 0.007272745896421906,
+        "bh_return": 2.909262486733787,
         "n_trades": 234,
         "win_rate": 91.45299145299145,
         "profit_factor": 2.0765925619038015,
         "mdd": 9.795780339017945,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.28789329032866723,
-        "exposure": 29.770502327074304,
+        "sharpe": 0.28777783190413425,
+        "exposure": 29.746632456703015,
         "max_consec_loss": 10,
         "avg_trade_return": 0.016222063086888436,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": 0.016901376637702636,
-        "cagr": 0.008448948100290954,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 10,
+        "total_return": 0.020312635969980564,
+        "cagr": 0.010145723393651274,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 12,
         "win_rate": 100.0,
         "profit_factor": "inf",
-        "mdd": 1.401347284267962,
+        "mdd": 1.5636372547127242,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.5449539844757159,
-        "exposure": 18.52589641434263,
+        "sharpe": 0.49874004382304227,
+        "exposure": 18.127490039840637,
         "max_consec_loss": 0,
-        "avg_trade_return": 0.03371602847725319,
-        "fee_drag": 0.0002078806961030022,
+        "avg_trade_return": 0.03376294712284955,
+        "fee_drag": 0.0002495310295549391,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4368,7 +4368,7 @@
           {
             "params": "range_pct=30.0",
             "oos_pf": "inf",
-            "oos_n_trades": 10
+            "oos_n_trades": 12
           },
           {
             "params": "range_pct=37.5",
@@ -4391,56 +4391,56 @@
       "params": "sostep1.5",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 1.6188180081534655,
-        "cagr": 0.03970327280586483,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 226,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
+        "total_return": 1.6210524339820704,
+        "cagr": 0.039706647808492646,
+        "bh_return": 2.909262486733787,
+        "n_trades": 227,
+        "win_rate": 99.55947136563876,
+        "profit_factor": 1162.616521365653,
         "mdd": 42.92478100397988,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.34864000547838997,
-        "exposure": 96.37297384047504,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014746488013187982,
+        "sharpe": 0.34874670264508817,
+        "exposure": 96.35984605516357,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.01471914371904396,
         "max_deal_dd": 0.5348946730598171
       },
       "oos": {
-        "total_return": 0.1681135113423553,
-        "cagr": 0.08112760372179628,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 42,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
-        "mdd": 13.362603264881013,
+        "total_return": 0.16381378705045835,
+        "cagr": 0.07912807360880025,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 41,
+        "win_rate": 97.5609756097561,
+        "profit_factor": 78.43318895893596,
+        "mdd": 13.36260326488099,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.798810225361034,
-        "exposure": 91.63346613545816,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014521069950486309,
-        "fee_drag": 0.008224831359863849,
+        "sharpe": 0.7815387798689984,
+        "exposure": 91.83266932270917,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014252041579667264,
+        "fee_drag": 0.008240330658996431,
         "max_deal_dd": 0.18822507847153563
       },
-      "suspicious": false,
+      "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "so_step_pct=1.125",
-            "oos_pf": "inf",
-            "oos_n_trades": 44
+            "oos_pf": 63.2971564564035,
+            "oos_n_trades": 43
           },
           {
             "params": "so_step_pct=1.5",
-            "oos_pf": "inf",
-            "oos_n_trades": 42
+            "oos_pf": 78.43318895893596,
+            "oos_n_trades": 41
           },
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": "inf",
-            "oos_n_trades": 36
+            "oos_pf": 95.70298089048862,
+            "oos_n_trades": 35
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4458,56 +4458,56 @@
       "params": "sostep2.5",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 1.2024761804263742,
-        "cagr": 0.03244836333532075,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 251,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
+        "total_return": 1.2051130486052593,
+        "cagr": 0.032471849660727026,
+        "bh_return": 2.909262486733787,
+        "n_trades": 253,
+        "win_rate": 99.60474308300395,
+        "profit_factor": 432.34909969731063,
         "mdd": 40.40990893299501,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.30500450256035144,
-        "exposure": 95.97175413256299,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014773835439200578,
+        "sharpe": 0.30524210933178186,
+        "exposure": 95.94291212315586,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014704424451489995,
         "max_deal_dd": 0.5039846744591604
       },
       "oos": {
-        "total_return": 0.1150107461780634,
-        "cagr": 0.05616970935650478,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 41,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
-        "mdd": 11.877680807396828,
+        "total_return": 0.10871503759456469,
+        "cagr": 0.053171872524496955,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 40,
+        "win_rate": 97.5,
+        "profit_factor": 29.533007072736698,
+        "mdd": 11.877680807396818,
         "bh_mdd": 18.99890412950491,
-        "sharpe": 0.6148708085616061,
-        "exposure": 91.83266932270917,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014439502045250005,
-        "fee_drag": 3.412920684442433e-05,
+        "sharpe": 0.5855391211159392,
+        "exposure": 92.03187250996015,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.01393856819253304,
+        "fee_drag": -2.290942140992236e-05,
         "max_deal_dd": 0.17143256400618745
       },
-      "suspicious": false,
+      "suspicious": true,
       "robustness": {
         "grid": [
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": "inf",
-            "oos_n_trades": 36
+            "oos_pf": 95.70298089048862,
+            "oos_n_trades": 35
           },
           {
             "params": "so_step_pct=2.5",
-            "oos_pf": "inf",
-            "oos_n_trades": 41
+            "oos_pf": 29.533007072736698,
+            "oos_n_trades": 40
           },
           {
             "params": "so_step_pct=3.125",
-            "oos_pf": "inf",
-            "oos_n_trades": 38
+            "oos_pf": 36.16207321422362,
+            "oos_n_trades": 36
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4525,37 +4525,37 @@
       "params": "sostep2.5-sl15",
       "asset": "SPY",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 1.0506989337149095,
-        "cagr": 0.02947127251850845,
-        "bh_return": 2.8646931585930653,
-        "n_trades": 645,
-        "win_rate": 98.6046511627907,
-        "profit_factor": 6.95883753615481,
+        "total_return": 1.0531540897846292,
+        "cagr": 0.02949707475223562,
+        "bh_return": 2.909262486733787,
+        "n_trades": 647,
+        "win_rate": 98.45440494590417,
+        "profit_factor": 6.929865843599547,
         "mdd": 35.40947943233943,
         "bh_mdd": 56.473669178171626,
-        "sharpe": 0.3770050910012408,
-        "exposure": 89.64853153586904,
+        "sharpe": 0.37740763025492713,
+        "exposure": 89.62475946119307,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.012486120457735372,
+        "avg_trade_return": 0.012466050055992176,
         "max_deal_dd": 0.20224107540737682
       },
       "oos": {
-        "total_return": -0.005877679244757128,
-        "cagr": -0.0029548791881003345,
-        "bh_return": 0.3578384361431759,
-        "n_trades": 52,
-        "win_rate": 98.07692307692307,
-        "profit_factor": 4.927679189287128,
-        "mdd": 12.201312500000006,
+        "total_return": -0.011490812973988351,
+        "cagr": -0.00578489652325509,
+        "bh_return": 0.31592107781471435,
+        "n_trades": 51,
+        "win_rate": 96.07843137254902,
+        "profit_factor": 4.272298843077484,
+        "mdd": 12.201312499999995,
         "bh_mdd": 18.99890412950491,
-        "sharpe": -0.014719450177438679,
-        "exposure": 89.64143426294821,
+        "sharpe": -0.0597539855675115,
+        "exposure": 89.8406374501992,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.011342684304908625,
-        "fee_drag": 0.002630925127021677,
+        "avg_trade_return": 0.01088907309218277,
+        "fee_drag": 0.002565254762024294,
         "max_deal_dd": 0.17143256400618745
       },
       "suspicious": false,
@@ -4563,18 +4563,18 @@
         "grid": [
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": 4.553971751484478,
-            "oos_n_trades": 48
+            "oos_pf": 4.284104838381634,
+            "oos_n_trades": 47
           },
           {
             "params": "so_step_pct=2.5",
-            "oos_pf": 4.927679189287128,
-            "oos_n_trades": 52
+            "oos_pf": 4.272298843077484,
+            "oos_n_trades": 51
           },
           {
             "params": "so_step_pct=3.125",
-            "oos_pf": 4.568989221725817,
-            "oos_n_trades": 48
+            "oos_pf": 3.9580647899571515,
+            "oos_n_trades": 46
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4592,37 +4592,37 @@
       "params": "range10-grid20",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "DEAD",
       "is": {
         "total_return": -0.4943099913425477,
-        "cagr": -0.02719854493868057,
-        "bh_return": 4.084905075337475,
+        "cagr": -0.027177036310311098,
+        "bh_return": 4.1010131811433155,
         "n_trades": 2461,
         "win_rate": 79.19544900446974,
         "profit_factor": 0.6158670407751238,
         "mdd": 50.87070250354764,
         "bh_mdd": 82.96390703529309,
-        "sharpe": -0.5282456336164996,
-        "exposure": 34.63328518696838,
+        "sharpe": -0.5280336180619839,
+        "exposure": 34.60551635663887,
         "max_consec_loss": 18,
         "avg_trade_return": -0.005378377443101845,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": -0.021860641526430524,
-        "cagr": -0.011034263961695712,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 143,
-        "win_rate": 79.02097902097903,
-        "profit_factor": 0.7651848188506478,
-        "mdd": 5.779885144175701,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": -0.30893829070247736,
-        "exposure": 38.84462151394422,
+        "total_return": -0.01170909897420147,
+        "cagr": -0.0058951129267292846,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 118,
+        "win_rate": 83.05084745762711,
+        "profit_factor": 0.8493084805546962,
+        "mdd": 4.379863989235,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": -0.16451066966423514,
+        "exposure": 31.872509960159363,
         "max_consec_loss": 10,
-        "avg_trade_return": -0.0029854876600623223,
-        "fee_drag": 0.00281699231020327,
+        "avg_trade_return": -0.0018525299351574516,
+        "fee_drag": 0.002351745110465653,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4630,22 +4630,22 @@
         "grid": [
           {
             "params": "range_pct=7.5",
-            "oos_pf": 0.8018339012925059,
-            "oos_n_trades": 133
+            "oos_pf": 0.7491658764518971,
+            "oos_n_trades": 162
           },
           {
             "params": "range_pct=10.0",
-            "oos_pf": 0.7651848188506478,
-            "oos_n_trades": 143
+            "oos_pf": 0.8493084805546962,
+            "oos_n_trades": 118
           },
           {
             "params": "range_pct=12.5",
-            "oos_pf": 1.0302928946268,
-            "oos_n_trades": 68
+            "oos_pf": 0.9588335228786916,
+            "oos_n_trades": 67
           }
         ],
-        "share_pf_ge_1": 0.3333333333333333,
-        "n_pass": 1,
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
         "n_total": 3,
         "note": "diagnostic; verdict uses registered params only"
       },
@@ -4659,37 +4659,37 @@
       "params": "range20-grid20",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
         "total_return": -0.05299848856239875,
-        "cagr": -0.0021998807715664093,
-        "bh_return": 4.084905075337475,
+        "cagr": -0.0021981188559171416,
+        "bh_return": 4.1010131811433155,
         "n_trades": 808,
         "win_rate": 84.15841584158416,
         "profit_factor": 0.9545721737725862,
         "mdd": 25.8162701571372,
         "bh_mdd": 82.96390703529309,
-        "sharpe": -0.026169467362830864,
-        "exposure": 29.016209276199646,
+        "sharpe": -0.026158975626405224,
+        "exposure": 28.992944194996795,
         "max_consec_loss": 10,
         "avg_trade_return": -0.0008920449043505263,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": 0.04305789113406666,
-        "cagr": 0.02138782669775008,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 39,
+        "total_return": 0.04209587319788555,
+        "cagr": 0.02091482572826764,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 38,
         "win_rate": 100.0,
         "profit_factor": "inf",
-        "mdd": 2.336403811436072,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.6981468271417473,
-        "exposure": 18.92430278884462,
+        "mdd": 2.5222682365857008,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7117532193927489,
+        "exposure": 19.322709163346612,
         "max_consec_loss": 0,
-        "avg_trade_return": 0.021809587967302535,
-        "fee_drag": 0.0008173856197994933,
+        "avg_trade_return": 0.02188667505662696,
+        "fee_drag": 0.0007962576192031001,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4697,22 +4697,22 @@
         "grid": [
           {
             "params": "range_pct=15.0",
-            "oos_pf": "inf",
-            "oos_n_trades": 39
+            "oos_pf": 0.7786343793972231,
+            "oos_n_trades": 52
           },
           {
             "params": "range_pct=20.0",
             "oos_pf": "inf",
-            "oos_n_trades": 39
+            "oos_n_trades": 38
           },
           {
             "params": "range_pct=25.0",
             "oos_pf": "inf",
-            "oos_n_trades": 20
+            "oos_n_trades": 26
           }
         ],
-        "share_pf_ge_1": 1.0,
-        "n_pass": 3,
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 2,
         "n_total": 3,
         "note": "diagnostic; verdict uses registered params only"
       },
@@ -4726,37 +4726,37 @@
       "params": "range30-grid20",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "FADING",
       "is": {
         "total_return": 0.2671174930486546,
-        "cagr": 0.009620634038507214,
-        "bh_return": 4.084905075337475,
+        "cagr": 0.009612883294814356,
+        "bh_return": 4.1010131811433155,
         "n_trades": 447,
         "win_rate": 88.81431767337807,
         "profit_factor": 1.5751701536456664,
         "mdd": 17.820499620429175,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.2285338988663791,
-        "exposure": 30.02728294013802,
+        "sharpe": 0.22844225742496482,
+        "exposure": 30.003207184092368,
         "max_consec_loss": 10,
         "avg_trade_return": 0.01132152313256226,
         "max_deal_dd": null
       },
       "oos": {
-        "total_return": 0.029238717279378656,
-        "cagr": 0.014572274217743209,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 17,
+        "total_return": 0.017343755425825558,
+        "cagr": 0.008669149037825674,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 10,
         "win_rate": 100.0,
         "profit_factor": "inf",
-        "mdd": 1.6483399284569766,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.6059806852218257,
-        "exposure": 31.274900398406373,
+        "mdd": 1.7051147967340863,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.390451712665138,
+        "exposure": 8.964143426294822,
         "max_consec_loss": 0,
-        "avg_trade_return": 0.03416029383611009,
-        "fee_drag": 0.00035664096214294005,
+        "avg_trade_return": 0.03468751085165178,
+        "fee_drag": 0.0002069788979497389,
         "max_deal_dd": null
       },
       "suspicious": false,
@@ -4764,18 +4764,18 @@
         "grid": [
           {
             "params": "range_pct=22.5",
-            "oos_pf": "inf",
-            "oos_n_trades": 35
+            "oos_pf": 31.807126698122854,
+            "oos_n_trades": 42
           },
           {
             "params": "range_pct=30.0",
             "oos_pf": "inf",
-            "oos_n_trades": 17
+            "oos_n_trades": 10
           },
           {
             "params": "range_pct=37.5",
             "oos_pf": "inf",
-            "oos_n_trades": 8
+            "oos_n_trades": 9
           }
         ],
         "share_pf_ge_1": 0.6666666666666666,
@@ -4793,37 +4793,37 @@
       "params": "sostep1.5",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 3.7661759807043476,
-        "cagr": 0.06519028308004504,
-        "bh_return": 4.084905075337475,
-        "n_trades": 349,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
+        "total_return": 3.7769238646318026,
+        "cagr": 0.06523330514500714,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 351,
+        "win_rate": 99.71509971509973,
+        "profit_factor": 957.3309097015143,
         "mdd": 64.99143044111699,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.45830828609171376,
-        "exposure": 94.39897287754775,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014772554748221131,
+        "sharpe": 0.45866225332102517,
+        "exposure": 94.37139191789609,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014739430825046208,
         "max_deal_dd": 0.8023287905102499
       },
       "oos": {
-        "total_return": 0.3121496993494335,
-        "cagr": 0.14611110167761177,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 67,
-        "win_rate": 98.50746268656717,
-        "profit_factor": 261.00947593338424,
+        "total_return": 0.27175596036094385,
+        "cagr": 0.1282617537815165,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 66,
+        "win_rate": 98.48484848484848,
+        "profit_factor": 32.10971419874079,
         "mdd": 16.320056858824216,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 1.1268463782037894,
-        "exposure": 86.65338645418326,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.9988409397778183,
+        "exposure": 86.85258964143426,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.014520303966116288,
-        "fee_drag": 0.0019888553404718845,
+        "avg_trade_return": 0.014118958971146723,
+        "fee_drag": 0.0021664953855031754,
         "max_deal_dd": 0.22648632844133829
       },
       "suspicious": true,
@@ -4831,18 +4831,18 @@
         "grid": [
           {
             "params": "so_step_pct=1.125",
-            "oos_pf": "inf",
-            "oos_n_trades": 61
+            "oos_pf": 23.409106346237,
+            "oos_n_trades": 60
           },
           {
             "params": "so_step_pct=1.5",
-            "oos_pf": 261.00947593338424,
-            "oos_n_trades": 67
+            "oos_pf": 32.10971419874079,
+            "oos_n_trades": 66
           },
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": 272.87354302125783,
-            "oos_n_trades": 70
+            "oos_pf": 44.69277825348731,
+            "oos_n_trades": 69
           }
         ],
         "share_pf_ge_1": 1.0,
@@ -4860,37 +4860,37 @@
       "params": "sostep2.5",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 1.4512509863565093,
-        "cagr": 0.036926537383331626,
-        "bh_return": 4.084905075337475,
-        "n_trades": 289,
-        "win_rate": 100.0,
-        "profit_factor": "inf",
+        "total_return": 1.4527454796868962,
+        "cagr": 0.036921929525552066,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 291,
+        "win_rate": 99.65635738831615,
+        "profit_factor": 297.6824803064531,
         "mdd": 66.72359296908508,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.29933546291512475,
-        "exposure": 95.36190017653668,
-        "max_consec_loss": 0,
-        "avg_trade_return": 0.014789035950034399,
+        "sharpe": 0.29936125182617923,
+        "exposure": 95.33354714560616,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014696614692613942,
         "max_deal_dd": 0.8238872220890391
       },
       "oos": {
-        "total_return": 0.20283679607820293,
-        "cagr": 0.09714272294913817,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 69,
-        "win_rate": 98.55072463768117,
-        "profit_factor": 268.91885399197207,
-        "mdd": 15.379839937040385,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.8338826134470512,
-        "exposure": 86.25498007968127,
+        "total_return": 0.1829327492827426,
+        "cagr": 0.08799115928067547,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 68,
+        "win_rate": 98.52941176470588,
+        "profit_factor": 35.46341123292311,
+        "mdd": 15.379839937040407,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7619823245898231,
+        "exposure": 86.45418326693228,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.014528324141011491,
-        "fee_drag": 0.003098040693469084,
+        "avg_trade_return": 0.014168286098203626,
+        "fee_drag": 0.0031615361938848174,
         "max_deal_dd": 0.21592684995399838
       },
       "suspicious": true,
@@ -4898,17 +4898,17 @@
         "grid": [
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": 272.87354302125783,
-            "oos_n_trades": 70
-          },
-          {
-            "params": "so_step_pct=2.5",
-            "oos_pf": 268.91885399197207,
+            "oos_pf": 44.69277825348731,
             "oos_n_trades": 69
           },
           {
+            "params": "so_step_pct=2.5",
+            "oos_pf": 35.46341123292311,
+            "oos_n_trades": 68
+          },
+          {
             "params": "so_step_pct=3.125",
-            "oos_pf": 229.3719636990281,
+            "oos_pf": 43.08949671691508,
             "oos_n_trades": 59
           }
         ],
@@ -4927,37 +4927,37 @@
       "params": "sostep2.5-sl15",
       "asset": "QQQ",
       "timeframe": "1d",
-      "as_of": "2026-10-09",
+      "as_of": "2026-10-16",
       "verdict": "ALIVE",
       "is": {
-        "total_return": 10.418516235007951,
-        "cagr": 0.1035013060632366,
-        "bh_return": 4.084905075337475,
-        "n_trades": 1264,
-        "win_rate": 99.12974683544303,
-        "profit_factor": 11.222638215815934,
+        "total_return": 10.425477944131625,
+        "cagr": 0.10344134655196502,
+        "bh_return": 4.1010131811433155,
+        "n_trades": 1266,
+        "win_rate": 99.0521327014218,
+        "profit_factor": 11.1358120694573,
         "mdd": 29.36549229794342,
         "bh_mdd": 82.96390703529309,
-        "sharpe": 0.9864067570312071,
-        "exposure": 79.71433156796662,
+        "sharpe": 0.986238036464085,
+        "exposure": 79.6985246953175,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.01335954856768977,
+        "avg_trade_return": 0.013340563092851964,
         "max_deal_dd": 0.21707955302792362
       },
       "oos": {
-        "total_return": 0.07798626490048544,
-        "cagr": 0.03841649998844621,
-        "bh_return": 0.5357250953231518,
-        "n_trades": 82,
-        "win_rate": 97.5609756097561,
-        "profit_factor": 7.6911664645300215,
-        "mdd": 12.201312499999995,
-        "bh_mdd": 22.88330692157109,
-        "sharpe": 0.5100152733944193,
-        "exposure": 83.66533864541833,
+        "total_return": 0.06014819315924891,
+        "cagr": 0.029754787601126598,
+        "bh_return": 0.44451348823329284,
+        "n_trades": 81,
+        "win_rate": 97.53086419753086,
+        "profit_factor": 6.562579207187066,
+        "mdd": 12.201312500000016,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.403638339204697,
+        "exposure": 83.86454183266933,
         "max_consec_loss": 1,
-        "avg_trade_return": 0.01255912641133891,
-        "fee_drag": 0.0032511385635707324,
+        "avg_trade_return": 0.012232561168862285,
+        "fee_drag": 0.0033002340588121903,
         "max_deal_dd": 0.17641045554320553
       },
       "suspicious": true,
@@ -4965,17 +4965,17 @@
         "grid": [
           {
             "params": "so_step_pct=1.875",
-            "oos_pf": 7.883445626143292,
-            "oos_n_trades": 84
+            "oos_pf": 6.940768528891186,
+            "oos_n_trades": 83
           },
           {
             "params": "so_step_pct=2.5",
-            "oos_pf": 7.6911664645300215,
-            "oos_n_trades": 82
+            "oos_pf": 6.562579207187066,
+            "oos_n_trades": 81
           },
           {
             "params": "so_step_pct=3.125",
-            "oos_pf": 6.537491494850529,
+            "oos_pf": 5.915762431651893,
             "oos_n_trades": 70
           }
         ],
@@ -4997,75 +4997,67 @@
   "suspicious": [
     {
       "strategy_id": "sma_cross",
-      "params": "10-50",
-      "asset": "SPY",
-      "tf": "1d",
-      "oos_pf": 5.292702060921613,
-      "oos_sharpe": 1.030714406265978
-    },
-    {
-      "strategy_id": "sma_cross",
       "params": "20-100",
       "asset": "SPY",
       "tf": "1d",
-      "oos_pf": 11.383891455404322,
-      "oos_sharpe": 0.9217304390338633
+      "oos_pf": 6.541656276279317,
+      "oos_sharpe": 0.7787211971349401
     },
     {
       "strategy_id": "ema_cross",
       "params": "12-26",
       "asset": "SPY",
       "tf": "1d",
-      "oos_pf": 8.236754172967428,
-      "oos_sharpe": 1.2631368962839502
+      "oos_pf": 5.604372368866615,
+      "oos_sharpe": 1.107913463474271
     },
     {
       "strategy_id": "above_sma",
       "params": "n200",
       "asset": "SPY",
       "tf": "1d",
-      "oos_pf": 7.1478949957931714,
-      "oos_sharpe": 1.0232259119544755
+      "oos_pf": 5.103414388405873,
+      "oos_sharpe": 0.8851081354098681
     },
     {
       "strategy_id": "tsmom",
       "params": "n90",
       "asset": "SPY",
       "tf": "1d",
-      "oos_pf": 19.900033180440715,
-      "oos_sharpe": 1.0811657236523537
+      "oos_pf": 16.476893602880335,
+      "oos_sharpe": 0.9330938199239356
     },
     {
-      "strategy_id": "ichimoku_cloud",
-      "params": "9-26-52",
+      "strategy_id": "dca_bot",
+      "params": "sostep1.5",
       "asset": "SPY",
       "tf": "1d",
-      "oos_pf": 5.183513066871239,
-      "oos_sharpe": 1.0069732464337184
+      "oos_pf": 78.43318895893596,
+      "oos_sharpe": 0.7815387798689984
+    },
+    {
+      "strategy_id": "dca_bot",
+      "params": "sostep2.5",
+      "asset": "SPY",
+      "tf": "1d",
+      "oos_pf": 29.533007072736698,
+      "oos_sharpe": 0.5855391211159392
     },
     {
       "strategy_id": "sma_cross",
       "params": "20-100",
       "asset": "QQQ",
       "tf": "1d",
-      "oos_pf": 16.082696982082872,
-      "oos_sharpe": 0.9533662604672073
-    },
-    {
-      "strategy_id": "sma_cross",
-      "params": "50-200",
-      "asset": "QQQ",
-      "tf": "1d",
-      "oos_pf": 6.15011600697606,
-      "oos_sharpe": 0.7355376565025794
+      "oos_pf": 10.757196222755908,
+      "oos_sharpe": 0.7606894659010178
     },
     {
       "strategy_id": "above_sma",
       "params": "n200",
       "asset": "QQQ",
       "tf": "1d",
-      "oos_pf": 95.81292898542435,
-      "oos_sharpe": 1.1566402659863586
+      "oos_pf": 38.49002220449072,
+      "oos_sharpe": 0.9672038841096271
     },
     {
       "strategy_id": "rsi_mr",
@@ -5081,39 +5073,31 @@
       "asset": "QQQ",
       "tf": "1d",
       "oos_pf": 7.652934421501146,
-      "oos_sharpe": 0.4981623473112775
-    },
-    {
-      "strategy_id": "tsmom",
-      "params": "n90",
-      "asset": "QQQ",
-      "tf": "1d",
-      "oos_pf": 5.082425987480677,
-      "oos_sharpe": 0.8096468280444733
+      "oos_sharpe": 0.4981623473112776
     },
     {
       "strategy_id": "dca_bot",
       "params": "sostep1.5",
       "asset": "QQQ",
       "tf": "1d",
-      "oos_pf": 261.00947593338424,
-      "oos_sharpe": 1.1268463782037894
+      "oos_pf": 32.10971419874079,
+      "oos_sharpe": 0.9988409397778183
     },
     {
       "strategy_id": "dca_bot",
       "params": "sostep2.5",
       "asset": "QQQ",
       "tf": "1d",
-      "oos_pf": 268.91885399197207,
-      "oos_sharpe": 0.8338826134470512
+      "oos_pf": 35.46341123292311,
+      "oos_sharpe": 0.7619823245898231
     },
     {
       "strategy_id": "dca_bot_sl",
       "params": "sostep2.5-sl15",
       "asset": "QQQ",
       "tf": "1d",
-      "oos_pf": 7.6911664645300215,
-      "oos_sharpe": 0.5100152733944193
+      "oos_pf": 6.562579207187066,
+      "oos_sharpe": 0.403638339204697
     }
   ],
   "legal_disclaimer": "Educational / informational content only. This is not investment advice, and nothing here is a recommendation to buy or sell any asset. Past backtested performance, especially net-of-cost historical simulation, does not guarantee future results.",
