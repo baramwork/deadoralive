@@ -1,8 +1,167 @@
-[fetch_prices] requesting 20 tickers + SPY (period1=2015-06-01, out=/home/runner/work/deadoralive/deadoralive/data/panic_dip)
+[fetch_prices] requesting 751 tickers + SPY (period1=2015-06-01, out=/home/runner/work/deadoralive/deadoralive/data/panic_dip)
 [fetch_prices] MISSING AABA: HTTP 404
 [fetch_prices] MISSING ABC: HTTP 404
 [fetch_prices] MISSING ABMD: HTTP 404
 [fetch_prices] MISSING ADS: HTTP 404
-[fetch_prices] 20/20 done (16 ok, 4 missing, 9s)
-[fetch_prices] done: requested=20 received=16 missing=4 split-events=2 (10s)
-19
+[fetch_prices] MISSING AET: HTTP 404
+[fetch_prices] MISSING AGN: HTTP 404
+[fetch_prices] 25/751 done (19 ok, 6 missing, 13s)
+[fetch_prices] MISSING ALTR: HTTP 404
+[fetch_prices] MISSING ALXN: HTTP 404
+[fetch_prices] MISSING ANDV: HTTP 404
+[fetch_prices] 50/751 done (41 ok, 9 missing, 26s)
+[fetch_prices] MISSING ANSS: HTTP 404
+[fetch_prices] MISSING ANTM: HTTP 404
+[fetch_prices] MISSING ARG: HTTP 404
+[fetch_prices] MISSING ARNC: HTTP 404
+[fetch_prices] MISSING ATVI: HTTP 404
+[fetch_prices] 75/751 done (61 ok, 14 missing, 38s)
+[fetch_prices] MISSING BCR: HTTP 404
+[fetch_prices] MISSING BHGE: HTTP 404
+[fetch_prices] MISSING BK: HTTP 404
+[fetch_prices] MISSING BLL: HTTP 404
+[fetch_prices] 100/751 done (82 ok, 18 missing, 52s)
+[fetch_prices] MISSING BRCM: HTTP 404
+[fetch_prices] MISSING BXLT: HTTP 404
+[fetch_prices] MISSING CA: HTTP 404
+[fetch_prices] MISSING CBS: HTTP 404
+[fetch_prices] MISSING CCE: HTTP 404
+[fetch_prices] 125/751 done (102 ok, 23 missing, 64s)
+[fetch_prices] MISSING CDAY: HTTP 404
+[fetch_prices] MISSING CELG: HTTP 404
+[fetch_prices] MISSING CERN: HTTP 404
+[fetch_prices] MISSING CHK: HTTP 404
+[fetch_prices] MISSING CMA: HTTP 404
+[fetch_prices] MISSING CMCSK: HTTP 404
+[fetch_prices] 150/751 done (121 ok, 29 missing, 77s)
+[fetch_prices] MISSING COG: HTTP 404
+[fetch_prices] MISSING COL: HTTP 404
+[fetch_prices] MISSING CPGX: HTTP 404
+[fetch_prices] 175/751 done (143 ok, 32 missing, 90s)
+[fetch_prices] MISSING CTL: HTTP 404
+[fetch_prices] MISSING CTLT: HTTP 404
+[fetch_prices] MISSING CTRA: HTTP 404
+[fetch_prices] MISSING CTXS: HTTP 404
+[fetch_prices] MISSING CVC: HTTP 404
+[fetch_prices] MISSING CXO: HTTP 404
+[fetch_prices] MISSING DAY: HTTP 404
+[fetch_prices] MISSING DFS: HTTP 404
+[fetch_prices] 200/751 done (160 ok, 40 missing, 100s)
+[fetch_prices] MISSING DISCA: HTTP 404
+[fetch_prices] MISSING DISCK: HTTP 404
+[fetch_prices] MISSING DISH: HTTP 404
+[fetch_prices] MISSING DNB: HTTP 404
+[fetch_prices] MISSING DO: HTTP 404
+[fetch_prices] MISSING DRE: HTTP 404
+[fetch_prices] MISSING DWDP: HTTP 404
+[fetch_prices] 225/751 done (178 ok, 47 missing, 111s)
+[fetch_prices] MISSING ENDP: HTTP 404
+[fetch_prices] MISSING ESRX: HTTP 404
+[fetch_prices] 250/751 done (201 ok, 49 missing, 122s)
+[fetch_prices] MISSING ESV: HTTP 404
+[fetch_prices] MISSING ETFC: HTTP 404
+[fetch_prices] MISSING EVHC: HTTP 404
+[fetch_prices] MISSING FBHS: HTTP 404
+[fetch_prices] 275/751 done (222 ok, 53 missing, 133s)
+[fetch_prices] MISSING FI: empty data
+[fetch_prices] MISSING FL: HTTP 404
+[fetch_prices] MISSING FLIR: HTTP 404
+[fetch_prices] MISSING FLT: HTTP 404
+[fetch_prices] MISSING FRC: HTTP 404
+[fetch_prices] MISSING FTR: HTTP 404
+[fetch_prices] MISSING GAS: HTTP 404
+[fetch_prices] 300/751 done (240 ok, 60 missing, 143s)
+[fetch_prices] MISSING GGP: HTTP 404
+[fetch_prices] MISSING GMCR: HTTP 404
+[fetch_prices] MISSING GPS: HTTP 404
+[fetch_prices] 325/751 done (262 ok, 63 missing, 155s)
+[fetch_prices] MISSING HAR: HTTP 404
+[fetch_prices] MISSING HBI: HTTP 404
+[fetch_prices] MISSING HCBK: HTTP 404
+[fetch_prices] MISSING HCP: HTTP 404
+[fetch_prices] MISSING HES: HTTP 404
+[fetch_prices] MISSING HFC: HTTP 404
+[fetch_prices] MISSING HOLX: HTTP 404
+[fetch_prices] MISSING HOT: HTTP 404
+[fetch_prices] 350/751 done (279 ok, 71 missing, 165s)
+[fetch_prices] MISSING HRS: HTTP 404
+[fetch_prices] MISSING IPG: HTTP 404
+[fetch_prices] 375/751 done (302 ok, 73 missing, 177s)
+[fetch_prices] MISSING JEC: HTTP 404
+[fetch_prices] MISSING JNPR: HTTP 404
+[fetch_prices] MISSING JWN: HTTP 404
+[fetch_prices] MISSING K: HTTP 404
+[fetch_prices] 400/751 done (323 ok, 77 missing, 190s)
+[fetch_prices] MISSING KORS: HTTP 404
+[fetch_prices] MISSING KSU: HTTP 404
+[fetch_prices] MISSING LLL: HTTP 404
+[fetch_prices] MISSING LLTC: HTTP 404
+[fetch_prices] MISSING LM: HTTP 404
+[fetch_prices] 425/751 done (343 ok, 82 missing, 203s)
+[fetch_prices] MISSING LVLT: HTTP 404
+[fetch_prices] 450/751 done (367 ok, 83 missing, 216s)
+[fetch_prices] MISSING MJN: HTTP 404
+[fetch_prices] MISSING MMC: HTTP 404
+[fetch_prices] MISSING MNK: HTTP 404
+[fetch_prices] MISSING MON: HTTP 404
+[fetch_prices] MISSING MRO: HTTP 404
+[fetch_prices] 475/751 done (387 ok, 88 missing, 229s)
+[fetch_prices] MISSING MXIM: HTTP 404
+[fetch_prices] MISSING MYL: HTTP 404
+[fetch_prices] MISSING NBL: HTTP 404
+[fetch_prices] MISSING NLOK: HTTP 404
+[fetch_prices] MISSING NLSN: HTTP 404
+[fetch_prices] 500/751 done (407 ok, 93 missing, 242s)
+[fetch_prices] 525/751 done (432 ok, 93 missing, 256s)
+[fetch_prices] MISSING PBCT: HTTP 404
+[fetch_prices] MISSING PCP: HTTP 404
+[fetch_prices] MISSING PDCO: HTTP 404
+[fetch_prices] MISSING PEAK: HTTP 404
+[fetch_prices] MISSING PKI: HTTP 404
+[fetch_prices] 550/751 done (452 ok, 98 missing, 267s)
+[fetch_prices] MISSING PX: HTTP 404
+[fetch_prices] MISSING PXD: HTTP 404
+[fetch_prices] MISSING RAI: HTTP 404
+[fetch_prices] MISSING RE: HTTP 404
+[fetch_prices] 575/751 done (473 ok, 102 missing, 278s)
+[fetch_prices] MISSING RHT: HTTP 404
+[fetch_prices] MISSING RTN: HTTP 404
+[fetch_prices] MISSING SCG: HTTP 404
+[fetch_prices] 600/751 done (495 ok, 105 missing, 289s)
+[fetch_prices] MISSING SEE: HTTP 404
+[fetch_prices] MISSING SIAL: HTTP 404
+[fetch_prices] MISSING SIVB: HTTP 404
+[fetch_prices] MISSING SNI: HTTP 404
+[fetch_prices] MISSING SRCL: HTTP 404
+[fetch_prices] MISSING STJ: HTTP 404
+[fetch_prices] 625/751 done (514 ok, 111 missing, 299s)
+[fetch_prices] MISSING SWN: HTTP 404
+[fetch_prices] MISSING SYMC: HTTP 404
+[fetch_prices] MISSING TGNA: HTTP 404
+[fetch_prices] 650/751 done (536 ok, 114 missing, 310s)
+[fetch_prices] MISSING TIF: HTTP 404
+[fetch_prices] MISSING TMK: HTTP 404
+[fetch_prices] MISSING TSS: HTTP 404
+[fetch_prices] MISSING TWC: HTTP 404
+[fetch_prices] MISSING TWTR: HTTP 404
+[fetch_prices] MISSING TWX: HTTP 404
+[fetch_prices] 675/751 done (555 ok, 120 missing, 320s)
+[fetch_prices] MISSING UTX: HTTP 404
+[fetch_prices] MISSING VAR: HTTP 404
+[fetch_prices] MISSING VIAB: HTTP 404
+[fetch_prices] MISSING VIAC: HTTP 404
+[fetch_prices] 700/751 done (576 ok, 124 missing, 331s)
+[fetch_prices] MISSING WBA: HTTP 404
+[fetch_prices] MISSING WCG: HTTP 404
+[fetch_prices] MISSING WFM: HTTP 404
+[fetch_prices] MISSING WLTW: HTTP 404
+[fetch_prices] 725/751 done (597 ok, 128 missing, 342s)
+[fetch_prices] MISSING WRK: HTTP 404
+[fetch_prices] MISSING WYND: HTTP 404
+[fetch_prices] MISSING XEC: HTTP 404
+[fetch_prices] MISSING XL: HTTP 404
+[fetch_prices] MISSING XLNX: HTTP 404
+[fetch_prices] 750/751 done (617 ok, 133 missing, 352s)
+[fetch_prices] 751/751 done (618 ok, 133 missing, 353s)
+[fetch_prices] done: requested=751 received=618 missing=133 split-events=148 (353s)
+767

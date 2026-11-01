@@ -4,8 +4,103 @@
   "verdict": "NO EVIDENCE",
   "n_pass": 0,
   "passers": [],
-  "real_trade_level_pass_count": 0,
+  "real_trade_level_pass_count": 1,
   "placebo_pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -13,7 +108,7 @@
     0
   ],
   "placebo_pass_count_p95": 0.0,
-  "placebo_n": 5,
+  "placebo_n": 100,
   "seed": 20261101,
   "holdout_computed": false,
   "periods": {
@@ -30,36 +125,82 @@
       "2026-10-31"
     ]
   },
-  "n_tickers_in_panel": 16,
-  "n_cells": 43909,
+  "n_tickers_in_panel": 610,
+  "n_cells": 1654832,
   "load_info": {
-    "loaded": 16,
-    "skipped": 0,
-    "no_file": 735
+    "loaded": 610,
+    "skipped": 8,
+    "no_file": 133
   },
   "exclusions": {
-    "flagged_days_rule_A_split_file": 2,
-    "flagged_days_rule_B_fallback": 0,
-    "tickers_with_splits_file": 2,
-    "tickers_using_fallback_rule": 14,
+    "flagged_days_rule_A_split_file": 180,
+    "flagged_days_rule_B_fallback": 1,
+    "tickers_with_splits_file": 147,
+    "tickers_using_fallback_rule": 463,
     "by_drop": {
       "8%": {
-        "signals_before_exclusion": 112,
-        "excluded_rule_A_split_file": 0,
+        "signals_before_exclusion": 4995,
+        "excluded_rule_A_split_file": 1,
         "excluded_rule_B_fallback": 0
       },
       "10%": {
-        "signals_before_exclusion": 51,
-        "excluded_rule_A_split_file": 0,
+        "signals_before_exclusion": 2618,
+        "excluded_rule_A_split_file": 1,
         "excluded_rule_B_fallback": 0
       },
       "15%": {
-        "signals_before_exclusion": 16,
-        "excluded_rule_A_split_file": 0,
+        "signals_before_exclusion": 783,
+        "excluded_rule_A_split_file": 1,
         "excluded_rule_B_fallback": 0
       }
     },
-    "extreme_review": []
+    "extreme_review": [
+      {
+        "ticker": "APA",
+        "date": "2020-03-09",
+        "close_to_close": -0.5386
+      },
+      {
+        "ticker": "CNC",
+        "date": "2025-07-02",
+        "close_to_close": -0.4037
+      },
+      {
+        "ticker": "DXCM",
+        "date": "2024-07-26",
+        "close_to_close": -0.4066
+      },
+      {
+        "ticker": "EPAM",
+        "date": "2022-02-28",
+        "close_to_close": -0.4568
+      },
+      {
+        "ticker": "FANG",
+        "date": "2020-03-09",
+        "close_to_close": -0.4465
+      },
+      {
+        "ticker": "GL",
+        "date": "2024-04-11",
+        "close_to_close": -0.5314
+      },
+      {
+        "ticker": "NKTR",
+        "date": "2018-06-04",
+        "close_to_close": -0.4182
+      },
+      {
+        "ticker": "OXY",
+        "date": "2020-03-09",
+        "close_to_close": -0.5343
+      },
+      {
+        "ticker": "PCG",
+        "date": "2019-01-14",
+        "close_to_close": -0.5236
+      }
+    ]
   },
-  "runtime_seconds": 0.2
+  "runtime_seconds": 2.5
 }

@@ -1,23 +1,281 @@
 {
   "run_date_utc": "2026-11-01",
   "period1": "2015-06-01",
-  "requested": 20,
-  "received": 16,
+  "requested": 751,
+  "received": 618,
   "missing": [
     "AABA",
     "ABC",
     "ABMD",
-    "ADS"
+    "ADS",
+    "AET",
+    "AGN",
+    "ALTR",
+    "ALXN",
+    "ANDV",
+    "ANSS",
+    "ANTM",
+    "ARG",
+    "ARNC",
+    "ATVI",
+    "BCR",
+    "BHGE",
+    "BK",
+    "BLL",
+    "BRCM",
+    "BXLT",
+    "CA",
+    "CBS",
+    "CCE",
+    "CDAY",
+    "CELG",
+    "CERN",
+    "CHK",
+    "CMA",
+    "CMCSK",
+    "COG",
+    "COL",
+    "CPGX",
+    "CTL",
+    "CTLT",
+    "CTRA",
+    "CTXS",
+    "CVC",
+    "CXO",
+    "DAY",
+    "DFS",
+    "DISCA",
+    "DISCK",
+    "DISH",
+    "DNB",
+    "DO",
+    "DRE",
+    "DWDP",
+    "ENDP",
+    "ESRX",
+    "ESV",
+    "ETFC",
+    "EVHC",
+    "FBHS",
+    "FI",
+    "FL",
+    "FLIR",
+    "FLT",
+    "FRC",
+    "FTR",
+    "GAS",
+    "GGP",
+    "GMCR",
+    "GPS",
+    "HAR",
+    "HBI",
+    "HCBK",
+    "HCP",
+    "HES",
+    "HFC",
+    "HOLX",
+    "HOT",
+    "HRS",
+    "IPG",
+    "JEC",
+    "JNPR",
+    "JWN",
+    "K",
+    "KORS",
+    "KSU",
+    "LLL",
+    "LLTC",
+    "LM",
+    "LVLT",
+    "MJN",
+    "MMC",
+    "MNK",
+    "MON",
+    "MRO",
+    "MXIM",
+    "MYL",
+    "NBL",
+    "NLOK",
+    "NLSN",
+    "PBCT",
+    "PCP",
+    "PDCO",
+    "PEAK",
+    "PKI",
+    "PX",
+    "PXD",
+    "RAI",
+    "RE",
+    "RHT",
+    "RTN",
+    "SCG",
+    "SEE",
+    "SIAL",
+    "SIVB",
+    "SNI",
+    "SRCL",
+    "STJ",
+    "SWN",
+    "SYMC",
+    "TGNA",
+    "TIF",
+    "TMK",
+    "TSS",
+    "TWC",
+    "TWTR",
+    "TWX",
+    "UTX",
+    "VAR",
+    "VIAB",
+    "VIAC",
+    "WBA",
+    "WCG",
+    "WFM",
+    "WLTW",
+    "WRK",
+    "WYND",
+    "XEC",
+    "XL",
+    "XLNX"
   ],
   "missing_reasons": {
     "AABA": "HTTP 404",
     "ABC": "HTTP 404",
     "ABMD": "HTTP 404",
-    "ADS": "HTTP 404"
+    "ADS": "HTTP 404",
+    "AET": "HTTP 404",
+    "AGN": "HTTP 404",
+    "ALTR": "HTTP 404",
+    "ALXN": "HTTP 404",
+    "ANDV": "HTTP 404",
+    "ANSS": "HTTP 404",
+    "ANTM": "HTTP 404",
+    "ARG": "HTTP 404",
+    "ARNC": "HTTP 404",
+    "ATVI": "HTTP 404",
+    "BCR": "HTTP 404",
+    "BHGE": "HTTP 404",
+    "BK": "HTTP 404",
+    "BLL": "HTTP 404",
+    "BRCM": "HTTP 404",
+    "BXLT": "HTTP 404",
+    "CA": "HTTP 404",
+    "CBS": "HTTP 404",
+    "CCE": "HTTP 404",
+    "CDAY": "HTTP 404",
+    "CELG": "HTTP 404",
+    "CERN": "HTTP 404",
+    "CHK": "HTTP 404",
+    "CMA": "HTTP 404",
+    "CMCSK": "HTTP 404",
+    "COG": "HTTP 404",
+    "COL": "HTTP 404",
+    "CPGX": "HTTP 404",
+    "CTL": "HTTP 404",
+    "CTLT": "HTTP 404",
+    "CTRA": "HTTP 404",
+    "CTXS": "HTTP 404",
+    "CVC": "HTTP 404",
+    "CXO": "HTTP 404",
+    "DAY": "HTTP 404",
+    "DFS": "HTTP 404",
+    "DISCA": "HTTP 404",
+    "DISCK": "HTTP 404",
+    "DISH": "HTTP 404",
+    "DNB": "HTTP 404",
+    "DO": "HTTP 404",
+    "DRE": "HTTP 404",
+    "DWDP": "HTTP 404",
+    "ENDP": "HTTP 404",
+    "ESRX": "HTTP 404",
+    "ESV": "HTTP 404",
+    "ETFC": "HTTP 404",
+    "EVHC": "HTTP 404",
+    "FBHS": "HTTP 404",
+    "FI": "empty data",
+    "FL": "HTTP 404",
+    "FLIR": "HTTP 404",
+    "FLT": "HTTP 404",
+    "FRC": "HTTP 404",
+    "FTR": "HTTP 404",
+    "GAS": "HTTP 404",
+    "GGP": "HTTP 404",
+    "GMCR": "HTTP 404",
+    "GPS": "HTTP 404",
+    "HAR": "HTTP 404",
+    "HBI": "HTTP 404",
+    "HCBK": "HTTP 404",
+    "HCP": "HTTP 404",
+    "HES": "HTTP 404",
+    "HFC": "HTTP 404",
+    "HOLX": "HTTP 404",
+    "HOT": "HTTP 404",
+    "HRS": "HTTP 404",
+    "IPG": "HTTP 404",
+    "JEC": "HTTP 404",
+    "JNPR": "HTTP 404",
+    "JWN": "HTTP 404",
+    "K": "HTTP 404",
+    "KORS": "HTTP 404",
+    "KSU": "HTTP 404",
+    "LLL": "HTTP 404",
+    "LLTC": "HTTP 404",
+    "LM": "HTTP 404",
+    "LVLT": "HTTP 404",
+    "MJN": "HTTP 404",
+    "MMC": "HTTP 404",
+    "MNK": "HTTP 404",
+    "MON": "HTTP 404",
+    "MRO": "HTTP 404",
+    "MXIM": "HTTP 404",
+    "MYL": "HTTP 404",
+    "NBL": "HTTP 404",
+    "NLOK": "HTTP 404",
+    "NLSN": "HTTP 404",
+    "PBCT": "HTTP 404",
+    "PCP": "HTTP 404",
+    "PDCO": "HTTP 404",
+    "PEAK": "HTTP 404",
+    "PKI": "HTTP 404",
+    "PX": "HTTP 404",
+    "PXD": "HTTP 404",
+    "RAI": "HTTP 404",
+    "RE": "HTTP 404",
+    "RHT": "HTTP 404",
+    "RTN": "HTTP 404",
+    "SCG": "HTTP 404",
+    "SEE": "HTTP 404",
+    "SIAL": "HTTP 404",
+    "SIVB": "HTTP 404",
+    "SNI": "HTTP 404",
+    "SRCL": "HTTP 404",
+    "STJ": "HTTP 404",
+    "SWN": "HTTP 404",
+    "SYMC": "HTTP 404",
+    "TGNA": "HTTP 404",
+    "TIF": "HTTP 404",
+    "TMK": "HTTP 404",
+    "TSS": "HTTP 404",
+    "TWC": "HTTP 404",
+    "TWTR": "HTTP 404",
+    "TWX": "HTTP 404",
+    "UTX": "HTTP 404",
+    "VAR": "HTTP 404",
+    "VIAB": "HTTP 404",
+    "VIAC": "HTTP 404",
+    "WBA": "HTTP 404",
+    "WCG": "HTTP 404",
+    "WFM": "HTTP 404",
+    "WLTW": "HTTP 404",
+    "WRK": "HTTP 404",
+    "WYND": "HTTP 404",
+    "XEC": "HTTP 404",
+    "XL": "HTTP 404",
+    "XLNX": "HTTP 404"
   },
-  "tickers_with_splits_file": 2,
-  "tickers_with_split_events": 2,
-  "tickers_without_splits_file": 14,
+  "tickers_with_splits_file": 148,
+  "tickers_with_split_events": 148,
+  "tickers_without_splits_file": 470,
   "benchmark": {
     "SPY": {
       "first_date": "2015-06-01",
@@ -102,6 +360,3016 @@
       "rows": 2208
     },
     "AEE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AEP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AES": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AFL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AIG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AIV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AIZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AJG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AKAM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ALB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ALGN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ALK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ALL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ALLE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMAT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMCR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AME": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMGN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AMTM": {
+      "first_date": "2024-09-24",
+      "last_date": "2026-10-30",
+      "rows": 528
+    },
+    "AMZN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ANET": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AON": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AOS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "APA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "APC": {
+      "first_date": "2026-02-12",
+      "last_date": "2026-10-30",
+      "rows": 181
+    },
+    "APD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "APH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "APO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "APP": {
+      "first_date": "2021-04-15",
+      "last_date": "2026-10-30",
+      "rows": 1394
+    },
+    "APTV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ARE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ARES": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ATO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AVB": {
+      "first_date": "2026-08-14",
+      "last_date": "2026-08-14",
+      "rows": 1
+    },
+    "AVGO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AVY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AWK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AXON": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AXP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AYI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AZO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BAC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BALL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BAX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BBBY": {
+      "first_date": "2026-07-17",
+      "last_date": "2026-10-30",
+      "rows": 75
+    },
+    "BBT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BBWI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BBY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BDX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BEN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BF.B": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BHF": {
+      "first_date": "2017-07-17",
+      "last_date": "2026-10-30",
+      "rows": 2337
+    },
+    "BIIB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BIO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BKNG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BKR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BLDR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BLK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BMY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BNY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BRK.B": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BRO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BSX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BWA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "BXP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "C": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CAG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CAH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CAM": {
+      "first_date": "2025-10-06",
+      "last_date": "2026-10-30",
+      "rows": 270
+    },
+    "CARR": {
+      "first_date": "2020-03-19",
+      "last_date": "2026-10-30",
+      "rows": 1664
+    },
+    "CASY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CAT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CBOE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CBRE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CCEP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CCI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CCL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CDNS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CDW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CEG": {
+      "first_date": "2022-01-19",
+      "last_date": "2026-10-30",
+      "rows": 1201
+    },
+    "CF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CFG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CHD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CHRW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CHTR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CIEN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CINF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CLX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CMCSA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CME": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CMG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CMI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CMS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CNC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CNP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CNX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COHR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COIN": {
+      "first_date": "2021-04-14",
+      "last_date": "2026-10-30",
+      "rows": 1395
+    },
+    "COO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "COTY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CPAY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CPB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CPRI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CPRT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CPT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CRH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CRL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CRM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CRWD": {
+      "first_date": "2019-06-12",
+      "last_date": "2026-10-30",
+      "rows": 1858
+    },
+    "CSCO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CSGP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CSRA": {
+      "first_date": "2026-08-12",
+      "last_date": "2026-10-30",
+      "rows": 57
+    },
+    "CSX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CTAS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CTSH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CTVA": {
+      "first_date": "2019-05-24",
+      "last_date": "2026-10-30",
+      "rows": 1870
+    },
+    "CVNA": {
+      "first_date": "2017-04-28",
+      "last_date": "2026-10-30",
+      "rows": 2391
+    },
+    "CVS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CVX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "CZR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "D": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DAL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DASH": {
+      "first_date": "2020-12-09",
+      "last_date": "2026-10-30",
+      "rows": 1480
+    },
+    "DD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DDOG": {
+      "first_date": "2019-09-19",
+      "last_date": "2026-10-30",
+      "rows": 1789
+    },
+    "DE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DECK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DELL": {
+      "first_date": "2016-08-17",
+      "last_date": "2026-10-30",
+      "rows": 2566
+    },
+    "DG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DGX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DHI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DHR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DIS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DLR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DLTR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DOC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DOV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DOW": {
+      "first_date": "2019-03-20",
+      "last_date": "2026-10-30",
+      "rows": 1916
+    },
+    "DPZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DRI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DTE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DUK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DVA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DVN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DXC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "DXCM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EA": {
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-04",
+      "rows": 1
+    },
+    "EBAY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ECHO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ECL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ED": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EFX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EIX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ELV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EMC": {
+      "first_date": "2023-05-15",
+      "last_date": "2026-10-30",
+      "rows": 870
+    },
+    "EME": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EMN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EMR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ENPH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EOG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EPAM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EQIX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EQR": {
+      "first_date": "2026-08-17",
+      "last_date": "2026-08-17",
+      "rows": 1
+    },
+    "EQT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ERIE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ES": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ESS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ETN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ETR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ETSY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EVRG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EXC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EXE": {
+      "first_date": "2021-02-10",
+      "last_date": "2026-10-30",
+      "rows": 1438
+    },
+    "EXPD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EXPE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "EXR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "F": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FANG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FAST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FB": {
+      "first_date": "2025-06-26",
+      "last_date": "2026-10-30",
+      "rows": 340
+    },
+    "FCPT": {
+      "first_date": "2015-11-10",
+      "last_date": "2026-10-30",
+      "rows": 2759
+    },
+    "FCX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FDS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FDX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FDXF": {
+      "first_date": "2026-05-27",
+      "last_date": "2026-10-30",
+      "rows": 110
+    },
+    "FE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FERG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FFIV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FICO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FIS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FISV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FITB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FIX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FLEX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FLR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FLS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FMC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FOSL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FOX": {
+      "first_date": "2019-03-13",
+      "last_date": "2026-10-30",
+      "rows": 1921
+    },
+    "FOXA": {
+      "first_date": "2019-03-12",
+      "last_date": "2026-10-30",
+      "rows": 1922
+    },
+    "FRT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FSLR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FTI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FTNT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "FTV": {
+      "first_date": "2016-07-05",
+      "last_date": "2026-10-30",
+      "rows": 2597
+    },
+    "GD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GDDY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GEHC": {
+      "first_date": "2022-12-15",
+      "last_date": "2026-10-30",
+      "rows": 972
+    },
+    "GEN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GEV": {
+      "first_date": "2024-03-27",
+      "last_date": "2026-10-30",
+      "rows": 652
+    },
+    "GILD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GIS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GLW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GME": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GNRC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GNW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GOOG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GOOGL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GPC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GPN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GRMN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "GWW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HAL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HAS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HBAN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HCA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HIG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HII": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HLT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HOG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HON": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HONA": {
+      "first_date": "2026-06-15",
+      "last_date": "2026-10-30",
+      "rows": 97
+    },
+    "HOOD": {
+      "first_date": "2021-07-29",
+      "last_date": "2026-10-30",
+      "rows": 1321
+    },
+    "HP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HPE": {
+      "first_date": "2015-10-19",
+      "last_date": "2026-10-30",
+      "rows": 2775
+    },
+    "HPQ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HRB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HRL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HSIC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HSY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HUBB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HUM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "HWM": {
+      "first_date": "2016-11-01",
+      "last_date": "2026-10-30",
+      "rows": 2513
+    },
+    "IBKR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IBM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ICE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IDXX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IEX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IFF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ILMN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "INCY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "INFO": {
+      "first_date": "2024-10-10",
+      "last_date": "2026-10-30",
+      "rows": 516
+    },
+    "INTC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "INTU": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "INVH": {
+      "first_date": "2017-02-01",
+      "last_date": "2026-10-30",
+      "rows": 2451
+    },
+    "IP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IPGP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IQV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IR": {
+      "first_date": "2017-05-12",
+      "last_date": "2026-10-30",
+      "rows": 2381
+    },
+    "IRM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ISRG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ITW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "IVZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "J": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JBHT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JBL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JCI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JEF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JKHY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JNJ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "JPM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KDP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KEY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KEYS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KHC": {
+      "first_date": "2015-07-06",
+      "last_date": "2026-10-30",
+      "rows": 2849
+    },
+    "KIM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KKR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KLAC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KMB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KMI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KMX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KSS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "KVUE": {
+      "first_date": "2023-05-04",
+      "last_date": "2026-10-30",
+      "rows": 877
+    },
+    "L": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LB": {
+      "first_date": "2024-06-28",
+      "last_date": "2026-10-30",
+      "rows": 588
+    },
+    "LDOS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LEG": {
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-26",
+      "rows": 1
+    },
+    "LEN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LHX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LII": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LIN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LITE": {
+      "first_date": "2015-07-23",
+      "last_date": "2026-10-30",
+      "rows": 2836
+    },
+    "LKQ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LLY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LMT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LNC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LNT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LOW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LRCX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LULU": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LUMN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LUV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LVS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LW": {
+      "first_date": "2016-11-10",
+      "last_date": "2026-10-30",
+      "rows": 2506
+    },
+    "LYB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "LYV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "M": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MAA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MAC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MAR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MAS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MAT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MCD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MCHP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MCK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MCO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MDLZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MDT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MET": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "META": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MGM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MHK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MKC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MKTX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MLM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MMM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MNST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MOH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MOS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MPC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MPWR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MRK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MRNA": {
+      "first_date": "2018-12-07",
+      "last_date": "2026-10-30",
+      "rows": 1985
+    },
+    "MRSH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MRVL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MSCI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MSFT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MSI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MTB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MTCH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MTD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MU": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "MUR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NAVI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NCLH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NDAQ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NDSN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NEE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NEM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NFLX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NFX": {
+      "first_date": "2026-07-07",
+      "last_date": "2026-10-30",
+      "rows": 83
+    },
+    "NI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NKE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NKTR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NOC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NOV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NOW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NRG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NSC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NTAP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NTRS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NUE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NVDA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NVR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NWL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NWS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NWSA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "NXPI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "O": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ODFL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "OGN": {
+      "first_date": "2021-05-14",
+      "last_date": "2026-10-30",
+      "rows": 1373
+    },
+    "OI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "OKE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "OMC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ON": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ORCL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ORLY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "OTIS": {
+      "first_date": "2020-03-19",
+      "last_date": "2026-10-30",
+      "rows": 1664
+    },
+    "OXY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PANW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PARA": {
+      "first_date": "2021-02-12",
+      "last_date": "2026-10-30",
+      "rows": 1434
+    },
+    "PAYC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PAYX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PBI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PCAR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PCG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PCL": {
+      "first_date": "2025-08-05",
+      "last_date": "2026-10-30",
+      "rows": 313
+    },
+    "PEG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PENN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PEP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PFE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PFG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PGR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PHM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PKG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PLD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PLTR": {
+      "first_date": "2020-09-30",
+      "last_date": "2026-10-30",
+      "rows": 1529
+    },
+    "PM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PNC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PNR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PNW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PODD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "POM": {
+      "first_date": "2025-10-08",
+      "last_date": "2026-10-30",
+      "rows": 268
+    },
+    "POOL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PPG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PPL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PRGO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PRU": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PSA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PSKY": {
+      "first_date": "2026-07-29",
+      "last_date": "2026-10-16",
+      "rows": 15
+    },
+    "PSX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PTC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PVH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PWR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "PYPL": {
+      "first_date": "2015-07-06",
+      "last_date": "2026-10-30",
+      "rows": 2849
+    },
+    "Q": {
+      "first_date": "2025-10-27",
+      "last_date": "2026-10-30",
+      "rows": 255
+    },
+    "QCOM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "QRVO": {
+      "first_date": "2026-10-02",
+      "last_date": "2026-10-02",
+      "rows": 1
+    },
+    "R": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RCL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RDDT": {
+      "first_date": "2024-03-21",
+      "last_date": "2026-10-30",
+      "rows": 656
+    },
+    "REG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "REGN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RHI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RIG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RJF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RMD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ROK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ROL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ROP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ROST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RRC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RSG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RTX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "RVTY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SATS": {
+      "first_date": "2026-10-20",
+      "last_date": "2026-10-30",
+      "rows": 9
+    },
+    "SBAC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SBNY": {
+      "first_date": "2024-08-15",
+      "last_date": "2026-10-30",
+      "rows": 555
+    },
+    "SBUX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SCHW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SE": {
+      "first_date": "2017-10-20",
+      "last_date": "2026-10-30",
+      "rows": 2269
+    },
+    "SEDG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SHW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SIG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SJM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SLB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SLG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SMCI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SNA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SNDK": {
+      "first_date": "2025-02-13",
+      "last_date": "2026-10-30",
+      "rows": 431
+    },
+    "SNPS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SOLS": {
+      "first_date": "2025-10-20",
+      "last_date": "2026-10-30",
+      "rows": 260
+    },
+    "SOLV": {
+      "first_date": "2024-03-26",
+      "last_date": "2026-10-30",
+      "rows": 653
+    },
+    "SPG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SPGI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SPLS": {
+      "first_date": "2026-01-16",
+      "last_date": "2026-10-30",
+      "rows": 199
+    },
+    "SRE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "STE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "STI": {
+      "first_date": "2022-05-02",
+      "last_date": "2026-10-30",
+      "rows": 1130
+    },
+    "STLD": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "STT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "STX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "STZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SWK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SWKS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SYF": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SYK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "SYY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "T": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TAP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TDC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TDG": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TDY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TE": {
+      "first_date": "2020-01-10",
+      "last_date": "2026-10-30",
+      "rows": 1711
+    },
+    "TECH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TEL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TER": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TFC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TFX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TGT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "THC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TJX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TKO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TMO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TMUS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TPL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TPR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TRGP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TRIP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TRMB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TROW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TRV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TSCO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TSLA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TSN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TTD": {
+      "first_date": "2016-09-21",
+      "last_date": "2026-10-30",
+      "rows": 2542
+    },
+    "TTWO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TXN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TXT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "TYL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UA": {
+      "first_date": "2016-03-23",
+      "last_date": "2026-10-30",
+      "rows": 2668
+    },
+    "UAA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UAL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UBER": {
+      "first_date": "2019-05-10",
+      "last_date": "2026-10-30",
+      "rows": 1880
+    },
+    "UDR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UHS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ULTA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UNH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UNM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UNP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "UPS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "URBN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "URI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "USB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "V": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VEEV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VFC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VICI": {
+      "first_date": "2018-01-02",
+      "last_date": "2026-10-30",
+      "rows": 2220
+    },
+    "VLO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VLTO": {
+      "first_date": "2023-10-04",
+      "last_date": "2026-10-30",
+      "rows": 772
+    },
+    "VMC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VMRK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VNO": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VNT": {
+      "first_date": "2020-09-24",
+      "last_date": "2026-10-30",
+      "rows": 1533
+    },
+    "VRSK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VRSN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VRT": {
+      "first_date": "2018-08-02",
+      "last_date": "2026-10-30",
+      "rows": 2073
+    },
+    "VRTX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VST": {
+      "first_date": "2016-10-05",
+      "last_date": "2026-10-30",
+      "rows": 2532
+    },
+    "VTR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VTRS": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "VZ": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WAB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WAT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WBD": {
+      "first_date": "2026-10-05",
+      "last_date": "2026-10-05",
+      "rows": 1
+    },
+    "WDAY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WDC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WEC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WELL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WFC": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WHR": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WMB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WMT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WRB": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WSM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WST": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WTW": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WU": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "WYNN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XEL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XOM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XRAY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XRX": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XYL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "XYZ": {
+      "first_date": "2015-11-19",
+      "last_date": "2026-10-30",
+      "rows": 2752
+    },
+    "YUM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ZBH": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ZBRA": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ZION": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ZTS": {
       "first_date": "2015-06-01",
       "last_date": "2026-10-30",
       "rows": 2873
