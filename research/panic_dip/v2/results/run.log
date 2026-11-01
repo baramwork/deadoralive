@@ -1,0 +1,8 @@
+[panic_dip_v2] universe 751 tickers -> 724 series after 32 alias(es); loaded 623, no file for 101; SPY loaded (0.9s)
+[panic_dip_v2] panel: 616 series, 1,672,070 cells, 2873 calendar days (1.7s)
+[panic_dip_v2] exit arrays for 12 (STOP,TARGET,HOLD) rules done in 0.5s (N cells=1,672,070)
+[panic_dip_v2] panic days IS/OOS: P2 45/21, P3 22/8
+[panic_dip_v2] 48 variants x (IS, OOS) evaluated incl. portfolio simulation in 0.7s
+[panic_dip_v2] controls: 48 variants x 2 periods x 100 runs done in 3.4s
+[panic_dip_v2] HOLDOUT stays sealed: no variant passed SPEC_v2 §6 (i)-(vii)
+[panic_dip_v2] verdict: NO EVIDENCE (PASS variants: 0, trade-level real 0 vs control p95 4.05); total runtime 5s
