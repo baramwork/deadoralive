@@ -1,0 +1,8 @@
+[fetch_prices] requesting 20 tickers + SPY (period1=2015-06-01, out=/home/runner/work/deadoralive/deadoralive/data/panic_dip)
+[fetch_prices] MISSING AABA: HTTP 404
+[fetch_prices] MISSING ABC: HTTP 404
+[fetch_prices] MISSING ABMD: HTTP 404
+[fetch_prices] MISSING ADS: HTTP 404
+[fetch_prices] 20/20 done (16 ok, 4 missing, 9s)
+[fetch_prices] done: requested=20 received=16 missing=4 split-events=2 (10s)
+19

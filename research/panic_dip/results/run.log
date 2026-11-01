@@ -1,0 +1,7 @@
+[panic_dip] universe 751 tickers, loaded 16, no file for 735; SPY loaded (0.0s)
+[panic_dip] panel: 16 tickers, 43,909 cells, 2873 calendar days (0.1s)
+[panic_dip] exit arrays for 24 (STOP,TARGET,HOLD) rules done in 0.1s (N cells=43,909)
+[panic_dip] 72 variants x (IS, OOS) evaluated incl. portfolio simulation in 0.2s
+[panic_dip] placebo: 72 variants x 2 periods x 5 runs done in 0.2s
+[panic_dip] HOLDOUT stays sealed: no variant passed SPEC §6 (i)-(vii)
+[panic_dip] verdict: NO EVIDENCE (PASS variants: 0, trade-level real 0 vs placebo p95 0.00); total runtime 0s

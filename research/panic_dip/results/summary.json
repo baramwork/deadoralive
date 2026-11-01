@@ -1,0 +1,65 @@
+{
+  "run_date": "2026-11-01",
+  "synthetic": false,
+  "verdict": "NO EVIDENCE",
+  "n_pass": 0,
+  "passers": [],
+  "real_trade_level_pass_count": 0,
+  "placebo_pass_counts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "placebo_pass_count_p95": 0.0,
+  "placebo_n": 5,
+  "seed": 20261101,
+  "holdout_computed": false,
+  "periods": {
+    "IS": [
+      "2015-11-01",
+      "2021-10-31"
+    ],
+    "OOS": [
+      "2021-11-01",
+      "2024-10-31"
+    ],
+    "HOLDOUT": [
+      "2024-11-01",
+      "2026-10-31"
+    ]
+  },
+  "n_tickers_in_panel": 16,
+  "n_cells": 43909,
+  "load_info": {
+    "loaded": 16,
+    "skipped": 0,
+    "no_file": 735
+  },
+  "exclusions": {
+    "flagged_days_rule_A_split_file": 2,
+    "flagged_days_rule_B_fallback": 0,
+    "tickers_with_splits_file": 2,
+    "tickers_using_fallback_rule": 14,
+    "by_drop": {
+      "8%": {
+        "signals_before_exclusion": 112,
+        "excluded_rule_A_split_file": 0,
+        "excluded_rule_B_fallback": 0
+      },
+      "10%": {
+        "signals_before_exclusion": 51,
+        "excluded_rule_A_split_file": 0,
+        "excluded_rule_B_fallback": 0
+      },
+      "15%": {
+        "signals_before_exclusion": 16,
+        "excluded_rule_A_split_file": 0,
+        "excluded_rule_B_fallback": 0
+      }
+    },
+    "extreme_review": []
+  },
+  "runtime_seconds": 0.2
+}

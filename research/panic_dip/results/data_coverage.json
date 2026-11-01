@@ -1,0 +1,110 @@
+{
+  "run_date_utc": "2026-11-01",
+  "period1": "2015-06-01",
+  "requested": 20,
+  "received": 16,
+  "missing": [
+    "AABA",
+    "ABC",
+    "ABMD",
+    "ADS"
+  ],
+  "missing_reasons": {
+    "AABA": "HTTP 404",
+    "ABC": "HTTP 404",
+    "ABMD": "HTTP 404",
+    "ADS": "HTTP 404"
+  },
+  "tickers_with_splits_file": 2,
+  "tickers_with_split_events": 2,
+  "tickers_without_splits_file": 14,
+  "benchmark": {
+    "SPY": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    }
+  },
+  "per_ticker": {
+    "A": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AAL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AAP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "AAPL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ABBV": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ABNB": {
+      "first_date": "2020-12-10",
+      "last_date": "2026-10-30",
+      "rows": 1479
+    },
+    "ABT": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ACGL": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ACN": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADBE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADI": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADM": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADP": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADSK": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    },
+    "ADT": {
+      "first_date": "2018-01-19",
+      "last_date": "2026-10-30",
+      "rows": 2208
+    },
+    "AEE": {
+      "first_date": "2015-06-01",
+      "last_date": "2026-10-30",
+      "rows": 2873
+    }
+  }
+}
