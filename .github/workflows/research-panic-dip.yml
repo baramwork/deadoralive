@@ -15,6 +15,7 @@ on:
       - ".github/workflows/research-panic-dip.yml"
       - "research/panic_dip/**"
       - "!research/panic_dip/results/**"
+      - "!research/panic_dip/v2/**"
   workflow_dispatch:
     inputs:
       limit:
