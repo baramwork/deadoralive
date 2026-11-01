@@ -43,7 +43,7 @@ jobs:
         # + request time is on the order of 10-20 minutes; 429/5xx are retried with backoff.
         shell: bash
         env:
-          SMOKE_LIMIT: "20"
+          SMOKE_LIMIT: ""
           LIMIT: ${{ github.event.inputs.limit }}
         run: |
           mkdir -p research/panic_dip/results
@@ -65,7 +65,7 @@ jobs:
       - name: Run study
         shell: bash
         env:
-          SMOKE_PLACEBO_N: "5"
+          SMOKE_PLACEBO_N: "100"
           PLACEBO_N: ${{ github.event.inputs.placebo_n }}
         run: |
           ARGS=""
