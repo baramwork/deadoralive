@@ -1,0 +1,142 @@
+old_ticker,new_ticker,kind,note
+AABA,,acquired,Altaba (ex-Yahoo) fund liquidated 2019
+ABC,COR,rename,AmerisourceBergen renamed Cencora (COR) 2023
+ABMD,,acquired,Abiomed acquired by Johnson & Johnson 2022
+ADS,BFH,rename,Alliance Data Systems renamed Bread Financial (BFH) 2022
+AET,,acquired,Aetna acquired by CVS 2018
+AGN,,acquired,Allergan acquired by AbbVie 2020
+ALTR,,acquired,Altera acquired by Intel 2015
+ALXN,,acquired,Alexion acquired by AstraZeneca 2021
+ANDV,,acquired,Andeavor acquired by Marathon Petroleum 2018
+ANSS,,acquired,Ansys acquired by Synopsys 2025
+ANTM,ELV,rename,Anthem renamed Elevance Health (ELV) 2022
+ARG,,acquired,Airgas acquired by Air Liquide 2016
+ARNC,HWM,rename,Arconic Inc (ex-Alcoa Inc) renamed Howmet Aerospace (HWM) 2020; Yahoo history starts 2016-11
+ATVI,,acquired,Activision Blizzard acquired by Microsoft 2023
+BCR,,acquired,C.R. Bard acquired by Becton Dickinson 2017
+BHGE,BKR,rename,Baker Hughes a GE company renamed Baker Hughes (BKR) 2019
+BK,BNY,rename,Bank of New York Mellon ticker BK to BNY 2026 (BNY row starts at BK end date in constituents)
+BLL,BALL,rename,Ball Corp ticker BLL to BALL 2022
+BRCM,,acquired,Broadcom Corp acquired by Avago 2016
+BXLT,,acquired,Baxalta acquired by Shire 2016
+CA,,acquired,CA Inc acquired by Broadcom 2018
+CBS,PSKY,rename,CBS Corp became ViacomCBS (VIAC) 2019 then Paramount Global (PARA) 2022 then Paramount Skydance (PSKY) 2025
+CCE,,acquired,Coca-Cola Enterprises merged into Coca-Cola European Partners 2016
+CDAY,DAY,rename,Ceridian HCM renamed Dayforce (DAY) 2024; DAY itself taken private 2026 so recovery is expected to fail
+CELG,,acquired,Celgene acquired by Bristol-Myers Squibb 2019
+CERN,,acquired,Cerner acquired by Oracle 2022
+CHK,,acquired,Chesapeake Energy bankruptcy 2020 old equity cancelled; later merged into Expand Energy
+CMA,,acquired,Comerica acquired by Fifth Third 2026
+CMCSK,CMCSA,rename,Comcast Class A Special (CMCSK) collapsed into CMCSA 2015; same company so overlapping membership dates are counted once
+COG,CTRA,rename,Cabot Oil & Gas renamed Coterra (CTRA) 2021; CTRA itself may be delisted 2026 so recovery may fail
+COL,,acquired,Rockwell Collins acquired by United Technologies 2018
+CPGX,,acquired,Columbia Pipeline Group acquired by TransCanada 2016
+CTL,LUMN,rename,CenturyLink renamed Lumen Technologies (LUMN) 2020
+CTLT,,acquired,Catalent acquired by Novo Holdings 2024
+CTRA,,unknown,Coterra: possible merger with Devon 2026 (not verified); 404 in v1 so retried directly
+CTXS,,acquired,Citrix taken private by Vista and Elliott 2022
+CVC,,acquired,Cablevision acquired by Altice 2016
+CXO,,acquired,Concho Resources acquired by ConocoPhillips 2021
+DAY,,acquired,Dayforce taken private by Thoma Bravo 2026
+DFS,,acquired,Discover Financial acquired by Capital One 2025
+DISCA,WBD,rename,Discovery Series A renamed Warner Bros. Discovery (WBD) 2022; WBD was a 1-row stub in v1
+DISCK,WBD,rename,Discovery Series C renamed Warner Bros. Discovery (WBD) 2022; same company as DISCA so overlap counted once
+DISH,,acquired,DISH Network merged into EchoStar 2023
+DNB,,acquired,Dun & Bradstreet taken private (2019 and again 2025)
+DO,,acquired,Diamond Offshore bankruptcy 2020 old equity cancelled
+DRE,,acquired,Duke Realty acquired by Prologis 2022
+DWDP,DD,rename,DowDuPont renamed DuPont de Nemours (DD) 2019
+ENDP,,acquired,Endo International bankruptcy 2022 old equity cancelled
+ESRX,,acquired,Express Scripts acquired by Cigna 2018
+ESV,,acquired,Ensco (later Valaris) bankruptcy 2020 old equity cancelled
+ETFC,,acquired,E*Trade acquired by Morgan Stanley 2020
+EVHC,,acquired,Envision Healthcare taken private by KKR 2018
+FBHS,FBIN,rename,Fortune Brands Home & Security renamed Fortune Brands Innovations (FBIN) 2022
+FI,FISV,rename,Fiserv moved back from FI to FISV in 2025 (FISV row starts at FI end date in constituents)
+FL,,acquired,Foot Locker acquired by Dick's Sporting Goods 2025
+FLIR,,acquired,FLIR Systems acquired by Teledyne 2021
+FLT,CPAY,rename,FleetCor renamed Corpay (CPAY) 2024
+FRC,,acquired,First Republic Bank failed 2023
+FTR,,acquired,Frontier Communications bankruptcy 2020 old equity cancelled
+GAS,,acquired,AGL Resources acquired by Southern Company 2016
+GGP,,acquired,GGP acquired by Brookfield Property 2018
+GMCR,,acquired,Keurig Green Mountain taken private by JAB 2016
+GPS,GAP,rename,Gap Inc ticker GPS to GAP 2022
+HAR,,acquired,Harman International acquired by Samsung 2017
+HBI,,acquired,Hanesbrands acquired by Gildan 2025
+HCBK,,acquired,Hudson City Bancorp acquired by M&T 2015
+HCP,DOC,rename,HCP renamed Healthpeak (PEAK 2019 then DOC 2024)
+HES,,acquired,Hess acquired by Chevron 2025
+HFC,DINO,rename,HollyFrontier renamed HF Sinclair (DINO) 2022
+HOLX,,acquired,Hologic taken private by Blackstone and TPG 2026; 404 in v1 so retried directly
+HOT,,acquired,Starwood Hotels acquired by Marriott 2016
+HRS,LHX,rename,Harris renamed L3Harris Technologies (LHX) 2019
+IPG,,acquired,Interpublic acquired by Omnicom 2025
+JEC,J,rename,Jacobs Engineering ticker JEC to J (Jacobs Solutions)
+JNPR,,acquired,Juniper Networks acquired by HPE 2025
+JWN,,acquired,Nordstrom taken private 2025
+K,,acquired,Kellanova acquired by Mars 2025
+KORS,CPRI,rename,Michael Kors Holdings renamed Capri Holdings (CPRI) 2018; overlapping membership dates counted once
+KSU,,acquired,Kansas City Southern acquired by Canadian Pacific 2021-23
+LLL,,acquired,L-3 Communications merged with Harris 2019
+LLTC,,acquired,Linear Technology acquired by Analog Devices 2017
+LM,,acquired,Legg Mason acquired by Franklin Resources 2020
+LVLT,,acquired,Level 3 acquired by CenturyLink 2017
+MJN,,acquired,Mead Johnson acquired by Reckitt Benckiser 2017
+MMC,MRSH,rename,Marsh McLennan renamed Marsh (MRSH) 2026 (MRSH row starts at MMC end date in constituents)
+MNK,,acquired,Mallinckrodt bankruptcy old equity cancelled
+MON,,acquired,Monsanto acquired by Bayer 2018
+MRO,,acquired,Marathon Oil acquired by ConocoPhillips 2024
+MXIM,,acquired,Maxim Integrated acquired by Analog Devices 2021
+MYL,VTRS,rename,Mylan combined with Upjohn into Viatris (VTRS) 2020; VTRS has Mylan history on Yahoo (VTRS row starts at MYL end date)
+NBL,,acquired,Noble Energy acquired by Chevron 2020
+NLOK,GEN,rename,NortonLifeLock renamed Gen Digital (GEN) 2022
+NLSN,,acquired,Nielsen taken private 2022
+PBCT,,acquired,People's United acquired by M&T 2022
+PCP,,acquired,Precision Castparts acquired by Berkshire Hathaway 2016
+PDCO,,acquired,Patterson Companies taken private 2025
+PEAK,DOC,rename,Healthpeak ticker PEAK to DOC 2024
+PKI,RVTY,rename,PerkinElmer renamed Revvity (RVTY) 2023
+PX,LIN,rename,Praxair merged with Linde AG into Linde plc (LIN) 2018; LIN has Praxair history on Yahoo
+PXD,,acquired,Pioneer Natural Resources acquired by Exxon 2024
+RAI,,acquired,Reynolds American acquired by British American Tobacco 2017
+RE,EG,rename,Everest Re Group renamed Everest Group (EG) 2023
+RHT,,acquired,Red Hat acquired by IBM 2019
+RTN,,acquired,Raytheon merged into United Technologies (RTX) 2020; UTX is the surviving entity not RTN
+SCG,,acquired,SCANA acquired by Dominion 2019
+SEE,,unknown,Sealed Air: possible take-private 2026 (not verified); 404 in v1 so retried directly
+SIAL,,acquired,Sigma-Aldrich acquired by Merck KGaA 2015
+SIVB,,acquired,SVB Financial failed 2023
+SNI,,acquired,Scripps Networks acquired by Discovery 2018
+SRCL,,acquired,Stericycle acquired by Waste Management 2024
+STJ,,acquired,St. Jude Medical acquired by Abbott 2017
+SWN,,acquired,Southwestern Energy merged with Chesapeake (Expand Energy) 2024
+SYMC,GEN,rename,Symantec renamed NortonLifeLock (NLOK) 2019 then Gen Digital (GEN) 2022
+TGNA,,unknown,TEGNA: possible Nexstar acquisition (not verified); 404 in v1 so retried directly
+TIF,,acquired,Tiffany acquired by LVMH 2021
+TMK,GL,rename,Torchmark renamed Globe Life (GL) 2019
+TSS,,acquired,Total System Services merged into Global Payments 2019
+TWC,,acquired,Time Warner Cable acquired by Charter 2016
+TWTR,,acquired,Twitter taken private 2022
+TWX,,acquired,Time Warner acquired by AT&T 2018
+UTX,RTX,rename,United Technologies renamed Raytheon Technologies (RTX) 2020
+VAR,,acquired,Varian acquired by Siemens Healthineers 2021
+VIAB,,acquired,Viacom Class B merged into CBS (ViacomCBS) 2019
+VIAC,PSKY,rename,ViacomCBS renamed Paramount Global (PARA) 2022 then Paramount Skydance (PSKY) 2025
+WBA,,acquired,Walgreens Boots Alliance taken private by Sycamore 2025
+WCG,,acquired,WellCare acquired by Centene 2020
+WFM,,acquired,Whole Foods acquired by Amazon 2017
+WLTW,WTW,rename,Willis Towers Watson ticker WLTW to WTW 2022
+WRK,SW,rename,WestRock combined into Smurfit WestRock (SW) 2024; SW has WestRock history on Yahoo
+WYND,TNL,rename,Wyndham Worldwide became Wyndham Destinations (WYND) then Travel + Leisure (TNL) 2021
+XEC,,acquired,Cimarex merged with Cabot (Coterra) 2021
+XL,,acquired,XL Group acquired by AXA 2018
+XLNX,,acquired,Xilinx acquired by AMD 2022
+AVB,,unknown,STUB: 1-row response in v1 (live REIT; not a rename); retried directly
+EA,,acquired,STUB: 1-row response in v1; Electronic Arts take-private by PIF consortium 2026
+EQR,,unknown,STUB: 1-row response in v1 (not a known rename); retried directly
+LEG,,unknown,STUB: 1-row response in v1 (not a known rename); retried directly
+QRVO,,unknown,STUB: 1-row response in v1 (Skyworks merger pending; unverified); retried directly
+WBD,,unknown,STUB: 1-row response in v1; this is the target of the DISCA/DISCK renames; retried directly
+SATS,,unknown,STUB: 9-row response in v1 (EchoStar; not a rename); retried directly
+PSKY,,unknown,STUB: 15-row response in v1; this is the target of the CBS/VIAC renames; retried directly

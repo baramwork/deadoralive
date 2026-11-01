@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 data/*.csv
 data/panic_dip/
+data/panic_dip_v2/

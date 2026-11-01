@@ -1,0 +1,92 @@
+name: research-panic-dip-v2
+
+# panic_dip v2 study (research/panic_dip/v2/SPEC_v2.md, pre-registered 2026-11-01): fetch raw daily OHLC for
+# every S&P 500 point-in-time constituent + SPY from Yahoo into data/panic_dip_v2/ (retries + renamed-ticker
+# recovery via v2/aliases.csv), self-test, run the backtest, commit research/panic_dip/v2/results/.
+# Results are pushed to the SAME branch the workflow ran on — never to main by default.
+# v1 (research-panic-dip.yml) is frozen and does not run on v2 changes (its paths exclude research/panic_dip/v2/**).
+on:
+  # Also runs on a push to its own branch (code or spec changes only — never the results the run itself
+  # commits back, which are excluded below and are pushed with GITHUB_TOKEN anyway).
+  # SMOKE_LIMIT below is the fallback when no dispatch input is given: "20" = smoke run on the first 20
+  # tickers, "" = full universe.
+  push:
+    branches: [research/panic-dip]
+    paths:
+      - ".github/workflows/research-panic-dip-v2.yml"
+      - "research/panic_dip/v2/**"
+      - "!research/panic_dip/v2/results/**"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "fetch only the first N constituents tickers (blank = all ~750; use e.g. 20 for a smoke run)"
+        required: false
+        default: ""
+      control_n:
+        description: "control runs per variant and period (SPEC_v2: 100)"
+        required: false
+        default: "100"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas numpy requests
+      - name: Fetch prices
+        # data/panic_dip_v2/ is gitignored, so a fresh checkout has none. ~750 tickers x 0.25 s sleep + request
+        # time is on the order of 10-20 minutes, plus the SPEC_v2 §2 retry rounds (20 s / 10 s / 30 s waits) and
+        # the renamed-ticker fetches; 429/5xx are retried with backoff inside the v1 request helper.
+        shell: bash
+        env:
+          SMOKE_LIMIT: ""
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          mkdir -p research/panic_dip/v2/results
+          ARGS=""
+          LIMIT="${LIMIT:-$SMOKE_LIMIT}"
+          if [ -n "$LIMIT" ]; then
+            case "$LIMIT" in
+              ''|*[!0-9]*) echo "limit must be a positive integer, got: $LIMIT"; exit 1 ;;
+            esac
+            ARGS="--limit $LIMIT"
+          fi
+          python research/panic_dip/v2/fetch_prices_v2.py $ARGS 2>&1 | tee research/panic_dip/v2/results/fetch.log
+          ls data/panic_dip_v2 | wc -l >> research/panic_dip/v2/results/fetch.log
+      - name: Tests
+        shell: bash
+        run: |
+          python research/panic_dip/v2/tests_panic_dip_v2.py
+          python research/panic_dip/v2/run_panic_dip_v2.py --synthetic
+      - name: Run study
+        shell: bash
+        env:
+          SMOKE_CONTROL_N: "100"
+          CONTROL_N: ${{ github.event.inputs.control_n }}
+        run: |
+          ARGS=""
+          CONTROL_N="${CONTROL_N:-$SMOKE_CONTROL_N}"
+          if [ -n "$CONTROL_N" ]; then
+            case "$CONTROL_N" in
+              ''|*[!0-9]*) echo "control_n must be a positive integer, got: $CONTROL_N"; exit 1 ;;
+            esac
+            ARGS="--control-n $CONTROL_N"
+          fi
+          python research/panic_dip/v2/run_panic_dip_v2.py $ARGS 2>&1 | tee research/panic_dip/v2/results/run.log
+      - name: Commit results
+        shell: bash
+        env:
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          git config user.name "deadoralive-bot"
+          git config user.email "deadoralive-bot@users.noreply.github.com"
+          git add -f research/panic_dip/v2/results/
+          git commit -m "research: panic_dip v2 run ($(date -u +%F))" || echo "nothing to commit"
+          git pull --rebase origin "$REF_NAME" || true
+          git push origin "HEAD:$REF_NAME"
