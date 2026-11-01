@@ -5,6 +5,16 @@ name: research-panic-dip
 # place that can reach it), self-test, run the backtest, commit research/panic_dip/results/.
 # Results are pushed to the SAME branch the workflow ran on — never to main by default.
 on:
+  # Also runs on a push to its own branch (code or spec changes only — never the results the
+  # run itself commits back, which are excluded below and are pushed with GITHUB_TOKEN anyway).
+  # SMOKE_LIMIT below is the fallback when no dispatch input is given: "20" = smoke run on the
+  # first 20 tickers, "" = full universe.
+  push:
+    branches: [research/panic-dip]
+    paths:
+      - ".github/workflows/research-panic-dip.yml"
+      - "research/panic_dip/**"
+      - "!research/panic_dip/results/**"
   workflow_dispatch:
     inputs:
       limit:
@@ -33,10 +43,12 @@ jobs:
         # + request time is on the order of 10-20 minutes; 429/5xx are retried with backoff.
         shell: bash
         env:
+          SMOKE_LIMIT: "20"
           LIMIT: ${{ github.event.inputs.limit }}
         run: |
           mkdir -p research/panic_dip/results
           ARGS=""
+          LIMIT="${LIMIT:-$SMOKE_LIMIT}"
           if [ -n "$LIMIT" ]; then
             case "$LIMIT" in
               ''|*[!0-9]*) echo "limit must be a positive integer, got: $LIMIT"; exit 1 ;;
@@ -53,9 +65,11 @@ jobs:
       - name: Run study
         shell: bash
         env:
+          SMOKE_PLACEBO_N: "5"
           PLACEBO_N: ${{ github.event.inputs.placebo_n }}
         run: |
           ARGS=""
+          PLACEBO_N="${PLACEBO_N:-$SMOKE_PLACEBO_N}"
           if [ -n "$PLACEBO_N" ]; then
             case "$PLACEBO_N" in
               ''|*[!0-9]*) echo "placebo_n must be a positive integer, got: $PLACEBO_N"; exit 1 ;;
