@@ -1,0 +1,5090 @@
+{
+  "project_name": "Dead or Alive",
+  "edition": "stocks",
+  "lang": "en",
+  "tagline": "Popular trading strategies, re-tested every week \u2014 after fees, out-of-sample.",
+  "generated_at": "2026-11-02T06:40:35.838557+00:00",
+  "as_of": "2026-10-30",
+  "oos_days": 730,
+  "tally": {
+    "ALIVE": 4,
+    "FADING": 16,
+    "DEAD": 2,
+    "TOO FEW TRADES": 22
+  },
+  "rows": [
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "10-50",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.004216871977904,
+        "cagr": 0.028447691015134335,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 82,
+        "win_rate": 41.46341463414634,
+        "profit_factor": 1.6433833519536756,
+        "mdd": 33.51428960880458,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.30679673137736696,
+        "exposure": 63.99295549151457,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.010069870679696398
+      },
+      "oos": {
+        "total_return": 0.1975420164525894,
+        "cagr": 0.09471567727693841,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 7,
+        "win_rate": 57.14285714285714,
+        "profit_factor": 4.834593110437717,
+        "mdd": 7.409718481787464,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.9144859842563031,
+        "exposure": 77.29083665338645,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.0282175858743753,
+        "fee_drag": 0.003357816440082928
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=8, n_slow=38",
+            "oos_pf": 3.9350577690139574,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=8, n_slow=50",
+            "oos_pf": 4.860290872182226,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=8, n_slow=62",
+            "oos_pf": 5.642257594582686,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=10, n_slow=38",
+            "oos_pf": 2.813479317399387,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=10, n_slow=50",
+            "oos_pf": 4.834593110437717,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=10, n_slow=62",
+            "oos_pf": 3.415321806467122,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_fast=12, n_slow=38",
+            "oos_pf": 2.4311670667384173,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=12, n_slow=50",
+            "oos_pf": 3.506173934514566,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=12, n_slow=62",
+            "oos_pf": 3.030538950386027,
+            "oos_n_trades": 5
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "20-100",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 2.026202710734446,
+        "cagr": 0.04568824369821267,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 35,
+        "win_rate": 48.57142857142857,
+        "profit_factor": 2.673558539040602,
+        "mdd": 23.695333174816437,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.4480308037144065,
+        "exposure": 67.72334293948127,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.03907954366477512
+      },
+      "oos": {
+        "total_return": 0.1586947068077187,
+        "cagr": 0.07674270937652983,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 3,
+        "win_rate": 66.66666666666666,
+        "profit_factor": 5.729011364182629,
+        "mdd": 9.301226966679298,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.7157148233031966,
+        "exposure": 83.26693227091634,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.05245911008691947,
+        "fee_drag": 0.0013912682607215565
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=15, n_slow=75",
+            "oos_pf": 11.888940920164298,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=15, n_slow=100",
+            "oos_pf": 8.908273518403224,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=15, n_slow=125",
+            "oos_pf": 5.848059612662682,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=20, n_slow=75",
+            "oos_pf": 9.336545008191838,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=20, n_slow=100",
+            "oos_pf": 5.729011364182629,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=20, n_slow=125",
+            "oos_pf": 4.02201531447772,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=25, n_slow=75",
+            "oos_pf": 5.025471392987659,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=25, n_slow=100",
+            "oos_pf": 4.819886589763644,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=25, n_slow=125",
+            "oos_pf": 5.395597800891148,
+            "oos_n_trades": 3
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "50-200",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 4.116335948352966,
+        "cagr": 0.06807939105992289,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 12,
+        "win_rate": 83.33333333333334,
+        "profit_factor": 15.226154009656618,
+        "mdd": 34.104746893243934,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.5971253216554454,
+        "exposure": 67.65930195325008,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.15881570160671785
+      },
+      "oos": {
+        "total_return": 0.1357816167965391,
+        "cagr": 0.06600088841936724,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 2,
+        "win_rate": 50.0,
+        "profit_factor": 3.110488645188853,
+        "mdd": 18.998904129504957,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.4851716510421919,
+        "exposure": 89.2430278884462,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.07594662414147874,
+        "fee_drag": 0.0009089888526188084
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=38, n_slow=150",
+            "oos_pf": 3.135123808586152,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=38, n_slow=200",
+            "oos_pf": 2.520430833525493,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=38, n_slow=250",
+            "oos_pf": 3.5988080304978056,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=50, n_slow=150",
+            "oos_pf": 0.9020778926840756,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=50, n_slow=200",
+            "oos_pf": 3.110488645188853,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=50, n_slow=250",
+            "oos_pf": 3.1494829165488283,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=62, n_slow=150",
+            "oos_pf": 1.3455875562415747,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=62, n_slow=200",
+            "oos_pf": 2.8842885963907023,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=62, n_slow=250",
+            "oos_pf": 5.318385340933632,
+            "oos_n_trades": 2
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ema_cross",
+      "strategy_name": "EMA crossover",
+      "type": "state",
+      "params": "12-26",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.9871080982509879,
+        "cagr": 0.028092026848991702,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 97,
+        "win_rate": 43.29896907216495,
+        "profit_factor": 1.5884056617561353,
+        "mdd": 29.85128967395253,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.30826498476866776,
+        "exposure": 64.66538584694204,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.008300059302882886
+      },
+      "oos": {
+        "total_return": 0.22688341952372837,
+        "cagr": 0.10809896097713367,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 9,
+        "win_rate": 55.55555555555556,
+        "profit_factor": 4.715261944918343,
+        "mdd": 6.89083819467089,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 1.046792774662388,
+        "exposure": 76.49402390438247,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.02496339998784754,
+        "fee_drag": 0.00442474012278371
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=9, n_slow=20",
+            "oos_pf": 2.725127296734828,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=9, n_slow=26",
+            "oos_pf": 3.883642381628644,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=9, n_slow=32",
+            "oos_pf": 4.141027484502366,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=12, n_slow=20",
+            "oos_pf": 4.64464817166726,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_fast=12, n_slow=26",
+            "oos_pf": 4.715261944918343,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=12, n_slow=32",
+            "oos_pf": 3.3962866144656645,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=15, n_slow=20",
+            "oos_pf": 4.381863947538344,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=15, n_slow=26",
+            "oos_pf": 4.1481980147954705,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=15, n_slow=32",
+            "oos_pf": 3.9517632682521318,
+            "oos_n_trades": 7
+          }
+        ],
+        "share_pf_ge_1": 0.3333333333333333,
+        "n_pass": 3,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "above_sma",
+      "strategy_name": "Price above SMA",
+      "type": "state",
+      "params": "n200",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 2.939058626921087,
+        "cagr": 0.05687006539042283,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 79,
+        "win_rate": 35.44303797468354,
+        "profit_factor": 2.9260010422754505,
+        "mdd": 22.302282243573636,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.5726188940786435,
+        "exposure": 68.05955811719501,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.020861895952924286
+      },
+      "oos": {
+        "total_return": 0.19368264728597806,
+        "cagr": 0.09294323272953964,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 4,
+        "win_rate": 50.0,
+        "profit_factor": 4.647872146817761,
+        "mdd": 10.756228748140517,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.8235006546963796,
+        "exposure": 88.84462151394422,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.04792487562810735,
+        "fee_drag": 0.0019114209901636148
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=150",
+            "oos_pf": 15.26952775630331,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n=200",
+            "oos_pf": 4.647872146817761,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "n=250",
+            "oos_pf": 2.370115553048586,
+            "oos_n_trades": 7
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "above_sma",
+      "strategy_name": "Price above SMA",
+      "type": "state",
+      "params": "n50",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.7919074208880539,
+        "cagr": 0.023812021404475248,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 222,
+        "win_rate": 31.53153153153153,
+        "profit_factor": 1.3601244848447644,
+        "mdd": 33.68203199956126,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.27428678856128896,
+        "exposure": 64.4092219020173,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.003238008543432715
+      },
+      "oos": {
+        "total_return": 0.1709634951724246,
+        "cagr": 0.08245093179209229,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 20,
+        "win_rate": 40.0,
+        "profit_factor": 2.271173625065106,
+        "mdd": 8.519356151322455,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.8164811844827079,
+        "exposure": 75.4980079681275,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.00882056786416105,
+        "fee_drag": 0.009405279041512893
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=38",
+            "oos_pf": 1.7846305339029136,
+            "oos_n_trades": 22
+          },
+          {
+            "params": "n=50",
+            "oos_pf": 2.271173625065106,
+            "oos_n_trades": 20
+          },
+          {
+            "params": "n=62",
+            "oos_pf": 2.80018611768105,
+            "oos_n_trades": 19
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "type": "state",
+      "params": "20-10",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.0624097133466899,
+        "cagr": 0.02963599199688649,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 107,
+        "win_rate": 46.728971962616825,
+        "profit_factor": 1.7023807043394172,
+        "mdd": 36.30713177226177,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.3610870905088184,
+        "exposure": 48.63912904258726,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.007635853449994715
+      },
+      "oos": {
+        "total_return": 0.10543257576425091,
+        "cagr": 0.051605495369948295,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 11,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 2.0384480113495447,
+        "mdd": 7.823072501553208,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.6055603257643323,
+        "exposure": 57.37051792828686,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.009999147482454541,
+        "fee_drag": 0.004874619697306404
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_high=15, n_low=8",
+            "oos_pf": 1.9347417348184517,
+            "oos_n_trades": 14
+          },
+          {
+            "params": "n_high=15, n_low=10",
+            "oos_pf": 2.439754144134646,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=15, n_low=12",
+            "oos_pf": 2.533801388788249,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_high=20, n_low=8",
+            "oos_pf": 1.8877290582212571,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_high=20, n_low=10",
+            "oos_pf": 2.0384480113495447,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=20, n_low=12",
+            "oos_pf": 2.1555887273918883,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_high=25, n_low=8",
+            "oos_pf": 1.389616558590805,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_high=25, n_low=10",
+            "oos_pf": 1.5365564731677228,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=25, n_low=12",
+            "oos_pf": 1.667048904419667,
+            "oos_n_trades": 10
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 9,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "type": "state",
+      "params": "55-20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.15976919388870559,
+        "cagr": 0.005998015054910377,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 61,
+        "win_rate": 45.90163934426229,
+        "profit_factor": 1.2074880877179448,
+        "mdd": 29.37894957129433,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.11396263841196162,
+        "exposure": 43.01953250080051,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.003562763063575983
+      },
+      "oos": {
+        "total_return": 0.017418677024987117,
+        "cagr": 0.008706437709474768,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 7,
+        "win_rate": 28.57142857142857,
+        "profit_factor": 1.1985600795200348,
+        "mdd": 9.70645872286864,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.1380647909521879,
+        "exposure": 65.93625498007968,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.003685779047102306,
+        "fee_drag": 0.0028527643399780533
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_high=41, n_low=15",
+            "oos_pf": 1.450480629224918,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_high=41, n_low=20",
+            "oos_pf": 1.3962953318411193,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_high=41, n_low=25",
+            "oos_pf": 2.5733558240719403,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=55, n_low=15",
+            "oos_pf": 1.2489678000247895,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_high=55, n_low=20",
+            "oos_pf": 1.1985600795200348,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_high=55, n_low=25",
+            "oos_pf": 2.2651623375121677,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=69, n_low=15",
+            "oos_pf": 1.2090388221830672,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_high=69, n_low=20",
+            "oos_pf": 1.1593796137412788,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_high=69, n_low=25",
+            "oos_pf": 2.204095005250223,
+            "oos_n_trades": 5
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout",
+      "strategy_name": "Larry Williams volatility breakout",
+      "type": "onebar",
+      "params": "k0.5",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": -0.6704754795104961,
+        "cagr": -0.043799900024467875,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 2640,
+        "win_rate": 50.83333333333333,
+        "profit_factor": 0.8968474132061962,
+        "mdd": 77.48485978471513,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.3335495411416759,
+        "exposure": 69.46845981428113,
+        "max_consec_loss": 9,
+        "avg_trade_return": -0.0003660501175202461
+      },
+      "oos": {
+        "total_return": 0.21715235783910347,
+        "cagr": 0.10367824528921288,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 215,
+        "win_rate": 58.139534883720934,
+        "profit_factor": 1.4215307029097042,
+        "mdd": 6.132974595294705,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 1.0179160220228336,
+        "exposure": 71.31474103585657,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0009475866146376733,
+        "fee_drag": 0.10930798576645517
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.4",
+            "oos_pf": 1.2605363585276466,
+            "oos_n_trades": 260
+          },
+          {
+            "params": "k=0.5",
+            "oos_pf": 1.4215307029097042,
+            "oos_n_trades": 215
+          },
+          {
+            "params": "k=0.6",
+            "oos_pf": 1.4447863051934062,
+            "oos_n_trades": 168
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout",
+      "strategy_name": "Larry Williams volatility breakout",
+      "type": "onebar",
+      "params": "k0.7",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": -0.3366516200477667,
+        "cagr": -0.016423777371533332,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 1694,
+        "win_rate": 53.30578512396694,
+        "profit_factor": 0.9393239605469116,
+        "mdd": 55.9673618714269,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.15983995000068013,
+        "exposure": 49.679795068844065,
+        "max_consec_loss": 8,
+        "avg_trade_return": -0.00019613469237264805
+      },
+      "oos": {
+        "total_return": 0.14669537504987384,
+        "cagr": 0.07113066531482115,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 132,
+        "win_rate": 62.121212121212125,
+        "profit_factor": 1.5306113459584445,
+        "mdd": 5.904698577318889,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.8696099612631657,
+        "exposure": 47.808764940239044,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0010687665011028618,
+        "fee_drag": 0.06217242543611645
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.6",
+            "oos_pf": 1.4447863051934062,
+            "oos_n_trades": 168
+          },
+          {
+            "params": "k=0.7",
+            "oos_pf": 1.5306113459584445,
+            "oos_n_trades": 132
+          },
+          {
+            "params": "k=0.8",
+            "oos_pf": 1.3039685951770787,
+            "oos_n_trades": 97
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout_trend",
+      "strategy_name": "Volatility breakout + trend filter",
+      "type": "onebar",
+      "params": "k0.5-sma20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "DEAD",
+      "is": {
+        "total_return": -0.4910972649956534,
+        "cagr": -0.026885509878660563,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 1619,
+        "win_rate": 48.919085855466335,
+        "profit_factor": 0.8613687883179002,
+        "mdd": 60.57698424086249,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.4063465837663796,
+        "exposure": 43.0835734870317,
+        "max_consec_loss": 9,
+        "avg_trade_return": -0.0003872727993098378
+      },
+      "oos": {
+        "total_return": -0.01581992797416354,
+        "cagr": -0.00797301064611089,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 137,
+        "win_rate": 55.47445255474452,
+        "profit_factor": 0.9561629169436127,
+        "mdd": 6.8916680463601665,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": -0.12918156835974437,
+        "exposure": 45.61752988047809,
+        "max_consec_loss": 7,
+        "avg_trade_return": -9.839315720516367e-05,
+        "fee_drag": 0.0554382025348088
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.4, sma_n=15",
+            "oos_pf": 1.0318966351302863,
+            "oos_n_trades": 164
+          },
+          {
+            "params": "k=0.4, sma_n=20",
+            "oos_pf": 0.9145883027303401,
+            "oos_n_trades": 169
+          },
+          {
+            "params": "k=0.4, sma_n=25",
+            "oos_pf": 0.986462630895908,
+            "oos_n_trades": 173
+          },
+          {
+            "params": "k=0.5, sma_n=15",
+            "oos_pf": 1.1137772573072027,
+            "oos_n_trades": 133
+          },
+          {
+            "params": "k=0.5, sma_n=20",
+            "oos_pf": 0.9561629169436127,
+            "oos_n_trades": 137
+          },
+          {
+            "params": "k=0.5, sma_n=25",
+            "oos_pf": 1.0023899157056213,
+            "oos_n_trades": 142
+          },
+          {
+            "params": "k=0.6, sma_n=15",
+            "oos_pf": 1.2939075938447342,
+            "oos_n_trades": 102
+          },
+          {
+            "params": "k=0.6, sma_n=20",
+            "oos_pf": 1.027749188718494,
+            "oos_n_trades": 107
+          },
+          {
+            "params": "k=0.6, sma_n=25",
+            "oos_pf": 1.085751577179166,
+            "oos_n_trades": 112
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 6,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "strategy_name": "RSI mean reversion",
+      "type": "state",
+      "params": "exit50",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.7823045848448513,
+        "cagr": 0.023590088367978934,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 33,
+        "win_rate": 81.81818181818183,
+        "profit_factor": 4.0036417590280795,
+        "mdd": 29.160087310732084,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.27117654818118636,
+        "exposure": 7.28466218379763,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.018213372403185397
+      },
+      "oos": {
+        "total_return": -0.0036245459850196005,
+        "cagr": -0.0018211383230686273,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 2,
+        "win_rate": 50.0,
+        "profit_factor": 0.8956074889940727,
+        "mdd": 13.724673821056676,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.04022811240103719,
+        "exposure": 8.565737051792828,
+        "max_consec_loss": 1,
+        "avg_trade_return": -0.0014612923058477945,
+        "fee_drag": 0.0007974192990344298
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "exit=38",
+            "oos_pf": 11.841227512721202,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "exit=50",
+            "oos_pf": 0.8956074889940727,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=62",
+            "oos_pf": "inf",
+            "oos_n_trades": 2
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "strategy_name": "RSI mean reversion",
+      "type": "state",
+      "params": "exit70",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.1833095797987205,
+        "cagr": 0.03200520126495876,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 20,
+        "win_rate": 80.0,
+        "profit_factor": 2.8640204803165,
+        "mdd": 56.47366917817161,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.2730985799494486,
+        "exposure": 42.77937880243356,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.04699027822456983
+      },
+      "oos": {
+        "total_return": 0.17993673605561922,
+        "cagr": 0.08660701930969839,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 2,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 13.724673821056676,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.7368564994805714,
+        "exposure": 18.92430278884462,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.08629191655889068,
+        "fee_drag": 0.0009443270819031735
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "exit=52",
+            "oos_pf": 1.2813609251336449,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=70",
+            "oos_pf": "inf",
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=88",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi2_connors",
+      "strategy_name": "Connors RSI(2)",
+      "type": "state",
+      "params": "fixed",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.6756530500980951,
+        "cagr": 0.021045020569177897,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 170,
+        "win_rate": 71.17647058823529,
+        "profit_factor": 1.778946343057423,
+        "mdd": 14.913272065388117,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.39281995606411296,
+        "exposure": 9.36599423631124,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0031654599768475692
+      },
+      "oos": {
+        "total_return": 0.15049211039833144,
+        "cagr": 0.07290953415295509,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 23,
+        "win_rate": 82.6086956521739,
+        "profit_factor": 4.390581068380962,
+        "mdd": 4.838766407608707,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 1.357218789786757,
+        "exposure": 13.147410358565736,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.0061615782867108036,
+        "fee_drag": 0.010633366040658787
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_mr",
+      "strategy_name": "Bollinger mean reversion",
+      "type": "state",
+      "params": "20-2",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.1990026159633538,
+        "cagr": 0.03230345006776947,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 117,
+        "win_rate": 74.35897435897436,
+        "profit_factor": 1.7881904518366447,
+        "mdd": 37.021522867160215,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.3025892093421844,
+        "exposure": 21.741914825488312,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.007619555021553659
+      },
+      "oos": {
+        "total_return": 0.17906538193681154,
+        "cagr": 0.08620413052574483,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 12,
+        "win_rate": 83.33333333333334,
+        "profit_factor": 4.368953622126029,
+        "mdd": 8.821222453297173,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.7725471597035084,
+        "exposure": 15.936254980079681,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014041340924666024,
+        "fee_drag": 0.00567311850095753
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_breakout",
+      "strategy_name": "Bollinger breakout",
+      "type": "state",
+      "params": "20-2",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "DEAD",
+      "is": {
+        "total_return": -0.015392858899013429,
+        "cagr": -0.0006256711154393191,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 107,
+        "win_rate": 42.05607476635514,
+        "profit_factor": 1.0114728728368079,
+        "mdd": 29.31569917732524,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.021370927306319717,
+        "exposure": 28.370156900416266,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.00010050791887305546
+      },
+      "oos": {
+        "total_return": -0.00916142446174295,
+        "cagr": -0.004609501646284819,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 10,
+        "win_rate": 30.0,
+        "profit_factor": 0.941171576471612,
+        "mdd": 5.504234269200037,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": -0.04004874426372093,
+        "exposure": 33.66533864541832,
+        "max_consec_loss": 3,
+        "avg_trade_return": -0.0005841259400749532,
+        "fee_drag": 0.003971291643335206
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "macd",
+      "strategy_name": "MACD signal cross",
+      "type": "state",
+      "params": "12-26-9",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.308752941373247,
+        "cagr": 0.03433390797758862,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 266,
+        "win_rate": 43.609022556390975,
+        "profit_factor": 1.4015349616034978,
+        "mdd": 26.356486529541844,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.35125141510495766,
+        "exposure": 50.720461095100866,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.0035742360016011217
+      },
+      "oos": {
+        "total_return": 0.0014679791159279976,
+        "cagr": 0.000736644650359608,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 24,
+        "win_rate": 37.5,
+        "profit_factor": 1.0727094098772199,
+        "mdd": 12.976258457389033,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.05167556500720064,
+        "exposure": 43.82470119521912,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0007294269245971449,
+        "fee_drag": 0.009660388400971609
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "supertrend",
+      "strategy_name": "Supertrend",
+      "type": "state",
+      "params": "10-3",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.313722558403145,
+        "cagr": 0.034423641895136914,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 99,
+        "win_rate": 45.45454545454545,
+        "profit_factor": 1.657245960928968,
+        "mdd": 30.836290347622807,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.36817927279297163,
+        "exposure": 59.574127441562595,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.009814972937997612
+      },
+      "oos": {
+        "total_return": 0.13156384389152365,
+        "cagr": 0.06401184211149702,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 10,
+        "win_rate": 30.0,
+        "profit_factor": 2.092064348192828,
+        "mdd": 7.5709308526323404,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.7426368325892495,
+        "exposure": 58.16733067729084,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.013951301186729026,
+        "fee_drag": 0.0045353200290025875
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "tsmom",
+      "strategy_name": "Time-series momentum",
+      "type": "state",
+      "params": "n30",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.8894689183820292,
+        "cagr": 0.026004237047304368,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 238,
+        "win_rate": 39.075630252100844,
+        "profit_factor": 1.340768143294494,
+        "mdd": 29.167132691721463,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.290717564416811,
+        "exposure": 62.936279218699966,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.0032704451567933703
+      },
+      "oos": {
+        "total_return": 0.00898134215328028,
+        "cagr": 0.004498524259981318,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 25,
+        "win_rate": 24.0,
+        "profit_factor": 1.0914380187087709,
+        "mdd": 15.93062889359359,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.09491954745588096,
+        "exposure": 69.9203187250996,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.0008931263651702359,
+        "fee_drag": 0.010140431209331613
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=22",
+            "oos_pf": 1.7645088568702978,
+            "oos_n_trades": 23
+          },
+          {
+            "params": "n=30",
+            "oos_pf": 1.0914380187087709,
+            "oos_n_trades": 25
+          },
+          {
+            "params": "n=38",
+            "oos_pf": 1.7704055464062791,
+            "oos_n_trades": 21
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "tsmom",
+      "strategy_name": "Time-series momentum",
+      "type": "state",
+      "params": "n90",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.4009141781835055,
+        "cagr": 0.035968637148464655,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 132,
+        "win_rate": 40.909090909090914,
+        "profit_factor": 1.806937647453089,
+        "mdd": 29.53610645272039,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.3801057194764346,
+        "exposure": 66.33045148895293,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.008248180939894
+      },
+      "oos": {
+        "total_return": 0.191954848735449,
+        "cagr": 0.09214880340309084,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 9,
+        "win_rate": 77.77777777777779,
+        "profit_factor": 12.976643997076302,
+        "mdd": 7.183087636714469,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.8660425773603537,
+        "exposure": 81.07569721115537,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.020424680914348927,
+        "fee_drag": 0.004298770657273243
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=68",
+            "oos_pf": 2.8278855581131443,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n=90",
+            "oos_pf": 12.976643997076302,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n=112",
+            "oos_pf": 3.0171496429164493,
+            "oos_n_trades": 6
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dip_3down",
+      "strategy_name": "Buy the dip (3 down closes)",
+      "type": "state",
+      "params": "fixed",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.0861591150633183,
+        "cagr": 0.030111734226259124,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 329,
+        "win_rate": 63.22188449848024,
+        "profit_factor": 1.5906063554233594,
+        "mdd": 20.49034403081795,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.430348725146276,
+        "exposure": 8.837656099903938,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.0023360598016088125
+      },
+      "oos": {
+        "total_return": 0.1290135517054456,
+        "cagr": 0.06280736626602001,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 28,
+        "win_rate": 64.28571428571429,
+        "profit_factor": 3.1589116937485993,
+        "mdd": 5.2312239149149615,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.6834223897834093,
+        "exposure": 7.968127490039841,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.004386781165010075,
+        "fee_drag": 0.012716028785231481
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dip_pct",
+      "strategy_name": "Buy the dip (-x% bar)",
+      "type": "holdN",
+      "params": "-5pct-5bar",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.07668225973799037,
+        "cagr": 0.002985371396987624,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 14,
+        "win_rate": 50.0,
+        "profit_factor": 1.3109974567102272,
+        "mdd": 24.783920502951162,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.07682818795946446,
+        "exposure": 1.2968299711815563,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.007411303378749535
+      },
+      "oos": {
+        "total_return": 0.11169976614206512,
+        "cagr": 0.05459416904582848,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 1,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 4.3818997195333225,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.6574255370151998,
+        "exposure": 1.1952191235059761,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.1116997661420649,
+        "fee_drag": 0.00044476886022848383
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "threshold=-0.0625, n_hold=4",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.0625, n_hold=5",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.0625, n_hold=6",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.05, n_hold=4",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.05, n_hold=5",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.05, n_hold=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=4",
+            "oos_pf": "inf",
+            "oos_n_trades": 2
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=5",
+            "oos_pf": 0.0,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "buy_and_hold",
+      "strategy_name": "Buy & hold (reference)",
+      "type": "reference",
+      "params": "-",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": null,
+      "is": {
+        "total_return": 2.9226803241533394,
+        "mdd": 56.473669178171626
+      },
+      "oos": {
+        "total_return": 0.29955404654304507,
+        "mdd": 18.99890412950491,
+        "fee_drag": 0.0005199256037380362
+      },
+      "suspicious": false,
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_weekly",
+      "strategy_name": "Weekly DCA (reference)",
+      "type": "reference",
+      "params": "-",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": null,
+      "is": {
+        "total_return": 2.620597580310813,
+        "mdd": 56.31661284174405
+      },
+      "oos": {
+        "total_return": 0.1572872820514164,
+        "mdd": 18.1217991528815,
+        "fee_drag": 0.00023145745641039994
+      },
+      "suspicious": false,
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "10-50",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.5725865217684465,
+        "cagr": 0.03885925765964582,
+        "bh_return": 4.197764570920794,
+        "n_trades": 79,
+        "win_rate": 48.10126582278481,
+        "profit_factor": 1.614540526792615,
+        "mdd": 50.14615756862541,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.3217255747204294,
+        "exposure": 63.49663784822286,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.01612809769812648
+      },
+      "oos": {
+        "total_return": 0.24206110936834135,
+        "cagr": 0.1149593082983078,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 7,
+        "win_rate": 42.857142857142854,
+        "profit_factor": 3.0165338183154344,
+        "mdd": 11.670785549600737,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7782434131538485,
+        "exposure": 73.70517928286853,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.03578061536801055,
+        "fee_drag": 0.0034826445797517813
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=8, n_slow=38",
+            "oos_pf": 5.283310151713708,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=8, n_slow=50",
+            "oos_pf": 3.840774848674967,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=8, n_slow=62",
+            "oos_pf": 5.032740265635325,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=10, n_slow=38",
+            "oos_pf": 3.9159498286030368,
+            "oos_n_trades": 6
+          },
+          {
+            "params": "n_fast=10, n_slow=50",
+            "oos_pf": 3.0165338183154344,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=10, n_slow=62",
+            "oos_pf": 4.99068472503269,
+            "oos_n_trades": 6
+          },
+          {
+            "params": "n_fast=12, n_slow=38",
+            "oos_pf": 4.309909356255609,
+            "oos_n_trades": 6
+          },
+          {
+            "params": "n_fast=12, n_slow=50",
+            "oos_pf": 3.154908367576986,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=12, n_slow=62",
+            "oos_pf": 37.25899152680513,
+            "oos_n_trades": 4
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "20-100",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 4.266133857160994,
+        "cagr": 0.06932367688013286,
+        "bh_return": 4.197764570920794,
+        "n_trades": 33,
+        "win_rate": 54.54545454545454,
+        "profit_factor": 3.0325110338388592,
+        "mdd": 31.005696670456206,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.501565960583861,
+        "exposure": 67.41914825488313,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.06534740804070648
+      },
+      "oos": {
+        "total_return": 0.19538013820372102,
+        "cagr": 0.09372316933938385,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 3,
+        "win_rate": 66.66666666666666,
+        "profit_factor": 5.828534160908113,
+        "mdd": 12.588970004624667,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6165095884582362,
+        "exposure": 80.87649402390437,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.06581800954157628,
+        "fee_drag": 0.0014353172030674433
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=15, n_slow=75",
+            "oos_pf": 2.1647112336289864,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_fast=15, n_slow=100",
+            "oos_pf": 4.064077836667521,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=15, n_slow=125",
+            "oos_pf": 5.720118252920753,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=20, n_slow=75",
+            "oos_pf": 1.7813516073010414,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_fast=20, n_slow=100",
+            "oos_pf": 5.828534160908113,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=20, n_slow=125",
+            "oos_pf": 4.671031668264716,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=25, n_slow=75",
+            "oos_pf": 2.6122949607464765,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "n_fast=25, n_slow=100",
+            "oos_pf": 3.709767793343051,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=25, n_slow=125",
+            "oos_pf": 4.563721234751079,
+            "oos_n_trades": 3
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "sma_cross",
+      "strategy_name": "SMA crossover",
+      "type": "state",
+      "params": "50-200",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 11.235862461570024,
+        "cagr": 0.10632190311454037,
+        "bh_return": 4.197764570920794,
+        "n_trades": 16,
+        "win_rate": 62.5,
+        "profit_factor": 12.128427938634799,
+        "mdd": 28.559369523153542,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.721845594153701,
+        "exposure": 68.68395773294908,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.19416350908231716
+      },
+      "oos": {
+        "total_return": 0.16869173619748312,
+        "cagr": 0.08139621977742317,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 2,
+        "win_rate": 50.0,
+        "profit_factor": 3.326351143793555,
+        "mdd": 22.883306921571034,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.47538656207820074,
+        "exposure": 90.2390438247012,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.09557466141817839,
+        "fee_drag": 0.0009353274825392166
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=38, n_slow=150",
+            "oos_pf": 1.987436895393586,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=38, n_slow=200",
+            "oos_pf": 2.3473068471411302,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=38, n_slow=250",
+            "oos_pf": 2.7457192555361565,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=50, n_slow=150",
+            "oos_pf": 0.2632482779459089,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=50, n_slow=200",
+            "oos_pf": 3.326351143793555,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=50, n_slow=250",
+            "oos_pf": 3.5794141793502043,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=62, n_slow=150",
+            "oos_pf": 0.4134893927915938,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_fast=62, n_slow=200",
+            "oos_pf": 2.9526227529180447,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_fast=62, n_slow=250",
+            "oos_pf": 9.64991996035474,
+            "oos_n_trades": 2
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ema_cross",
+      "strategy_name": "EMA crossover",
+      "type": "state",
+      "params": "12-26",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 2.96278346535293,
+        "cagr": 0.057126147350681444,
+        "bh_return": 4.197764570920794,
+        "n_trades": 101,
+        "win_rate": 45.54455445544555,
+        "profit_factor": 1.8132034339267913,
+        "mdd": 34.66193392851932,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.43481149603229624,
+        "exposure": 64.23310918988152,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.016534981894961314
+      },
+      "oos": {
+        "total_return": 0.18795355959544913,
+        "cagr": 0.09030683470158873,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 8,
+        "win_rate": 37.5,
+        "profit_factor": 2.440336967849273,
+        "mdd": 13.043860875188917,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6478933660428526,
+        "exposure": 73.30677290836654,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.02542601851849524,
+        "fee_drag": 0.003807540256779429
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=9, n_slow=20",
+            "oos_pf": 2.521021714747083,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_fast=9, n_slow=26",
+            "oos_pf": 3.753652995517895,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=9, n_slow=32",
+            "oos_pf": 3.565810786777358,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=12, n_slow=20",
+            "oos_pf": 4.608416322625518,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_fast=12, n_slow=26",
+            "oos_pf": 2.440336967849273,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=12, n_slow=32",
+            "oos_pf": 3.0872340937536293,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=15, n_slow=20",
+            "oos_pf": 2.911688589999639,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_fast=15, n_slow=26",
+            "oos_pf": 3.190420298444095,
+            "oos_n_trades": 7
+          },
+          {
+            "params": "n_fast=15, n_slow=32",
+            "oos_pf": 3.2444037003040944,
+            "oos_n_trades": 7
+          }
+        ],
+        "share_pf_ge_1": 0.2222222222222222,
+        "n_pass": 2,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "above_sma",
+      "strategy_name": "Price above SMA",
+      "type": "state",
+      "params": "n200",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 6.557007373870827,
+        "cagr": 0.08502000601760051,
+        "bh_return": 4.197764570920794,
+        "n_trades": 79,
+        "win_rate": 26.582278481012654,
+        "profit_factor": 3.450446871841994,
+        "mdd": 26.56771542764107,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.6281107039761636,
+        "exposure": 69.53250080051234,
+        "max_consec_loss": 9,
+        "avg_trade_return": 0.034539499539648445
+      },
+      "oos": {
+        "total_return": 0.28773321871415525,
+        "cagr": 0.1353551289065762,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 3,
+        "win_rate": 66.66666666666666,
+        "profit_factor": 11.994648197475074,
+        "mdd": 11.31526692861441,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8225757527152626,
+        "exposure": 88.24701195219123,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.09118237381258872,
+        "fee_drag": 0.0015462074219803057
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=150",
+            "oos_pf": 3.7957599258404007,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n=200",
+            "oos_pf": 11.994648197475074,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n=250",
+            "oos_pf": 3.616847470696237,
+            "oos_n_trades": 6
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "above_sma",
+      "strategy_name": "Price above SMA",
+      "type": "state",
+      "params": "n50",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 2.8867152865761616,
+        "cagr": 0.056299804518496366,
+        "bh_return": 4.197764570920794,
+        "n_trades": 200,
+        "win_rate": 29.5,
+        "profit_factor": 1.6781514807395035,
+        "mdd": 46.620594717715036,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.4380167884510637,
+        "exposure": 63.352545629202694,
+        "max_consec_loss": 14,
+        "avg_trade_return": 0.008277355936845872
+      },
+      "oos": {
+        "total_return": 0.1942411110665876,
+        "cagr": 0.09319988787509037,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 22,
+        "win_rate": 27.27272727272727,
+        "profit_factor": 1.97260779672548,
+        "mdd": 12.847956483703694,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6742831408873309,
+        "exposure": 70.5179282868526,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.009805838460338006,
+        "fee_drag": 0.01055569887381691
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=38",
+            "oos_pf": 2.509624642467126,
+            "oos_n_trades": 26
+          },
+          {
+            "params": "n=50",
+            "oos_pf": 1.97260779672548,
+            "oos_n_trades": 22
+          },
+          {
+            "params": "n=62",
+            "oos_pf": 3.0228117911067005,
+            "oos_n_trades": 17
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "type": "state",
+      "params": "20-10",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.587000878848527,
+        "cagr": 0.03909347317216261,
+        "bh_return": 4.197764570920794,
+        "n_trades": 106,
+        "win_rate": 51.886792452830186,
+        "profit_factor": 1.6296395374723018,
+        "mdd": 44.66525475944135,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.35559314620248117,
+        "exposure": 48.84726224783862,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.010983936038141072
+      },
+      "oos": {
+        "total_return": 0.15773108203094388,
+        "cagr": 0.07629309761685987,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 11,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 1.8567463768192496,
+        "mdd": 11.092762687077917,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6915169906432608,
+        "exposure": 48.40637450199203,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.01590707821258428,
+        "fee_drag": 0.005105240120818921
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_high=15, n_low=8",
+            "oos_pf": 1.9916621771175944,
+            "oos_n_trades": 12
+          },
+          {
+            "params": "n_high=15, n_low=10",
+            "oos_pf": 2.0511359569560743,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=15, n_low=12",
+            "oos_pf": 2.541673593580666,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_high=20, n_low=8",
+            "oos_pf": 1.8010853652905614,
+            "oos_n_trades": 12
+          },
+          {
+            "params": "n_high=20, n_low=10",
+            "oos_pf": 1.8567463768192496,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=20, n_low=12",
+            "oos_pf": 2.3008580136009145,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_high=25, n_low=8",
+            "oos_pf": 1.7397539323284277,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_high=25, n_low=10",
+            "oos_pf": 1.9497909289370456,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_high=25, n_low=12",
+            "oos_pf": 2.642992520789794,
+            "oos_n_trades": 7
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 6,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "donchian",
+      "strategy_name": "Donchian/Turtle breakout",
+      "type": "state",
+      "params": "55-20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.9145442017780916,
+        "cagr": 0.02655012480299135,
+        "bh_return": 4.197764570920794,
+        "n_trades": 58,
+        "win_rate": 55.172413793103445,
+        "profit_factor": 1.6316292145522444,
+        "mdd": 45.06127594367264,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.28290433570552953,
+        "exposure": 46.2536023054755,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.014147294962958185
+      },
+      "oos": {
+        "total_return": 0.15754393771918873,
+        "cagr": 0.07620575749395853,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 5,
+        "win_rate": 60.0,
+        "profit_factor": 2.91551855655474,
+        "mdd": 11.349817232780657,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.5926633216259131,
+        "exposure": 59.16334661354582,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.032593669116917676,
+        "fee_drag": 0.0023174045384113384
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_high=41, n_low=15",
+            "oos_pf": 2.1915923875919265,
+            "oos_n_trades": 6
+          },
+          {
+            "params": "n_high=41, n_low=20",
+            "oos_pf": 3.396796854690759,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=41, n_low=25",
+            "oos_pf": 2.3349528035327167,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=55, n_low=15",
+            "oos_pf": 1.8799084201739757,
+            "oos_n_trades": 6
+          },
+          {
+            "params": "n_high=55, n_low=20",
+            "oos_pf": 2.91551855655474,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=55, n_low=25",
+            "oos_pf": 1.9636690984138843,
+            "oos_n_trades": 5
+          },
+          {
+            "params": "n_high=69, n_low=15",
+            "oos_pf": 4.061507315716316,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "n_high=69, n_low=20",
+            "oos_pf": 4.168846081836912,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "n_high=69, n_low=25",
+            "oos_pf": 2.4589284715352364,
+            "oos_n_trades": 4
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout",
+      "strategy_name": "Larry Williams volatility breakout",
+      "type": "onebar",
+      "params": "k0.5",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 5.580621371443058,
+        "cagr": 0.07898063508225661,
+        "bh_return": 4.197764570920794,
+        "n_trades": 2600,
+        "win_rate": 54.69230769230769,
+        "profit_factor": 1.205622306798635,
+        "mdd": 36.29531926091316,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.5943772622891345,
+        "exposure": 68.89209093820044,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.0008188159350773677
+      },
+      "oos": {
+        "total_return": 0.3249603569518036,
+        "cagr": 0.15171460497215117,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 210,
+        "win_rate": 56.666666666666664,
+        "profit_factor": 1.4640493346869186,
+        "mdd": 9.700144524958299,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.2437694454395527,
+        "exposure": 68.32669322709162,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0013948362556229733,
+        "fee_drag": 0.11610481203421608
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.4",
+            "oos_pf": 1.402681370437499,
+            "oos_n_trades": 254
+          },
+          {
+            "params": "k=0.5",
+            "oos_pf": 1.4640493346869186,
+            "oos_n_trades": 210
+          },
+          {
+            "params": "k=0.6",
+            "oos_pf": 1.4850484345468058,
+            "oos_n_trades": 168
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout",
+      "strategy_name": "Larry Williams volatility breakout",
+      "type": "onebar",
+      "params": "k0.7",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 2.9687628812071556,
+        "cagr": 0.05719045602479644,
+        "bh_return": 4.197764570920794,
+        "n_trades": 1727,
+        "win_rate": 55.00868558193399,
+        "profit_factor": 1.2425467833511732,
+        "mdd": 21.166759935902736,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.5593602812651324,
+        "exposure": 50.17611271213577,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.0008807465168178118
+      },
+      "oos": {
+        "total_return": 0.17004712550824763,
+        "cagr": 0.08202561057945568,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 133,
+        "win_rate": 61.65413533834586,
+        "profit_factor": 1.4430250303348398,
+        "mdd": 7.444543495502643,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8986132476315454,
+        "exposure": 48.80478087649402,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.0012271164137486257,
+        "fee_drag": 0.06393202184098845
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.6",
+            "oos_pf": 1.4850484345468058,
+            "oos_n_trades": 168
+          },
+          {
+            "params": "k=0.7",
+            "oos_pf": 1.4430250303348398,
+            "oos_n_trades": 133
+          },
+          {
+            "params": "k=0.8",
+            "oos_pf": 1.6489218753587562,
+            "oos_n_trades": 103
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "vol_breakout_trend",
+      "strategy_name": "Volatility breakout + trend filter",
+      "type": "onebar",
+      "params": "k0.5-sma20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 2.294839313440369,
+        "cagr": 0.04928254339666882,
+        "bh_return": 4.197764570920794,
+        "n_trades": 1572,
+        "win_rate": 54.4529262086514,
+        "profit_factor": 1.2720002058817186,
+        "mdd": 20.928970587229234,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.6263242743661706,
+        "exposure": 41.78674351585015,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.0008095801959332181
+      },
+      "oos": {
+        "total_return": -0.003408595886018495,
+        "cagr": -0.001712542744468415,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 127,
+        "win_rate": 52.75590551181102,
+        "profit_factor": 1.0022954760420508,
+        "mdd": 10.40591027991028,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.011449166571853683,
+        "exposure": 42.430278884462155,
+        "max_consec_loss": 4,
+        "avg_trade_return": 6.814000501536476e-06,
+        "fee_drag": 0.05193482017797335
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "k=0.4, sma_n=15",
+            "oos_pf": 1.1320825178328149,
+            "oos_n_trades": 152
+          },
+          {
+            "params": "k=0.4, sma_n=20",
+            "oos_pf": 1.1538133224034384,
+            "oos_n_trades": 154
+          },
+          {
+            "params": "k=0.4, sma_n=25",
+            "oos_pf": 1.2604213637791684,
+            "oos_n_trades": 157
+          },
+          {
+            "params": "k=0.5, sma_n=15",
+            "oos_pf": 1.0154178691284408,
+            "oos_n_trades": 124
+          },
+          {
+            "params": "k=0.5, sma_n=20",
+            "oos_pf": 1.0022954760420508,
+            "oos_n_trades": 127
+          },
+          {
+            "params": "k=0.5, sma_n=25",
+            "oos_pf": 1.2631083496439903,
+            "oos_n_trades": 128
+          },
+          {
+            "params": "k=0.6, sma_n=15",
+            "oos_pf": 1.0525161763719393,
+            "oos_n_trades": 96
+          },
+          {
+            "params": "k=0.6, sma_n=20",
+            "oos_pf": 1.0796821241614754,
+            "oos_n_trades": 101
+          },
+          {
+            "params": "k=0.6, sma_n=25",
+            "oos_pf": 1.292651237782575,
+            "oos_n_trades": 104
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 9,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "strategy_name": "RSI mean reversion",
+      "type": "state",
+      "params": "exit50",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.6079048200896335,
+        "cagr": 0.019346280853041575,
+        "bh_return": 4.197764570920794,
+        "n_trades": 31,
+        "win_rate": 80.64516129032258,
+        "profit_factor": 2.0148697791115464,
+        "mdd": 47.49649188915036,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.20319670374320323,
+        "exposure": 8.597502401536984,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.01923796873114929
+      },
+      "oos": {
+        "total_return": 0.05493583285992698,
+        "cagr": 0.02721011937712481,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 2,
+        "win_rate": 50.0,
+        "profit_factor": 5.728928757996147,
+        "mdd": 15.685160952613975,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.27150080632636014,
+        "exposure": 7.768924302788845,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.02786576689889586,
+        "fee_drag": 0.0008442863470552453
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "exit=38",
+            "oos_pf": "inf",
+            "oos_n_trades": 3
+          },
+          {
+            "params": "exit=50",
+            "oos_pf": 5.728928757996147,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=62",
+            "oos_pf": "inf",
+            "oos_n_trades": 2
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "strategy_name": "RSI mean reversion",
+      "type": "state",
+      "params": "exit70",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.6028642413090259,
+        "cagr": 0.019217160565077274,
+        "bh_return": 4.197764570920794,
+        "n_trades": 21,
+        "win_rate": 80.95238095238095,
+        "profit_factor": 1.8079092997976223,
+        "mdd": 77.81851658732558,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.19607217081606182,
+        "exposure": 36.87159782260647,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.039672566063024946
+      },
+      "oos": {
+        "total_return": 0.2309639849684424,
+        "cagr": 0.10994751946562009,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 2,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 15.685160952613975,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8390415565925076,
+        "exposure": 11.553784860557768,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.10961140713581796,
+        "fee_drag": 0.0009851652146546375
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "exit=52",
+            "oos_pf": 5.728928757996147,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=70",
+            "oos_pf": "inf",
+            "oos_n_trades": 2
+          },
+          {
+            "params": "exit=88",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi2_connors",
+      "strategy_name": "Connors RSI(2)",
+      "type": "state",
+      "params": "fixed",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.132540486403741,
+        "cagr": 0.03102603278634275,
+        "bh_return": 4.197764570920794,
+        "n_trades": 185,
+        "win_rate": 67.02702702702703,
+        "profit_factor": 1.8945093471648435,
+        "mdd": 13.940230762741123,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.45446876097843647,
+        "exposure": 11.11111111111111,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.004244123120467133
+      },
+      "oos": {
+        "total_return": 0.1434864854694804,
+        "cagr": 0.06962492899413042,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 23,
+        "win_rate": 73.91304347826086,
+        "profit_factor": 2.52699684858398,
+        "mdd": 7.337219259566186,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8175724753708845,
+        "exposure": 15.53784860557769,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.006028979338629786,
+        "fee_drag": 0.010568616901104555
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_mr",
+      "strategy_name": "Bollinger mean reversion",
+      "type": "state",
+      "params": "20-2",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.3400496048671715,
+        "cagr": 0.03489595258906664,
+        "bh_return": 4.197764570920794,
+        "n_trades": 110,
+        "win_rate": 75.45454545454545,
+        "profit_factor": 1.6528217022021519,
+        "mdd": 49.871009328295514,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.2805987969338828,
+        "exposure": 21.293627921869998,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.009685803797932593
+      },
+      "oos": {
+        "total_return": 0.07800262347120324,
+        "cagr": 0.038424410396580067,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 8,
+        "win_rate": 75.0,
+        "profit_factor": 2.328832233646721,
+        "mdd": 8.211849544977634,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.3367146698173001,
+        "exposure": 17.52988047808765,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.009753373192806475,
+        "fee_drag": 0.0034551337067272314
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_breakout",
+      "strategy_name": "Bollinger breakout",
+      "type": "state",
+      "params": "20-2",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": -0.05777223285004407,
+        "cagr": -0.002398029046862926,
+        "bh_return": 4.197764570920794,
+        "n_trades": 117,
+        "win_rate": 43.58974358974359,
+        "profit_factor": 1.018235085935451,
+        "mdd": 49.08475956143504,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.031462642846537256,
+        "exposure": 31.556195965417867,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.0002620912801245251
+      },
+      "oos": {
+        "total_return": 0.11748007806904548,
+        "cagr": 0.05734323247686923,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 9,
+        "win_rate": 33.33333333333333,
+        "profit_factor": 2.0773242537339125,
+        "mdd": 7.111692776331047,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6330282252104853,
+        "exposure": 33.067729083665334,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.01386812386352655,
+        "fee_drag": 0.004030178303137344
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "macd",
+      "strategy_name": "MACD signal cross",
+      "type": "state",
+      "params": "12-26-9",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.22057370615586103,
+        "cagr": 0.008074191297705147,
+        "bh_return": 4.197764570920794,
+        "n_trades": 249,
+        "win_rate": 44.57831325301205,
+        "profit_factor": 1.1347855646302736,
+        "mdd": 75.41231359684973,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.13234052519549802,
+        "exposure": 51.6010246557797,
+        "max_consec_loss": 9,
+        "avg_trade_return": 0.0023922708366613996
+      },
+      "oos": {
+        "total_return": -0.0014311407360856343,
+        "cagr": -0.0007186774455333333,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 19,
+        "win_rate": 26.31578947368421,
+        "profit_factor": 1.0976872629338958,
+        "mdd": 21.700761200927264,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.05726799305309649,
+        "exposure": 46.015936254980076,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.0017849663771819454,
+        "fee_drag": 0.007618035298004866
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "supertrend",
+      "strategy_name": "Supertrend",
+      "type": "state",
+      "params": "10-3",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 2.058915268382915,
+        "cagr": 0.046141949845181385,
+        "bh_return": 4.197764570920794,
+        "n_trades": 96,
+        "win_rate": 48.95833333333333,
+        "profit_factor": 1.6767333634354027,
+        "mdd": 47.84653545198928,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.37316180861065995,
+        "exposure": 58.005123278898495,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.014409022885324538
+      },
+      "oos": {
+        "total_return": 0.3165586314593274,
+        "cagr": 0.1480426726179287,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 8,
+        "win_rate": 50.0,
+        "profit_factor": 3.183813850422423,
+        "mdd": 11.969354343171757,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.1642299849670483,
+        "exposure": 55.97609561752988,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.03874088169823697,
+        "fee_drag": 0.0042197356531361585
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "tsmom",
+      "strategy_name": "Time-series momentum",
+      "type": "state",
+      "params": "n30",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 2.014196459604104,
+        "cagr": 0.04552054167176123,
+        "bh_return": 4.197764570920794,
+        "n_trades": 222,
+        "win_rate": 44.5945945945946,
+        "profit_factor": 1.4756925687934068,
+        "mdd": 52.49767360488165,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.3629756279370766,
+        "exposure": 62.35991034261927,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.006327025406699854
+      },
+      "oos": {
+        "total_return": 0.2218316322067626,
+        "cagr": 0.10580617719984464,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 24,
+        "win_rate": 45.83333333333333,
+        "profit_factor": 1.8468923654963734,
+        "mdd": 12.44382660769121,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.7479422138768812,
+        "exposure": 68.72509960159363,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.010199376657597006,
+        "fee_drag": 0.011786066428336683
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=22",
+            "oos_pf": 1.638413269850228,
+            "oos_n_trades": 25
+          },
+          {
+            "params": "n=30",
+            "oos_pf": 1.8468923654963734,
+            "oos_n_trades": 24
+          },
+          {
+            "params": "n=38",
+            "oos_pf": 1.7800311636960386,
+            "oos_n_trades": 25
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "tsmom",
+      "strategy_name": "Time-series momentum",
+      "type": "state",
+      "params": "n90",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 4.076650861128167,
+        "cagr": 0.06774389150748528,
+        "bh_return": 4.197764570920794,
+        "n_trades": 95,
+        "win_rate": 41.05263157894737,
+        "profit_factor": 2.241625827115677,
+        "mdd": 48.525405780794514,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.5026081671955506,
+        "exposure": 68.86007044508486,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.024309784156154444
+      },
+      "oos": {
+        "total_return": 0.1490376123824022,
+        "cagr": 0.07222841013047576,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 11,
+        "win_rate": 18.181818181818183,
+        "profit_factor": 2.615822981071604,
+        "mdd": 11.9869206833917,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.5026622694041063,
+        "exposure": 81.07569721115537,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.014017952796064497,
+        "fee_drag": 0.005066904577509135
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n=68",
+            "oos_pf": 3.230528121181406,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n=90",
+            "oos_pf": 2.615822981071604,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n=112",
+            "oos_pf": 1.8827517587950842,
+            "oos_n_trades": 8
+          }
+        ],
+        "share_pf_ge_1": 0.3333333333333333,
+        "n_pass": 1,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dip_3down",
+      "strategy_name": "Buy the dip (3 down closes)",
+      "type": "state",
+      "params": "fixed",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 4.144521308272715,
+        "cagr": 0.06831615810549296,
+        "bh_return": 4.197764570920794,
+        "n_trades": 320,
+        "win_rate": 65.3125,
+        "profit_factor": 1.9905544426472355,
+        "mdd": 19.860832328476196,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.6313424885717955,
+        "exposure": 8.88568683957733,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.005425339881439161
+      },
+      "oos": {
+        "total_return": 0.08632920633279983,
+        "cagr": 0.0424431125554261,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 25,
+        "win_rate": 64.0,
+        "profit_factor": 1.7338259656642703,
+        "mdd": 6.40385743818046,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6366942209504571,
+        "exposure": 8.565737051792828,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.0034442276302375286,
+        "fee_drag": 0.010917790178355258
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dip_pct",
+      "strategy_name": "Buy the dip (-x% bar)",
+      "type": "holdN",
+      "params": "-5pct-5bar",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.45898869461443614,
+        "cagr": 0.015357099307410138,
+        "bh_return": 4.197764570920794,
+        "n_trades": 45,
+        "win_rate": 60.0,
+        "profit_factor": 1.4631415360003115,
+        "mdd": 34.580781394999114,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.18342993510987507,
+        "exposure": 4.274735830931797,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.010537437791209123
+      },
+      "oos": {
+        "total_return": 0.014452354506939269,
+        "cagr": 0.007229045129738543,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 1,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 5.0584771327191085,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.12075538313148812,
+        "exposure": 1.1952191235059761,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.014452354506939269,
+        "fee_drag": 0.00040586211422577456
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "threshold=-0.0625, n_hold=4",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.0625, n_hold=5",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.0625, n_hold=6",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "threshold=-0.05, n_hold=4",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.05, n_hold=5",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.05, n_hold=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=4",
+            "oos_pf": 81.08071371437013,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=5",
+            "oos_pf": 3.832701319768621,
+            "oos_n_trades": 4
+          },
+          {
+            "params": "threshold=-0.0375, n_hold=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 3
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "buy_and_hold",
+      "strategy_name": "Buy & hold (reference)",
+      "type": "reference",
+      "params": "-",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": null,
+      "is": {
+        "total_return": 4.197764570920794,
+        "mdd": 82.96390703529309
+      },
+      "oos": {
+        "total_return": 0.38211383732278703,
+        "mdd": 22.8833069215711,
+        "fee_drag": 0.0005529561261543581
+      },
+      "suspicious": false,
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_weekly",
+      "strategy_name": "Weekly DCA (reference)",
+      "type": "reference",
+      "params": "-",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": null,
+      "is": {
+        "total_return": 6.784153796533335,
+        "mdd": 62.846472354820484
+      },
+      "oos": {
+        "total_return": 0.18051978262609336,
+        "mdd": 21.719249771411008,
+        "fee_drag": 0.00023610395652484684
+      },
+      "suspicious": false,
+      "edition": "stocks"
+    }
+  ],
+  "popular_combos": [
+    {
+      "strategy_id": "ema_9_21",
+      "strategy_name": "EMA 9/21 crossover",
+      "type": "state",
+      "params": "9-21",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.1655654981050256,
+        "cagr": 0.03166548373513778,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 130,
+        "win_rate": 41.53846153846154,
+        "profit_factor": 1.5399623601241597,
+        "mdd": 28.638998855974883,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.3398018286245478,
+        "exposure": 63.896894012167785,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.007038787073948278
+      },
+      "oos": {
+        "total_return": 0.18203285812956516,
+        "cagr": 0.08757559864060993,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 11,
+        "win_rate": 36.36363636363637,
+        "profit_factor": 2.725127296734828,
+        "mdd": 6.166832007030187,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.8995835409552918,
+        "exposure": 72.50996015936255,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.01733665415549913,
+        "fee_drag": 0.005212403523676246
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=7, n_slow=16",
+            "oos_pf": 1.6212728594523373,
+            "oos_n_trades": 16
+          },
+          {
+            "params": "n_fast=7, n_slow=21",
+            "oos_pf": 1.8501910455339736,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_fast=7, n_slow=26",
+            "oos_pf": 2.2168109085336822,
+            "oos_n_trades": 12
+          },
+          {
+            "params": "n_fast=9, n_slow=16",
+            "oos_pf": 2.0235278843225073,
+            "oos_n_trades": 14
+          },
+          {
+            "params": "n_fast=9, n_slow=21",
+            "oos_pf": 2.725127296734828,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=9, n_slow=26",
+            "oos_pf": 3.883642381628644,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=11, n_slow=16",
+            "oos_pf": 2.3232146323496314,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=11, n_slow=21",
+            "oos_pf": 3.951370712403364,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_fast=11, n_slow=26",
+            "oos_pf": 6.379598877393959,
+            "oos_n_trades": 8
+          }
+        ],
+        "share_pf_ge_1": 0.8888888888888888,
+        "n_pass": 8,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ema200_macd",
+      "strategy_name": "EMA200 trend + MACD cross",
+      "type": "state",
+      "params": "ema200-macd12.26.9",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.6025091570307199,
+        "cagr": 0.019208049982263997,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 241,
+        "win_rate": 42.738589211618255,
+        "profit_factor": 1.3144018203748433,
+        "mdd": 13.451479353829686,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.30833914543513286,
+        "exposure": 38.20044828690362,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.002194307177847408
+      },
+      "oos": {
+        "total_return": 0.04370980744041675,
+        "cagr": 0.021708234703857965,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 24,
+        "win_rate": 37.5,
+        "profit_factor": 1.3326145171821862,
+        "mdd": 7.717604096301667,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.3480156863650864,
+        "exposure": 39.6414342629482,
+        "max_consec_loss": 4,
+        "avg_trade_return": 0.0021474050811290946,
+        "fee_drag": 0.01006786270558413
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_ema=150",
+            "oos_pf": 1.010968119813776,
+            "oos_n_trades": 23
+          },
+          {
+            "params": "n_ema=200",
+            "oos_pf": 1.3326145171821862,
+            "oos_n_trades": 24
+          },
+          {
+            "params": "n_ema=250",
+            "oos_pf": 0.918618808102184,
+            "oos_n_trades": 24
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 2,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_uptrend",
+      "strategy_name": "RSI dip in uptrend",
+      "type": "state",
+      "params": "rsi14-sma200",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.04229560010589184,
+        "cagr": 0.001672746871644204,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 10,
+        "win_rate": 40.0,
+        "profit_factor": 1.3770137417854191,
+        "mdd": 9.185899028480172,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.07131487951862772,
+        "exposure": 2.9458853666346463,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.005061185367627463
+      },
+      "oos": {
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": null,
+        "mdd": 0.0,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.0,
+        "exposure": 0.0,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.0,
+        "fee_drag": 0.0
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_sma=150",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "n_sma=200",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "n_sma=250",
+            "oos_pf": 0.0,
+            "oos_n_trades": 1
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_squeeze",
+      "strategy_name": "Bollinger squeeze breakout",
+      "type": "state",
+      "params": "bb20.2-look120-conf5",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": -0.17116189408721716,
+        "cagr": -0.007545526934377045,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 24,
+        "win_rate": 20.833333333333336,
+        "profit_factor": 0.3993958074481995,
+        "mdd": 26.74644469971047,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.25653895881538546,
+        "exposure": 4.867114953570285,
+        "max_consec_loss": 9,
+        "avg_trade_return": -0.00755438264698137
+      },
+      "oos": {
+        "total_return": 0.004236377377158984,
+        "cagr": 0.002124389094246615,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 1,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 2.984648312685423,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.1006069689673283,
+        "exposure": 4.183266932270916,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.00423637737715965,
+        "fee_drag": 0.00040177490593285015
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_lookback=90, n_confirm=4",
+            "oos_pf": 0.3689501661044057,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_lookback=90, n_confirm=5",
+            "oos_pf": 0.3689501661044057,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_lookback=90, n_confirm=6",
+            "oos_pf": 0.17385926639636298,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=120, n_confirm=4",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "n_lookback=120, n_confirm=5",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "n_lookback=120, n_confirm=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "n_lookback=150, n_confirm=4",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "n_lookback=150, n_confirm=5",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          },
+          {
+            "params": "n_lookback=150, n_confirm=6",
+            "oos_pf": "inf",
+            "oos_n_trades": 1
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ichimoku_cloud",
+      "strategy_name": "Ichimoku cloud breakout",
+      "type": "state",
+      "params": "9-26-52",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.8084394595764417,
+        "cagr": 0.042542315407765985,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 72,
+        "win_rate": 41.66666666666667,
+        "profit_factor": 2.0589577146098432,
+        "mdd": 34.21911583266844,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.4265490171443438,
+        "exposure": 69.54851104707012,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.016927462697673243
+      },
+      "oos": {
+        "total_return": 0.17619498972237024,
+        "cagr": 0.08487589486938663,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 5,
+        "win_rate": 40.0,
+        "profit_factor": 3.7865161637092615,
+        "mdd": 10.974147552007786,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.795705624483662,
+        "exposure": 83.86454183266933,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.03536198214323753,
+        "fee_drag": 0.002354743969894768
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "heikin_ashi_trend",
+      "strategy_name": "Heikin-Ashi colour",
+      "type": "state",
+      "params": "conf2",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": -0.36862904623003223,
+        "cagr": -0.01838244164201719,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 634,
+        "win_rate": 43.84858044164038,
+        "profit_factor": 0.9191362286148009,
+        "mdd": 62.26936489511126,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.12538484555521423,
+        "exposure": 44.508485430675634,
+        "max_consec_loss": 11,
+        "avg_trade_return": -0.0005541888709016923
+      },
+      "oos": {
+        "total_return": 0.08809078833092032,
+        "cagr": 0.04329134590128869,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 52,
+        "win_rate": 46.15384615384615,
+        "profit_factor": 1.3613895106557397,
+        "mdd": 6.97152989811245,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.5761771002470513,
+        "exposure": 46.81274900398406,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.001799008309447228,
+        "fee_drag": 0.02286930496510209
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_confirm=2",
+            "oos_pf": 1.3613895106557397,
+            "oos_n_trades": 52
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 1,
+        "n_total": 1,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "supertrend_ema200",
+      "strategy_name": "Supertrend + EMA200 filter",
+      "type": "state",
+      "params": "st10.3-ema200",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.5157484213248733,
+        "cagr": 0.016921781699616556,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 91,
+        "win_rate": 41.75824175824176,
+        "profit_factor": 1.35100325845989,
+        "mdd": 25.48194983457237,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.2341232404691211,
+        "exposure": 52.52961895613193,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.005736500033290811
+      },
+      "oos": {
+        "total_return": 0.10139256309554767,
+        "cagr": 0.04967443476746203,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 10,
+        "win_rate": 30.0,
+        "profit_factor": 1.8536786760569965,
+        "mdd": 7.570930852632419,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.5972412039832794,
+        "exposure": 57.56972111553785,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.010905885121209246,
+        "fee_drag": 0.004414393211809697
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_ema=150",
+            "oos_pf": 1.8536786760569965,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_ema=200",
+            "oos_pf": 1.8536786760569965,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_ema=250",
+            "oos_pf": 1.8203946349773945,
+            "oos_n_trades": 10
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ema_9_21",
+      "strategy_name": "EMA 9/21 crossover",
+      "type": "state",
+      "params": "9-21",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.9204467168459818,
+        "cagr": 0.04418856708121455,
+        "bh_return": 4.197764570920794,
+        "n_trades": 134,
+        "win_rate": 37.3134328358209,
+        "profit_factor": 1.5478714766461121,
+        "mdd": 45.38015077189114,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.35682359295937743,
+        "exposure": 63.304514889529294,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.010308079395251364
+      },
+      "oos": {
+        "total_return": 0.27645247692584496,
+        "cagr": 0.1303514346193606,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 13,
+        "win_rate": 30.76923076923077,
+        "profit_factor": 2.5653401135365863,
+        "mdd": 12.633259706385047,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.9108514175802593,
+        "exposure": 69.7211155378486,
+        "max_consec_loss": 3,
+        "avg_trade_return": 0.022540617180591364,
+        "fee_drag": 0.006654840558627084
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_fast=7, n_slow=16",
+            "oos_pf": 2.131523753032014,
+            "oos_n_trades": 16
+          },
+          {
+            "params": "n_fast=7, n_slow=21",
+            "oos_pf": 2.4954622271973217,
+            "oos_n_trades": 14
+          },
+          {
+            "params": "n_fast=7, n_slow=26",
+            "oos_pf": 2.2626924997042988,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_fast=9, n_slow=16",
+            "oos_pf": 2.0538878116944788,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_fast=9, n_slow=21",
+            "oos_pf": 2.5653401135365863,
+            "oos_n_trades": 13
+          },
+          {
+            "params": "n_fast=9, n_slow=26",
+            "oos_pf": 3.753652995517895,
+            "oos_n_trades": 9
+          },
+          {
+            "params": "n_fast=11, n_slow=16",
+            "oos_pf": 2.6984222040898267,
+            "oos_n_trades": 11
+          },
+          {
+            "params": "n_fast=11, n_slow=21",
+            "oos_pf": 4.938527296570125,
+            "oos_n_trades": 10
+          },
+          {
+            "params": "n_fast=11, n_slow=26",
+            "oos_pf": 3.5599242619594533,
+            "oos_n_trades": 8
+          }
+        ],
+        "share_pf_ge_1": 0.7777777777777778,
+        "n_pass": 7,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ema200_macd",
+      "strategy_name": "EMA200 trend + MACD cross",
+      "type": "state",
+      "params": "ema200-macd12.26.9",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 1.706131857820954,
+        "cagr": 0.0409826079108071,
+        "bh_return": 4.197764570920794,
+        "n_trades": 208,
+        "win_rate": 44.71153846153847,
+        "profit_factor": 1.518316717280168,
+        "mdd": 25.318233217782105,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.44880690364479653,
+        "exposure": 39.00096061479347,
+        "max_consec_loss": 7,
+        "avg_trade_return": 0.0054142793959412365
+      },
+      "oos": {
+        "total_return": 0.018571240798467503,
+        "cagr": 0.009279899414764481,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 20,
+        "win_rate": 25.0,
+        "profit_factor": 1.1566089075023538,
+        "mdd": 15.253202460836256,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.13983385515751073,
+        "exposure": 41.832669322709165,
+        "max_consec_loss": 6,
+        "avg_trade_return": 0.0021094080283142968,
+        "fee_drag": 0.008181251407807899
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_ema=150",
+            "oos_pf": 1.0457339764359375,
+            "oos_n_trades": 19
+          },
+          {
+            "params": "n_ema=200",
+            "oos_pf": 1.1566089075023538,
+            "oos_n_trades": 20
+          },
+          {
+            "params": "n_ema=250",
+            "oos_pf": 1.0585849908902032,
+            "oos_n_trades": 19
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "rsi_uptrend",
+      "strategy_name": "RSI dip in uptrend",
+      "type": "state",
+      "params": "rsi14-sma200",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 0.5317421498894519,
+        "cagr": 0.017352525867911917,
+        "bh_return": 4.197764570920794,
+        "n_trades": 10,
+        "win_rate": 80.0,
+        "profit_factor": 6.344357633201729,
+        "mdd": 13.65237673100702,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.43011541267815795,
+        "exposure": 4.62696125520333,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.045215001405712454
+      },
+      "oos": {
+        "total_return": 0.0,
+        "cagr": 0.0,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": null,
+        "mdd": 0.0,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.0,
+        "exposure": 0.0,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.0,
+        "fee_drag": 0.0
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_sma=150",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "n_sma=200",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          },
+          {
+            "params": "n_sma=250",
+            "oos_pf": null,
+            "oos_n_trades": 0
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "bb_squeeze",
+      "strategy_name": "Bollinger squeeze breakout",
+      "type": "state",
+      "params": "bb20.2-look120-conf5",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": -0.22634112915209137,
+        "cagr": -0.0103003004431661,
+        "bh_return": 4.197764570920794,
+        "n_trades": 28,
+        "win_rate": 39.285714285714285,
+        "profit_factor": 0.529861440472205,
+        "mdd": 31.625313830279623,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": -0.17979800934032378,
+        "exposure": 5.9077809798270895,
+        "max_consec_loss": 5,
+        "avg_trade_return": -0.008488448659226128
+      },
+      "oos": {
+        "total_return": -0.0615017297933913,
+        "cagr": -0.03136128118487491,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 3,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "mdd": 7.179381539833562,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": -0.8871839235186771,
+        "exposure": 6.175298804780876,
+        "max_consec_loss": 3,
+        "avg_trade_return": -0.020904427247614394,
+        "fee_drag": 0.0011268739284049367
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_lookback=90, n_confirm=4",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=90, n_confirm=5",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=90, n_confirm=6",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=120, n_confirm=4",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=120, n_confirm=5",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=120, n_confirm=6",
+            "oos_pf": 0.0,
+            "oos_n_trades": 3
+          },
+          {
+            "params": "n_lookback=150, n_confirm=4",
+            "oos_pf": 0.0,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_lookback=150, n_confirm=5",
+            "oos_pf": 0.0,
+            "oos_n_trades": 2
+          },
+          {
+            "params": "n_lookback=150, n_confirm=6",
+            "oos_pf": 0.0,
+            "oos_n_trades": 2
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 9,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "ichimoku_cloud",
+      "strategy_name": "Ichimoku cloud breakout",
+      "type": "state",
+      "params": "9-26-52",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.789607615864695,
+        "cagr": 0.04225935788908175,
+        "bh_return": 4.197764570920794,
+        "n_trades": 77,
+        "win_rate": 38.961038961038966,
+        "profit_factor": 1.7545532773175718,
+        "mdd": 48.418850913280934,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.34701882989769584,
+        "exposure": 67.03490233749599,
+        "max_consec_loss": 8,
+        "avg_trade_return": 0.018132570052375535
+      },
+      "oos": {
+        "total_return": 0.13321356068307955,
+        "cagr": 0.06479026580076108,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 8,
+        "win_rate": 50.0,
+        "profit_factor": 2.2819059655320793,
+        "mdd": 15.124443354647255,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.47296619260981504,
+        "exposure": 79.2828685258964,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.017653285117902,
+        "fee_drag": 0.003632091689932171
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [],
+        "share_pf_ge_1": null,
+        "n_pass": null,
+        "n_total": 0,
+        "note": "diagnostic; verdict uses registered params only; this variant has no tunable numeric parameter to vary"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "heikin_ashi_trend",
+      "strategy_name": "Heikin-Ashi colour",
+      "type": "state",
+      "params": "conf2",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": -0.02753173222694849,
+        "cagr": -0.0011257338104115888,
+        "bh_return": 4.197764570920794,
+        "n_trades": 613,
+        "win_rate": 44.69820554649266,
+        "profit_factor": 1.0329272741612219,
+        "mdd": 70.7317803569311,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.06686422236657476,
+        "exposure": 44.26833173230868,
+        "max_consec_loss": 11,
+        "avg_trade_return": 0.00030962574133081797
+      },
+      "oos": {
+        "total_return": 0.026571381576293573,
+        "cagr": 0.013251520311802878,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 56,
+        "win_rate": 44.642857142857146,
+        "profit_factor": 1.0973531809222736,
+        "mdd": 12.325403857836747,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.16930341211133212,
+        "exposure": 48.007968127490045,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.000861234668396303,
+        "fee_drag": 0.02325467931819447
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_confirm=2",
+            "oos_pf": 1.0973531809222736,
+            "oos_n_trades": 56
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 1,
+        "n_total": 1,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "supertrend_ema200",
+      "strategy_name": "Supertrend + EMA200 filter",
+      "type": "state",
+      "params": "st10.3-ema200",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "TOO FEW TRADES",
+      "is": {
+        "total_return": 1.8711386964446608,
+        "cagr": 0.04347145190640078,
+        "bh_return": 4.197764570920794,
+        "n_trades": 87,
+        "win_rate": 49.42528735632184,
+        "profit_factor": 1.779868024516409,
+        "mdd": 32.953064373371674,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.40984630416754725,
+        "exposure": 51.681075888568685,
+        "max_consec_loss": 5,
+        "avg_trade_return": 0.014422156821096153
+      },
+      "oos": {
+        "total_return": 0.2851252991916975,
+        "cagr": 0.13420030435043873,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 8,
+        "win_rate": 50.0,
+        "profit_factor": 2.9850695934691833,
+        "mdd": 11.969354343171744,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 1.0741087878202624,
+        "exposure": 54.980079681274894,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.035215156396448954,
+        "fee_drag": 0.004118987878065861
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "n_ema=150",
+            "oos_pf": 2.9850695934691833,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_ema=200",
+            "oos_pf": 2.9850695934691833,
+            "oos_n_trades": 8
+          },
+          {
+            "params": "n_ema=250",
+            "oos_pf": 2.9526704629155174,
+            "oos_n_trades": 8
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "popular_combos",
+      "edition": "stocks"
+    }
+  ],
+  "bot_templates": [
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range10-grid20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "DEAD",
+      "is": {
+        "total_return": -0.16397637478065763,
+        "cagr": -0.007199828459240831,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 1456,
+        "win_rate": 82.6923076923077,
+        "profit_factor": 0.7891154310170135,
+        "mdd": 24.63769119275131,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": -0.19277904052788736,
+        "exposure": 32.08453410182517,
+        "max_consec_loss": 10,
+        "avg_trade_return": -0.0023188408184123595,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": -0.010475457725281578,
+        "cagr": -0.005272385214108444,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 70,
+        "win_rate": 85.71428571428571,
+        "profit_factor": 0.7604683344764704,
+        "mdd": 3.9181330796960734,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": -0.19228869532088064,
+        "exposure": 20.119521912350596,
+        "max_consec_loss": 10,
+        "avg_trade_return": -0.002802551206454781,
+        "fee_drag": 0.001388421137529905,
+        "max_deal_dd": null
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=7.5",
+            "oos_pf": 1.9575470364070742,
+            "oos_n_trades": 108
+          },
+          {
+            "params": "range_pct=10.0",
+            "oos_pf": 0.7604683344764704,
+            "oos_n_trades": 70
+          },
+          {
+            "params": "range_pct=12.5",
+            "oos_pf": 0.5907264257206476,
+            "oos_n_trades": 41
+          }
+        ],
+        "share_pf_ge_1": 0.3333333333333333,
+        "n_pass": 1,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range20-grid20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.13141191382466189,
+        "cagr": 0.004993778206553223,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 437,
+        "win_rate": 89.01601830663616,
+        "profit_factor": 1.4290685299483976,
+        "mdd": 9.126475347305718,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.16959772661508057,
+        "exposure": 26.54498879282741,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.005935521295847291,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": 0.019172356152179493,
+        "cagr": 0.009578858015983238,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 17,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 2.2833867393436846,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.35655213341491165,
+        "exposure": 10.557768924302788,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.022555713120212015,
+        "fee_drag": 0.0003477384901588998,
+        "max_deal_dd": null
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=15.0",
+            "oos_pf": 52.61720359624586,
+            "oos_n_trades": 43
+          },
+          {
+            "params": "range_pct=20.0",
+            "oos_pf": "inf",
+            "oos_n_trades": 17
+          },
+          {
+            "params": "range_pct=25.0",
+            "oos_pf": "inf",
+            "oos_n_trades": 16
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range30-grid20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.19707414261495626,
+        "cagr": 0.007283819971414696,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 235,
+        "win_rate": 91.48936170212765,
+        "profit_factor": 2.0797702373899587,
+        "mdd": 9.795780339017945,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.2884037353849057,
+        "exposure": 29.763048350944604,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.016200710396719865,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": 0.02031263596998034,
+        "cagr": 0.010145723393651052,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 12,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 1.585395446662441,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.49706076489049544,
+        "exposure": 18.52589641434263,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.03376294712284922,
+        "fee_drag": 0.00024953102955516115,
+        "max_deal_dd": null
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=22.5",
+            "oos_pf": "inf",
+            "oos_n_trades": 14
+          },
+          {
+            "params": "range_pct=30.0",
+            "oos_pf": "inf",
+            "oos_n_trades": 12
+          },
+          {
+            "params": "range_pct=37.5",
+            "oos_pf": "inf",
+            "oos_n_trades": 7
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 2,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot",
+      "strategy_name": "DCA bot (3Commas-style safety orders)",
+      "type": "lotsim",
+      "params": "sostep1.5",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 1.6219497333164576,
+        "cagr": 0.039656190080006315,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 227,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 42.92478100397988,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.3485660597340705,
+        "exposure": 96.3656740313801,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.014734220576955904,
+        "max_deal_dd": 0.5348946730598171
+      },
+      "oos": {
+        "total_return": 0.1619168403602087,
+        "cagr": 0.07824475411655119,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 41,
+        "win_rate": 97.5609756097561,
+        "profit_factor": 80.01932361157344,
+        "mdd": 13.36260326488099,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.7730720350765572,
+        "exposure": 91.83266932270917,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.01425568991805357,
+        "fee_drag": 0.008332020040875854,
+        "max_deal_dd": 0.18822507847153575
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.125",
+            "oos_pf": 51.023878420721296,
+            "oos_n_trades": 43
+          },
+          {
+            "params": "so_step_pct=1.5",
+            "oos_pf": 80.01932361157344,
+            "oos_n_trades": 41
+          },
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 33.38241300476865,
+            "oos_n_trades": 35
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot",
+      "strategy_name": "DCA bot (3Commas-style safety orders)",
+      "type": "lotsim",
+      "params": "sostep2.5",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 1.2058640338573592,
+        "cagr": 0.03243321121786913,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 253,
+        "win_rate": 99.60474308300395,
+        "profit_factor": 714.0784530206055,
+        "mdd": 40.40990893299501,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.30509982318559686,
+        "exposure": 95.94940762087735,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014717873925629515,
+        "max_deal_dd": 0.5039846744591604
+      },
+      "oos": {
+        "total_return": 0.10692041631099491,
+        "cagr": 0.05231577330674009,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 40,
+        "win_rate": 97.5,
+        "profit_factor": 40.41747628992548,
+        "mdd": 11.877680807396818,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": 0.5767099770845656,
+        "exposure": 92.03187250996015,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014070123593719383,
+        "fee_drag": 4.3142721731781464e-05,
+        "max_deal_dd": 0.17143256400618753
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 33.38241300476865,
+            "oos_n_trades": 35
+          },
+          {
+            "params": "so_step_pct=2.5",
+            "oos_pf": 40.41747628992548,
+            "oos_n_trades": 40
+          },
+          {
+            "params": "so_step_pct=3.125",
+            "oos_pf": 21.537724011027862,
+            "oos_n_trades": 36
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot_sl",
+      "strategy_name": "DCA bot with stop-loss (3Commas-style)",
+      "type": "lotsim",
+      "params": "sostep2.5-sl15",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 1.0538533230700575,
+        "cagr": 0.029463303288309817,
+        "bh_return": 2.9226803241533394,
+        "n_trades": 647,
+        "win_rate": 98.45440494590417,
+        "profit_factor": 6.947245861326561,
+        "mdd": 35.40947943233943,
+        "bh_mdd": 56.473669178171626,
+        "sharpe": 0.37726218785607235,
+        "exposure": 89.64137047710534,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.012471309278491861,
+        "max_deal_dd": 0.20224107540737682
+      },
+      "oos": {
+        "total_return": -0.013090863091365534,
+        "cagr": -0.006593071138029094,
+        "bh_return": 0.29955404654304507,
+        "n_trades": 51,
+        "win_rate": 96.07843137254902,
+        "profit_factor": 4.409009242969433,
+        "mdd": 12.201312499999995,
+        "bh_mdd": 18.99890412950491,
+        "sharpe": -0.0723715099776019,
+        "exposure": 89.8406374501992,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.010992253798995577,
+        "fee_drag": 0.002620114242245397,
+        "max_deal_dd": 0.17143256400618753
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 4.029665806379813,
+            "oos_n_trades": 47
+          },
+          {
+            "params": "so_step_pct=2.5",
+            "oos_pf": 4.409009242969433,
+            "oos_n_trades": 51
+          },
+          {
+            "params": "so_step_pct=3.125",
+            "oos_pf": 3.7371320250415483,
+            "oos_n_trades": 46
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range10-grid20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "DEAD",
+      "is": {
+        "total_return": -0.4943099913425434,
+        "cagr": -0.027134120940132678,
+        "bh_return": 4.197764570920794,
+        "n_trades": 2461,
+        "win_rate": 79.19544900446974,
+        "profit_factor": 0.6158670407751236,
+        "mdd": 50.87070250354731,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": -0.5276103516748358,
+        "exposure": 34.550112071725906,
+        "max_consec_loss": 18,
+        "avg_trade_return": -0.005378377443101849,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": -0.01853156650192911,
+        "cagr": -0.009346027288984482,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 121,
+        "win_rate": 82.64462809917356,
+        "profit_factor": 0.7807396869328382,
+        "mdd": 5.082163734118817,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": -0.25248755356146924,
+        "exposure": 32.27091633466135,
+        "max_consec_loss": 10,
+        "avg_trade_return": -0.0029043749377379085,
+        "fee_drag": 0.0023964583798808947,
+        "max_deal_dd": null
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=7.5",
+            "oos_pf": 0.6202603004312928,
+            "oos_n_trades": 172
+          },
+          {
+            "params": "range_pct=10.0",
+            "oos_pf": 0.7807396869328382,
+            "oos_n_trades": 121
+          },
+          {
+            "params": "range_pct=12.5",
+            "oos_pf": 0.8169399011226092,
+            "oos_n_trades": 69
+          }
+        ],
+        "share_pf_ge_1": 0.0,
+        "n_pass": 0,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range20-grid20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": -0.05299848856239753,
+        "cagr": -0.0021946034779336543,
+        "bh_return": 4.197764570920794,
+        "n_trades": 808,
+        "win_rate": 84.15841584158416,
+        "profit_factor": 0.9545721737725859,
+        "mdd": 25.8162701571374,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": -0.026138029954657513,
+        "exposure": 28.946525776496955,
+        "max_consec_loss": 10,
+        "avg_trade_return": -0.00089204490435053,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": 0.04804930520750794,
+        "cagr": 0.023838503943739653,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 47,
+        "win_rate": 95.74468085106383,
+        "profit_factor": 24.26898749894912,
+        "mdd": 3.057997261621248,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6572354655977075,
+        "exposure": 31.07569721115538,
+        "max_consec_loss": 2,
+        "avg_trade_return": 0.02015485793262124,
+        "fee_drag": 0.000988120092229705,
+        "max_deal_dd": null
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=15.0",
+            "oos_pf": 0.3525808551528055,
+            "oos_n_trades": 37
+          },
+          {
+            "params": "range_pct=20.0",
+            "oos_pf": 24.26898749894912,
+            "oos_n_trades": 47
+          },
+          {
+            "params": "range_pct=25.0",
+            "oos_pf": "inf",
+            "oos_n_trades": 23
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 2,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "type": "lotsim",
+      "params": "range30-grid20",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "FADING",
+      "is": {
+        "total_return": 0.26711749304866705,
+        "cagr": 0.009597419212614922,
+        "bh_return": 4.197764570920794,
+        "n_trades": 447,
+        "win_rate": 88.81431767337807,
+        "profit_factor": 1.5751701536456664,
+        "mdd": 17.820499620429043,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.22825930478823028,
+        "exposure": 29.955171309638168,
+        "max_consec_loss": 10,
+        "avg_trade_return": 0.011321523132562256,
+        "max_deal_dd": null
+      },
+      "oos": {
+        "total_return": 0.02062100005329426,
+        "cagr": 0.010298965706005747,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 12,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 1.9911808284411636,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.4657335126751112,
+        "exposure": 10.557768924302788,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.03436833342215776,
+        "fee_drag": 0.0002482980596330009,
+        "max_deal_dd": null
+      },
+      "suspicious": false,
+      "robustness": {
+        "grid": [
+          {
+            "params": "range_pct=22.5",
+            "oos_pf": 4.710708050209052,
+            "oos_n_trades": 35
+          },
+          {
+            "params": "range_pct=30.0",
+            "oos_pf": "inf",
+            "oos_n_trades": 12
+          },
+          {
+            "params": "range_pct=37.5",
+            "oos_pf": "inf",
+            "oos_n_trades": 9
+          }
+        ],
+        "share_pf_ge_1": 0.6666666666666666,
+        "n_pass": 2,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot",
+      "strategy_name": "DCA bot (3Commas-style safety orders)",
+      "type": "lotsim",
+      "params": "sostep1.5",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 3.8010881083353585,
+        "cagr": 0.06534239216085203,
+        "bh_return": 4.197764570920794,
+        "n_trades": 351,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 64.99143044111699,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.45949565564225786,
+        "exposure": 94.38040345821325,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.014796999999999935,
+        "max_deal_dd": 0.8023287905102499
+      },
+      "oos": {
+        "total_return": 0.24608890401545547,
+        "cagr": 0.11677285999625209,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 65,
+        "win_rate": 98.46153846153847,
+        "profit_factor": 16.807710196230342,
+        "mdd": 16.320056858824206,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.8978886836163334,
+        "exposure": 87.05179282868527,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.013702528224099585,
+        "fee_drag": 0.002151715255320985,
+        "max_deal_dd": 0.22648632844133812
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.125",
+            "oos_pf": 13.518686213801296,
+            "oos_n_trades": 59
+          },
+          {
+            "params": "so_step_pct=1.5",
+            "oos_pf": 16.807710196230342,
+            "oos_n_trades": 65
+          },
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 20.188967201067985,
+            "oos_n_trades": 68
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot",
+      "strategy_name": "DCA bot (3Commas-style safety orders)",
+      "type": "lotsim",
+      "params": "sostep2.5",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 1.4661145548018517,
+        "cagr": 0.03708916358119496,
+        "bh_return": 4.197764570920794,
+        "n_trades": 292,
+        "win_rate": 100.0,
+        "profit_factor": "inf",
+        "mdd": 66.72359296908508,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.30042301055029186,
+        "exposure": 95.32500800512328,
+        "max_consec_loss": 0,
+        "avg_trade_return": 0.014756630975844435,
+        "max_deal_dd": 0.8238872220890391
+      },
+      "oos": {
+        "total_return": 0.16126573110926934,
+        "cagr": 0.07794139740390915,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 67,
+        "win_rate": 98.50746268656717,
+        "profit_factor": 26.52150057931339,
+        "mdd": 15.379839937040396,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.6770656844226592,
+        "exposure": 86.65338645418326,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.014026551797503615,
+        "fee_drag": 0.0032378130655834614,
+        "max_deal_dd": 0.21592684995399838
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 20.188967201067985,
+            "oos_n_trades": 68
+          },
+          {
+            "params": "so_step_pct=2.5",
+            "oos_pf": 26.52150057931339,
+            "oos_n_trades": 67
+          },
+          {
+            "params": "so_step_pct=3.125",
+            "oos_pf": 34.76954784236898,
+            "oos_n_trades": 58
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    },
+    {
+      "strategy_id": "dca_bot_sl",
+      "strategy_name": "DCA bot with stop-loss (3Commas-style)",
+      "type": "lotsim",
+      "params": "sostep2.5-sl15",
+      "asset": "QQQ",
+      "timeframe": "1d",
+      "as_of": "2026-10-30",
+      "verdict": "ALIVE",
+      "is": {
+        "total_return": 10.487754309178234,
+        "cagr": 0.10350945212154516,
+        "bh_return": 4.197764570920794,
+        "n_trades": 1267,
+        "win_rate": 99.13180741910024,
+        "profit_factor": 11.243768725714796,
+        "mdd": 29.36549229794342,
+        "bh_mdd": 82.96390703529309,
+        "sharpe": 0.9875125497067666,
+        "exposure": 79.71501761127121,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.013355465070991715,
+        "max_deal_dd": 0.21707955302792362
+      },
+      "oos": {
+        "total_return": 0.04073014071147929,
+        "cagr": 0.02024295442254309,
+        "bh_return": 0.38211383732278703,
+        "n_trades": 80,
+        "win_rate": 97.5,
+        "profit_factor": 6.172240765717362,
+        "mdd": 12.201312500000016,
+        "bh_mdd": 22.8833069215711,
+        "sharpe": 0.28279581489123645,
+        "exposure": 84.06374501992032,
+        "max_consec_loss": 1,
+        "avg_trade_return": 0.012089662130409271,
+        "fee_drag": 0.0033600953737256134,
+        "max_deal_dd": 0.17641045554320553
+      },
+      "suspicious": true,
+      "robustness": {
+        "grid": [
+          {
+            "params": "so_step_pct=1.875",
+            "oos_pf": 5.940304525241407,
+            "oos_n_trades": 82
+          },
+          {
+            "params": "so_step_pct=2.5",
+            "oos_pf": 6.172240765717362,
+            "oos_n_trades": 80
+          },
+          {
+            "params": "so_step_pct=3.125",
+            "oos_pf": 5.68372479036039,
+            "oos_n_trades": 69
+          }
+        ],
+        "share_pf_ge_1": 1.0,
+        "n_pass": 3,
+        "n_total": 3,
+        "note": "diagnostic; verdict uses registered params only"
+      },
+      "group": "bot_templates",
+      "edition": "stocks"
+    }
+  ],
+  "bot_tally": {
+    "ALIVE": 7,
+    "FADING": 3,
+    "DEAD": 2,
+    "TOO FEW TRADES": 0
+  },
+  "suspicious": [
+    {
+      "strategy_id": "sma_cross",
+      "params": "20-100",
+      "asset": "SPY",
+      "tf": "1d",
+      "oos_pf": 5.729011364182629,
+      "oos_sharpe": 0.7157148233031966
+    },
+    {
+      "strategy_id": "tsmom",
+      "params": "n90",
+      "asset": "SPY",
+      "tf": "1d",
+      "oos_pf": 12.976643997076302,
+      "oos_sharpe": 0.8660425773603537
+    },
+    {
+      "strategy_id": "dca_bot",
+      "params": "sostep1.5",
+      "asset": "SPY",
+      "tf": "1d",
+      "oos_pf": 80.01932361157344,
+      "oos_sharpe": 0.7730720350765572
+    },
+    {
+      "strategy_id": "dca_bot",
+      "params": "sostep2.5",
+      "asset": "SPY",
+      "tf": "1d",
+      "oos_pf": 40.41747628992548,
+      "oos_sharpe": 0.5767099770845656
+    },
+    {
+      "strategy_id": "sma_cross",
+      "params": "20-100",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 5.828534160908113,
+      "oos_sharpe": 0.6165095884582362
+    },
+    {
+      "strategy_id": "above_sma",
+      "params": "n200",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 11.994648197475074,
+      "oos_sharpe": 0.8225757527152626
+    },
+    {
+      "strategy_id": "rsi_mr",
+      "params": "exit50",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 5.728928757996147,
+      "oos_sharpe": 0.27150080632636014
+    },
+    {
+      "strategy_id": "grid_bot",
+      "params": "range20-grid20",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 24.26898749894912,
+      "oos_sharpe": 0.6572354655977075
+    },
+    {
+      "strategy_id": "dca_bot",
+      "params": "sostep1.5",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 16.807710196230342,
+      "oos_sharpe": 0.8978886836163334
+    },
+    {
+      "strategy_id": "dca_bot",
+      "params": "sostep2.5",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 26.52150057931339,
+      "oos_sharpe": 0.6770656844226592
+    },
+    {
+      "strategy_id": "dca_bot_sl",
+      "params": "sostep2.5-sl15",
+      "asset": "QQQ",
+      "tf": "1d",
+      "oos_pf": 6.172240765717362,
+      "oos_sharpe": 0.28279581489123645
+    }
+  ],
+  "legal_disclaimer": "Educational / informational content only. This is not investment advice, and nothing here is a recommendation to buy or sell any asset. Past backtested performance, especially net-of-cost historical simulation, does not guarantee future results.",
+  "repo_url": "https://github.com/getjogak-sketch/deadoralive",
+  "signup_url": "https://buttondown.com/jogak"
+}

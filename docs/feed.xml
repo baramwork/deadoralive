@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>Weekly, plain-numbers digest of what changed in this week&#x27;s strategy backtest run.</description>
   <item>
+    <title>Week of 2026-11-02: 10 alive / 31 fading / 31 dead — what changed</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-11-02.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-11-02.html</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <description>Week of 2026-11-02: 10 alive / 31 fading / 31 dead — what changed</description>
+    <content:encoded><![CDATA[<ul><li>This run covers 140 strategy/asset/timeframe rows: 10 ALIVE, 31 FADING, 31 DEAD, 16 with too few trades.</li><li>5 verdict(s) changed since the 2026-10-26 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 21.63 (DCA bot (3Commas-style safety orders) (sostep1.5) on BTCUSD 1d); the lowest was 0.39 (Grid bot (Pionex-style spot grid) (range10-grid20) on ETHUSD 1d).</li></ul><h2>Verdict changes</h2><ul><li>Bollinger breakout (20-2) on BTCUSD 4h: FADING &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range30-grid20) on BTCUSD 1d: ALIVE &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range30-grid20) on BTCUSD 4h: ALIVE &rarr; DEAD</li><li>Grid bot (Pionex-style spot grid) (range20-grid20) on ETHUSD 4h: DEAD &rarr; FADING</li><li>SMA crossover (20-100) on ETHUSD 4h: FADING &rarr; ALIVE</li></ul><p><strong>Biggest fee drag:</strong> 639.0% on DCA bot (3Commas-style safety orders) (sostep1.5) on ETHUSD 1d.</p>]]></content:encoded>
+  </item>
+  <item>
     <title>Week of 2026-10-26: 9 alive / 33 fading / 30 dead — what changed</title>
     <link>https://getjogak-sketch.github.io/deadoralive/digest/2026-10-26.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/digest/2026-10-26.html</guid>
