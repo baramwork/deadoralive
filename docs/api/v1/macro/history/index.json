@@ -2,6 +2,10 @@
   "edition": "macro",
   "history": [
     {
+      "as_of": "2026-11-06",
+      "file": "history/2026-11-06.json"
+    },
+    {
       "as_of": "2026-10-30",
       "file": "history/2026-10-30.json"
     },

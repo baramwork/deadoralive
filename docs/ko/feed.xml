@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>매주 전략 백테스트 결과 중 바뀐 부분만 숫자로 정리한 요약입니다.</description>
   <item>
+    <title>2026-11-09 주간 요약: 생존 13 / 약화 32 / 사망 25 — 이번 주 변경 사항</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-09.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-09.html</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <description>2026-11-09 주간 요약: 생존 13 / 약화 32 / 사망 25 — 이번 주 변경 사항</description>
+    <content:encoded><![CDATA[<ul><li>이번 실행은 전략·자산·시간대 조합 140건을 다뤘습니다: 생존 13건, 약화 32건, 사망 25건, 표본 부족 18건입니다.</li><li>2026-11-02 실행 이후 판정이 12건 바뀌었습니다.</li><li>거래가 30회 이상인 조합의 표본외 순손익비 중, 가장 높은 값은 15.51(손절 포함 분할매수 봇 (DCA bot with stop-loss)(sostep2.5-sl15) KRW-ETH (이더리움) 일봉 (1d)), 가장 낮은 값은 0.44(그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range10-grid20) KRW-ETH (이더리움) 일봉 (1d))이었습니다.</li></ul><h2>판정 변경</h2><ul><li>이동평균선 위에서만 보유 (Price above SMA)(n200) KRW-BTC 1d: TOO FEW TRADES &rarr; FADING</li><li>200일 이동평균 추세 + MACD 교차 (EMA200 trend + MACD cross)(ema200-macd12.26.9) KRW-ETH 1d: FADING &rarr; DEAD</li><li>지수이동평균 9/21 교차 (EMA 9/21 crossover)(9-21) KRW-ETH 4h: FADING &rarr; DEAD</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range20-grid20) KRW-BTC 1d: FADING &rarr; DEAD</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-BTC 1d: ALIVE &rarr; DEAD</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range20-grid20) KRW-BTC 4h: FADING &rarr; DEAD</li><li>일목균형표 구름대 돌파 (Ichimoku cloud breakout)(9-26-52) KRW-BTC 4h: ALIVE &rarr; FADING</li><li>MACD 시그널 교차 (MACD signal cross)(12-26-9) KRW-BTC 4h: FADING &rarr; DEAD</li><li>단순이동평균 교차 (SMA crossover)(10-50) KRW-ETH 4h: ALIVE &rarr; FADING</li><li>시계열 모멘텀 (Time-series momentum)(n30) KRW-ETH 4h: FADING &rarr; DEAD</li><li>변동성 돌파 (Larry Williams volatility breakout)(k0.7) KRW-BTC 1d: FADING &rarr; DEAD</li><li>변동성 돌파 + 추세 필터 (Volatility breakout + trend filter)(k0.5-sma20) KRW-BTC 1d: FADING &rarr; DEAD</li></ul>]]></content:encoded>
+  </item>
+  <item>
     <title>2026-11-02 주간 요약: 생존 14 / 약화 34 / 사망 21 — 이번 주 변경 사항</title>
     <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-02.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-02.html</guid>
