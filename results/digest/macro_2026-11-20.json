@@ -1,0 +1,234 @@
+{
+  "edition": "macro",
+  "as_of": "2026-11-20",
+  "tally": {
+    "ALIVE": 6,
+    "FADING": 34,
+    "DEAD": 15,
+    "TOO FEW TRADES": 55
+  },
+  "first_week": false,
+  "prev_as_of": "2026-11-13",
+  "flips": [
+    {
+      "strategy_id": "bb_mr",
+      "strategy_name": "Bollinger mean reversion",
+      "params": "20-2",
+      "asset": "GLD",
+      "timeframe": "1d",
+      "from": "TOO FEW TRADES",
+      "to": "FADING"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range30-grid20",
+      "asset": "GLD",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "vol_breakout",
+    "strategy_name": "Larry Williams volatility breakout",
+    "type": "onebar",
+    "params": "k0.5",
+    "asset": "SLV",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "FADING",
+    "is": {
+      "total_return": 1.7781389578227595,
+      "cagr": 0.05886156010880805,
+      "bh_return": 1.1921053896595484,
+      "n_trades": 1831,
+      "win_rate": 49.15346805024577,
+      "profit_factor": 1.1213336425712368,
+      "mdd": 57.554065425959,
+      "bh_mdd": 76.2801514255676,
+      "sharpe": 0.4038208235912101,
+      "exposure": 66.74811195024434,
+      "max_consec_loss": 13,
+      "avg_trade_return": 0.0007177653885711072
+    },
+    "oos": {
+      "total_return": 0.1980152820564156,
+      "cagr": 0.09493283216643955,
+      "bh_return": 0.3016983787149412,
+      "n_trades": 196,
+      "win_rate": 52.04081632653062,
+      "profit_factor": 1.143486636047897,
+      "mdd": 43.93734866075207,
+      "bh_mdd": 64.99052864118819,
+      "sharpe": 0.4987198735698388,
+      "exposure": 65.13944223107569,
+      "max_consec_loss": 8,
+      "avg_trade_return": 0.0012096383934233164,
+      "fee_drag": 0.0977043703789322
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "k=0.4",
+          "oos_pf": 1.0461530361969649,
+          "oos_n_trades": 246
+        },
+        {
+          "params": "k=0.5",
+          "oos_pf": 1.143486636047897,
+          "oos_n_trades": 196
+        },
+        {
+          "params": "k=0.6",
+          "oos_pf": 1.1610104198780928,
+          "oos_n_trades": 157
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "edition": "macro"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep2.5",
+    "asset": "USO",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 0.2227966724557504,
+      "cagr": 0.011322488689883503,
+      "bh_return": -0.8242875293729908,
+      "n_trades": 377,
+      "win_rate": 99.73474801061008,
+      "profit_factor": 7.0634818161052735,
+      "mdd": 77.1837051697567,
+      "bh_mdd": 98.18692538851106,
+      "sharpe": 0.15256117812420852,
+      "exposure": 91.62594402487784,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.012668448099983055,
+      "max_deal_dd": 0.9504232216438506
+    },
+    "oos": {
+      "total_return": 0.4261066474858306,
+      "cagr": 0.1950417493517982,
+      "bh_return": 0.9161747812502443,
+      "n_trades": 158,
+      "win_rate": 99.36708860759494,
+      "profit_factor": 17.19616667491326,
+      "mdd": 17.416216573673438,
+      "bh_mdd": 32.48562231286562,
+      "sharpe": 1.1695131956728717,
+      "exposure": 68.52589641434263,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013848311721401182,
+      "fee_drag": 0.013986004645103245,
+      "max_deal_dd": 0.23576757269091217
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 11.442638904462758,
+          "oos_n_trades": 114
+        },
+        {
+          "params": "so_step_pct=2.5",
+          "oos_pf": 17.19616667491326,
+          "oos_n_trades": 158
+        },
+        {
+          "params": "so_step_pct=3.125",
+          "oos_pf": 16.373062734016532,
+          "oos_n_trades": 138
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "macro"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "SLV",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.652054234237778,
+      "cagr": -0.05738129537767089,
+      "bh_return": 1.1921053896595484,
+      "n_trades": 2113,
+      "win_rate": 75.01183151916706,
+      "profit_factor": 0.44842930365010825,
+      "mdd": 65.47092285006022,
+      "bh_mdd": 76.2801514255676,
+      "sharpe": -0.9817822541106713,
+      "exposure": 49.08929364726788,
+      "max_consec_loss": 30,
+      "avg_trade_return": -0.009707765640474179,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.3473204116884706,
+      "cagr": -0.19280048549883,
+      "bh_return": 0.3016983787149412,
+      "n_trades": 324,
+      "win_rate": 61.419753086419746,
+      "profit_factor": 0.20049306655838603,
+      "mdd": 35.65688521642193,
+      "bh_mdd": 64.99052864118819,
+      "sharpe": -1.918504388198498,
+      "exposure": 38.44621513944223,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.025587945287562062,
+      "fee_drag": 0.004214448138079807,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 0.1774052410500224,
+          "oos_n_trades": 525
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.20049306655838603,
+          "oos_n_trades": 324
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.33201056491260633,
+          "oos_n_trades": 276
+        }
+      ],
+      "share_pf_ge_1": 0.0,
+      "n_pass": 0,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "macro"
+  },
+  "n_rows": 175,
+  "title": "Week of 2026-11-20: 6 alive / 34 fading / 15 dead \u2014 what changed",
+  "markdown": "# Week of 2026-11-20: 6 alive / 34 fading / 15 dead \u2014 what changed\n\n- This run covers 175 strategy/asset/timeframe rows: 6 ALIVE, 34 FADING, 15 DEAD, 55 with too few trades.\n- 2 verdict(s) changed since the 2026-11-13 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 17.20 (DCA bot (3Commas-style safety orders) (sostep2.5) on USO 1d); the lowest was 0.20 (Grid bot (Pionex-style spot grid) (range10-grid20) on SLV 1d).\n\n## Verdict changes\n- Bollinger mean reversion (20-2) on GLD 1d: TOO FEW TRADES -> FADING\n- Grid bot (Pionex-style spot grid) (range30-grid20) on GLD 1d: FADING -> DEAD\n\nBiggest fee drag: 9.8% on Larry Williams volatility breakout (k0.5) on SLV 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 175 strategy/asset/timeframe rows: 6 ALIVE, 34 FADING, 15 DEAD, 55 with too few trades.</li><li>2 verdict(s) changed since the 2026-11-13 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 17.20 (DCA bot (3Commas-style safety orders) (sostep2.5) on USO 1d); the lowest was 0.20 (Grid bot (Pionex-style spot grid) (range10-grid20) on SLV 1d).</li></ul><h2>Verdict changes</h2><ul><li>Bollinger mean reversion (20-2) on GLD 1d: TOO FEW TRADES &rarr; FADING</li><li>Grid bot (Pionex-style spot grid) (range30-grid20) on GLD 1d: FADING &rarr; DEAD</li></ul><p><strong>Biggest fee drag:</strong> 9.8% on Larry Williams volatility breakout (k0.5) on SLV 1d.</p>"
+}

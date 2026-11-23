@@ -1,0 +1,234 @@
+{
+  "edition": "stocks",
+  "as_of": "2026-11-20",
+  "tally": {
+    "ALIVE": 5,
+    "FADING": 14,
+    "DEAD": 2,
+    "TOO FEW TRADES": 23
+  },
+  "first_week": false,
+  "prev_as_of": "2026-11-13",
+  "flips": [
+    {
+      "strategy_id": "dip_3down",
+      "strategy_name": "Buy the dip (3 down closes)",
+      "params": "fixed",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "ALIVE"
+    },
+    {
+      "strategy_id": "grid_bot",
+      "strategy_name": "Grid bot (Pionex-style spot grid)",
+      "params": "range10-grid20",
+      "asset": "SPY",
+      "timeframe": "1d",
+      "from": "FADING",
+      "to": "DEAD"
+    }
+  ],
+  "biggest_fee_drag": {
+    "strategy_id": "vol_breakout",
+    "strategy_name": "Larry Williams volatility breakout",
+    "type": "onebar",
+    "params": "k0.5",
+    "asset": "SPY",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": -0.6642261392004647,
+      "cagr": -0.04297389448044042,
+      "bh_return": 2.9801950422422103,
+      "n_trades": 2646,
+      "win_rate": 50.83144368858654,
+      "profit_factor": 0.8990731593950795,
+      "mdd": 77.48485978471513,
+      "bh_mdd": 56.473669178171626,
+      "sharpe": -0.32615422751921813,
+      "exposure": 69.46174732470851,
+      "max_consec_loss": 9,
+      "avg_trade_return": -0.0003579473624989908
+    },
+    "oos": {
+      "total_return": 0.1885575325696356,
+      "cagr": 0.09058506769662311,
+      "bh_return": 0.16794966467437278,
+      "n_trades": 213,
+      "win_rate": 58.21596244131455,
+      "profit_factor": 1.3768110249452152,
+      "mdd": 6.132974595294738,
+      "bh_mdd": 18.9989041295049,
+      "sharpe": 0.9070574775465161,
+      "exposure": 70.7171314741036,
+      "max_consec_loss": 4,
+      "avg_trade_return": 0.0008429397826199412,
+      "fee_drag": 0.10570416581800646
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "k=0.4",
+          "oos_pf": 1.2451439938235462,
+          "oos_n_trades": 256
+        },
+        {
+          "params": "k=0.5",
+          "oos_pf": 1.3768110249452152,
+          "oos_n_trades": 213
+        },
+        {
+          "params": "k=0.6",
+          "oos_pf": 1.3234997423087658,
+          "oos_n_trades": 169
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "edition": "stocks"
+  },
+  "best_pf": {
+    "strategy_id": "dca_bot",
+    "strategy_name": "DCA bot (3Commas-style safety orders)",
+    "type": "lotsim",
+    "params": "sostep2.5",
+    "asset": "SPY",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "ALIVE",
+    "is": {
+      "total_return": 1.2140542931171847,
+      "cagr": 0.032508268572607024,
+      "bh_return": 2.9801950422422103,
+      "n_trades": 254,
+      "win_rate": 99.60629921259843,
+      "profit_factor": 736.1417522531691,
+      "mdd": 40.40990893299501,
+      "bh_mdd": 56.473669178171626,
+      "sharpe": 0.30584220975310766,
+      "exposure": 95.94314007347069,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.014718722483094157,
+      "max_deal_dd": 0.5039846744591604
+    },
+    "oos": {
+      "total_return": 0.08133189826986453,
+      "cagr": 0.040033084030450805,
+      "bh_return": 0.16794966467437278,
+      "n_trades": 40,
+      "win_rate": 97.5,
+      "profit_factor": 15.18078401718738,
+      "mdd": 11.877680807396818,
+      "bh_mdd": 18.9989041295049,
+      "sharpe": 0.4484017867379213,
+      "exposure": 92.03187250996015,
+      "max_consec_loss": 1,
+      "avg_trade_return": 0.013476723886140083,
+      "fee_drag": 0.00034904134187496716,
+      "max_deal_dd": 0.17143256400618737
+    },
+    "suspicious": true,
+    "robustness": {
+      "grid": [
+        {
+          "params": "so_step_pct=1.875",
+          "oos_pf": 10.00556751001268,
+          "oos_n_trades": 35
+        },
+        {
+          "params": "so_step_pct=2.5",
+          "oos_pf": 15.18078401718738,
+          "oos_n_trades": 40
+        },
+        {
+          "params": "so_step_pct=3.125",
+          "oos_pf": 10.505070516237438,
+          "oos_n_trades": 37
+        }
+      ],
+      "share_pf_ge_1": 1.0,
+      "n_pass": 3,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "stocks"
+  },
+  "worst_pf": {
+    "strategy_id": "grid_bot",
+    "strategy_name": "Grid bot (Pionex-style spot grid)",
+    "type": "lotsim",
+    "params": "range10-grid20",
+    "asset": "SPY",
+    "timeframe": "1d",
+    "as_of": "2026-11-20",
+    "verdict": "DEAD",
+    "is": {
+      "total_return": -0.16397637478065763,
+      "cagr": -0.007182641326127004,
+      "bh_return": 2.9801950422422103,
+      "n_trades": 1456,
+      "win_rate": 82.6923076923077,
+      "profit_factor": 0.7891154310170135,
+      "mdd": 24.63769119275131,
+      "bh_mdd": 56.473669178171626,
+      "sharpe": -0.19254797654667083,
+      "exposure": 32.00766650694777,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.0023188408184123595,
+      "max_deal_dd": null
+    },
+    "oos": {
+      "total_return": -0.02807261936232619,
+      "cagr": -0.01419214420319903,
+      "bh_return": 0.16794966467437278,
+      "n_trades": 86,
+      "win_rate": 80.23255813953489,
+      "profit_factor": 0.5615751079573719,
+      "mdd": 4.51605175413995,
+      "bh_mdd": 18.9989041295049,
+      "sharpe": -0.4716918105886325,
+      "exposure": 23.50597609561753,
+      "max_consec_loss": 10,
+      "avg_trade_return": -0.006418321077323573,
+      "fee_drag": 0.0016792588236519412,
+      "max_deal_dd": null
+    },
+    "suspicious": false,
+    "robustness": {
+      "grid": [
+        {
+          "params": "range_pct=7.5",
+          "oos_pf": 1.0536544607013851,
+          "oos_n_trades": 123
+        },
+        {
+          "params": "range_pct=10.0",
+          "oos_pf": 0.5615751079573719,
+          "oos_n_trades": 86
+        },
+        {
+          "params": "range_pct=12.5",
+          "oos_pf": 0.43392361092751536,
+          "oos_n_trades": 50
+        }
+      ],
+      "share_pf_ge_1": 0.3333333333333333,
+      "n_pass": 1,
+      "n_total": 3,
+      "note": "diagnostic; verdict uses registered params only"
+    },
+    "group": "bot_templates",
+    "edition": "stocks"
+  },
+  "n_rows": 70,
+  "title": "Week of 2026-11-20: 5 alive / 14 fading / 2 dead \u2014 what changed",
+  "markdown": "# Week of 2026-11-20: 5 alive / 14 fading / 2 dead \u2014 what changed\n\n- This run covers 70 strategy/asset/timeframe rows: 5 ALIVE, 14 FADING, 2 DEAD, 23 with too few trades.\n- 2 verdict(s) changed since the 2026-11-13 run.\n- Among rows with at least 30 out-of-sample trades, the highest was 15.18 (DCA bot (3Commas-style safety orders) (sostep2.5) on SPY 1d); the lowest was 0.56 (Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d).\n\n## Verdict changes\n- Buy the dip (3 down closes) (fixed) on SPY 1d: FADING -> ALIVE\n- Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d: FADING -> DEAD\n\nBiggest fee drag: 10.6% on Larry Williams volatility breakout (k0.5) on SPY 1d.\n\nThis digest restates numbers already published on the site; it is not investment advice.",
+  "html_body": "<ul><li>This run covers 70 strategy/asset/timeframe rows: 5 ALIVE, 14 FADING, 2 DEAD, 23 with too few trades.</li><li>2 verdict(s) changed since the 2026-11-13 run.</li><li>Among rows with at least 30 out-of-sample trades, the highest was 15.18 (DCA bot (3Commas-style safety orders) (sostep2.5) on SPY 1d); the lowest was 0.56 (Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d).</li></ul><h2>Verdict changes</h2><ul><li>Buy the dip (3 down closes) (fixed) on SPY 1d: FADING &rarr; ALIVE</li><li>Grid bot (Pionex-style spot grid) (range10-grid20) on SPY 1d: FADING &rarr; DEAD</li></ul><p><strong>Biggest fee drag:</strong> 10.6% on Larry Williams volatility breakout (k0.5) on SPY 1d.</p>"
+}

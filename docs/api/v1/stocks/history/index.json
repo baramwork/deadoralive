@@ -2,6 +2,10 @@
   "edition": "stocks",
   "history": [
     {
+      "as_of": "2026-11-20",
+      "file": "history/2026-11-20.json"
+    },
+    {
       "as_of": "2026-11-13",
       "file": "history/2026-11-13.json"
     },

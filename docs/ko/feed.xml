@@ -5,6 +5,14 @@
   <link>https://getjogak-sketch.github.io/deadoralive</link>
   <description>매주 전략 백테스트 결과 중 바뀐 부분만 숫자로 정리한 요약입니다.</description>
   <item>
+    <title>2026-11-23 주간 요약: 생존 7 / 약화 29 / 사망 34 — 이번 주 변경 사항</title>
+    <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-23.html</link>
+    <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-23.html</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <description>2026-11-23 주간 요약: 생존 7 / 약화 29 / 사망 34 — 이번 주 변경 사항</description>
+    <content:encoded><![CDATA[<ul><li>이번 실행은 전략·자산·시간대 조합 140건을 다뤘습니다: 생존 7건, 약화 29건, 사망 34건, 표본 부족 18건입니다.</li><li>2026-11-16 실행 이후 판정이 8건 바뀌었습니다.</li><li>거래가 30회 이상인 조합의 표본외 순손익비 중, 가장 높은 값은 15.48(손절 포함 분할매수 봇 (DCA bot with stop-loss)(sostep2.5-sl15) KRW-ETH (이더리움) 일봉 (1d)), 가장 낮은 값은 0.42(그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range10-grid20) KRW-BTC (비트코인) 일봉 (1d))이었습니다.</li></ul><h2>판정 변경</h2><ul><li>볼린저밴드 수축 후 돌파 (Bollinger squeeze breakout)(bb20.2-look120-conf5) KRW-BTC 4h: FADING &rarr; DEAD</li><li>3봉 연속 하락 뒤 매수 (Buy the dip, 3 down closes)(fixed) KRW-BTC 1d: FADING &rarr; DEAD</li><li>지수이동평균 교차 (EMA crossover)(12-26) KRW-BTC 4h: FADING &rarr; DEAD</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-BTC 1d: FADING &rarr; DEAD</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range20-grid20) KRW-BTC 4h: DEAD &rarr; FADING</li><li>그리드 봇, 파이오넥스 방식 (Grid bot, Pionex-style spot grid)(range30-grid20) KRW-BTC 4h: ALIVE &rarr; DEAD</li><li>MACD 시그널 교차 (MACD signal cross)(12-26-9) KRW-ETH 4h: FADING &rarr; DEAD</li><li>단순이동평균 교차 (SMA crossover)(10-50) KRW-BTC 4h: FADING &rarr; DEAD</li></ul>]]></content:encoded>
+  </item>
+  <item>
     <title>2026-11-16 주간 요약: 생존 7 / 약화 33 / 사망 30 — 이번 주 변경 사항</title>
     <link>https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-16.html</link>
     <guid isPermaLink="true">https://getjogak-sketch.github.io/deadoralive/ko/digest/2026-11-16.html</guid>
